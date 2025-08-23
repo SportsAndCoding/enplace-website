@@ -379,11 +379,11 @@ const ROICalculatorEnhanced = ({ onClose }) => {
 
 // Social Proof Engine Component - CORRECTED STATISTICS
 const SocialProofEngine = () => {
-    const [currentTestimonial, setCurrentTestimonial] = useState(0);
+    const [currentScenario, setCurrentScenario] = useState(0);
     const [counters, setCounters] = useState({
-        restaurants: 0,
-        savings: 0,
-        staff: 0
+        people: 0,
+        product: 0,
+        profit: 0
     });
 
     // CORRECTED TESTIMONIALS - Removed specific dollar amounts
@@ -412,12 +412,12 @@ const SocialProofEngine = () => {
     useEffect(() => {
         // Rotate scenarios
         const scenarioTimer = setInterval(() => {
-            setCurrentTestimonial((prev) => (prev + 1) % scenarios.length);
+            setCurrentScenario((prev) => (prev + 1) % scenarios.length);
         }, 8000);
 
         // Animate counters - CORRECTED NUMBERS
         const animateCounters = () => {
-            const targets = { restaurants: 25, savings: 18000, staff: 340 }; // Realistic numbers
+            const targets = { people: 41400, product: 34000, profit: 45000 }; // People/Product/Profit savings
             const duration = 2000;
             const steps = 50;
             const stepTime = duration / steps;
@@ -479,17 +479,17 @@ const SocialProofEngine = () => {
 
                         <div className="text-left mb-8">
                             <div className="text-lg font-semibold text-gray-900 mb-4">
-                                Scenario: {scenarios[currentTestimonial].scenario}
+                                Scenario: {scenarios[currentScenario].scenario}
                             </div>
                             <div className="text-gray-700 mb-4">
-                                <strong>En Place Response:</strong> {scenarios[currentTestimonial].solution}
+                                <strong>En Place Response:</strong> {scenarios[currentScenario].solution}
                             </div>
                             <div className="text-center">
                                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: '#581845' }}>
-                                    <span>Result: {scenarios[currentTestimonial].impact}</span>
+                                    <span>Result: {scenarios[currentScenario].impact}</span>
                                 </div>
                                 <div className="mt-2 text-sm text-gray-500">
-                                    {scenarios[currentTestimonial].category} Optimization
+                                    {scenarios[currentScenario].category} Optimization
                                 </div>
                             </div>
                         </div>
