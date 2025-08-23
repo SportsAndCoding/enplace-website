@@ -6,7 +6,8 @@ const AnalyticsService = {
     init() {
         // Initialize Google Analytics 4
         if (typeof gtag !== 'undefined') {
-            gtag('config', 'GA_MEASUREMENT_ID', {
+            // eslint-disable-next-line no-undef
+            gtag('event', eventName, {
                 page_title: 'En Place Marketing Site',
                 page_location: window.location.href,
                 custom_map: {
@@ -1299,8 +1300,8 @@ const EnPlaceWebsite = () => {
                                 <button
                                     onClick={() => setSelectedTier('standard')}
                                     className={`px-6 py-2 rounded-md font-medium transition-colors ${selectedTier === 'standard'
-                                            ? 'bg-white shadow-sm'
-                                            : 'text-gray-600 hover:text-gray-900'
+                                        ? 'bg-white shadow-sm'
+                                        : 'text-gray-600 hover:text-gray-900'
                                         }`}
                                     style={{ color: selectedTier === 'standard' ? '#581845' : undefined }}
                                 >
@@ -1309,8 +1310,8 @@ const EnPlaceWebsite = () => {
                                 <button
                                     onClick={() => setSelectedTier('real-time')}
                                     className={`px-6 py-2 rounded-md font-medium transition-colors ${selectedTier === 'real-time'
-                                            ? 'bg-white shadow-sm'
-                                            : 'text-gray-600 hover:text-gray-900'
+                                        ? 'bg-white shadow-sm'
+                                        : 'text-gray-600 hover:text-gray-900'
                                         }`}
                                     style={{ color: selectedTier === 'real-time' ? '#581845' : undefined }}
                                 >
