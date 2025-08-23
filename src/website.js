@@ -387,34 +387,32 @@ const SocialProofEngine = () => {
     });
 
     // CORRECTED TESTIMONIALS - Removed specific dollar amounts
-    const testimonials = [
+    // Real operational scenarios that demonstrate En Place intelligence
+    const scenarios = [
         {
-            text: "En Place transformed our operations completely. We saw immediate improvements in labor efficiency and the staff loves the system.",
-            author: "Maria Rodriguez",
-            title: "Owner, North Beach Bistro",
-            location: "San Francisco, CA",
-            benefit: "Better labor efficiency"
+            scenario: "Billy calls out sick 2 hours before dinner rush",
+            solution: "En Place instantly posts the shift to your staff portal and calculates optimal coverage based on forecasted demand and current staffing levels.",
+            impact: "Zero revenue loss from understaffing",
+            category: "People"
         },
         {
-            text: "The AIME system helped us identify staff concerns early and improve team communication. Our retention has never been better.",
-            author: "James Chen",
-            title: "General Manager, Pacific Grill",
-            location: "Seattle, WA",
-            benefit: "Improved team communication"
+            scenario: "Local soccer tournament breaks for lunch in 1 hour",
+            solution: "System detects the event, predicts 40% demand surge, and alerts kitchen to increase prep quantities while suggesting staff adjustments.",
+            impact: "Ready for the rush, capture every dollar",
+            category: "Product"
         },
         {
-            text: "Computer vision cleaning verification gave us our clean rating back. Customer confidence is through the roof.",
-            author: "Sarah Johnson",
-            title: "Operations Director, Metro Eats",
-            location: "Portland, OR",
-            benefit: "98% customer satisfaction"
+            scenario: "Table 17 sends back their entree during Saturday night service",
+            solution: "Manager gets instant mobile alert with context and suggested service recovery actions to personally ensure guest satisfaction.",
+            impact: "Turn potential 1-star review into loyal customer",
+            category: "Profit Protection"
         }
     ];
 
     useEffect(() => {
         // Rotate testimonials
         const testimonialTimer = setInterval(() => {
-            setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+            setCurrentTestimonial((prev) => (prev + 1) % scenarios.length);
         }, 8000);
 
         // Animate counters - CORRECTED NUMBERS
@@ -430,9 +428,9 @@ const SocialProofEngine = () => {
                 const progress = currentStep / steps;
 
                 setCounters({
-                    restaurants: Math.round(targets.restaurants * progress),
-                    savings: Math.round(targets.savings * progress),
-                    staff: Math.round(targets.staff * progress)
+                    people: Math.round(targets.people * progress),
+                    product: Math.round(targets.product * progress),
+                    profit: Math.round(targets.profit * progress)
                 });
 
                 if (currentStep >= steps) clearInterval(timer);
@@ -453,16 +451,16 @@ const SocialProofEngine = () => {
                 <div className="max-w-6xl mx-auto px-5">
                     <div className="grid md:grid-cols-3 gap-8 text-center">
                         <div>
-                            <div className="text-4xl font-bold text-white">{counters.restaurants}+</div>
-                            <div className="text-gray-200">Beta Restaurants</div>
+                            <div className="text-4xl font-bold text-white">${counters.people?.toLocaleString()}</div>
+                            <div className="text-gray-200">Annual People & Labor Savings</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold text-white">${counters.savings?.toLocaleString()}</div>
-                            <div className="text-gray-200">Average Potential Annual Savings</div>
+                            <div className="text-4xl font-bold text-white">${counters.product?.toLocaleString()}</div>
+                            <div className="text-gray-200">Annual Product & Inventory Savings</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-bold text-white">{counters.staff}+</div>
-                            <div className="text-gray-200">Staff Using Platform</div>
+                            <div className="text-4xl font-bold text-white">${counters.profit?.toLocaleString()}</div>
+                            <div className="text-gray-200">Annual Revenue Protection</div>
                         </div>
                     </div>
                 </div>
@@ -471,6 +469,7 @@ const SocialProofEngine = () => {
             {/* Customer Testimonial */}
             <section className="py-16 bg-gray-50">
                 <div className="max-w-4xl mx-auto px-5">
+                    <h2 className="text-3xl font-bold text-center mb-8" style={{ color: '#2c3e50' }}>En Place Intelligence in Action</h2>
                     <div className="bg-white rounded-2xl p-8 shadow-lg">
                         <div className="flex items-center justify-center mb-6">
                             {[...Array(5)].map((_, i) => (
@@ -478,22 +477,20 @@ const SocialProofEngine = () => {
                             ))}
                         </div>
 
-                        <blockquote className="text-xl text-gray-700 text-center mb-8 italic">
-                            "{testimonials[currentTestimonial].text}"
-                        </blockquote>
-
-                        <div className="text-center">
-                            <div className="text-lg font-semibold text-gray-900">
-                                {testimonials[currentTestimonial].author}
+                        <div className="text-left mb-8">
+                            <div className="text-lg font-semibold text-gray-900 mb-4">
+                                Scenario: {scenarios[currentTestimonial].scenario}
                             </div>
-                            <div className="text-gray-600">
-                                {testimonials[currentTestimonial].title}
+                            <div className="text-gray-700 mb-4">
+                                <strong>En Place Response:</strong> {scenarios[currentTestimonial].solution}
                             </div>
-                            <div className="text-sm text-gray-500">
-                                {testimonials[currentTestimonial].location}
-                            </div>
-                            <div className="mt-2 text-sm font-medium" style={{ color: '#581845' }}>
-                                {testimonials[currentTestimonial].benefit}
+                            <div className="text-center">
+                                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: '#581845' }}>
+                                    <span>Result: {scenarios[currentTestimonial].impact}</span>
+                                </div>
+                                <div className="mt-2 text-sm text-gray-500">
+                                    {scenarios[currentTestimonial].category} Optimization
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1134,15 +1131,15 @@ const EnPlaceWebsite = () => {
             <section className="py-20" style={{ background: 'linear-gradient(135deg, #f8f4e6, #f5f5f5)' }}>
                 <div className="max-w-6xl mx-auto px-5">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl font-bold mb-4" style={{ color: '#2c3e50' }}>Why 25+ Beta Restaurants Choose En Place</h2>
+                        <h2 className="text-3xl font-bold text-center mb-12" style={{ color: '#2c3e50' }}>Why Restaurant Leaders Choose En Place</h2>
                         <p className="text-xl text-gray-600">Built by restaurant operators who understand your daily challenges</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                            <Zap className="w-12 h-12 mb-4" style={{ color: '#581845' }} />
-                            <h3 className="text-xl font-semibold mb-3" style={{ color: '#2c3e50' }}>24-Hour Setup</h3>
-                            <p className="text-gray-600">Start saving money within 24 hours. No lengthy implementations or training required.</p>
+                            <Shield className="w-12 h-12 mb-4" style={{ color: '#581845' }} />
+                            <h3 className="text-xl font-semibold mb-3" style={{ color: '#2c3e50' }}>Industry Validated</h3>
+                            <p className="text-gray-600">Built on proven AI techniques and restaurant industry research. Technology validated in enterprise environments.</p>
                         </div>
 
                         <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
@@ -1784,6 +1781,42 @@ const EnPlaceWebsite = () => {
                             <div className="flex items-center gap-2">
                                 <Mail size={16} />
                                 <span>hello@en-place.ai</span>
+                            </div>
+                        </div>
+
+                        <div className="mt-4">
+                            <h5 className="font-medium mb-2 text-sm">Follow Us</h5>
+                            <div className="flex items-center gap-3">
+                                <a
+                                    href="#"
+                                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                                    title="Twitter - Coming Soon"
+                                    onClick={(e) => { e.preventDefault(); alert('Twitter page coming soon!'); }}
+                                >
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                    </svg>
+                                </a>
+                                <a
+                                    href="#"
+                                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                                    title="LinkedIn - Coming Soon"
+                                    onClick={(e) => { e.preventDefault(); alert('LinkedIn page coming soon!'); }}
+                                >
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                    </svg>
+                                </a>
+                                <a
+                                    href="#"
+                                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                                    title="Instagram - Coming Soon"
+                                    onClick={(e) => { e.preventDefault(); alert('Instagram page coming soon!'); }}
+                                >
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
