@@ -383,7 +383,8 @@ const SocialProofEngine = () => {
     const [counters, setCounters] = useState({
         people: 0,
         product: 0,
-        profit: 0
+        profit: 0,
+        total: 0
     });
 
     // CORRECTED TESTIMONIALS - Removed specific dollar amounts
@@ -417,7 +418,7 @@ const SocialProofEngine = () => {
 
         // Animate counters - CORRECTED NUMBERS
         const animateCounters = () => {
-            const targets = { people: 41400, product: 34000, profit: 45000 }; // People/Product/Profit savings
+            const targets = { people: 41400, product: 34000, profit: 45000, total: 120400 }; // People/Product/Profit savings
             const duration = 2000;
             const steps = 50;
             const stepTime = duration / steps;
@@ -430,7 +431,8 @@ const SocialProofEngine = () => {
                 setCounters({
                     people: Math.round(targets.people * progress),
                     product: Math.round(targets.product * progress),
-                    profit: Math.round(targets.profit * progress)
+                    profit: Math.round(targets.profit * progress),
+                    total: Math.round(targets.total * progress)
                 });
 
                 if (currentStep >= steps) clearInterval(timer);
@@ -449,7 +451,7 @@ const SocialProofEngine = () => {
             {/* Animated Counters - CORRECTED STATISTICS */}
             <div className="text-white py-8" style={{ background: 'linear-gradient(135deg, #581845, #900C3F)' }}>
                 <div className="max-w-6xl mx-auto px-5">
-                    <div className="grid md:grid-cols-3 gap-8 text-center">
+                    <div className="grid md:grid-cols-4 gap-8 text-center">
                         <div>
                             <div className="text-4xl font-bold text-white">${counters.people?.toLocaleString()}</div>
                             <div className="text-gray-200">Annual People & Labor Savings</div>
@@ -461,6 +463,10 @@ const SocialProofEngine = () => {
                         <div>
                             <div className="text-4xl font-bold text-white">${counters.profit?.toLocaleString()}</div>
                             <div className="text-gray-200">Annual Revenue Protection</div>
+                        </div>
+                        <div>
+                            <div className="text-4xl font-bold text-white">${(counters.people + counters.product + counters.profit)?.toLocaleString()}</div>
+                            <div className="text-gray-200">Total Annual Impact</div>
                         </div>
                     </div>
                 </div>
