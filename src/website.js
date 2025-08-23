@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Menu, X, Star, Check, Calculator, MapPin, Phone, Mail, Calendar, Users, TrendingUp, Shield, Clock, Zap, Eye, BarChart3, Bot, Camera, Utensils, Award, Search, Play, CheckCircle, ArrowRight, PhoneCall } from 'lucide-react';
 
@@ -5,9 +6,8 @@ import { ChevronDown, Menu, X, Star, Check, Calculator, MapPin, Phone, Mail, Cal
 const AnalyticsService = {
     init() {
         // Initialize Google Analytics 4
-        if (typeof gtag !== 'undefined') {
-            // eslint-disable-next-line no-undef
-            gtag('event', eventName, {
+        if (typeof window !== 'undefined' && window.gtag) {
+            window.gtag('config', 'GA_MEASUREMENT_ID', {
                 page_title: 'En Place Marketing Site',
                 page_location: window.location.href,
                 custom_map: {
@@ -20,8 +20,8 @@ const AnalyticsService = {
 
     trackEvent(eventName, data = {}) {
         // Google Analytics
-        if (typeof gtag !== 'undefined') {
-            gtag('event', eventName, {
+        if (typeof window !== 'undefined' && window.gtag) {
+            window.gtag('event', eventName, {
                 event_category: 'conversion',
                 event_label: JSON.stringify(data),
                 value: 1
