@@ -410,8 +410,8 @@ const SocialProofEngine = () => {
     ];
 
     useEffect(() => {
-        // Rotate testimonials
-        const testimonialTimer = setInterval(() => {
+        // Rotate scenarios
+        const scenarioTimer = setInterval(() => {
             setCurrentTestimonial((prev) => (prev + 1) % scenarios.length);
         }, 8000);
 
@@ -440,9 +440,9 @@ const SocialProofEngine = () => {
         animateCounters();
 
         return () => {
-            clearInterval(testimonialTimer);
+            clearInterval(scenarioTimer);
         };
-    }, [testimonials.length]);
+    }, [scenarios.length]);
 
     return (
         <div className="social-proof-elements">
