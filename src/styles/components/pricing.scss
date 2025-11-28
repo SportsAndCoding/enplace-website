@@ -1,0 +1,15 @@
+// src/styles/components/pricing.scss
+@import './_pricing-master.scss';
+
+.pricing {
+    background: var(--espresso);
+    color: var(--champagne);
+    min-height: 100vh;
+    padding-bottom: 6rem;
+}
+
+.pricing__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}

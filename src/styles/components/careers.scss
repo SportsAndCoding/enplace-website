@@ -1,0 +1,283 @@
+// src/styles/components/careers.scss
+
+.careers {
+    min-height: 100vh;
+    background: var(--espresso);
+    color: var(--champagne);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.careers__container {
+    max-width: var(--max-width, 1200px);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* HERO */
+.careers__hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.careers__hero-image {
+    position: absolute;
+    inset: 0;
+    background: url('/careers.png') center/cover no-repeat fixed;
+    z-index: 1;
+    /* Image layer */
+}
+
+/* Dark overlay — this is what makes text readable */
+.careers__hero-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(22, 14, 12, 0.4) 0%, rgba(22, 14, 12, 0.85) 100%);
+    z-index: 2;
+    /* Overlay sits ON TOP of the image */
+}
+
+.careers__hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    animation: fadeUp 1s ease forwards;
+}
+
+.careers__hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--champagne);
+    margin-bottom: 1.5rem;
+}
+
+.careers__hero-subtitle {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    line-height: 1.5;
+    color: var(--champagne-muted);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ABOUT SECTION */
+.careers__about {
+    padding: 160px 0 140px;
+    background: var(--espresso);
+}
+
+.careers__about-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--champagne);
+}
+
+.careers__about-text {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: var(--champagne-muted);
+    text-align: center;
+}
+
+.careers__about-text p {
+    margin-bottom: 1.75rem;
+}
+
+/* FORM SECTION */
+.careers__form-section {
+    padding: 120px 0 180px;
+    background: var(--espresso);
+}
+
+.careers__form-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--champagne);
+}
+
+.careers__form {
+    background: rgba(26, 17, 15, 0.92);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(244, 208, 111, 0.3);
+    border-radius: 24px;
+    padding: 4rem;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.careers__form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.careers__field--full {
+    grid-column: 1 / -1;
+}
+
+.careers__label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+}
+
+.careers__field input,
+.careers__field textarea,
+.careers__field select {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(244, 208, 111, 0.2);
+    border-radius: 12px;
+    color: var(--champagne);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.careers__field input:focus,
+.careers__field textarea:focus,
+.careers__field select:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(244, 208, 111, 0.15);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.careers__field textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.careers__checkbox-group,
+.careers__radio-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+}
+
+.careers__checkbox-group label,
+.careers__radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+    color: var(--champagne-muted);
+    cursor: pointer;
+}
+
+.careers__checkbox-group input[type="checkbox"],
+.careers__radio-group input[type="radio"] {
+    width: auto;
+    accent-color: var(--gold);
+}
+
+.careers__submit {
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    margin: 2rem auto 0;
+    padding: 1.25rem 2rem;
+    background: var(--gold);
+    color: var(--bordeaux);
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 24px rgba(244, 208, 111, 0.3);
+}
+
+.careers__submit:hover {
+    background: var(--gold-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(244, 208, 111, 0.4);
+}
+
+/* CONFIRMATION */
+.careers__confirmation {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4rem;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.careers__confirmation h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.careers__confirmation p {
+    font-size: 1.25rem;
+    color: var(--champagne-muted);
+    line-height: 1.6;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .careers__hero {
+        min-height: 90vh;
+    }
+
+    .careers__about,
+    .careers__form-section {
+        padding: 100px 0;
+    }
+
+    .careers__form {
+        padding: 2.5rem 1.5rem;
+        border-radius: 20px;
+    }
+
+    .careers__form-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .careers__checkbox-group,
+    .careers__radio-group {
+        grid-template-columns: 1fr;
+    }
+}

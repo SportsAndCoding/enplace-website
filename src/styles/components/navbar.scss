@@ -1,0 +1,285 @@
+// src/styles/components/navbar.scss
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    padding: 2rem 0;
+    /* taller when transparent */
+    background-color: transparent;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.navbar.scrolled {
+    padding: 1rem 0;
+    /* compact when scrolled */
+    background-color: rgba(22, 14, 12, 0.92);
+    /* warm espresso tone */
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(244, 208, 111, 0.2);
+    /* luxury detail */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Use grid so logo is left, links centered, actions right */
+.navbar__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+/* LEFT: Logo */
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.navbar__logo-icon {
+    width: 42px;
+    height: 42px;
+}
+
+.navbar__logo-text {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1.95rem;
+    /* larger when transparent */
+    letter-spacing: -0.02em;
+    color: var(--champagne);
+    transition: font-size 0.4s ease;
+}
+
+.navbar.scrolled .navbar__logo-text {
+    font-size: 1.65rem;
+    /* subtle shrink on scroll */
+}
+
+/* CENTER: Links */
+
+.navbar__links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+
+    /* shift slightly left to match hero positioning */
+    margin-left: clamp(4rem, 8vw, 10rem);
+    margin-right: auto;
+
+    max-width: 1400px;
+}
+
+.navbar__link {
+    font-family: "Inter", sans-serif;
+    font-size: 1.05rem;
+    color: rgba(247, 243, 233, 0.85);
+    text-decoration: none;
+    padding: 0.25rem 0;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.25s ease;
+
+    &:hover {
+        color: var(--gold);
+    }
+}
+
+/* Dropdowns (desktop) */
+
+.navbar__dropdown {
+    position: relative;
+}
+
+.navbar__dropdown-toggle {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.navbar__dropdown-menu {
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 220px;
+    padding: 0.75rem 0.25rem;
+    background-color: rgba(22, 14, 12, 0.98);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55);
+    border-radius: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: top center;
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0.2s ease;
+
+    a {
+        display: block;
+        padding: 0.55rem 1rem;
+        font-size: 0.95rem;
+        color: rgba(247, 243, 233, 0.9);
+        text-decoration: none;
+        white-space: nowrap;
+
+        &:hover {
+            color: var(--gold);
+            background-color: rgba(88, 24, 69, 0.4);
+        }
+    }
+}
+
+/* Show dropdown on hover (desktop only) */
+@media (min-width: 901px) {
+    .navbar__dropdown:hover .navbar__dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(4px);
+    }
+}
+
+/* RIGHT: Actions */
+
+.navbar__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.75rem;
+}
+
+.navbar__login {
+    color: rgba(247, 243, 233, 0.85);
+    font-size: 1.05rem;
+    text-decoration: none;
+    transition: color 0.25s ease;
+
+    &:hover {
+        color: var(--gold);
+    }
+}
+
+.navbar__cta {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    background-color: var(--gold);
+    color: var(--bordeaux);
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+        background-color: var(--gold-dark);
+    }
+}
+
+/* Hamburger (mobile) */
+
+.navbar__hamburger {
+    width: 32px;
+    height: 22px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    span {
+        display: block;
+        height: 3px;
+        background-color: var(--champagne) !important;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    &.open span:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+    }
+
+    &.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    &.open span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
+    }
+}
+
+/* Mobile full-screen menu */
+
+.navbar__mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(17, 17, 17, 0.97);
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 2rem 2rem;
+    transform: translateY(-100%);
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    z-index: 40;
+
+    a,
+    button {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: var(--champagne);
+        text-decoration: none;
+        background: none;
+        border: none;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+    }
+
+    .navbar__mobile-sub {
+        font-size: 1.1rem;
+        padding-left: 1.25rem;
+        margin-bottom: 1rem;
+        color: rgba(247, 243, 233, 0.85);
+    }
+}
+
+.navbar__mobile-menu.open {
+    transform: translateY(0);
+}
+
+.navbar__cta-mobile {
+    margin-top: 2rem;
+    padding: 0.9rem 1.75rem;
+    background-color: var(--gold);
+    color: var(--bordeaux);
+    border-radius: 8px;
+}
+
+/* Responsive breakpoints */
+
+@media (max-width: 900px) {
+
+    .navbar__links,
+    .navbar__actions {
+        display: none;
+    }
+
+    .navbar__hamburger {
+        display: flex;
+        justify-self: end;
+    }
+
+    .navbar__inner {
+        grid-template-columns: auto 1fr auto;
+        padding: 0 1.5rem;
+    }
+}
