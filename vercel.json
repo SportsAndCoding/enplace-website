@@ -1,0 +1,34 @@
+{
+    "builds": [
+        {
+            "src": "*.html",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "pricing/*.html",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "careers/*.html",
+            "use": "@vercel/static"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/pricing",
+            "dest": "/pricing/index.html"
+        },
+        {
+            "src": "/pricing/",
+            "dest": "/pricing/index.html"
+        },
+        {
+            "src": "/careers",
+            "dest": "/careers/index.html"
+        },
+        {
+            "src": "/careers/",
+            "dest": "/careers/index.html"
+        }
+    ]
+}
