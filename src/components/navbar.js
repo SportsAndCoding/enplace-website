@@ -10,7 +10,7 @@ export default function Navbar() {
 
       <!-- LEFT: Logo — NOW CLICKABLE HOME LINK -->
       <a href="/" class="navbar__logo">
-        <img src="/assets/4_squares.png" alt="En Place logo" class="navbar__logo-icon" />
+        <img src="/4_squares.png" alt="En Place logo" class="navbar__logo-icon" />
         <span class="navbar__logo-text">En Place</span>
       </a>
 
