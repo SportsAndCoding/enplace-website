@@ -63,26 +63,33 @@ export default function Navbar() {
     <!-- MOBILE MENU -->
     <div class="navbar__mobile-menu" aria-label="Mobile navigation">
 
-      <div class="navbar__mobile-group">
-        <button class="navbar__mobile-section">Features</button>
-        <a href="#sse" class="navbar__mobile-sub">Staff Stability Engine (SSE)</a>
-        <a href="#stable-schedule" class="navbar__mobile-sub">Stable Schedule</a>
-        <a href="#stable-hire" class="navbar__mobile-sub">Stable Hire</a>
-        <a href="#house-guardian" class="navbar__mobile-sub">House Guardian</a>
-        <a href="#open-shift-market" class="navbar__mobile-sub">Open Shift Marketplace</a>
-        <a href="#shift-swap" class="navbar__mobile-sub">Shift Swap Portal</a>
+      <div class="navbar__mobile-dropdown">
+        <button class="navbar__mobile-dropdown-title" type="button">Features</button>
+        <div class="navbar__mobile-subnav">
+          <a href="#sse" class="navbar__mobile-subitem">Staff Stability Engine (SSE)</a>
+          <a href="#stable-schedule" class="navbar__mobile-subitem">Stable Schedule</a>
+          <a href="#stable-hire" class="navbar__mobile-subitem">Stable Hire</a>
+          <a href="#house-guardian" class="navbar__mobile-subitem">House Guardian</a>
+          <a href="#open-shift-market" class="navbar__mobile-subitem">Open Shift Marketplace</a>
+          <a href="#shift-swap" class="navbar__mobile-subitem">Shift Swap Portal</a>
+        </div>
       </div>
 
-      <div class="navbar__mobile-group">
-        <button class="navbar__mobile-section">Our Network</button>
-        <a href="/affiliate" class="navbar__mobile-sub">Affiliate</a>
-        <a href="/movement" class="navbar__mobile-sub">The Movement</a>
-        <a href="/testimonials" class="navbar__mobile-sub">Testimonials</a>
+      <div class="navbar__mobile-dropdown">
+        <button class="navbar__mobile-dropdown-title" type="button">Our Network</button>
+        <div class="navbar__mobile-subnav">
+          <a href="/affiliate" class="navbar__mobile-subitem">Affiliate</a>
+          <a href="/movement" class="navbar__mobile-subitem">The Movement</a>
+          <a href="/testimonials" class="navbar__mobile-subitem">Testimonials</a>
+        </div>
       </div>
 
-      <a href="/intelligence-hub" class="navbar__mobile-link">Intelligence Hub</a>
-      <a href="/pricing" class="navbar__mobile-link">Pricing</a>
-      <a href="/login" class="navbar__mobile-link">Login</a>
+      <a href="/intelligence-hub" class="navbar__mobile-item">Intelligence Hub</a>
+      <a href="/pricing" class="navbar__mobile-item">Pricing</a>
+      
+      <div class="navbar__mobile-divider"></div>
+      
+      <a href="/login" class="navbar__mobile-login">Login</a>
       <a href="/buy" class="navbar__cta-mobile">Buy Now</a>
     </div>
   `;
@@ -95,6 +102,23 @@ export default function Navbar() {
     hamburger.classList.toggle('open');
     mobileMenu.classList.toggle('open');
     document.body.classList.toggle('nav-open');
+  });
+
+  // Mobile dropdown accordions
+  nav.querySelectorAll('.navbar__mobile-dropdown-title').forEach(button => {
+    button.addEventListener('click', () => {
+      button.classList.toggle('open');
+      button.nextElementSibling.classList.toggle('open');
+    });
+  });
+
+  // Close mobile menu when a link is clicked
+  nav.querySelectorAll('.navbar__mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      document.body.classList.remove('nav-open');
+    });
   });
 
   return nav;
