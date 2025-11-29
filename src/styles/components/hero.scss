@@ -14,6 +14,8 @@
     position: relative;
     height: 100vh;
     min-height: 720px;
+    padding-top: 80px;
+    /* Clear the fixed navbar */
     background: url('/assets/hero.png') center / cover no-repeat;
     display: flex;
     align-items: center;
@@ -139,8 +141,17 @@
 }
 
 @media (max-width: 768px) {
+    .hero {
+        padding-top: 70px;
+        align-items: flex-start;
+        /* Push content down from top instead of centering */
+    }
+
     .hero__content {
         margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 15vh;
+        /* Control vertical position manually */
         text-align: center;
     }
 
@@ -157,8 +168,51 @@
 }
 
 @media (max-width: 480px) {
+    .hero {
+        min-height: 100vh;
+        min-height: 100dvh;
+        /* Dynamic viewport height for mobile browsers */
+    }
+
     .hero__content {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        margin-top: 12vh;
+    }
+
+    .hero__title {
+        font-size: clamp(2.25rem, 10vw, 3rem);
+    }
+
+    .hero__cta {
+        padding: 1rem 2rem;
+        font-size: 1.125rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* iPhone SE and other 320px-375px devices */
+@media (max-width: 375px) {
+    .hero__content {
+        margin-top: 10vh;
+    }
+
+    .hero__title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero__subheader {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero__credibility {
+        margin-top: 2.5rem;
+    }
+
+    .hero__credibility-item {
+        font-size: 0.95rem;
     }
 }

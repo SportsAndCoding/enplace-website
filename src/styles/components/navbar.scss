@@ -267,7 +267,7 @@
 
 /* Responsive breakpoints */
 
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
 
     .navbar__links,
     .navbar__actions {
@@ -281,16 +281,25 @@
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
 
     section[id^="hero"],
     .hero,
     .hero-section {
-        padding-top: 140px !important;
+        padding-top: 100px !important;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    .navbar__inner {
+        grid-template-columns: auto 1fr auto;
+        padding: 0 1.25rem !important;
+    }
+
     .navbar__logo-text {
         font-size: 1.35rem !important;
     }
@@ -299,23 +308,24 @@
         width: 32px;
         height: 32px;
     }
-}
 
-@media (max-width: 900px) {
-    .navbar {
-        padding: 1rem 0;
-    }
-}
-
-@media (max-width: 900px) {
     .navbar__links {
         margin-left: 0 !important;
     }
 }
 
-@media (max-width: 900px) {
+/* Extra small phones (iPhone SE, etc.) */
+@media (max-width: 375px) {
+    .navbar__logo-text {
+        font-size: 1.1rem !important;
+    }
+
+    .navbar__logo-icon {
+        width: 28px;
+        height: 28px;
+    }
+
     .navbar__inner {
-        grid-template-columns: auto 1fr auto;
-        padding: 0 1.25rem !important;
+        padding: 0 0.75rem !important;
     }
 }
