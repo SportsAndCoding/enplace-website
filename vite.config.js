@@ -9,7 +9,9 @@ export default defineConfig({
             input: {
                 main: './index.html',
                 pricing: './pricing/index.html',
-                careers: './careers/index.html'    // ← ADDED
+                careers: './careers/index.html',
+                sse: './sse/index.html',
+                sh: './sh/index.html'
             }
         }
     },
@@ -26,6 +28,12 @@ export default defineConfig({
                     }
                     if (req.url === '/careers' || req.url === '/careers/') {   // ← ADDED
                         req.url = '/careers/index.html';
+                    }
+                    if (req.url === '/sse' || req.url === '/sse/') {
+                        req.url = '/sse/index.html';
+                    }
+                    if (req.url === '/sh' || req.url === '/sh/') {
+                        req.url = '/sh/index.html';
                     }
                     next();
                 });

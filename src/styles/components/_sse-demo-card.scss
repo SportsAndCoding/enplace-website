@@ -1,0 +1,409 @@
+// src/styles/components/_sse-demo-card.scss
+// Interactive demo card showcasing SSE crisis management UI
+// Styled to match marketing site aesthetic
+
+/* ===========================================
+   DEMO CONTAINER
+   =========================================== */
+
+.sse-demo {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sse-demo-card {
+    background: linear-gradient(145deg, var(--espresso-card) 0%, rgba(22, 14, 12, 0.95) 100%);
+    border: 1px solid rgba(244, 208, 111, 0.2);
+    border-radius: 16px;
+    padding: 1.75rem 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.sse-demo-card:hover {
+    border-color: rgba(244, 208, 111, 0.35);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+
+/* Subtle top accent line */
+.sse-demo-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(244, 208, 111, 0.4), transparent);
+}
+
+/* ===========================================
+   HEADER
+   =========================================== */
+
+.sse-demo-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.sse-demo-card__meta {
+    flex: 1;
+}
+
+.sse-demo-card__id {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--champagne-muted);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.sse-demo-card__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--champagne);
+    margin: 0 0 0.35rem 0;
+}
+
+.sse-demo-card__role {
+    font-size: 0.95rem;
+    color: var(--gold);
+    font-weight: 500;
+    margin: 0;
+}
+
+.sse-demo-card__severity {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.sse-demo-card__severity--critical {
+    background: linear-gradient(135deg, #8b2942 0%, #6b1d32 100%);
+    color: #ffd4dc;
+    border: 1px solid rgba(255, 100, 130, 0.3);
+    box-shadow: 0 2px 12px rgba(139, 41, 66, 0.4);
+}
+
+.sse-demo-card__severity--high {
+    background: linear-gradient(135deg, #a85523 0%, #8b4513 100%);
+    color: #ffe4cc;
+    border: 1px solid rgba(255, 165, 100, 0.3);
+}
+
+.sse-demo-card__severity--moderate {
+    background: linear-gradient(135deg, #7a6b20 0%, #5c5010 100%);
+    color: #fff8dc;
+    border: 1px solid rgba(255, 215, 100, 0.3);
+}
+
+/* ===========================================
+   ESCALATION LADDER
+   =========================================== */
+
+.sse-demo-ladder {
+    margin-bottom: 1.5rem;
+    padding: 1.25rem 0;
+    border-top: 1px solid rgba(244, 208, 111, 0.08);
+    border-bottom: 1px solid rgba(244, 208, 111, 0.08);
+}
+
+.sse-demo-ladder__label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--champagne-muted);
+    margin: 0 0 1rem 0;
+}
+
+.sse-demo-ladder__track {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 0.5rem;
+}
+
+/* Connecting line behind steps */
+.sse-demo-ladder__track::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    right: 30px;
+    height: 2px;
+    background: rgba(247, 243, 233, 0.15);
+    z-index: 1;
+}
+
+.sse-demo-ladder__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    cursor: default;
+    transition: transform 0.2s ease;
+}
+
+.sse-demo-ladder__step:hover {
+    transform: translateY(-2px);
+}
+
+.sse-demo-ladder__node {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.25s ease;
+}
+
+.sse-demo-ladder__name {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--champagne-muted);
+    text-align: center;
+    max-width: 60px;
+    line-height: 1.3;
+}
+
+/* Step States */
+
+/* Completed: Green with checkmark */
+.sse-demo-ladder__step--completed .sse-demo-ladder__node {
+    background: linear-gradient(135deg, #2d8a4e 0%, #1e6b3a 100%);
+    color: #ffffff;
+    border: 2px solid #3da863;
+    box-shadow: 0 2px 8px rgba(45, 138, 78, 0.4);
+    font-weight: 700;
+}
+
+.sse-demo-ladder__step--completed .sse-demo-ladder__name {
+    color: #6fcf8d;
+}
+
+/* Current: Gold, glowing, prominent */
+.sse-demo-ladder__step--current .sse-demo-ladder__node {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+    color: var(--espresso);
+    border: 2px solid var(--gold);
+    box-shadow:
+        0 0 20px rgba(244, 208, 111, 0.5),
+        0 4px 12px rgba(244, 208, 111, 0.3);
+    transform: scale(1.15);
+    font-size: 1rem;
+}
+
+.sse-demo-ladder__step--current .sse-demo-ladder__name {
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.sse-demo-ladder__step--current:hover {
+    transform: translateY(-2px);
+}
+
+.sse-demo-ladder__step--current:hover .sse-demo-ladder__node {
+    transform: scale(1.2);
+    box-shadow:
+        0 0 28px rgba(244, 208, 111, 0.6),
+        0 6px 16px rgba(244, 208, 111, 0.4);
+}
+
+/* Future: Muted gray */
+.sse-demo-ladder__step--future .sse-demo-ladder__node {
+    background: rgba(247, 243, 233, 0.08);
+    color: var(--champagne-muted);
+    border: 1px solid rgba(247, 243, 233, 0.15);
+    font-size: 0.85rem;
+}
+
+.sse-demo-ladder__step--future .sse-demo-ladder__name {
+    color: rgba(247, 243, 233, 0.4);
+}
+
+.sse-demo-ladder__step--future:hover .sse-demo-ladder__node {
+    background: rgba(247, 243, 233, 0.12);
+    border-color: rgba(247, 243, 233, 0.25);
+}
+
+/* ===========================================
+   INFO ROWS
+   =========================================== */
+
+.sse-demo-info {
+    margin-bottom: 1.5rem;
+}
+
+.sse-demo-info__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(244, 208, 111, 0.06);
+}
+
+.sse-demo-info__row:last-child {
+    border-bottom: none;
+}
+
+.sse-demo-info__label {
+    font-size: 0.85rem;
+    color: var(--champagne-muted);
+}
+
+.sse-demo-info__value {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--champagne);
+    text-align: right;
+}
+
+.sse-demo-info__value--urgent {
+    color: #ff7a8a;
+    font-weight: 600;
+}
+
+.sse-demo-info__value--negative {
+    color: #ff7a8a;
+}
+
+.sse-demo-info__value--positive {
+    color: #6fcf8d;
+}
+
+/* ===========================================
+   ACTION BUTTON
+   =========================================== */
+
+.sse-demo-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.sse-demo-actions__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--gold);
+    color: var(--bordeaux);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(244, 208, 111, 0.25);
+}
+
+.sse-demo-actions__btn:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(244, 208, 111, 0.35);
+}
+
+.sse-demo-actions__btn:active,
+.sse-demo-actions__btn.clicked {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 2px 8px rgba(244, 208, 111, 0.2);
+}
+
+.sse-demo-actions__icon {
+    font-size: 1rem;
+}
+
+/* Secondary button variant (if needed later) */
+.sse-demo-actions__btn--secondary {
+    background: transparent;
+    color: var(--champagne);
+    border: 1px solid rgba(247, 243, 233, 0.2);
+    box-shadow: none;
+}
+
+.sse-demo-actions__btn--secondary:hover {
+    background: rgba(247, 243, 233, 0.08);
+    border-color: rgba(247, 243, 233, 0.3);
+    box-shadow: none;
+}
+
+/* ===========================================
+   RESPONSIVE
+   =========================================== */
+
+@media (max-width: 768px) {
+    .sse-demo-card {
+        padding: 1.25rem 1rem;
+    }
+
+    .sse-demo-card__header {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .sse-demo-card__severity {
+        align-self: flex-start;
+    }
+
+    .sse-demo-ladder__track {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1rem;
+    }
+
+    .sse-demo-ladder__track::before {
+        display: none;
+    }
+
+    .sse-demo-ladder__step {
+        flex: 0 0 auto;
+    }
+
+    .sse-demo-info__row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .sse-demo-info__value {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .sse-demo-ladder__node {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
+
+    .sse-demo-ladder__step--current .sse-demo-ladder__node {
+        transform: scale(1.1);
+    }
+
+    .sse-demo-ladder__name {
+        font-size: 0.6rem;
+        max-width: 50px;
+    }
+
+    .sse-demo-actions__btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -23,9 +23,9 @@ export default function Navbar() {
             Features
           </button>
           <div class="navbar__dropdown-menu">
-            <a href="#sse">Staff Stability Engine (SSE)</a>
+            <a href="/sse">Staff Stability Engine (SSE)</a>
             <a href="#stable-schedule">Stable Schedule</a>
-            <a href="#stable-hire">Stable Hire</a>
+            <a href="/sh">Stable Hire</a>
             <a href="#house-guardian">House Guardian</a>
             <a href="#open-shift-market">Open Shift Marketplace</a>
             <a href="#shift-swap">Shift Swap Portal</a>
@@ -66,9 +66,9 @@ export default function Navbar() {
       <div class="navbar__mobile-dropdown">
         <button class="navbar__mobile-dropdown-title" type="button">Features</button>
         <div class="navbar__mobile-subnav">
-          <a href="#sse" class="navbar__mobile-subitem">Staff Stability Engine (SSE)</a>
+          <a href="/sse" class="navbar__mobile-subitem">Staff Stability Engine (SSE)</a>
           <a href="#stable-schedule" class="navbar__mobile-subitem">Stable Schedule</a>
-          <a href="#stable-hire" class="navbar__mobile-subitem">Stable Hire</a>
+          <a href="/sh" class="navbar__mobile-subitem">Stable Hire</a>
           <a href="#house-guardian" class="navbar__mobile-subitem">House Guardian</a>
           <a href="#open-shift-market" class="navbar__mobile-subitem">Open Shift Marketplace</a>
           <a href="#shift-swap" class="navbar__mobile-subitem">Shift Swap Portal</a>
