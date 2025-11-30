@@ -24,11 +24,11 @@ export default function Navbar() {
           </button>
           <div class="navbar__dropdown-menu">
             <a href="/sse">Staff Stability Engine (SSE)</a>
-            <a href="#stable-schedule">Stable Schedule</a>
+            <a href="/ssb">Stable Schedule</a>
             <a href="/sh">Stable Hire</a>
-            <a href="#house-guardian">House Guardian</a>
-            <a href="#open-shift-market">Open Shift Marketplace</a>
-            <a href="#shift-swap">Shift Swap Portal</a>
+            <a href="/hg">House Guardian</a>
+            <a href="/osm">Open Shift Marketplace</a>
+            <a href="/ssp">Shift Swap Portal</a>
           </div>
         </div>
 
@@ -67,11 +67,11 @@ export default function Navbar() {
         <button class="navbar__mobile-dropdown-title" type="button">Features</button>
         <div class="navbar__mobile-subnav">
           <a href="/sse" class="navbar__mobile-subitem">Staff Stability Engine (SSE)</a>
-          <a href="#stable-schedule" class="navbar__mobile-subitem">Stable Schedule</a>
+          <a href="ssb" class="navbar__mobile-subitem">Stable Schedule</a>
           <a href="/sh" class="navbar__mobile-subitem">Stable Hire</a>
-          <a href="#house-guardian" class="navbar__mobile-subitem">House Guardian</a>
-          <a href="#open-shift-market" class="navbar__mobile-subitem">Open Shift Marketplace</a>
-          <a href="#shift-swap" class="navbar__mobile-subitem">Shift Swap Portal</a>
+          <a href="/hg" class="navbar__mobile-subitem">House Guardian</a>
+          <a href="/osm" class="navbar__mobile-subitem">Open Shift Marketplace</a>
+          <a href="/ssp" class="navbar__mobile-subitem">Shift Swap Portal</a>
         </div>
       </div>
 

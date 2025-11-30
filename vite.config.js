@@ -11,7 +11,11 @@ export default defineConfig({
                 pricing: './pricing/index.html',
                 careers: './careers/index.html',
                 sse: './sse/index.html',
-                sh: './sh/index.html'
+                sh: './sh/index.html',
+                hg: './hg/index.html',
+                ssb: './ssb/index.html',
+                osm: './osm/index.html',
+                ssp: './ssp/index.html'
             }
         }
     },
@@ -34,6 +38,18 @@ export default defineConfig({
                     }
                     if (req.url === '/sh' || req.url === '/sh/') {
                         req.url = '/sh/index.html';
+                    }
+                    if (req.url === '/hg' || req.url === '/hg/') {
+                        req.url = '/hg/index.html';
+                    }
+                    if (req.url === '/ssb' || req.url === '/ssb/') {
+                        req.url = '/ssb/index.html';
+                    }
+                    if (req.url === '/osm' || req.url === '/osm/') {
+                        req.url = '/osm/index.html';
+                    }
+                    if (req.url === '/ssp' || req.url === '/ssp/') {
+                        req.url = '/ssp/index.html';
                     }
                     next();
                 });
