@@ -24,9 +24,7 @@ export default function Hero() {
     </p>
 
     <div class="hero__pillars">
-      <div class="hero__pillar">Predict problems early — spot burnout and flight risk before they walk out.</div>
-      <div class="hero__pillar">Stabilize your team — keep core staff longer and reduce constant rehiring.</div>
-      <div class="hero__pillar">Run smoother shifts — fewer call-ins, cleaner schedules, less overtime panic.</div>
+      <div class="hero__pillar">Predict problems early. Stabilize your team. Run Smoother Shifts.</div>
     </div>
 
     <a href="/experience" class="hero__cta">Watch the Demo</a>
