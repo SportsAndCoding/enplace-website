@@ -180,6 +180,13 @@ export default function Careers() {
       const { error } = await supabase.from("careers_submissions").insert(data);
 
       if (!error) {
+        // Fire off confirmation email (don't await - let it happen in background)
+        fetch("https://uclgflqwxdixbnylxmih.supabase.co/functions/v1/career-email", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name: data.name, email: data.email }),
+        }).catch((emailErr) => console.warn("Email send failed:", emailErr));
+
         form.style.opacity = "0";
         setTimeout(() => {
           form.hidden = true;

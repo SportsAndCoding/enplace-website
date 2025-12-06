@@ -8,16 +8,16 @@ export default function Navbar() {
   nav.innerHTML = `
     <div class="navbar__inner">
 
-      <!-- LEFT: Logo — NOW CLICKABLE HOME LINK -->
+      <!-- LEFT: Logo — clickable home -->
       <a href="/" class="navbar__logo">
         <img src="/assets/4_squares.png" onerror="this.src='/4_squares.png'" alt="En Place logo" class="navbar__logo-icon" />
         <span class="navbar__logo-text">En Place</span>
       </a>
 
-      <!-- CENTER: Main nav links -->
+      <!-- CENTER: Main nav links (V1 shipping state) -->
       <nav class="navbar__links" aria-label="Main navigation">
 
-        <!-- Features Dropdown -->
+        <!-- Features Dropdown ONLY -->
         <div class="navbar__dropdown">
           <button class="navbar__link navbar__dropdown-toggle" type="button">
             Features
@@ -32,19 +32,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <!-- Network Dropdown -->
-        <div class="navbar__dropdown">
-          <button class="navbar__link navbar__dropdown-toggle" type="button">
-            Our Network
-          </button>
-          <div class="navbar__dropdown-menu">
-            <a href="/affiliate">Affiliate</a>
-            <a href="/movement">The Movement</a>
-            <a href="/testimonials">Testimonials</a>
-          </div>
-        </div>
-
-        <a href="/intelligence-hub" class="navbar__link">Intelligence Hub</a>
+        <!-- Pricing — top-level, no dropdown -->
         <a href="/pricing" class="navbar__link">Pricing</a>
       </nav>
 
@@ -60,14 +48,14 @@ export default function Navbar() {
       </button>
     </div>
 
-    <!-- MOBILE MENU -->
+    <!-- MOBILE MENU — stripped down -->
     <div class="navbar__mobile-menu" aria-label="Mobile navigation">
 
       <div class="navbar__mobile-dropdown">
         <button class="navbar__mobile-dropdown-title" type="button">Features</button>
         <div class="navbar__mobile-subnav">
           <a href="/sse" class="navbar__mobile-subitem">Staff Stability Engine (SSE)</a>
-          <a href="ssb" class="navbar__mobile-subitem">Stable Schedule</a>
+          <a href="/ssb" class="navbar__mobile-subitem">Stable Schedule</a>
           <a href="/sh" class="navbar__mobile-subitem">Stable Hire</a>
           <a href="/hg" class="navbar__mobile-subitem">House Guardian</a>
           <a href="/osm" class="navbar__mobile-subitem">Open Shift Marketplace</a>
@@ -75,16 +63,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div class="navbar__mobile-dropdown">
-        <button class="navbar__mobile-dropdown-title" type="button">Our Network</button>
-        <div class="navbar__mobile-subnav">
-          <a href="/affiliate" class="navbar__mobile-subitem">Affiliate</a>
-          <a href="/movement" class="navbar__mobile-subitem">The Movement</a>
-          <a href="/testimonials" class="navbar__mobile-subitem">Testimonials</a>
-        </div>
-      </div>
-
-      <a href="/intelligence-hub" class="navbar__mobile-item">Intelligence Hub</a>
       <a href="/pricing" class="navbar__mobile-item">Pricing</a>
       
       <div class="navbar__mobile-divider"></div>
@@ -104,7 +82,7 @@ export default function Navbar() {
     document.body.classList.toggle('nav-open');
   });
 
-  // Mobile dropdown accordions
+  // Mobile Features accordion (only one left)
   nav.querySelectorAll('.navbar__mobile-dropdown-title').forEach(button => {
     button.addEventListener('click', () => {
       button.classList.toggle('open');
@@ -112,7 +90,7 @@ export default function Navbar() {
     });
   });
 
-  // Close mobile menu when a link is clicked
+  // Close mobile menu on link click
   nav.querySelectorAll('.navbar__mobile-menu a').forEach(link => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('open');
