@@ -183,7 +183,10 @@ export default function Careers() {
         // Fire off confirmation email (don't await - let it happen in background)
         fetch("https://uclgflqwxdixbnylxmih.supabase.co/functions/v1/career-email", {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer " + supabaseAnonKey
+          },
           body: JSON.stringify({ name: data.name, email: data.email }),
         }).catch((emailErr) => console.warn("Email send failed:", emailErr));
 
