@@ -181,38 +181,37 @@ export default function Careers() {
       const { error } = await supabase.from("careers_submissions").insert(data);
 
       if (!error) {
-        if (!error) {
-          // Change button to success state immediately
-          const submitBtn = form.querySelector(".careers__submit");
-          submitBtn.disabled = true;
-          submitBtn.textContent = "✓ Application Sent!";
-          submitBtn.style.backgroundColor = "#4CAF50";
-          submitBtn.style.cursor = "default";
+        // Change button to success state immediately
+        const submitBtn = form.querySelector(".careers__submit");
+        submitBtn.disabled = true;
+        submitBtn.textContent = "✓ Application Sent!";
+        submitBtn.style.backgroundColor = "#4CAF50";
+        submitBtn.style.cursor = "default";
 
-          // Fire off confirmation email (don't await - let it happen in background)
-          fetch("https://uclgflqwxdixbnylxmih.supabase.co/functions/v1/career-email", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "Authorization": "Bearer " + supabaseAnonKey
-            },
-            body: JSON.stringify({ name: data.name, email: data.email }),
-          }).catch((emailErr) => console.warn("Email send failed:", emailErr));
+        // Fire off confirmation email (don't await - let it happen in background)
+        fetch("https://uclgflqwxdixbnylxmih.supabase.co/functions/v1/career-email", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer " + supabaseAnonKey
+          },
+          body: JSON.stringify({ name: data.name, email: data.email }),
+        }).catch((emailErr) => console.warn("Email send failed:", emailErr));
 
-          // Fade out form and show confirmation after a moment
+        // Fade out form and show confirmation after a moment
+        setTimeout(() => {
+          form.style.opacity = "0";
           setTimeout(() => {
-            form.style.opacity = "0";
-            setTimeout(() => {
-              form.hidden = true;
-              confirmation.hidden = false;
-              confirmation.style.opacity = "1";
-            }, 400);
-          }, 1500);
-        } else {
-          alert("Something went wrong. Please try again.");
-          console.error(error);
-        }
-      });
+            form.hidden = true;
+            confirmation.hidden = false;
+            confirmation.style.opacity = "1";
+          }, 400);
+        }, 1500);
+      } else {
+        alert("Something went wrong. Please try again.");
+        console.error(error);
+      }
+    });
   }
 
   return section;
