@@ -143,8 +143,9 @@ export default function Careers() {
         </form>
 
         <div class="careers__confirmation" hidden>
-          <h3>You’re officially on our radar.</h3>
-          <p>We review every submission personally and will reach out if there’s a regional fit.</p>
+          <h3>🔥 You're officially on our radar.</h3>
+          <p>Check your inbox — we just sent you a confirmation email.</p>
+          <p style="margin-top: 1rem; opacity: 0.8;">We review every submission personally and will reach out in 24-48 hours if there's a fit.</p>
         </div>
       </div>
     </div>
@@ -180,27 +181,38 @@ export default function Careers() {
       const { error } = await supabase.from("careers_submissions").insert(data);
 
       if (!error) {
-        // Fire off confirmation email (don't await - let it happen in background)
-        fetch("https://uclgflqwxdixbnylxmih.supabase.co/functions/v1/career-email", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "Authorization": "Bearer " + supabaseAnonKey
-          },
-          body: JSON.stringify({ name: data.name, email: data.email }),
-        }).catch((emailErr) => console.warn("Email send failed:", emailErr));
+        if (!error) {
+          // Change button to success state immediately
+          const submitBtn = form.querySelector(".careers__submit");
+          submitBtn.disabled = true;
+          submitBtn.textContent = "✓ Application Sent!";
+          submitBtn.style.backgroundColor = "#4CAF50";
+          submitBtn.style.cursor = "default";
 
-        form.style.opacity = "0";
-        setTimeout(() => {
-          form.hidden = true;
-          confirmation.hidden = false;
-          confirmation.style.opacity = "1";
-        }, 400);
-      } else {
-        alert("Something went wrong. Please try again.");
-        console.error(error);
-      }
-    });
+          // Fire off confirmation email (don't await - let it happen in background)
+          fetch("https://uclgflqwxdixbnylxmih.supabase.co/functions/v1/career-email", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Authorization": "Bearer " + supabaseAnonKey
+            },
+            body: JSON.stringify({ name: data.name, email: data.email }),
+          }).catch((emailErr) => console.warn("Email send failed:", emailErr));
+
+          // Fade out form and show confirmation after a moment
+          setTimeout(() => {
+            form.style.opacity = "0";
+            setTimeout(() => {
+              form.hidden = true;
+              confirmation.hidden = false;
+              confirmation.style.opacity = "1";
+            }, 400);
+          }, 1500);
+        } else {
+          alert("Something went wrong. Please try again.");
+          console.error(error);
+        }
+      });
   }
 
   return section;
