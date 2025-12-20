@@ -16,7 +16,8 @@ export default defineConfig({
                 ssb: './ssb/index.html',
                 osm: './osm/index.html',
                 ssp: './ssp/index.html',
-                buy: './buy/index.html'
+                buy: './buy/index.html',
+                register: './register/index.html'
             }
         }
     },
@@ -54,6 +55,9 @@ export default defineConfig({
                     }
                     if (req.url === '/buy' || req.url === '/buy/') {
                         req.url = '/buy/index.html';
+                    }
+                    if (req.url === '/register' || req.url === '/register/') {
+                        req.url = '/register/index.html';
                     }
                     next();
                 });
