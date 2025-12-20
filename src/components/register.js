@@ -289,7 +289,7 @@ export default function Register() {
           localStorage.setItem("enplace_token", data.token);
 
           // Redirect to onboarding
-          window.location.href = "/onboarding";
+          window.location.href = "https://app.en-place.ai/onboarding.html";
         } else {
           formError.textContent = data.detail || data.error || "Registration failed. Please try again.";
           formError.hidden = false;
