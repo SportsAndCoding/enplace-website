@@ -15,7 +15,8 @@ export default defineConfig({
                 hg: './hg/index.html',
                 ssb: './ssb/index.html',
                 osm: './osm/index.html',
-                ssp: './ssp/index.html'
+                ssp: './ssp/index.html',
+                buy: './buy/index.html'
             }
         }
     },
@@ -50,6 +51,9 @@ export default defineConfig({
                     }
                     if (req.url === '/ssp' || req.url === '/ssp/') {
                         req.url = '/ssp/index.html';
+                    }
+                    if (req.url === '/buy' || req.url === '/buy/') {
+                        req.url = '/buy/index.html';
                     }
                     next();
                 });
