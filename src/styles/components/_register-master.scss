@@ -88,6 +88,62 @@
 }
 
 /* ===========================================
+   LOADING STATE
+   =========================================== */
+
+.register-loading {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.register-loading__spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(244, 208, 111, 0.2);
+    border-top-color: var(--gold);
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.register-loading__text {
+    font-size: 1rem;
+    color: var(--champagne-muted);
+    margin: 0;
+}
+
+/* ===========================================
+   ERROR STATE
+   =========================================== */
+
+.register-error {
+    margin-bottom: 2rem;
+}
+
+.register-error__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--champagne);
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.register-error__message {
+    font-size: 1rem;
+    color: var(--champagne-muted);
+    text-align: center;
+    margin: 0 0 2rem 0;
+    line-height: 1.5;
+}
+
+/* ===========================================
    FORM
    =========================================== */
 
@@ -95,6 +151,12 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+
+.register-form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
 .register-form__field {
@@ -108,6 +170,12 @@
     font-weight: 600;
     color: var(--champagne);
     letter-spacing: 0.02em;
+}
+
+.register-form__optional {
+    font-weight: 400;
+    color: var(--champagne-muted);
+    font-size: 0.8rem;
 }
 
 .register-form__input {
@@ -296,6 +364,10 @@
         align-items: center;
         gap: 0.75rem;
     }
+
+    .register-form__row {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -315,4 +387,34 @@
     .register-next__list {
         padding-left: 0;
     }
+}
+
+/* ===========================================
+   BUTTON (centered, link style)
+   =========================================== */
+
+.register-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.register-btn--primary {
+    background: var(--gold);
+    color: var(--bordeaux);
+    box-shadow: 0 8px 24px rgba(244, 208, 111, 0.25);
+}
+
+.register-btn--primary:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(244, 208, 111, 0.35);
 }
