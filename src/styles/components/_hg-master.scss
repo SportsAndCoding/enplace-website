@@ -316,27 +316,14 @@
     margin-bottom: 2rem;
 }
 
-.hg-dashboard__placeholder {
-    background: rgba(22, 14, 12, 0.6);
-    backdrop-filter: blur(12px);
-    border: 1px dashed rgba(139, 41, 66, 0.3);
+.hg-dashboard__image {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    display: block;
     border-radius: 20px;
-    padding: 4rem 2rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.hg-dashboard__placeholder-icon {
-    font-size: 2.5rem;
-    opacity: 0.4;
-}
-
-.hg-dashboard__placeholder-text {
-    font-size: 0.9rem;
-    color: var(--champagne-muted);
+    border: 1px solid rgba(139, 41, 66, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
 /* Notes Animation */

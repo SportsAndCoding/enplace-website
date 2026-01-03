@@ -56,12 +56,9 @@ export default function HG() {
           <h2 class="section-header__title">What You'll Actually See</h2>
         </div>
 
-        <!-- Placeholder for thermometer dashboard screenshot -->
+        <!-- House Guardian Alert Screenshot -->
         <div class="hg-dashboard__screenshot" id="hg-dashboard-mount">
-          <div class="hg-dashboard__placeholder">
-            <span class="hg-dashboard__placeholder-icon">📊</span>
-            <span class="hg-dashboard__placeholder-text">Thermometer dashboard coming soon</span>
-          </div>
+          <img src="/hg-hero.png" alt="House Guardian detecting a harassment pattern from 4 independent sources" class="hg-dashboard__image" />
         </div>
 
         <!-- Animated Notes + Gauge -->
