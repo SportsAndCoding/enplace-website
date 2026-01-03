@@ -2,11 +2,11 @@
 import "../styles/components/ssb.scss";
 
 export default function SSB() {
-    const section = document.createElement("section");
-    section.className = "ssb";
-    section.id = "ssb";
+  const section = document.createElement("section");
+  section.className = "ssb";
+  section.id = "ssb";
 
-    section.innerHTML = `
+  section.innerHTML = `
     <div class="ssb__container">
 
       <!-- HERO -->
@@ -23,13 +23,7 @@ export default function SSB() {
 
         <!-- Placeholder for Stability Score Dashboard Screenshot -->
         <div class="ssb-hero__visual">
-          <div class="ssb-placeholder" id="ssb-hero-screenshot">
-            <div class="ssb-placeholder__content">
-              <span class="ssb-placeholder__icon">📊</span>
-              <span class="ssb-placeholder__text">Stability Score Dashboard screenshot</span>
-              <span class="ssb-placeholder__note">Big bold number, red/yellow/green heatmap, gold button</span>
-            </div>
-          </div>
+          <img src="/ssb-hero.png" alt="Schedule Stability Score dashboard showing a 74 stability rating with fairness, preference alignment, and fatigue risk metrics" class="ssb-hero__image" />
         </div>
       </header>
 
@@ -88,12 +82,7 @@ export default function SSB() {
         </div>
 
         <!-- Placeholder for Analyzer Results Screenshot -->
-        <div class="ssb-placeholder ssb-placeholder--large" id="ssb-results-screenshot">
-          <div class="ssb-placeholder__content">
-            <span class="ssb-placeholder__icon">📈</span>
-            <span class="ssb-placeholder__text">Analyzer Results screenshot</span>
-          </div>
-        </div>
+        <img src="/ssb-results.png" alt="Top Priority Fixes showing recommended schedule changes with one-click fix buttons" class="ssb-results__image" />
 
         <div class="ssb-results__features">
           <div class="ssb-results__item">
@@ -143,5 +132,5 @@ export default function SSB() {
     </div>
   `;
 
-    return section;
+  return section;
 }

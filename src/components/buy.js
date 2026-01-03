@@ -96,6 +96,12 @@ export default function Buy() {
           <span class="buy-checkout__label">Monthly Total</span>
           <span class="buy-checkout__amount">$<span id="totalAmount">1,500</span>/mo</span>
         </div>
+        <div class="buy-checkout__terms" id="termsWrapper">
+          <label class="buy-terms">
+            <input type="checkbox" id="agreeTerms" class="buy-terms__checkbox">
+            <span class="buy-terms__text">I agree to the <a href="/terms.html" target="_blank">Terms of Service</a> and <a href="/privacy.html" target="_blank">Privacy Policy</a></span>
+          </label>
+        </div>
         <div class="buy-checkout__actions">
           <button class="buy-btn buy-btn--primary" type="button" onclick="startCheckout()">Buy Now</button>
           <button class="buy-btn buy-btn--secondary" type="button">Talk to Sales</button>
@@ -212,6 +218,16 @@ function getSelectedModules() {
 }
 
 async function startCheckout() {
+  const termsCheckbox = document.getElementById('agreeTerms');
+  const termsWrapper = document.getElementById('termsWrapper');
+
+  if (!termsCheckbox || !termsCheckbox.checked) {
+    termsWrapper?.classList.add('buy-checkout__terms--error');
+    termsCheckbox?.focus();
+    return;
+  }
+
+  termsWrapper?.classList.remove('buy-checkout__terms--error');
   const modules = getSelectedModules();
 
   // Find all buy buttons and disable them

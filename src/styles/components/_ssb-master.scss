@@ -117,6 +117,24 @@
 }
 
 /* ===========================================
+   SCREENSHOT IMAGES
+   =========================================== */
+
+.ssb-hero__image,
+.ssb-results__image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    border: 1px solid rgba(244, 208, 111, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.ssb-results__image {
+    margin-bottom: 2rem;
+}
+
+/* ===========================================
    BUTTONS
    =========================================== */
 
