@@ -102,8 +102,8 @@
    =========================================== */
 
 .osm-screenshots {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     margin-top: 3rem;
 }
@@ -148,21 +148,7 @@
     font-style: italic;
 }
 
-/* Responsive - stack on mobile */
-@media (max-width: 768px) {
-    .osm-screenshots {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
 
-    .osm-screenshots__panel {
-        padding: 1.25rem;
-    }
-
-    .osm-screenshots__coming-soon {
-        min-height: 200px;
-    }
-}
 
 /* ===========================================
    BUTTONS
