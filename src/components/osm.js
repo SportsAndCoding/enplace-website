@@ -2,11 +2,11 @@
 import "../styles/components/osm.scss";
 
 export default function OSM() {
-    const section = document.createElement("section");
-    section.className = "osm";
-    section.id = "osm";
+  const section = document.createElement("section");
+  section.className = "osm";
+  section.id = "osm";
 
-    section.innerHTML = `
+  section.innerHTML = `
     <div class="osm__container">
 
       <!-- HERO -->
@@ -98,14 +98,17 @@ export default function OSM() {
           <button class="osm-btn osm-btn--secondary" type="button">Talk to Sales</button>
         </div>
 
-        <!-- Placeholder for phone mockup screenshot -->
-        <div class="osm-placeholder" id="osm-mockup-screenshot">
-          <div class="osm-placeholder__content">
-            <span class="osm-placeholder__icon">📱</span>
-            <span class="osm-placeholder__text">Phone mockup screenshot</span>
-            <span class="osm-placeholder__note">Panic group-text (top, blurred) → Clean Open Shift screen with 3 volunteer cards (bottom, gold Pick buttons)</span>
-          </div>
-        </div>
+        <!-- Manager / Staff screenshot comparison -->
+<div class="osm-screenshots" id="osm-mockup-screenshot">
+  <div class="osm-screenshots__panel">
+    <p class="osm-screenshots__label">What managers see</p>
+    <img src="/osm-hero.png" alt="Manager view - Open Shifts dashboard with Post buttons" class="osm-screenshots__img" />
+  </div>
+  <div class="osm-screenshots__panel">
+    <p class="osm-screenshots__label">What staff see</p>
+    <img src="/osm-staff.png" alt="Staff view - Available shifts with Grab Shift buttons" class="osm-screenshots__img" />
+  </div>
+</div>
       </section>
 
       <!-- CLOSING SECTION -->
@@ -129,5 +132,5 @@ export default function OSM() {
     </div>
   `;
 
-    return section;
+  return section;
 }

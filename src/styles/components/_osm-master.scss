@@ -98,6 +98,73 @@
 }
 
 /* ===========================================
+   SCREENSHOTS (Manager / Staff comparison)
+   =========================================== */
+
+.osm-screenshots {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.osm-screenshots__panel {
+    background: linear-gradient(145deg, var(--espresso-card) 0%, rgba(26, 17, 15, 0.6) 100%);
+    border: 1px solid rgba(244, 208, 111, 0.12);
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.osm-screenshots__label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 0;
+}
+
+.osm-screenshots__img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.osm-screenshots__coming-soon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 300px;
+    border: 1px dashed rgba(244, 208, 111, 0.2);
+    border-radius: 12px;
+    color: var(--champagne-muted);
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+/* Responsive - stack on mobile */
+@media (max-width: 768px) {
+    .osm-screenshots {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .osm-screenshots__panel {
+        padding: 1.25rem;
+    }
+
+    .osm-screenshots__coming-soon {
+        min-height: 200px;
+    }
+}
+
+/* ===========================================
    BUTTONS
    =========================================== */
 
