@@ -2,11 +2,11 @@
 import "../styles/components/ssp.scss";
 
 export default function SSP() {
-    const section = document.createElement("section");
-    section.className = "ssp";
-    section.id = "ssp";
+  const section = document.createElement("section");
+  section.className = "ssp";
+  section.id = "ssp";
 
-    section.innerHTML = `
+  section.innerHTML = `
     <div class="ssp__container">
 
       <!-- HERO -->
@@ -75,13 +75,16 @@ export default function SSP() {
         </div>
       </section>
 
-      <!-- SPLIT SCREENSHOT PLACEHOLDER -->
+      <!-- SPLIT SCREENSHOT -->
       <section class="ssp-visual">
-        <div class="ssp-placeholder" id="ssp-screenshot">
-          <div class="ssp-placeholder__content">
-            <span class="ssp-placeholder__icon">📱</span>
-            <span class="ssp-placeholder__text">Split screenshot</span>
-            <span class="ssp-placeholder__note">Left: Staff portal swap screen | Right: Manager Action Board request card with approve/deny buttons</span>
+        <div class="ssp-visual__split">
+          <div class="ssp-visual__panel">
+            <span class="ssp-visual__label">Staff Portal</span>
+            <img src="/ss-staff.png" alt="Staff portal showing upcoming shifts with swap request options" class="ssp-visual__img" />
+          </div>
+          <div class="ssp-visual__panel">
+            <span class="ssp-visual__label">Manager Portal</span>
+            <img src="/ss-manager.png" alt="Manager portal showing pending swap requests with approve and deny buttons" class="ssp-visual__img" />
           </div>
         </div>
       </section>
@@ -132,5 +135,5 @@ export default function SSP() {
     </div>
   `;
 
-    return section;
+  return section;
 }
