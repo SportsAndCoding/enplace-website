@@ -46,22 +46,13 @@ export default function SSP() {
           <!-- Step 2 -->
           <div class="ssp-how__step">
             <span class="ssp-how__step-number">2</span>
-            <p class="ssp-how__step-text">Offers it to another qualified person (or system suggests)</p>
+            <p class="ssp-how__step-text">Posts shift to restaurant-wide Shift Swap Marketplace</p>
           </div>
 
           <!-- Step 3 -->
           <div class="ssp-how__step">
             <span class="ssp-how__step-number">3</span>
-            <div class="ssp-how__step-content">
-              <p class="ssp-how__step-text">Both agree → En Place instantly checks:</p>
-              <ul class="ssp-how__checks">
-                <li>Overtime risk</li>
-                <li>Burnout risk</li>
-                <li>Fairness impact</li>
-                <li>Turnaround rules</li>
-                <li>Skill match</li>
-              </ul>
-            </div>
+            <p class="ssp-how__step-text">Colleague accepts → swap request goes to manager</p>
           </div>
 
           <!-- Step 4 -->
