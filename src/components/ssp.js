@@ -75,9 +75,9 @@ export default function SSP() {
         </div>
       </section>
 
-      <!-- SPLIT SCREENSHOT -->
+      <!-- SCREENSHOT FLOW -->
       <section class="ssp-visual">
-        <div class="ssp-visual__split">
+        <div class="ssp-visual__flow">
           <div class="ssp-visual__panel">
             <span class="ssp-visual__label">Staff Portal</span>
             <img src="/ss-staff.png" alt="Staff portal showing upcoming shifts with swap request options" class="ssp-visual__img" />
