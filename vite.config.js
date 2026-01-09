@@ -17,7 +17,8 @@ export default defineConfig({
                 osm: './osm/index.html',
                 ssp: './ssp/index.html',
                 buy: './buy/index.html',
-                register: './register/index.html'
+                register: './register/index.html',
+                contact: './contact/index.html'
             }
         }
     },
@@ -58,6 +59,9 @@ export default defineConfig({
                     }
                     if (req.url === '/register' || req.url === '/register/') {
                         req.url = '/register/index.html';
+                    }
+                    if (req.url === '/contact' || req.url === '/contact/') {
+                        req.url = '/contact/index.html';
                     }
                     next();
                 });
