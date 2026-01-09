@@ -20,7 +20,7 @@ export default function SSB() {
         </p>
         <div class="ssb-hero__buttons">
           <button class="ssb-btn ssb-btn--primary" type="button" id="ssb-demo-cta">Experience En Place</button>
-          <button class="ssb-btn ssb-btn--secondary" type="button">Talk to Sales</button>
+          <a href="tel:+15134020611" class="ssb-btn ssb-btn--secondary">Talk to Sales</a>
         </div>
 
         <!-- Placeholder for Stability Score Dashboard Screenshot -->
@@ -127,7 +127,7 @@ export default function SSB() {
         </h2>
         <div class="ssb-cta__buttons">
           <button class="ssb-btn ssb-btn--primary" type="button" id="ssb-demo-cta-bottom">Experience En Place</button>
-          <button class="ssb-btn ssb-btn--secondary" type="button">Talk to Sales</button>
+          <a href="tel:+15134020611" class="ssb-btn ssb-btn--secondary">Talk to Sales</a>
         </div>
       </section>
 

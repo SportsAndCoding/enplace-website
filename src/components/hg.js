@@ -20,7 +20,7 @@ export default function HG() {
         </p>
         <div class="hg-hero__buttons">
           <button class="hg-btn hg-btn--primary" type="button" id="hg-demo-cta">Experience En Place</button>
-          <button class="hg-btn hg-btn--secondary" type="button">Talk to Sales</button>
+          <a href="tel:+15134020611" class="hg-btn hg-btn--secondary">Talk to Sales</a>
         </div>
       </header>
 
@@ -196,7 +196,7 @@ export default function HG() {
           <p class="hg-cta__subtitle">It just keeps the house from burning down.</p>
           <div class="hg-cta__buttons">
             <button class="hg-btn hg-btn--primary" type="button" id="hg-demo-cta-bottom">Experience En Place</button>
-            <button class="hg-btn hg-btn--secondary" type="button">Talk to Sales</button>
+            <a href="tel:+15134020611" class="hg-btn hg-btn--secondary">Talk to Sales</a>
           </div>
         </div>
       </section>
