@@ -1,5 +1,7 @@
 // src/components/osm.js
 import "../styles/components/osm.scss";
+import { openVideoModal } from './videoModal.js';
+import { VIDEO_IDS } from './hero.js';
 
 export default function OSM() {
   const section = document.createElement("section");
@@ -94,7 +96,7 @@ export default function OSM() {
         <p class="osm-tagline__sub">Turns call-outs from nightmares into volunteers.</p>
         
         <div class="osm-tagline__buttons">
-          <button class="osm-btn osm-btn--primary" type="button">40-sec Demo</button>
+          <button class="osm-btn osm-btn--primary" type="button" id="osm-demo-cta">Experience En Place</button>
           <button class="osm-btn osm-btn--secondary" type="button">Talk to Sales</button>
         </div>
 
@@ -124,13 +126,26 @@ export default function OSM() {
         </div>
 
         <div class="osm-cta__buttons">
-          <button class="osm-btn osm-btn--primary" type="button">Watch 40 Seconds</button>
+          <button class="osm-btn osm-btn--primary" type="button" id="osm-demo-cta-bottom">Experience En Place</button>
           <button class="osm-btn osm-btn--secondary" type="button">Talk to Sales</button>
         </div>
       </section>
 
     </div>
   `;
+
+  // Wire up video CTAs
+  setTimeout(() => {
+    const ctaTop = document.getElementById('osm-demo-cta');
+    const ctaBottom = document.getElementById('osm-demo-cta-bottom');
+
+    if (ctaTop) {
+      ctaTop.addEventListener('click', () => openVideoModal(VIDEO_IDS.osm));
+    }
+    if (ctaBottom) {
+      ctaBottom.addEventListener('click', () => openVideoModal(VIDEO_IDS.osm));
+    }
+  }, 0);
 
   return section;
 }

@@ -8,7 +8,7 @@ export const VIDEO_IDS = {
   sh: '1152916991',        // EnPlace-Stable-Hire-Demo
   hg: '1152916956',        // EnPlace-House-Guardian-Demo
   ssb: '1152916907',       // EnPlace-Stable-Schedule-Builder-Demo
-  osm: 'XXXXXXXXX',        // UPDATE with Open Shift Marketplace video ID
+  osm: '1152916886',       // EnPlace-Open-Shift-Marketplace-Demo
   ssp: 'XXXXXXXXX',        // UPDATE with Shift Swap video ID
 };
 
