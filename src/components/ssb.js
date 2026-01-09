@@ -1,5 +1,7 @@
 // src/components/ssb.js
 import "../styles/components/ssb.scss";
+import { openVideoModal } from './videoModal.js';
+import { VIDEO_IDS } from './hero.js';
 
 export default function SSB() {
   const section = document.createElement("section");
@@ -17,7 +19,7 @@ export default function SSB() {
           Stable Schedule Builder tells you who it's about to hurt—before you publish.
         </p>
         <div class="ssb-hero__buttons">
-          <button class="ssb-btn ssb-btn--primary" type="button">40-sec Demo</button>
+          <button class="ssb-btn ssb-btn--primary" type="button" id="ssb-demo-cta">Experience En Place</button>
           <button class="ssb-btn ssb-btn--secondary" type="button">Talk to Sales</button>
         </div>
 
@@ -124,13 +126,26 @@ export default function SSB() {
           <span>We just stop it from breaking your team.</span>
         </h2>
         <div class="ssb-cta__buttons">
-          <button class="ssb-btn ssb-btn--primary" type="button">Watch 40 seconds</button>
+          <button class="ssb-btn ssb-btn--primary" type="button" id="ssb-demo-cta-bottom">Experience En Place</button>
           <button class="ssb-btn ssb-btn--secondary" type="button">Talk to Sales</button>
         </div>
       </section>
 
     </div>
   `;
+
+  // Wire up video CTAs
+  setTimeout(() => {
+    const ctaTop = document.getElementById('ssb-demo-cta');
+    const ctaBottom = document.getElementById('ssb-demo-cta-bottom');
+
+    if (ctaTop) {
+      ctaTop.addEventListener('click', () => openVideoModal(VIDEO_IDS.ssb));
+    }
+    if (ctaBottom) {
+      ctaBottom.addEventListener('click', () => openVideoModal(VIDEO_IDS.ssb));
+    }
+  }, 0);
 
   return section;
 }

@@ -7,7 +7,7 @@ export const VIDEO_IDS = {
   home: '1152916924',      // EnPlace-Full-Platform-Demo
   sh: '1152916991',        // EnPlace-Stable-Hire-Demo
   hg: 'XXXXXXXXX',         // UPDATE with House Guardian video ID
-  ssb: 'XXXXXXXXX',        // UPDATE with Stable Schedule Builder video ID
+  ssb: '1152916907',       // EnPlace-Stable-Schedule-Builder-Demo
   osm: 'XXXXXXXXX',        // UPDATE with Open Shift Marketplace video ID
   ssp: 'XXXXXXXXX',        // UPDATE with Shift Swap video ID
 };

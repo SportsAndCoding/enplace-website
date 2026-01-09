@@ -2,6 +2,7 @@
 
 import Navbar from "./components/navbar.js";
 import SSB from "./components/ssb.js";
+import VideoModal, { initVideoModal } from "./components/videoModal.js";
 import "./styles/globals.scss";
 
 // Mount root
@@ -18,6 +19,10 @@ app.appendChild(navbar);
 // 2) Stable Schedule Builder page
 const ssb = SSB();
 app.appendChild(ssb);
+
+// 3) Video Modal
+app.appendChild(VideoModal());
+initVideoModal();
 
 // ---------------------
 // NAVBAR SCROLL BEHAVIOR
