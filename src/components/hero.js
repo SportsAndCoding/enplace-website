@@ -1,5 +1,16 @@
 // src/components/hero.js
 import '../styles/components/hero.scss';
+import { openVideoModal } from './videoModal.js';
+
+// Vimeo video IDs
+export const VIDEO_IDS = {
+  home: '1152916924',      // EnPlace-Full-Platform-Demo
+  sh: 'XXXXXXXXX',         // UPDATE with Stable Hire video ID
+  hg: 'XXXXXXXXX',         // UPDATE with House Guardian video ID
+  ssb: 'XXXXXXXXX',        // UPDATE with Stable Schedule Builder video ID
+  osm: 'XXXXXXXXX',        // UPDATE with Open Shift Marketplace video ID
+  ssp: 'XXXXXXXXX',        // UPDATE with Shift Swap video ID
+};
 
 export default function Hero() {
   const hero = document.createElement('section');
@@ -27,7 +38,7 @@ export default function Hero() {
       <div class="hero__pillar">Predict problems early. Stabilize your team. Run Smoother Shifts.</div>
     </div>
 
-    <a href="/experience" class="hero__cta">Watch the Demo</a>
+    <button class="hero__cta" id="hero-video-cta">Experience En Place</button>
 
     <div class="hero__credibility">
       <div class="hero__credibility-item">

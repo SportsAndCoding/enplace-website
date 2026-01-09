@@ -2,6 +2,7 @@
 
 import Navbar from "./components/navbar.js";
 import Hero from "./components/hero.js";
+import VideoModal, { initVideoModal } from "./components/videoModal.js";
 import "./styles/globals.scss";
 
 // Mount root
@@ -16,6 +17,10 @@ app.appendChild(Navbar());
 
 // 2) Hero section (homepage only)
 app.appendChild(Hero());
+
+// 3) Video Modal (mount once, reused everywhere)
+app.appendChild(VideoModal());
+initVideoModal();
 
 // ---------------------
 // HERO FADE-IN ON LOAD
