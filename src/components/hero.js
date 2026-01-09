@@ -6,7 +6,7 @@ import { openVideoModal } from './videoModal.js';
 export const VIDEO_IDS = {
   home: '1152916924',      // EnPlace-Full-Platform-Demo
   sh: '1152916991',        // EnPlace-Stable-Hire-Demo
-  hg: 'XXXXXXXXX',         // UPDATE with House Guardian video ID
+  hg: '1152916956',        // EnPlace-House-Guardian-Demo
   ssb: '1152916907',       // EnPlace-Stable-Schedule-Builder-Demo
   osm: 'XXXXXXXXX',        // UPDATE with Open Shift Marketplace video ID
   ssp: 'XXXXXXXXX',        // UPDATE with Shift Swap video ID
