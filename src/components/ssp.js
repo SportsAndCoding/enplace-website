@@ -1,5 +1,7 @@
 // src/components/ssp.js
 import "../styles/components/ssp.scss";
+import { openVideoModal } from './videoModal.js';
+import { VIDEO_IDS } from './hero.js';
 
 export default function SSP() {
   const section = document.createElement("section");
@@ -14,7 +16,7 @@ export default function SSP() {
         <p class="ssp-hero__eyebrow">Shift Swap Portal</p>
         <h1 class="ssp-hero__title">Staff swap shifts. You just tap approve.</h1>
         <div class="ssp-hero__buttons">
-          <button class="ssp-btn ssp-btn--primary" type="button">30-sec Demo</button>
+          <button class="ssp-btn ssp-btn--primary" type="button" id="ssp-demo-cta">Experience En Place</button>
           <button class="ssp-btn ssp-btn--secondary" type="button">Talk to Sales</button>
         </div>
       </header>
@@ -118,13 +120,26 @@ export default function SSP() {
           <span class="ssp-cta__title--gold">You just tap approve.</span>
         </h2>
         <div class="ssp-cta__buttons">
-          <button class="ssp-btn ssp-btn--primary" type="button">Watch 30 seconds</button>
+          <button class="ssp-btn ssp-btn--primary" type="button" id="ssp-demo-cta-bottom">Experience En Place</button>
           <button class="ssp-btn ssp-btn--secondary" type="button">Talk to Sales</button>
         </div>
       </section>
 
     </div>
   `;
+
+  // Wire up video CTAs
+  setTimeout(() => {
+    const ctaTop = document.getElementById('ssp-demo-cta');
+    const ctaBottom = document.getElementById('ssp-demo-cta-bottom');
+
+    if (ctaTop) {
+      ctaTop.addEventListener('click', () => openVideoModal(VIDEO_IDS.ssp));
+    }
+    if (ctaBottom) {
+      ctaBottom.addEventListener('click', () => openVideoModal(VIDEO_IDS.ssp));
+    }
+  }, 0);
 
   return section;
 }

@@ -9,7 +9,7 @@ export const VIDEO_IDS = {
   hg: '1152916956',        // EnPlace-House-Guardian-Demo
   ssb: '1152916907',       // EnPlace-Stable-Schedule-Builder-Demo
   osm: '1152916886',       // EnPlace-Open-Shift-Marketplace-Demo
-  ssp: 'XXXXXXXXX',        // UPDATE with Shift Swap video ID
+  ssp: '1152916974',       // EnPlace-Shift-Swap-Demo
 };
 
 export default function Hero() {
