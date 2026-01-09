@@ -48,5 +48,15 @@ export default function Hero() {
   </div>
 `;
 
+  // Wire up the CTA button
+  setTimeout(() => {
+    const ctaBtn = document.getElementById('hero-video-cta');
+    if (ctaBtn) {
+      ctaBtn.addEventListener('click', () => {
+        openVideoModal(VIDEO_IDS.home);
+      });
+    }
+  }, 0);
+
   return hero;
 }
