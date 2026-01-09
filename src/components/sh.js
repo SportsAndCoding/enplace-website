@@ -1,6 +1,8 @@
 // src/components/sh.js
 import "../styles/components/sh.scss";
 import SHReportDemo from "./sh-report-demo.js";
+import { openVideoModal } from './videoModal.js';
+import { VIDEO_IDS } from './hero.js';
 
 export default function SH() {
   const section = document.createElement("section");
@@ -19,7 +21,7 @@ export default function SH() {
             Stable Hire predicts who survives the 90-day cliff—using every shift, every team, every exit in the En Place network.
           </p>
           <div class="sh-hero__buttons">
-            <button class="sh-btn sh-btn--primary" type="button">45-sec Demo</button>
+            <button class="sh-btn sh-btn--primary" type="button" id="sh-demo-cta">Experience En Place</button>
             <button class="sh-btn sh-btn--secondary" type="button">Talk to Sales</button>
           </div>
         </div>
@@ -187,7 +189,7 @@ export default function SH() {
       <section class="sh-cta">
         <h2 class="sh-cta__title">The best hire you'll ever make is now the most predictable one.</h2>
         <div class="sh-cta__buttons">
-          <button class="sh-btn sh-btn--primary" type="button">Watch 45 seconds</button>
+          <button class="sh-btn sh-btn--primary" type="button" id="sh-demo-cta-bottom">Experience En Place</button>
           <button class="sh-btn sh-btn--secondary" type="button">Talk to Sales</button>
         </div>
       </section>
@@ -201,6 +203,19 @@ export default function SH() {
     const reportDemo = SHReportDemo();
     reportMount.appendChild(reportDemo);
   }
+
+  // Wire up video CTAs
+  setTimeout(() => {
+    const ctaTop = document.getElementById('sh-demo-cta');
+    const ctaBottom = document.getElementById('sh-demo-cta-bottom');
+
+    if (ctaTop) {
+      ctaTop.addEventListener('click', () => openVideoModal(VIDEO_IDS.sh));
+    }
+    if (ctaBottom) {
+      ctaBottom.addEventListener('click', () => openVideoModal(VIDEO_IDS.sh));
+    }
+  }, 0);
 
   return section;
 }

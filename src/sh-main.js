@@ -2,6 +2,7 @@
 
 import Navbar from "./components/navbar.js";
 import SH from "./components/sh.js";
+import VideoModal, { initVideoModal } from "./components/videoModal.js";
 import "./styles/globals.scss";
 
 // Mount root
@@ -18,6 +19,10 @@ app.appendChild(navbar);
 // 2) Stable Hire page
 const sh = SH();
 app.appendChild(sh);
+
+// 3) Video Modal
+app.appendChild(VideoModal());
+initVideoModal();
 
 // ---------------------
 // NAVBAR SCROLL BEHAVIOR
