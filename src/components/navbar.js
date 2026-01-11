@@ -39,7 +39,7 @@ export default function Navbar() {
 
       <!-- RIGHT: Auth + CTA -->
       <div class="navbar__actions">
-        <a href="/login" class="navbar__login">Login</a>
+        <a href="https://app.en-place.ai/index.html" class="navbar__login">Login</a>
         <a href="/buy" class="navbar__cta">Buy Now</a>
       </div>
 
@@ -69,7 +69,7 @@ export default function Navbar() {
       
       <div class="navbar__mobile-divider"></div>
       
-      <a href="/login" class="navbar__mobile-login">Login</a>
+      <a href="https://app.en-place.ai/index.html" class="navbar__mobile-login">Login</a>
       <a href="/buy" class="navbar__cta-mobile">Buy Now</a>
     </div>
   `;

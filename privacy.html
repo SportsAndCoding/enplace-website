@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy • En Place</title>
+    <meta name="description" content="En Place Privacy Policy - How we collect, use, and protect your data." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --gold: #f4d06f;
+            --gold-dark: #e6b800;
+            --gold-glow: rgba(244, 208, 111, 0.15);
+            --champagne: #f7f3e9;
+            --champagne-muted: rgba(247, 243, 233, 0.7);
+            --bordeaux: #581845;
+            --bordeaux-light: #7a2d5f;
+            --espresso: #160e0c;
+            --espresso-light: #1e1412;
+            --espresso-card: #1a110f;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--espresso);
+            color: var(--champagne);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* Header */
+        .legal-header {
+            padding: 6rem 2rem 3rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(244, 208, 111, 0.1);
+        }
+
+        .legal-header__title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-header__updated {
+            font-size: 0.9rem;
+            color: var(--champagne-muted);
+        }
+
+        /* Navigation */
+        .legal-nav {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .legal-nav__title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .legal-nav__list {
+            list-style: none;
+            column-count: 2;
+            column-gap: 2rem;
+        }
+
+        .legal-nav__list li {
+            break-inside: avoid;
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-nav__list a {
+            color: var(--champagne-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        .legal-nav__list a:hover {
+            color: var(--gold);
+        }
+
+        /* Content */
+        .legal-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .legal-section {
+            margin-bottom: 3rem;
+            padding-top: 1rem;
+        }
+
+        .legal-section__title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(244, 208, 111, 0.15);
+        }
+
+        .legal-section__subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--champagne);
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        .legal-section p {
+            margin-bottom: 1rem;
+            color: var(--champagne-muted);
+        }
+
+        .legal-section ul {
+            margin: 1rem 0 1rem 1.5rem;
+            color: var(--champagne-muted);
+        }
+
+        .legal-section ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .legal-section strong {
+            color: var(--champagne);
+        }
+
+        .legal-intro {
+            background: linear-gradient(145deg, var(--espresso-card) 0%, rgba(26, 17, 15, 0.8) 100%);
+            border: 1px solid rgba(244, 208, 111, 0.12);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .legal-intro p {
+            color: var(--champagne-muted);
+            margin-bottom: 1rem;
+        }
+
+        .legal-intro p:last-child {
+            margin-bottom: 0;
+        }
+
+        .legal-intro strong {
+            color: var(--champagne);
+        }
+
+        /* Highlight box for important notices */
+        .legal-highlight {
+            background: linear-gradient(145deg, rgba(88, 24, 69, 0.15) 0%, rgba(26, 17, 15, 0.8) 100%);
+            border: 1px solid rgba(244, 208, 111, 0.2);
+            border-left: 3px solid var(--gold);
+            border-radius: 8px;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .legal-highlight p {
+            margin-bottom: 0;
+            color: var(--champagne);
+        }
+
+        /* Preliminary notice */
+        .legal-notice {
+            background: linear-gradient(145deg, rgba(244, 208, 111, 0.08) 0%, rgba(26, 17, 15, 0.9) 100%);
+            border: 1px solid rgba(244, 208, 111, 0.25);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .legal-notice__title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-notice__text {
+            font-size: 0.9rem;
+            color: var(--champagne-muted);
+            margin: 0;
+        }
+
+        /* Back link */
+        .legal-back {
+            position: fixed;
+            top: 1.5rem;
+            left: 1.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--champagne-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+            background: rgba(22, 14, 12, 0.9);
+            border: 1px solid rgba(244, 208, 111, 0.15);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            z-index: 100;
+        }
+
+        .legal-back:hover {
+            color: var(--gold);
+            border-color: rgba(244, 208, 111, 0.3);
+        }
+
+        /* Footer */
+        .legal-footer {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            border-top: 1px solid rgba(244, 208, 111, 0.1);
+            text-align: center;
+        }
+
+        .legal-footer__contact {
+            color: var(--champagne-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-footer__contact a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .legal-footer__contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Service provider list */
+        .service-list {
+            margin: 1rem 0 1.5rem 0;
+        }
+
+        .service-list__item {
+            display: flex;
+            gap: 0.5rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(244, 208, 111, 0.08);
+        }
+
+        .service-list__item:last-child {
+            border-bottom: none;
+        }
+
+        .service-list__name {
+            color: var(--gold);
+            font-weight: 600;
+            min-width: 100px;
+        }
+
+        .service-list__desc {
+            color: var(--champagne-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .legal-header {
+                padding: 5rem 1.5rem 2rem;
+            }
+
+            .legal-nav,
+            .legal-content,
+            .legal-footer {
+                padding: 1.5rem;
+            }
+
+            .legal-nav__list {
+                column-count: 1;
+            }
+
+            .legal-back {
+                top: 1rem;
+                left: 1rem;
+                padding: 0.4rem 0.75rem;
+                font-size: 0.85rem;
+            }
+
+            .service-list__item {
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Back to home -->
+    <a href="/" class="legal-back">← Back</a>
+
+    <!-- Header -->
+    <header class="legal-header">
+        <h1 class="legal-header__title">Privacy Policy</h1>
+        <p class="legal-header__updated">Last Updated: January 11, 2025</p>
+    </header>
+
+    <!-- Table of Contents -->
+    <nav class="legal-nav">
+        <h2 class="legal-nav__title">Table of Contents</h2>
+        <ul class="legal-nav__list">
+            <li><a href="#collect">1. What Personal Data Do We Collect?</a></li>
+            <li><a href="#use">2. How Do We Use Personal Data?</a></li>
+            <li><a href="#share">3. How Do We Share Personal Data?</a></li>
+            <li><a href="#anonymization">4. Anonymization and Staff Privacy</a></li>
+            <li><a href="#security">5. Data Security</a></li>
+            <li><a href="#retention">6. Data Retention</a></li>
+            <li><a href="#rights">7. Your Privacy Rights and Choices</a></li>
+            <li><a href="#children">8. Children</a></li>
+            <li><a href="#california">9. California & Other U.S. State Privacy Rights</a></li>
+            <li><a href="#international">10. International Data Transfers</a></li>
+            <li><a href="#changes">11. Changes to This Privacy Policy</a></li>
+            <li><a href="#contact">12. How to Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="legal-content">
+
+        <!-- Preliminary Notice -->
+        <div class="legal-notice">
+            <p class="legal-notice__title">⚠️ Preliminary Document</p>
+            <p class="legal-notice__text">This privacy policy is a working document pending formal legal review. It
+                reflects En Place's current data practices and privacy commitments.</p>
+        </div>
+
+        <!-- Introduction -->
+        <div class="legal-intro">
+            <p>This Privacy Policy describes the personal data we collect and process to provide products and services
+                offered by <strong>En Place, Inc.</strong> ("En Place," "we," "us," or "our"), including our web-based
+                platform, mobile applications, staff management tools, mood tracking features, and related services
+                (collectively, "En Place Products and Services" or "Services").</p>
+            <p>En Place is a restaurant emotional intelligence platform designed to help reduce staff turnover through
+                mood tracking and management insights. We are committed to protecting the privacy of restaurant
+                operators, managers, and staff members who use our Services.</p>
+        </div>
+
+        <!-- 1. What We Collect -->
+        <section class="legal-section" id="collect">
+            <h2 class="legal-section__title">1. What Personal Data Do We Collect?</h2>
+            <p>Personal data is any information from or about an identified or identifiable person. We may collect the
+                following categories of personal data when you use or interact with En Place Products and Services:</p>
+
+            <h3 class="legal-section__subtitle">Account Information</h3>
+            <p>Information associated with a restaurant or organization account, which may include: restaurant name,
+                business address, administrator contact information, account ID, billing and payment information,
+                subscription plan details, and account settings.</p>
+
+            <h3 class="legal-section__subtitle">Profile and User Information</h3>
+            <p>Information associated with manager and staff profiles, which may include: name, display name, email
+                address, phone number, job title or position, hire date, employment status, wage information, and
+                profile photos.</p>
+
+            <h3 class="legal-section__subtitle">Mood and Wellness Data</h3>
+            <p>Information submitted through our Staff Stability Engine (SSE), including daily mood check-ins, wellness
+                indicators, and emotional state data.</p>
+            <div class="legal-highlight">
+                <p><strong>CRITICAL:</strong> Mood data is collected anonymously and is never directly associated with
+                    individual staff identities in management-facing reports. This anonymization is fundamental to
+                    maintaining staff trust and the integrity of our emotional intelligence platform.</p>
+            </div>
+
+            <h3 class="legal-section__subtitle">Schedule and Shift Data</h3>
+            <p>Information related to work schedules, including: shift times and dates, availability preferences,
+                time-off requests, call-in records, shift coverage requests, overtime records, and scheduling
+                preferences.</p>
+
+            <h3 class="legal-section__subtitle">Communication Data</h3>
+            <p>Information from communications through our platform, including: SMS notifications, in-app messages,
+                shift coverage requests and responses, and notification preferences.</p>
+
+            <h3 class="legal-section__subtitle">Device Information</h3>
+            <p>Information about devices used to access our Services, which may include: device type, operating system,
+                browser type, IP address (which may be used to infer general location), and device identifiers.</p>
+
+            <h3 class="legal-section__subtitle">Usage Information</h3>
+            <p>Information about how users interact with our Services, including: feature usage patterns, login times,
+                pages viewed, actions taken within the platform, and performance data.</p>
+
+            <h3 class="legal-section__subtitle">Recruiting and Candidate Data (Stable Hire)</h3>
+            <p>For restaurants using our Stable Hire recruiting features: candidate names, contact information, resume
+                data, application responses, assessment results, interview notes, and hiring pipeline status.</p>
+        </section>
+
+        <!-- 2. How We Use Data -->
+        <section class="legal-section" id="use">
+            <h2 class="legal-section__title">2. How Do We Use Personal Data?</h2>
+            <p>En Place uses personal data to provide, improve, and secure our Services. <strong>We do not sell personal
+                    data to third parties.</strong> Specifically, we use personal data for the following purposes:</p>
+
+            <h3 class="legal-section__subtitle">Provide En Place Products and Services</h3>
+            <p>To provide our platform to restaurant accounts and their authorized users, including: processing mood
+                check-ins, generating anonymized management insights, facilitating schedule management, sending shift
+                notifications, enabling staff communication, processing payments, and providing customer support.</p>
+
+            <h3 class="legal-section__subtitle">Generate Anonymized Insights</h3>
+            <p>To analyze mood and wellness data in aggregate to generate management insights, identify trends, and
+                provide early warning indicators of potential retention issues. Individual staff members are never
+                identified in these reports except where their data is already publicly observable (such as scheduled
+                shifts).</p>
+
+            <h3 class="legal-section__subtitle">Product Development and Improvement</h3>
+            <p>To develop, test, and improve our products and services, including using aggregated and anonymized data
+                to train and improve our predictive models and algorithms.</p>
+
+            <h3 class="legal-section__subtitle">Security and Fraud Prevention</h3>
+            <p>To authenticate accounts, detect and prevent malicious activity, address security threats, and protect
+                the integrity of our Services.</p>
+
+            <h3 class="legal-section__subtitle">Communications</h3>
+            <p>To communicate with you about your account, service updates, shift notifications, coverage requests, and
+                changes to our policies. We may also send promotional communications with your consent, which you can
+                opt out of at any time.</p>
+
+            <h3 class="legal-section__subtitle">Legal Compliance</h3>
+            <p>To comply with applicable laws, respond to valid legal process, enforce our Terms of Service, and protect
+                our rights and the rights of our users.</p>
+        </section>
+
+        <!-- 3. How We Share Data -->
+        <section class="legal-section" id="share">
+            <h2 class="legal-section__title">3. How Do We Share Personal Data?</h2>
+            <p><strong>En Place does not sell personal data.</strong> We share personal data only in the following
+                circumstances:</p>
+
+            <h3 class="legal-section__subtitle">Service Providers</h3>
+            <p>We work with third-party service providers to operate and improve our Services. These providers are
+                contractually bound to protect personal data and use it only for the purposes we specify. Our key
+                service providers include:</p>
+
+            <div class="service-list">
+                <div class="service-list__item">
+                    <span class="service-list__name">Stripe</span>
+                    <span class="service-list__desc">Payment processing and subscription billing</span>
+                </div>
+                <div class="service-list__item">
+                    <span class="service-list__name">Twilio</span>
+                    <span class="service-list__desc">SMS notifications and communications</span>
+                </div>
+                <div class="service-list__item">
+                    <span class="service-list__name">OpenAI</span>
+                    <span class="service-list__desc">AI-powered features including resume parsing and text
+                        analysis</span>
+                </div>
+                <div class="service-list__item">
+                    <span class="service-list__name">Heroku</span>
+                    <span class="service-list__desc">Cloud infrastructure and application hosting</span>
+                </div>
+                <div class="service-list__item">
+                    <span class="service-list__name">Supabase</span>
+                    <span class="service-list__desc">Database services and data storage</span>
+                </div>
+                <div class="service-list__item">
+                    <span class="service-list__name">Vercel</span>
+                    <span class="service-list__desc">Frontend hosting and content delivery</span>
+                </div>
+            </div>
+
+            <h3 class="legal-section__subtitle">Restaurant Account Owners and Managers</h3>
+            <p>Account owners and authorized managers can access certain personal data for users associated with their
+                restaurant account, including staff profiles, schedule data, and anonymized mood insights.</p>
+            <div class="legal-highlight">
+                <p><strong>Individual mood check-in data is never shared with managers in an identifiable form.</strong>
+                </p>
+            </div>
+
+            <h3 class="legal-section__subtitle">Legal Requirements</h3>
+            <p>We may share personal data when required by law, subpoena, or other legal process, or when we believe in
+                good faith that disclosure is necessary to protect our rights, protect your safety or the safety of
+                others, investigate fraud, or respond to a government request.</p>
+
+            <h3 class="legal-section__subtitle">Business Transfers</h3>
+            <p>In the event of a merger, acquisition, restructuring, or sale of all or a portion of our assets, personal
+                data may be transferred as part of that transaction. We will notify you via email and/or prominent
+                notice on our website of any change in ownership or uses of your personal data.</p>
+
+            <h3 class="legal-section__subtitle">Aggregated and Anonymized Data</h3>
+            <p>We may share aggregated, anonymized data that cannot reasonably be used to identify individuals for
+                research, benchmarking, and industry analysis purposes.</p>
+        </section>
+
+        <!-- 4. Anonymization -->
+        <section class="legal-section" id="anonymization">
+            <h2 class="legal-section__title">4. Anonymization and Staff Privacy</h2>
+            <p>En Place is built on a foundation of staff trust. Our anonymization principles are central to this
+                commitment:</p>
+
+            <h3 class="legal-section__subtitle">Mood-Based Data: Always Anonymous</h3>
+            <p>Mood check-ins and emotional wellness data submitted by staff are processed anonymously. When mood-based
+                insights are escalated to management, they appear as "Multiple staff affected" or similar aggregate
+                descriptions. <strong>Individual staff members are never identified based on their mood
+                    submissions.</strong></p>
+
+            <h3 class="legal-section__subtitle">Schedule-Based Data: Observable Information</h3>
+            <p>Schedule-based events (such as call-ins, shift coverage, or attendance) may identify individual staff
+                members because this information is inherently observable and part of normal restaurant operations.</p>
+
+            <h3 class="legal-section__subtitle">The Distinction Matters</h3>
+            <p>This distinction ensures that staff can provide honest mood feedback without fear of identification,
+                while managers still receive actionable insights about publicly observable scheduling matters. We
+                believe this balance is essential for building genuine trust and achieving the retention benefits our
+                platform provides.</p>
+        </section>
+
+        <!-- 5. Data Security -->
+        <section class="legal-section" id="security">
+            <h2 class="legal-section__title">5. Data Security</h2>
+            <p>We implement appropriate technical and organizational measures to protect personal data against
+                unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
+            <ul>
+                <li>Encryption of data in transit using TLS/SSL</li>
+                <li>Encryption of sensitive data at rest</li>
+                <li>Row-Level Security (RLS) policies ensuring data isolation between restaurant accounts</li>
+                <li>JWT-based authentication with secure token management</li>
+                <li>Regular security assessments and monitoring</li>
+                <li>Access controls limiting data access to authorized personnel</li>
+                <li>Audit logging of management actions</li>
+            </ul>
+            <p>While we strive to protect your personal data, no method of transmission over the Internet or electronic
+                storage is 100% secure. We cannot guarantee absolute security.</p>
+        </section>
+
+        <!-- 6. Data Retention -->
+        <section class="legal-section" id="retention">
+            <h2 class="legal-section__title">6. Data Retention</h2>
+            <p>We retain personal data for as long as necessary to provide our Services and fulfill the purposes
+                described in this Privacy Policy. Our retention periods are determined by:</p>
+            <ul>
+                <li>The duration of your relationship with En Place</li>
+                <li>Legal obligations requiring retention of certain records</li>
+                <li>Legitimate business purposes such as maintaining audit trails and resolving disputes</li>
+                <li>Your requests for data deletion (subject to legal requirements)</li>
+            </ul>
+            <p>When personal data is no longer needed, we will securely delete or anonymize it in accordance with our
+                data retention policies.</p>
+        </section>
+
+        <!-- 7. Your Rights -->
+        <section class="legal-section" id="rights">
+            <h2 class="legal-section__title">7. Your Privacy Rights and Choices</h2>
+            <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+
+            <h3 class="legal-section__subtitle">Access and Portability</h3>
+            <p>You may request access to the personal data we hold about you and, in some circumstances, request that
+                data be provided in a portable format.</p>
+
+            <h3 class="legal-section__subtitle">Correction</h3>
+            <p>You may request that we correct inaccurate or incomplete personal data.</p>
+
+            <h3 class="legal-section__subtitle">Deletion</h3>
+            <p>You may request that we delete your personal data, subject to certain legal exceptions.</p>
+
+            <h3 class="legal-section__subtitle">Opt-Out of Marketing</h3>
+            <p>You may opt out of promotional communications by following the unsubscribe instructions in those messages
+                or by contacting us directly.</p>
+
+            <h3 class="legal-section__subtitle">Withdraw Consent</h3>
+            <p>Where we process your data based on consent, you may withdraw that consent at any time.</p>
+
+            <p>To exercise these rights, please contact us at <a href="mailto:support@en-place.ai"
+                    style="color: var(--gold);">support@en-place.ai</a>. We will respond to your request within 45
+                days (or sooner if required by law). We may need to verify your identity before processing your request.
+            </p>
+        </section>
+
+        <!-- 8. Children -->
+        <section class="legal-section" id="children">
+            <h2 class="legal-section__title">8. Children</h2>
+            <p>En Place Services are intended for use by restaurants and their adult employees. We do not knowingly
+                collect personal data from children under the age of 16. If we learn that we have collected personal
+                data from a child under 16, we will take steps to delete that information promptly.</p>
+        </section>
+
+        <!-- 9. California Rights -->
+        <section class="legal-section" id="california">
+            <h2 class="legal-section__title">9. California & Other U.S. State Privacy Rights</h2>
+            <p>California residents and residents of other U.S. states with applicable privacy laws may have additional
+                rights, including:</p>
+            <ul>
+                <li><strong>Right to Know:</strong> The categories and specific pieces of personal data we have
+                    collected about you</li>
+                <li><strong>Right to Delete:</strong> Request deletion of your personal data</li>
+                <li><strong>Right to Correct:</strong> Request correction of inaccurate personal data</li>
+                <li><strong>Right to Opt-Out:</strong> Opt out of the "sale" or "sharing" of personal data</li>
+                <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising
+                    these rights</li>
+            </ul>
+            <p>En Place does not sell personal data in the conventional sense. We do not share personal data for
+                targeted advertising purposes. To exercise these rights, contact us at <a
+                    href="mailto:support@en-place.ai" style="color: var(--gold);">support@en-place.ai</a>.</p>
+        </section>
+
+        <!-- 10. International -->
+        <section class="legal-section" id="international">
+            <h2 class="legal-section__title">10. International Data Transfers</h2>
+            <p>En Place is based in the United States. If you access our Services from outside the United States, your
+                personal data may be transferred to, stored, and processed in the United States or other countries where
+                our service providers operate. These countries may have data protection laws that differ from those in
+                your country. By using our Services, you consent to such transfers.</p>
+        </section>
+
+        <!-- 11. Changes -->
+        <section class="legal-section" id="changes">
+            <h2 class="legal-section__title">11. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other
+                operational, legal, or regulatory reasons. We will post the updated Privacy Policy on our website with a
+                new "Last Updated" date. If we make material changes, we will notify you by email or through a prominent
+                notice on our Services before the changes take effect.</p>
+        </section>
+
+        <!-- 12. Contact -->
+        <section class="legal-section" id="contact">
+            <h2 class="legal-section__title">12. How to Contact Us</h2>
+            <p>If you have questions about this Privacy Policy or wish to exercise your privacy rights, please contact
+                us:</p>
+            <p><strong>En Place, Inc.</strong></p>
+            <p>Email: <a href="mailto:support@en-place.ai" style="color: var(--gold);">support@en-place.ai</a></p>
+            <p>Phone: <a href="tel:513-954-3338" style="color: var(--gold);">513-954-3338</a></p>
+            <p>Website: <a href="https://www.en-place.ai" style="color: var(--gold);">www.en-place.ai</a></p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="legal-footer">
+        <p class="legal-footer__contact">Questions? Email us at <a
+                href="mailto:support@en-place.ai">support@en-place.ai</a></p>
+        <p class="legal-footer__contact" style="font-size: 0.8rem; margin-top: 1rem;">© 2025 En Place, Inc. All rights
+            reserved.</p>
+    </footer>
+
+</body>
+
+</html>

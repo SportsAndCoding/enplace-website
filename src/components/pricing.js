@@ -54,7 +54,7 @@ export default function Pricing() {
         <div class="core-product__features">
           <div class="feature-item">
             <span class="feature-item__icon"></span>
-            Staff-Manamgement Alignment Score
+            Staff-Management Alignment Score
           </div>
           <div class="feature-item">
             <span class="feature-item__icon"></span>
