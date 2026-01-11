@@ -18,6 +18,7 @@ export default defineConfig({
                 ssp: './ssp/index.html',
                 buy: './buy/index.html',
                 register: './register/index.html',
+                join: './join/index.html',
                 contact: './contact/index.html',
                 terms: './terms/index.html',
                 privacy: './privacy/index.html'
@@ -35,7 +36,7 @@ export default defineConfig({
                     if (req.url === '/pricing' || req.url === '/pricing/') {
                         req.url = '/pricing/index.html';
                     }
-                    if (req.url === '/careers' || req.url === '/careers/') {   // ← ADDED
+                    if (req.url === '/careers' || req.url === '/careers/') {
                         req.url = '/careers/index.html';
                     }
                     if (req.url === '/sse' || req.url === '/sse/') {
@@ -61,6 +62,9 @@ export default defineConfig({
                     }
                     if (req.url === '/register' || req.url === '/register/') {
                         req.url = '/register/index.html';
+                    }
+                    if (req.url.startsWith('/join')) {
+                        req.url = '/join/index.html';
                     }
                     if (req.url === '/contact' || req.url === '/contact/') {
                         req.url = '/contact/index.html';

@@ -1,0 +1,378 @@
+// src/styles/components/join.scss
+
+// ═══════════════════════════════════════════════════════════════════
+// STAFF JOIN STYLES
+// Matches register.scss pattern for consistency
+// ═══════════════════════════════════════════════════════════════════
+
+.join {
+    min-height: 100vh;
+    padding: 6rem 1.5rem 4rem;
+    background: linear-gradient(135deg, #faf9f7 0%, #f5f3f0 100%);
+}
+
+.join__container {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// HERO
+// ─────────────────────────────────────────────────────────────────
+
+.join-hero {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.join-hero__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+}
+
+.join-hero__subtitle {
+    font-size: 1.125rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// CARD
+// ─────────────────────────────────────────────────────────────────
+
+.join-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+
+    &--success {
+        text-align: center;
+    }
+}
+
+// ─────────────────────────────────────────────────────────────────
+// LOADING
+// ─────────────────────────────────────────────────────────────────
+
+.join-loading {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.join-loading__spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #f0f0f0;
+    border-top-color: #722F37;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.join-loading__text {
+    color: #666;
+    font-size: 1rem;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// ERROR STATE
+// ─────────────────────────────────────────────────────────────────
+
+.join-error {
+    text-align: center;
+}
+
+.join-error__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.join-error__message {
+    color: #dc3545;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.join-error__help {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// ENTER CODE STATE
+// ─────────────────────────────────────────────────────────────────
+
+.join-enter-code__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.join-enter-code__subtitle {
+    color: #666;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// RESTAURANT BADGE
+// ─────────────────────────────────────────────────────────────────
+
+.join-restaurant-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.join-restaurant-badge__label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #999;
+    margin-bottom: 0.25rem;
+}
+
+.join-restaurant-badge__name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #722F37;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// FORM
+// ─────────────────────────────────────────────────────────────────
+
+.join-form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.join-form__field {
+    margin-bottom: 1.25rem;
+}
+
+.join-form__label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.join-form__input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: #fff;
+
+    &:focus {
+        outline: none;
+        border-color: #722F37;
+        box-shadow: 0 0 0 3px rgba(114, 47, 55, 0.1);
+    }
+
+    &::placeholder {
+        color: #aaa;
+    }
+}
+
+.join-form__hint {
+    display: block;
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 0.375rem;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// SMS CONSENT - CRITICAL FOR TWILIO VERIFICATION
+// ─────────────────────────────────────────────────────────────────
+
+.join-form__consent {
+    background: #f8f7f5;
+    border: 1px solid #e8e6e3;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.join-form__checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    cursor: pointer;
+}
+
+.join-form__checkbox {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    accent-color: #722F37;
+    cursor: pointer;
+}
+
+.join-form__checkbox-text {
+    font-size: 0.875rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.join-form__privacy-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: #722F37;
+    text-decoration: underline;
+
+    &:hover {
+        color: #5a252c;
+    }
+}
+
+// ─────────────────────────────────────────────────────────────────
+// ERROR MESSAGE
+// ─────────────────────────────────────────────────────────────────
+
+.join-form__error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #dc2626;
+    padding: 0.875rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// SUBMIT BUTTON
+// ─────────────────────────────────────────────────────────────────
+
+.join-form__submit {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #722F37 0%, #8B3D47 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover:not(:disabled) {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(114, 47, 55, 0.3);
+    }
+
+    &:active:not(:disabled) {
+        transform: translateY(0);
+    }
+
+    &:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+}
+
+.join-form__helper {
+    text-align: center;
+    color: #888;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// SUCCESS STATE
+// ─────────────────────────────────────────────────────────────────
+
+.join-success__icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 auto 1.5rem;
+}
+
+.join-success__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.75rem;
+}
+
+.join-success__message {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// TRUST FOOTER
+// ─────────────────────────────────────────────────────────────────
+
+.join-trust {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.join-trust__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+
+    li {
+        font-size: 0.875rem;
+        color: #888;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &::before {
+            content: "✓";
+            color: #10b981;
+            font-weight: 600;
+        }
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
