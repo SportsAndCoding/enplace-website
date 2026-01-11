@@ -18,7 +18,9 @@ export default defineConfig({
                 ssp: './ssp/index.html',
                 buy: './buy/index.html',
                 register: './register/index.html',
-                contact: './contact/index.html'
+                contact: './contact/index.html',
+                terms: './terms/index.html',
+                privacy: './privacy/index.html'
             }
         }
     },
@@ -62,6 +64,12 @@ export default defineConfig({
                     }
                     if (req.url === '/contact' || req.url === '/contact/') {
                         req.url = '/contact/index.html';
+                    }
+                    if (req.url === '/terms' || req.url === '/terms/') {
+                        req.url = '/terms/index.html';
+                    }
+                    if (req.url === '/privacy' || req.url === '/privacy/') {
+                        req.url = '/privacy/index.html';
                     }
                     next();
                 });

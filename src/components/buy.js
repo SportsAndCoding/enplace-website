@@ -99,7 +99,7 @@ export default function Buy() {
         <div class="buy-checkout__terms" id="termsWrapper">
           <label class="buy-terms">
             <input type="checkbox" id="agreeTerms" class="buy-terms__checkbox">
-            <span class="buy-terms__text">I agree to the <a href="/terms.html" target="_blank">Terms of Service</a> and <a href="/privacy.html" target="_blank">Privacy Policy</a></span>
+            <span class="buy-terms__text">I agree to the <a href="/terms" target="_blank">Terms of Service</a> and <a href="/privacy" target="_blank">Privacy Policy</a></span>
           </label>
         </div>
         <div class="buy-checkout__actions">
