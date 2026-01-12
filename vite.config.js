@@ -7,6 +7,9 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
+                // ─────────────────────────────────────
+                // EXISTING PAGES
+                // ─────────────────────────────────────
                 main: './index.html',
                 pricing: './pricing/index.html',
                 careers: './careers/index.html',
@@ -21,7 +24,15 @@ export default defineConfig({
                 join: './join/index.html',
                 contact: './contact/index.html',
                 terms: './terms/index.html',
-                privacy: './privacy/index.html'
+                privacy: './privacy/index.html',
+
+                // ─────────────────────────────────────
+                // SALES REP BOOKING PAGES
+                // Add new reps here as: repName: './rep-slug/index.html'
+                // ─────────────────────────────────────
+                kyleParker: './kyle-parker/index.html',
+                amandaNunnallee: './amanda-nunnallee/index.html',
+                juliaVanDorn: './julia-van-dorn/index.html',
             }
         }
     },
@@ -32,7 +43,9 @@ export default defineConfig({
             apply: 'serve',
             configureServer(server) {
                 server.middlewares.use(async (req, res, next) => {
-                    // Rewrite clean URLs in dev
+                    // ─────────────────────────────────────
+                    // EXISTING PAGE REWRITES
+                    // ─────────────────────────────────────
                     if (req.url === '/pricing' || req.url === '/pricing/') {
                         req.url = '/pricing/index.html';
                     }
@@ -75,6 +88,21 @@ export default defineConfig({
                     if (req.url === '/privacy' || req.url === '/privacy/') {
                         req.url = '/privacy/index.html';
                     }
+
+                    // ─────────────────────────────────────
+                    // SALES REP BOOKING PAGE REWRITES
+                    // Add new reps here
+                    // ─────────────────────────────────────
+                    if (req.url === '/kyle-parker' || req.url === '/kyle-parker/') {
+                        req.url = '/kyle-parker/index.html';
+                    }
+                    if (req.url === '/sarah-jackson' || req.url === '/sarah-jackson/') {
+                        req.url = '/sarah-jackson/index.html';
+                    }
+                    if (req.url === '/amanda-nunnallee' || req.url === '/amanda-nunnallee/') {
+                        req.url = '/amanda-nunnallee/index.html';
+                    }
+
                     next();
                 });
             }
