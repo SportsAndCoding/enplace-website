@@ -24,15 +24,8 @@ class RepBooking {
         }
 
         try {
-            // Fetch rep data from API to confirm they exist and get latest info
-            const repData = await this.fetchRepData();
-            if (!repData) {
-                this.showNotFound();
-                return;
-            }
-
-            // Merge API data with config (config overrides for display)
-            this.repData = { ...repData, ...this.config };
+            // Use config directly (API validation disabled until backend deployed)
+            this.repData = this.config;
 
             // Render the page
             this.render();
