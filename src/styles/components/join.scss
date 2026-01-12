@@ -40,7 +40,41 @@
 }
 
 // ─────────────────────────────────────────────────────────────────
+// VIDEO EXPLAINER
+// ─────────────────────────────────────────────────────────────────
+
+.join-video {
+    margin-bottom: 2.5rem;
+}
+
+.join-video__wrapper {
+    position: relative;
+    padding-bottom: 56.25%; // 16:9 aspect ratio
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #1a1a1a;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.join-video__caption {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #888;
+    margin-top: 0.75rem;
+}
+
+// ─────────────────────────────────────────────────────────────────
 // CARD
+``` --- **When you have the Vimeo video ID:** Just replace `VIMEO_ID_HERE` with the actual ID (e.g., `123456789`). The embed URL becomes: ``` https: //player.vimeo.com/video/123456789?badge=0&autopause=0&player_id=0&app_id=58479
 // ─────────────────────────────────────────────────────────────────
 
 .join-card {
@@ -375,4 +409,88 @@
         flex-direction: column;
         gap: 0.75rem;
     }
+}
+
+// ─────────────────────────────────────────────────────────────────
+// CONFIRMATION SCREEN
+// ─────────────────────────────────────────────────────────────────
+
+.join-confirm {
+    text-align: center;
+}
+
+.join-confirm__title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.join-confirm__match {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 2rem;
+}
+
+.join-confirm__name {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.join-confirm__position {
+    font-size: 1.1rem;
+    color: #722F37;
+    font-weight: 500;
+}
+
+.join-confirm__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.join-form__submit--secondary {
+    background: transparent;
+    color: #666;
+    border: 1px solid #ddd;
+
+    &:hover:not(:disabled) {
+        background: #f5f5f5;
+        box-shadow: none;
+        transform: none;
+    }
+}
+
+// ─────────────────────────────────────────────────────────────────
+// WELCOME BADGE (credentials form)
+// ─────────────────────────────────────────────────────────────────
+
+.join-welcome-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.join-welcome-badge__greeting {
+    font-size: 1rem;
+    color: #888;
+}
+
+.join-welcome-badge__name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// NOT FOUND STATE
+// ─────────────────────────────────────────────────────────────────
+
+.join-not-found {
+    text-align: center;
 }

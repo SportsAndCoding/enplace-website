@@ -96,7 +96,7 @@ export default function OSM() {
         <p class="osm-tagline__sub">Turns call-outs from nightmares into volunteers.</p>
         
         <div class="osm-tagline__buttons">
-          <button class="osm-btn osm-btn--primary" type="button" id="osm-demo-cta">Experience En Place</button>
+          <button class="osm-btn osm-btn--primary" type="button" id="osm-demo-cta">Experience Open Shift Marketplace</button>
           <a href="tel:+15134020611" class="osm-btn osm-btn--secondary">Talk to Sales</a>
         </div>
 
