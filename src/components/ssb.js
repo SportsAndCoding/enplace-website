@@ -19,7 +19,7 @@ export default function SSB() {
           Stable Schedule Builder tells you who it's about to hurt—before you publish.
         </p>
         <div class="ssb-hero__buttons">
-          <button class="ssb-btn ssb-btn--primary" type="button" id="ssb-demo-cta">Experience En Place</button>
+          <button class="ssb-btn ssb-btn--primary" type="button" id="ssb-demo-cta">Experience Stable Schedule Builder</button>
           <a href="tel:+15134020611" class="ssb-btn ssb-btn--secondary">Talk to Sales</a>
         </div>
 
@@ -126,7 +126,7 @@ export default function SSB() {
           <span>We just stop it from breaking your team.</span>
         </h2>
         <div class="ssb-cta__buttons">
-          <button class="ssb-btn ssb-btn--primary" type="button" id="ssb-demo-cta-bottom">Experience En Place</button>
+          <button class="ssb-btn ssb-btn--primary" type="button" id="ssb-demo-cta-bottom">Experience Stable Schedule Builder</button>
           <a href="tel:+15134020611" class="ssb-btn ssb-btn--secondary">Talk to Sales</a>
         </div>
       </section>

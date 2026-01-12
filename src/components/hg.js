@@ -19,7 +19,7 @@ export default function HG() {
           House Guardian watches anonymous shift notes. When multiple people report the same ugly pattern, it quietly puts it on leadership's desk.
         </p>
         <div class="hg-hero__buttons">
-          <button class="hg-btn hg-btn--primary" type="button" id="hg-demo-cta">Experience En Place</button>
+          <button class="hg-btn hg-btn--primary" type="button" id="hg-demo-cta">Experience House Guardian</button>
           <a href="tel:+15134020611" class="hg-btn hg-btn--secondary">Talk to Sales</a>
         </div>
       </header>
@@ -195,7 +195,7 @@ export default function HG() {
           <h2 class="hg-cta__title">House Guardian doesn't name names.</h2>
           <p class="hg-cta__subtitle">It just keeps the house from burning down.</p>
           <div class="hg-cta__buttons">
-            <button class="hg-btn hg-btn--primary" type="button" id="hg-demo-cta-bottom">Experience En Place</button>
+            <button class="hg-btn hg-btn--primary" type="button" id="hg-demo-cta-bottom">Experience House Guardian</button>
             <a href="tel:+15134020611" class="hg-btn hg-btn--secondary">Talk to Sales</a>
           </div>
         </div>

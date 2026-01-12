@@ -16,7 +16,7 @@ export default function SSP() {
         <p class="ssp-hero__eyebrow">Shift Swap Portal</p>
         <h1 class="ssp-hero__title">Staff swap shifts. You just tap approve.</h1>
         <div class="ssp-hero__buttons">
-          <button class="ssp-btn ssp-btn--primary" type="button" id="ssp-demo-cta">Experience En Place</button>
+          <button class="ssp-btn ssp-btn--primary" type="button" id="ssp-demo-cta">Experience Shift Swap Marketplace</button>
           <a href="tel:+15134020611" class="ssp-btn ssp-btn--secondary">Talk to Sales</a>
         </div>
       </header>
@@ -120,7 +120,7 @@ export default function SSP() {
           <span class="ssp-cta__title--gold">You just tap approve.</span>
         </h2>
         <div class="ssp-cta__buttons">
-          <button class="ssp-btn ssp-btn--primary" type="button" id="ssp-demo-cta-bottom">Experience En Place</button>
+          <button class="ssp-btn ssp-btn--primary" type="button" id="ssp-demo-cta-bottom">Experience Shift Swap Portal</button>
           <a href="tel:+15134020611" class="ssp-btn ssp-btn--secondary">Talk to Sales</a>
         </div>
       </section>

@@ -21,7 +21,7 @@ export default function SH() {
             Stable Hire predicts who survives the 90-day cliff—using every shift, every team, every exit in the En Place network.
           </p>
           <div class="sh-hero__buttons">
-            <button class="sh-btn sh-btn--primary" type="button" id="sh-demo-cta">Experience En Place</button>
+            <button class="sh-btn sh-btn--primary" type="button" id="sh-demo-cta">Experience Stable Hire</button>
             <a href="tel:+15134020611" class="sh-btn sh-btn--secondary">Talk to Sales</a>
           </div>
         </div>
@@ -189,7 +189,7 @@ export default function SH() {
       <section class="sh-cta">
         <h2 class="sh-cta__title">The best hire you'll ever make is now the most predictable one.</h2>
         <div class="sh-cta__buttons">
-          <button class="sh-btn sh-btn--primary" type="button" id="sh-demo-cta-bottom">Experience En Place</button>
+          <button class="sh-btn sh-btn--primary" type="button" id="sh-demo-cta-bottom">Experience Stable Hire</button>
           <a href="tel:+15134020611" class="sh-btn sh-btn--secondary">Talk to Sales</a>
         </div>
       </section>

@@ -126,7 +126,7 @@ export default function OSM() {
         </div>
 
         <div class="osm-cta__buttons">
-          <button class="osm-btn osm-btn--primary" type="button" id="osm-demo-cta-bottom">Experience En Place</button>
+          <button class="osm-btn osm-btn--primary" type="button" id="osm-demo-cta-bottom">Experience Open Shift Marketplace</button>
           <a href="tel:+15134020611" class="osm-btn osm-btn--secondary">Talk to Sales</a>
         </div>
       </section>
