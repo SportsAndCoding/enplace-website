@@ -31,8 +31,8 @@ export default defineConfig({
                 // Add new reps here as: repName: './rep-slug/index.html'
                 // ─────────────────────────────────────
                 kyleParker: './kyle-parker/index.html',
-                amandaNunnallee: './amanda-nunnallee/index.html',
-                juliaVanDorn: './julia-van-dorn/index.html',
+                // amandaNunnallee: './amanda-nunnallee/index.html',
+                // juliaVanDorn: './julia-van-dorn/index.html',
             }
         }
     },
@@ -95,12 +95,6 @@ export default defineConfig({
                     // ─────────────────────────────────────
                     if (req.url === '/kyle-parker' || req.url === '/kyle-parker/') {
                         req.url = '/kyle-parker/index.html';
-                    }
-                    if (req.url === '/sarah-jackson' || req.url === '/sarah-jackson/') {
-                        req.url = '/sarah-jackson/index.html';
-                    }
-                    if (req.url === '/amanda-nunnallee' || req.url === '/amanda-nunnallee/') {
-                        req.url = '/amanda-nunnallee/index.html';
                     }
 
                     next();
