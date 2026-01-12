@@ -2,8 +2,8 @@
 // Entry point for rep booking pages
 // Loads the rep config and initializes the booking component
 
-import '../styles/globals.scss';
-import '../styles/components/rep.scss';
+import './styles/globals.scss';
+import './styles/components/rep.scss';
 import { RepBooking } from './components/rep.js';
 
 // Wait for DOM and config
