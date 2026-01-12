@@ -9,8 +9,8 @@ import { RepBooking } from './components/rep.js';
 // Wait for DOM and config
 document.addEventListener('DOMContentLoaded', () => {
     // REP_CONFIG should be defined in the page's config.js
-    if (typeof REP_CONFIG !== 'undefined') {
-        new RepBooking(REP_CONFIG);
+    if (window.REP_CONFIG) {
+        new RepBooking(window.REP_CONFIG);
     } else {
         console.error('REP_CONFIG not defined. Make sure config.js is loaded before rep-main.js');
 
