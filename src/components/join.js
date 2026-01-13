@@ -21,7 +21,7 @@ export default function StaffJoin() {
           <!-- REPLACE data-vimeo-id with actual ID when ready -->
           <div class="join-video__placeholder" id="videoPlaceholder">
             <iframe 
-              src="https://player.vimeo.com/video/VIMEO_ID_HERE?badge=0&autopause=0&player_id=0&app_id=58479"
+              src="https://player.vimeo.com/video/1153778229?badge=0&autopause=0&player_id=0&app_id=58479"
               frameborder="0"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
               title="How to join your team on En Place"
