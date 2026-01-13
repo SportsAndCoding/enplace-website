@@ -18,7 +18,6 @@ export default function StaffJoin() {
       <!-- VIDEO EXPLAINER -->
       <div class="join-video" id="joinVideo">
         <div class="join-video__wrapper">
-          <!-- REPLACE data-vimeo-id with actual ID when ready -->
           <div class="join-video__placeholder" id="videoPlaceholder">
             <iframe 
               src="https://player.vimeo.com/video/1153778229?badge=0&autopause=0&player_id=0&app_id=58479"
@@ -127,6 +126,24 @@ export default function StaffJoin() {
               <span class="join-confirm__name" id="matchedName"></span>
               <span class="join-confirm__position" id="matchedPosition"></span>
             </div>
+            <input type="hidden" id="matchedStaffId" />
+            <div class="join-confirm__buttons">
+              <button type="button" class="join-form__submit" id="confirmYes">Yes, that's me</button>
+              <button type="button" class="join-form__submit join-form__submit--secondary" id="confirmNo">No, that's not me</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOT FOUND STATE -->
+      <div class="join-not-found" id="joinNotFound" hidden>
+        <div class="join-card">
+          <h2 class="join-error__title">We couldn't find you</h2>
+          <p class="join-error__message">You're not on the roster yet. Please contact your manager to be added, then try again.</p>
+          <button type="button" class="join-form__submit join-form__submit--secondary" id="tryAgainBtn">Try Different Name</button>
+        </div>
+      </div>
+
       <!-- REGISTRATION FORM (Step 3) -->
       <section class="join-form-section" id="joinFormSection" hidden>
         <div class="join-card">
@@ -549,7 +566,7 @@ export default function StaffJoin() {
             localStorage.setItem("enplace_token", data.token);
           }
 
-          showSuccess(data.message || `Welcome to the team, ${firstName}!`);
+          showSuccess(data.message || "Welcome to the team!");
         } else {
           formError.textContent = data.error || "Registration failed. Please try again.";
           formError.hidden = false;
