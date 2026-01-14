@@ -24,7 +24,7 @@ export default function OSM() {
           <p class="osm-panic__text">Billy texts: <span class="osm-panic__quote">"can't come in."</span></p>
           <p class="osm-panic__text">Friday.</p>
           <p class="osm-panic__text">400 covers.</p>
-          <p class="osm-panic__text osm-panic__text--red">You're screwed.</p>
+          <p class="osm-panic__text osm-panic__text--red">Chaos is coming.</p>
         </div>
 
         <div class="osm-panic__chaos">
@@ -42,7 +42,7 @@ export default function OSM() {
 
       <!-- THE TURN -->
       <section class="osm-turn">
-        <p class="osm-turn__hook">Now watch this.</p>
+        <p class="osm-turn__hook">Now listen to this.</p>
         
         <div class="osm-turn__action">
           <p class="osm-turn__line">You open En Place.</p>
@@ -67,7 +67,7 @@ export default function OSM() {
 
       <!-- THE RESULT -->
       <section class="osm-result">
-        <p class="osm-result__time">Thirty-seven seconds later:</p>
+        <p class="osm-result__time">Less than a minute later:</p>
         
         <ul class="osm-result__list">
           <li>Three qualified volunteers.</li>
