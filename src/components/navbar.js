@@ -34,6 +34,7 @@ export default function Navbar() {
 
         <!-- Pricing — top-level, no dropdown -->
         <a href="/pricing" class="navbar__link">Pricing</a>
+        <a href="/learn" class="navbar__link">Learn</a>
         <a href="/contact" class="navbar__link">Contact</a>
       </nav>
 
@@ -65,6 +66,7 @@ export default function Navbar() {
       </div>
 
       <a href="/pricing" class="navbar__mobile-item">Pricing</a>
+      <a href="/learn" class="navbar__mobile-item">Learn</a>
       <a href="/contact" class="navbar__mobile-item">Contact</a>
       
       <div class="navbar__mobile-divider"></div>

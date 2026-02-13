@@ -25,6 +25,7 @@ export default defineConfig({
                 contact: './contact/index.html',
                 terms: './terms/index.html',
                 privacy: './privacy/index.html',
+                learn: './learn/index.html',
 
                 // ─────────────────────────────────────
                 // SALES REP BOOKING PAGES
@@ -87,6 +88,9 @@ export default defineConfig({
                     }
                     if (req.url === '/privacy' || req.url === '/privacy/') {
                         req.url = '/privacy/index.html';
+                    }
+                    if (req.url === '/learn' || req.url === '/learn/') {
+                        req.url = '/learn/index.html';
                     }
 
                     // ─────────────────────────────────────
