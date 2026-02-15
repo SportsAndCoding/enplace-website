@@ -26,6 +26,7 @@ export default defineConfig({
                 terms: './terms/index.html',
                 privacy: './privacy/index.html',
                 learn: './learn/index.html',
+                calculator: './calculator/index.html',
 
                 // ─────────────────────────────────────
                 // SALES REP BOOKING PAGES
@@ -91,6 +92,9 @@ export default defineConfig({
                     }
                     if (req.url === '/learn' || req.url === '/learn/') {
                         req.url = '/learn/index.html';
+                    }
+                    if (req.url === '/calculator' || req.url === '/calculator/') {
+                        req.url = '/calculator/index.html';
                     }
 
                     // ─────────────────────────────────────

@@ -106,6 +106,18 @@ const CONTENT = [
         duration: '5 min read',
         featured: false,
     },
+    {
+        id: 'turnover-calculator',
+        type: 'research',
+        title: 'Restaurant Turnover Cost Calculator',
+        excerpt: 'Enter your restaurant\'s numbers and see what employee turnover is actually costing you — with breakdown by category and savings projections.',
+        thumbnail: null,
+        videoUrl: null,
+        articleUrl: '/calculator',
+        date: '2025-02-13',
+        duration: 'Interactive tool',
+        featured: true,
+    },
 ];
 
 // ─────────────────────────────────────
