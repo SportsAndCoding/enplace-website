@@ -61,13 +61,13 @@ const CONTENT = [
     {
         id: 'true-cost-turnover',
         type: 'research',
-        title: 'The True Cost of Restaurant Turnover in 2025',
-        excerpt: 'Industry data shows replacing a single hourly employee costs $3,500–$6,000. For a 30-person restaurant turning over 75% annually, that\'s $78,000+ per year walking out the door.',
+        title: 'The Real Cost of Restaurant Turnover: Why Your Staffing Problem Is a $420,000 Hemorrhage',
+        excerpt: 'Black Box Intelligence data shows a five-unit operator hemorrhages $420,000–$720,000 annually to turnover. Here\'s the full cost model — hard costs, hidden costs, and the math nobody is tracking.',
         thumbnail: null,
         videoUrl: null,
-        articleUrl: null,
-        date: '2025-01-10',
-        duration: '5 min read',
+        articleUrl: '/learn/hidden-hemorrhage/',
+        date: '2025-06-01',
+        duration: '10 min read',
         featured: true,
     },
     {

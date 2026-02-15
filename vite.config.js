@@ -26,6 +26,7 @@ export default defineConfig({
                 terms: './terms/index.html',
                 privacy: './privacy/index.html',
                 learn: './learn/index.html',
+                learnHiddenHemorrhage: './learn/hidden-hemorrhage/index.html',
                 calculator: './calculator/index.html',
 
                 // ─────────────────────────────────────
@@ -92,6 +93,9 @@ export default defineConfig({
                     }
                     if (req.url === '/learn' || req.url === '/learn/') {
                         req.url = '/learn/index.html';
+                    }
+                    if (req.url.startsWith('/learn/hidden-hemorrhage')) {
+                        req.url = '/learn/hidden-hemorrhage/index.html';
                     }
                     if (req.url === '/calculator' || req.url === '/calculator/') {
                         req.url = '/calculator/index.html';
