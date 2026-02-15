@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://en-place.ai/sitemap.xml
+Sitemap: https://www.en-place.ai/sitemap.xml
