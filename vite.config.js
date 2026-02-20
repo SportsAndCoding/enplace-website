@@ -28,6 +28,7 @@ export default defineConfig({
                 learn: './learn/index.html',
                 learnHiddenHemorrhage: './learn/hidden-hemorrhage/index.html',
                 calculator: './calculator/index.html',
+                effect: './effect/index.html',
 
                 // ─────────────────────────────────────
                 // SALES REP BOOKING PAGES
@@ -99,6 +100,9 @@ export default defineConfig({
                     }
                     if (req.url === '/calculator' || req.url === '/calculator/') {
                         req.url = '/calculator/index.html';
+                    }
+                    if (req.url === '/effect' || req.url === '/effect/') {
+                        req.url = '/effect/index.html';
                     }
 
                     // ─────────────────────────────────────
