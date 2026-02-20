@@ -236,7 +236,7 @@ async function initEffect(section) {
     // Parallel fetch
     const [benchRes, chartRes] = await Promise.all([
       supabase.from("turnover_benchmarks").select("*"),
-      supabase.from("turnover_chart_agg").select("*"),
+      supabase.from("turnover_chart_agg").select("*").limit(5000),
     ]);
 
     if (benchRes.error) throw benchRes.error;
