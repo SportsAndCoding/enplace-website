@@ -234,16 +234,18 @@ async function initEffect(section) {
 
   try {
     // Parallel fetch
-    const [benchRes, chartRes] = await Promise.all([
+    const [benchRes, chartRes1, chartRes2] = await Promise.all([
       supabase.from("turnover_benchmarks").select("*"),
-      supabase.from("turnover_chart_agg").select("*").limit(5000),
+      supabase.from("turnover_chart_agg").select("*").range(0, 999),
+      supabase.from("turnover_chart_agg").select("*").range(1000, 1999),
     ]);
 
     if (benchRes.error) throw benchRes.error;
-    if (chartRes.error) throw chartRes.error;
+    if (chartRes1.error) throw chartRes1.error;
+    if (chartRes2.error) throw chartRes2.error;
 
     benchmarks = benchRes.data || [];
-    chartAgg = chartRes.data || [];
+    chartAgg = [...(chartRes1.data || []), ...(chartRes2.data || [])];
 
     // Compute segment summaries
     computeSummaries();
