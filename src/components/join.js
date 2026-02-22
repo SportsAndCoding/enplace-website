@@ -139,8 +139,30 @@ export default function StaffJoin() {
       <div class="join-not-found" id="joinNotFound" hidden>
         <div class="join-card">
           <h2 class="join-error__title">We couldn't find you</h2>
-          <p class="join-error__message">You're not on the roster yet. Please contact your manager to be added, then try again.</p>
-          <button type="button" class="join-form__submit join-form__submit--secondary" id="tryAgainBtn">Try Different Name</button>
+          <p class="join-error__message">Your name didn't match our records. Try a different spelling, or browse the roster to find yourself.</p>
+          <div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap;">
+            <button type="button" class="join-form__submit join-form__submit--secondary" id="tryAgainBtn" style="flex:1; min-width:140px;">Try Different Name</button>
+            <button type="button" class="join-form__submit" id="browseRosterBtn" style="flex:1; min-width:140px;">Browse Roster</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- BROWSE ROSTER FALLBACK -->
+      <div class="join-browse-roster" id="joinBrowseRoster" hidden>
+        <div class="join-card">
+          <h2 class="join-enter-code__title">Find Yourself</h2>
+          <p class="join-enter-code__subtitle">Tap your name from the roster below.</p>
+          <div class="join-form__field" style="margin-bottom:16px;">
+            <input 
+              type="text" 
+              id="rosterSearch" 
+              class="join-form__input" 
+              placeholder="Filter by name or role..."
+              autocomplete="off"
+            />
+          </div>
+          <div id="rosterList" style="max-height:400px; overflow-y:auto; display:flex; flex-direction:column; gap:8px;"></div>
+          <button type="button" class="join-form__submit join-form__submit--secondary" id="rosterBackBtn" style="margin-top:16px;">Back</button>
         </div>
       </div>
 
@@ -248,7 +270,7 @@ export default function StaffJoin() {
           <div class="join-success__icon">✓</div>
           <h2 class="join-success__title">You're all set!</h2>
           <p class="join-success__message" id="successMessage"></p>
-          <a href="https://app.en-place.ai/staff-portal/" class="join-form__submit">
+          <a href="https://app.en-place.ai/staff-portal" class="join-form__submit">
             Go to Staff Portal
           </a>
         </div>
@@ -277,6 +299,7 @@ export default function StaffJoin() {
   const nameSection = section.querySelector("#joinNameSection");
   const confirmSection = section.querySelector("#joinConfirmSection");
   const notFoundDiv = section.querySelector("#joinNotFound");
+  const browseRosterDiv = section.querySelector("#joinBrowseRoster");
   const formSection = section.querySelector("#joinFormSection");
   const trustSection = section.querySelector("#joinTrust");
   const successDiv = section.querySelector("#joinSuccess");
@@ -342,6 +365,7 @@ export default function StaffJoin() {
     nameSection.hidden = true;
     confirmSection.hidden = true;
     notFoundDiv.hidden = true;
+    browseRosterDiv.hidden = true;
     formSection.hidden = true;
     trustSection.hidden = true;
     successDiv.hidden = true;
@@ -497,6 +521,94 @@ export default function StaffJoin() {
   if (tryAgainBtn) {
     tryAgainBtn.addEventListener("click", () => {
       showNameEntry(currentJoinCode, currentRestaurantName);
+    });
+  }
+
+  // Browse roster fallback
+  const browseRosterBtn = section.querySelector("#browseRosterBtn");
+  const rosterBackBtn = section.querySelector("#rosterBackBtn");
+  const rosterSearch = section.querySelector("#rosterSearch");
+  const rosterList = section.querySelector("#rosterList");
+  let rosterData = [];
+
+  if (browseRosterBtn) {
+    browseRosterBtn.addEventListener("click", async () => {
+      hideAll();
+      browseRosterDiv.hidden = false;
+      trustSection.hidden = false;
+      rosterList.innerHTML = '<p style="text-align:center; opacity:0.6;">Loading roster...</p>';
+
+      try {
+        const response = await fetch(`${API_BASE}/api/public/join/browse-roster?code=${currentJoinCode}`);
+        const data = await response.json();
+
+        if (data.success && data.roster.length > 0) {
+          rosterData = data.roster;
+          renderRoster(rosterData);
+        } else {
+          rosterList.innerHTML = '<p style="text-align:center; opacity:0.6;">No unclaimed staff found. Contact your manager.</p>';
+        }
+      } catch (err) {
+        console.error("Browse roster error:", err);
+        rosterList.innerHTML = '<p style="text-align:center; color:#c0392b;">Failed to load roster. Please try again.</p>';
+      }
+    });
+  }
+
+  function renderRoster(list) {
+    if (list.length === 0) {
+      rosterList.innerHTML = '<p style="text-align:center; opacity:0.6;">No matches found.</p>';
+      return;
+    }
+
+    rosterList.innerHTML = list.map(s => `
+      <div class="roster-item" data-staff-id="${s.staff_id}" data-full-name="${s.full_name}" data-position="${s.position}" 
+        style="display:flex; justify-content:space-between; align-items:center; padding:14px 18px; 
+        background:rgba(255,255,255,0.04); border:1px solid rgba(212,175,55,0.15); border-radius:10px; 
+        cursor:pointer; transition:all 0.2s ease;">
+        <div>
+          <div style="font-weight:600; font-size:1.05rem;">${s.display_name}</div>
+          <div style="font-size:0.85rem; opacity:0.6;">${s.position}</div>
+        </div>
+        <div style="font-size:1.2rem; opacity:0.3;">›</div>
+      </div>
+    `).join('');
+
+    // Add hover effect and click handlers
+    rosterList.querySelectorAll('.roster-item').forEach(item => {
+      item.addEventListener('mouseenter', () => {
+        item.style.borderColor = 'rgba(212,175,55,0.5)';
+        item.style.background = 'rgba(212,175,55,0.08)';
+      });
+      item.addEventListener('mouseleave', () => {
+        item.style.borderColor = 'rgba(212,175,55,0.15)';
+        item.style.background = 'rgba(255,255,255,0.04)';
+      });
+      item.addEventListener('click', () => {
+        showConfirmation({
+          staff_id: item.dataset.staffId,
+          full_name: item.dataset.fullName,
+          position: item.dataset.position
+        });
+      });
+    });
+  }
+
+  if (rosterSearch) {
+    rosterSearch.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      const filtered = rosterData.filter(s =>
+        s.display_name.toLowerCase().includes(query) ||
+        s.position.toLowerCase().includes(query)
+      );
+      renderRoster(filtered);
+    });
+  }
+
+  if (rosterBackBtn) {
+    rosterBackBtn.addEventListener("click", () => {
+      rosterSearch.value = '';
+      showNotFound();
     });
   }
 
