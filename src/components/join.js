@@ -248,7 +248,7 @@ export default function StaffJoin() {
           <div class="join-success__icon">✓</div>
           <h2 class="join-success__title">You're all set!</h2>
           <p class="join-success__message" id="successMessage"></p>
-          <a href="https://app.en-place.ai/staff-portal" class="join-form__submit">
+          <a href="https://app.en-place.ai/staff-portal/" class="join-form__submit">
             Go to Staff Portal
           </a>
         </div>
