@@ -37,8 +37,8 @@ export default function Buy() {
           <span class="buy-selector__tier-price">$500/month each</span>
         </div>
 
-        <div class="buy-module" data-module="stable_hire" data-price="500" onclick="toggleModule(this)">
-          <div class="buy-module__checkbox"></div>
+        <div class="buy-module buy-module--selected" data-module="stable_hire" data-price="500" onclick="toggleModule(this)">
+          <div class="buy-module__checkbox buy-module__checkbox--checked">✓</div>
           <div class="buy-module__content">
             <h3 class="buy-module__title">Stable Hire</h3>
             <p class="buy-module__desc">Predict which candidates will stay before you hire them. Psychological assessment that scores cultural fit and retention probability.</p>
@@ -46,8 +46,8 @@ export default function Buy() {
           <div class="buy-module__price">+$500<span>/mo</span></div>
         </div>
 
-        <div class="buy-module" data-module="stable_schedule" data-price="500" onclick="toggleModule(this)">
-          <div class="buy-module__checkbox"></div>
+        <div class="buy-module buy-module--selected" data-module="stable_schedule" data-price="500" onclick="toggleModule(this)">
+          <div class="buy-module__checkbox buy-module__checkbox--checked">✓</div>
           <div class="buy-module__content">
             <h3 class="buy-module__title">Stable Schedule Builder</h3>
             <p class="buy-module__desc">See the human cost of your schedule before you publish. Emotional load analysis that prevents burnout before it starts.</p>
@@ -55,8 +55,8 @@ export default function Buy() {
           <div class="buy-module__price">+$500<span>/mo</span></div>
         </div>
 
-        <div class="buy-module" data-module="house_guardian" data-price="500" onclick="toggleModule(this)">
-          <div class="buy-module__checkbox"></div>
+        <div class="buy-module buy-module--selected" data-module="house_guardian" data-price="500" onclick="toggleModule(this)">
+          <div class="buy-module__checkbox buy-module__checkbox--checked">✓</div>
           <div class="buy-module__content">
             <h3 class="buy-module__title">House Guardian</h3>
             <p class="buy-module__desc">Early detection for high-risk issues hidden in team feedback. Continuously scans open-ended comments to quietly flag theft, harassment, substance use, or mutiny. Alerting leaders with context and guidance before problems escalate.</p>
@@ -70,8 +70,8 @@ export default function Buy() {
           <span class="buy-selector__tier-price">$200/month each</span>
         </div>
 
-        <div class="buy-module" data-module="open_shift" data-price="200" onclick="toggleModule(this)">
-          <div class="buy-module__checkbox"></div>
+        <div class="buy-module buy-module--selected" data-module="open_shift" data-price="200" onclick="toggleModule(this)">
+          <div class="buy-module__checkbox buy-module__checkbox--checked">✓</div>
           <div class="buy-module__content">
             <h3 class="buy-module__title">Open Shift Marketplace</h3>
             <p class="buy-module__desc">Post open shifts. Staff claims them. No more phone tag, group texts, or begging.</p>
@@ -79,8 +79,8 @@ export default function Buy() {
           <div class="buy-module__price">+$200<span>/mo</span></div>
         </div>
 
-        <div class="buy-module" data-module="shift_swap" data-price="200" onclick="toggleModule(this)">
-          <div class="buy-module__checkbox"></div>
+        <div class="buy-module buy-module--selected" data-module="shift_swap" data-price="200" onclick="toggleModule(this)">
+          <div class="buy-module__checkbox buy-module__checkbox--checked">✓</div>
           <div class="buy-module__content">
             <h3 class="buy-module__title">Shift Swap</h3>
             <p class="buy-module__desc">Staff-initiated shift trades with manager approval. They handle the logistics, you just approve.</p>
@@ -94,7 +94,7 @@ export default function Buy() {
       <div class="buy-checkout">
         <div class="buy-checkout__total">
           <span class="buy-checkout__label">Monthly Total</span>
-          <span class="buy-checkout__amount">$<span id="totalAmount">1,500</span>/mo</span>
+          <span class="buy-checkout__amount">$<span id="totalAmount">3,400</span>/mo</span>
         </div>
         <div class="buy-checkout__terms" id="termsWrapper">
           <label class="buy-terms">
