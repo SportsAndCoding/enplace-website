@@ -68,8 +68,111 @@ export default function StaffJoin() {
             <div class="join-form__error" id="codeError" hidden></div>
             <button type="submit" class="join-form__submit">Continue</button>
           </form>
+          <!-- ═══ NEW: Link to soft wall for codeless visitors ═══ -->
+          <div style="margin-top: 20px; text-align: center;">
+            <button type="button" class="join-form__link" id="noCodeBtn" 
+              style="background: none; border: none; color: rgba(212,175,55,0.8); cursor: pointer; font-size: 0.9rem; text-decoration: underline; padding: 8px;">
+              Don't have a code? Your restaurant might not be on En Place yet.
+            </button>
+          </div>
+          <!-- ═══ END NEW ═══ -->
         </div>
       </div>
+
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <!-- NEW: STAFF INTEREST FORM (Lane 2 & 3 - Soft Wall)        -->
+      <!-- ═══════════════════════════════════════════════════════════ -->
+      <div class="join-interest" id="joinInterest" hidden>
+        <div class="join-card">
+          <h2 class="join-enter-code__title">Your restaurant isn't on En Place yet.</h2>
+          <p class="join-enter-code__subtitle">But you can change that. Tell us where you work and we'll reach out to bring En Place to your team.</p>
+          
+          <form class="join-form" id="interestForm">
+            <input type="hidden" id="interestRef" name="ref" />
+
+            <div class="join-form__field">
+              <label class="join-form__label" for="interestFirstName">Your First Name</label>
+              <input 
+                type="text" 
+                id="interestFirstName" 
+                name="firstName" 
+                class="join-form__input" 
+                required 
+                autocomplete="given-name"
+              />
+            </div>
+
+            <div class="join-form__field">
+              <label class="join-form__label" for="interestRestaurant">Restaurant Name</label>
+              <input 
+                type="text" 
+                id="interestRestaurant" 
+                name="restaurantName" 
+                class="join-form__input" 
+                required 
+                placeholder="Where do you work?"
+              />
+            </div>
+
+            <div class="join-form__field">
+              <label class="join-form__label" for="interestGM">Manager or GM Name <span style="opacity:0.5;">(optional)</span></label>
+              <input 
+                type="text" 
+                id="interestGM" 
+                name="gmName" 
+                class="join-form__input" 
+                placeholder="Who should we talk to?"
+              />
+            </div>
+
+            <div class="join-form__field">
+              <label class="join-form__label" for="interestPhone">Your Phone Number</label>
+              <input 
+                type="tel" 
+                id="interestPhone" 
+                name="phone" 
+                class="join-form__input" 
+                placeholder="(555) 555-5555"
+                autocomplete="tel"
+              />
+              <span class="join-form__hint">So we can let you know when your restaurant is live</span>
+            </div>
+
+            <div class="join-form__field">
+              <label class="join-form__label" for="interestEmail">Your Email <span style="opacity:0.5;">(optional)</span></label>
+              <input 
+                type="email" 
+                id="interestEmail" 
+                name="email" 
+                class="join-form__input" 
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="join-form__error" id="interestError" hidden></div>
+
+            <button type="submit" class="join-form__submit">
+              Bring En Place to My Restaurant
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- NEW: INTEREST THANK YOU STATE -->
+      <div class="join-interest-thanks" id="joinInterestThanks" hidden>
+        <div class="join-card join-card--success">
+          <div class="join-success__icon">&#10003;</div>
+          <h2 class="join-success__title">You've been heard.</h2>
+          <p class="join-success__message" id="interestThanksMessage">
+            We're going to reach out to your restaurant about getting En Place set up. 
+            When they're on board, you'll be one of the first to know.
+          </p>
+          <p style="margin-top: 16px; font-size: 0.9rem; opacity: 0.7;">
+            In the meantime, tell your coworkers. The more people who ask, the faster it happens.
+          </p>
+        </div>
+      </div>
+      <!-- ═══ END NEW SECTIONS ═══ -->
 
       <!-- NAME ENTRY (Step 1) -->
       <section class="join-name-section" id="joinNameSection" hidden>
@@ -267,7 +370,7 @@ export default function StaffJoin() {
       <!-- SUCCESS STATE -->
       <div class="join-success" id="joinSuccess" hidden>
         <div class="join-card join-card--success">
-          <div class="join-success__icon">✓</div>
+          <div class="join-success__icon">&#10003;</div>
           <h2 class="join-success__title">You're all set!</h2>
           <p class="join-success__message" id="successMessage"></p>
           <a href="https://app.en-place.ai/staff-portal" class="join-form__submit">
@@ -291,7 +394,7 @@ export default function StaffJoin() {
   // API base URL
   const API_BASE = 'https://enplace-api-v3-9101f20a30b4.herokuapp.com';
 
-  // DOM elements
+  // DOM elements - EXISTING
   const loadingDiv = section.querySelector("#joinLoading");
   const errorDiv = section.querySelector("#joinError");
   const errorMessage = section.querySelector("#errorMessage");
@@ -311,10 +414,23 @@ export default function StaffJoin() {
   const nameForm = section.querySelector("#nameForm");
   const nameError = section.querySelector("#nameError");
 
+  // ═══ NEW: DOM elements for Lane 2/3 ═══
+  const interestDiv = section.querySelector("#joinInterest");
+  const interestForm = section.querySelector("#interestForm");
+  const interestError = section.querySelector("#interestError");
+  const interestThanksDiv = section.querySelector("#joinInterestThanks");
+  const noCodeBtn = section.querySelector("#noCodeBtn");
+  // ═══ END NEW DOM ═══
+
   // Store state across steps
   let currentRestaurantName = '';
   let currentJoinCode = '';
   let matchedStaff = null;
+
+  // ═══ NEW: Capture ref param early ═══
+  const urlParams = new URLSearchParams(window.location.search);
+  const refSource = urlParams.get("ref");
+  // ═══ END NEW ═══
 
   // Get join code from URL path: /join/ABC123
   const pathParts = window.location.pathname.split('/');
@@ -323,7 +439,6 @@ export default function StaffJoin() {
 
   // Also check query param as fallback: /join?code=ABC123
   if (!joinCode) {
-    const urlParams = new URLSearchParams(window.location.search);
     joinCode = urlParams.get("code");
   }
 
@@ -339,16 +454,26 @@ export default function StaffJoin() {
     }
   }
 
-  // Show appropriate state based on code
+  // ═══════════════════════════════════════════════════════════════
+  // MODIFIED: initialize() now detects Lane 2/3
+  // ═══════════════════════════════════════════════════════════════
   async function initialize() {
     if (!joinCode) {
-      // No code provided - show code entry form
       loadingDiv.hidden = true;
+
+      // ═══ NEW: If ref param present, go straight to soft wall ═══
+      if (refSource) {
+        showInterestForm();
+        return;
+      }
+      // ═══ END NEW ═══
+
+      // No code, no ref - show code entry (with "don't have a code?" link)
       enterCodeDiv.hidden = false;
       return;
     }
 
-    // Validate the code
+    // Validate the code (existing Lane 1 flow)
     const result = await validateCode(joinCode);
 
     if (result.valid) {
@@ -358,6 +483,9 @@ export default function StaffJoin() {
     }
   }
 
+  // ═══════════════════════════════════════════════════════════════
+  // MODIFIED: hideAll() includes new sections
+  // ═══════════════════════════════════════════════════════════════
   function hideAll() {
     loadingDiv.hidden = true;
     enterCodeDiv.hidden = true;
@@ -369,6 +497,10 @@ export default function StaffJoin() {
     formSection.hidden = true;
     trustSection.hidden = true;
     successDiv.hidden = true;
+    // ═══ NEW ═══
+    interestDiv.hidden = true;
+    interestThanksDiv.hidden = true;
+    // ═══ END NEW ═══
   }
 
   function showError(message) {
@@ -416,6 +548,98 @@ export default function StaffJoin() {
     successMessage.textContent = message;
     successDiv.hidden = false;
   }
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEW: Lane 2/3 functions
+  // ═══════════════════════════════════════════════════════════════
+  function showInterestForm() {
+    hideAll();
+    // Pre-fill the ref source
+    section.querySelector("#interestRef").value = refSource || "organic";
+    interestDiv.hidden = false;
+    trustSection.hidden = false;
+  }
+
+  function showInterestThanks() {
+    hideAll();
+    interestThanksDiv.hidden = false;
+  }
+  // ═══ END NEW FUNCTIONS ═══
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEW: "Don't have a code?" button handler
+  // ═══════════════════════════════════════════════════════════════
+  if (noCodeBtn) {
+    noCodeBtn.addEventListener("click", () => {
+      showInterestForm();
+    });
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // NEW: Interest form submission (Lane 2/3)
+  // ═══════════════════════════════════════════════════════════════
+  if (interestForm) {
+    interestForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      interestError.hidden = true;
+
+      const firstName = interestForm.firstName.value.trim();
+      const restaurantName = interestForm.restaurantName.value.trim();
+      const gmName = interestForm.gmName.value.trim();
+      const phone = interestForm.phone.value.trim();
+      const email = interestForm.email.value.trim();
+      const ref = interestForm.ref.value;
+
+      if (!firstName || !restaurantName) {
+        interestError.textContent = "Please enter your name and restaurant.";
+        interestError.hidden = false;
+        return;
+      }
+
+      if (!phone && !email) {
+        interestError.textContent = "Please provide a phone number or email so we can follow up.";
+        interestError.hidden = false;
+        return;
+      }
+
+      const submitBtn = interestForm.querySelector(".join-form__submit");
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Submitting...";
+
+      try {
+        const response = await fetch(`${API_BASE}/api/public/join/interest`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            first_name: firstName,
+            restaurant_name: restaurantName,
+            gm_name: gmName || null,
+            contact_phone: phone || null,
+            contact_email: email || null,
+            ref_source: ref || null
+          })
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          showInterestThanks();
+        } else {
+          interestError.textContent = data.error || "Something went wrong. Please try again.";
+          interestError.hidden = false;
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Bring En Place to My Restaurant";
+        }
+      } catch (err) {
+        console.error("Interest form error:", err);
+        interestError.textContent = "Something went wrong. Please try again.";
+        interestError.hidden = false;
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Bring En Place to My Restaurant";
+      }
+    });
+  }
+  // ═══ END NEW INTEREST FORM ═══
 
   // Manual code entry form
   if (codeForm) {
