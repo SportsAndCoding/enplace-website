@@ -220,10 +220,10 @@ The restaurants losing $420,000 a year to turnover aren't doing it because they'
     'service-profit-chain': {
         meta: {
             title: 'The Harvard Framework That Explains Why Your Best Restaurants Always Have the Same Staff',
-            description: 'Taco Bell stores with the lowest turnover produced 2x sales and 55% higher profits. The Service Profit Chain explains exactly why \u2014 and how to use it.',
+            description: 'Taco Bell stores with the lowest turnover produced 2x sales and 55% higher profits. The Service Profit Chain explains exactly why,  and how to use it.',
             author: 'Rob',
             authorTitle: 'Founder & CEO, En Place',
-            authorBio: 'Rob spent twenty years in restaurant operations \u2014 from hands-on work at Culver\'s to enterprise-level analytics at Caesars Entertainment \u2014 before building the platform he wished had existed for the last two decades. He writes about the intersection of restaurant operations, workforce psychology, and the data that connects them.',
+            authorBio: 'Rob spent twenty years in restaurant operations,  from hands-on work at Culver\'s to enterprise-level analytics at Caesars Entertainment,  before building the platform he wished had existed for the last two decades. He writes about the intersection of restaurant operations, workforce psychology, and the data that connects them.',
             date: '2025-07-01',
             duration: '9 min read',
             series: {
@@ -232,7 +232,7 @@ The restaurants losing $420,000 a year to turnover aren't doing it because they'
                 total: 5,
             },
             heroImage: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1400&q=80&fit=crop',
-            heroAlt: 'Chef working in a busy restaurant kitchen \u2014 the Service Profit Chain in action',
+            heroAlt: 'Chef working in a busy restaurant kitchen,  the Service Profit Chain in action',
             heroCredit: 'Unsplash',
             paperUrl: '/learn',
             paperTitle: 'Read the full research paper',
@@ -243,13 +243,13 @@ The restaurants losing $420,000 a year to turnover aren't doing it because they'
             // \u2500\u2500 THE QUESTION PAPER #1 LEFT UNANSWERED \u2500\u2500
             {
                 type: 'text',
-                content: `In our first paper in this series, we laid out a number that most restaurant operators have never calculated: <a href="/learn/hidden-hemorrhage/">a five-unit operator hemorrhages $420,000 to $720,000 annually</a> in turnover costs. Hard costs, hidden costs, the full picture. If you haven't read it, start there \u2014 it's the financial foundation for everything that follows.
+                content: `In our first paper in this series, we laid out a number that most restaurant operators have never calculated: <a href="/learn/hidden-hemorrhage/">a five-unit operator hemorrhages $420,000 to $720,000 annually</a> in turnover costs. Hard costs, hidden costs, the full picture. If you haven't read it, start there,  it's the financial foundation for everything that follows.
 
 But that paper left a question hanging: <em>Why?</em>
 
-Why is full-service hourly turnover still hovering at 92%? Why does the same cycle \u2014 hire, train, lose, repeat \u2014 grind forward year after year while operators eat the cost? Why do the restaurants that retain their people consistently outperform the ones that don't \u2014 not by a little, but by multiples?
+Why is full-service hourly turnover still hovering at 92%? Why does the same cycle,  hire, train, lose, repeat,  grind forward year after year while operators eat the cost? Why do the restaurants that retain their people consistently outperform the ones that don't,  not by a little, but by multiples?
 
-The answer isn't motivation. It isn't culture posters in the break room. It's a framework that Harvard researchers built from real restaurant data thirty years ago \u2014 and that three decades of evidence have since validated in ways the original authors probably didn't expect.`
+The answer isn't motivation. It isn't culture posters in the break room. It's a framework that Harvard researchers built from real restaurant data thirty years ago,  and that three decades of evidence have since validated in ways the original authors probably didn't expect.`
             },
 
             // \u2500\u2500 THE FRAMEWORK \u2500\u2500
@@ -259,13 +259,13 @@ The answer isn't motivation. It isn't culture posters in the break room. It's a 
             },
             {
                 type: 'text',
-                content: `In 1994, five Harvard Business School professors \u2014 Heskett, Jones, Loveman, Sasser, and Schlesinger \u2014 published a framework in the <em>Harvard Business Review</em> that connected a sequence most operators already feel in their gut but have never been able to measure:
+                content: `In 1994, five Harvard Business School professors,  Heskett, Jones, Loveman, Sasser, and Schlesinger,  published a framework in the <em>Harvard Business Review</em> that connected a sequence most operators already feel in their gut but have never been able to measure:
 
 <strong>Internal service quality \u2192 Employee satisfaction \u2192 Employee retention and productivity \u2192 External service quality \u2192 Customer satisfaction and loyalty \u2192 Revenue and profitability.</strong>
 
 Six links. Each one drives the next. Break any link and the chain breaks. Strengthen any link and the effects compound forward.
 
-Here's what that means in plain English: when you invest in your people \u2014 pay, scheduling, training, tools, management quality \u2014 they deliver better service. Better service produces loyal customers, not just satisfied ones. Loyal customers drive revenue. Revenue funds more investment.
+Here's what that means in plain English: when you invest in your people,  pay, scheduling, training, tools, management quality,  they deliver better service. Better service produces loyal customers, not just satisfied ones. Loyal customers drive revenue. Revenue funds more investment.
 
 That's not theory. Every link has been measured. Some in restaurants specifically.`
             },
@@ -277,7 +277,7 @@ That's not theory. Every link has been measured. Some in restaurants specificall
             },
             {
                 type: 'text',
-                content: `The original Harvard paper drew from data across multiple industries \u2014 Banc One, Southwest Airlines, USAA, Xerox, ServiceMaster \u2014 but the restaurant data came from Taco Bell. And it produced the single most powerful stat in the entire staffing research literature:`
+                content: `The original Harvard paper drew from data across multiple industries,  Banc One, Southwest Airlines, USAA, Xerox, ServiceMaster,  but the restaurant data came from Taco Bell. And it produced the single most powerful stat in the entire staffing research literature:`
             },
             {
                 type: 'pullquote',
@@ -288,7 +288,7 @@ That's not theory. Every link has been measured. Some in restaurants specificall
                 type: 'text',
                 content: `Read that again. Not 10% better. Not a marginal improvement. <strong>Two times the sales. Fifty-five percent higher profits.</strong> Same menu. Same brand. Same price points. The only variable that separated the top from the bottom was how long their people stayed.
 
-This wasn't a survey. It wasn't a focus group. It was financial data from a real restaurant chain \u2014 controlling for location, concept, and market. The stores with the most stable teams simply outperformed on every metric that mattered.
+This wasn't a survey. It wasn't a focus group. It was financial data from a real restaurant chain,  controlling for location, concept, and market. The stores with the most stable teams simply outperformed on every metric that mattered.
 
 And this finding was just the beginning.`
             },
@@ -301,20 +301,20 @@ And this finding was just the beginning.`
             {
                 type: 'image',
                 src: 'https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200&q=80&fit=crop',
-                alt: 'Kitchen team working in sync during service \u2014 the retention advantage in action',
+                alt: 'Kitchen team working in sync during service,  the retention advantage in action',
                 credit: 'Unsplash',
             },
             {
                 type: 'text',
-                content: `Since 1994, the Service Profit Chain has been tested, extended, and validated by some of the largest studies in management research. Here's the evidence density \u2014 one stat per study, each one sourced in our <a href="/learn">full research paper</a>:
+                content: `Since 1994, the Service Profit Chain has been tested, extended, and validated by some of the largest studies in management research. Here's the evidence density,  one stat per study, each one sourced in our <a href="/learn">full research paper</a>:
 
 <strong>The meta-analysis.</strong> Hogreve et al. (2017), published in the <em>Journal of Marketing</em>, conducted the first comprehensive meta-analytic test of the full chain. Their finding: all proposed links are statistically significant and substantial. The Service Profit Chain works.
 
 <strong>The scheduling causality.</strong> Kamalahmadi et al. (2021), in <em>Management Science</em>, analyzed 1.44 million transactions across 25 restaurants and found that when servers were asked to stay past their scheduled shifts with no advance notice, average check size dropped 4.4%. Schedule instability directly reduces the revenue each server generates. That's causal evidence, not correlation.
 
-<strong>The engagement multiplier.</strong> Gallup's Q12 meta-analysis (2024) \u2014 2.7 million employees across 96,000+ business units \u2014 found that top-quartile engagement produces 23% greater profitability, 18% higher productivity, and 51% lower turnover compared to bottom-quartile units.
+<strong>The engagement multiplier.</strong> Gallup's Q12 meta-analysis (2024),  2.7 million employees across 96,000+ business units,  found that top-quartile engagement produces 23% greater profitability, 18% higher productivity, and 51% lower turnover compared to bottom-quartile units.
 
-<strong>The Yelp-to-revenue pipeline.</strong> Michael Luca's Harvard Business School study established that a one-star increase in Yelp rating produces a 5\u20139% revenue increase for independent restaurants \u2014 through a regression discontinuity design that isolates causal impact.
+<strong>The Yelp-to-revenue pipeline.</strong> Michael Luca's Harvard Business School study established that a one-star increase in Yelp rating produces a 5\u20139% revenue increase for independent restaurants,  through a regression discontinuity design that isolates causal impact.
 
 <strong>The return intention link.</strong> Susskind et al. (2018) studied 80 full-service restaurants with data from 990 servers and 879 guests, and found that guest intention to return explained 55% of the variance in unit-level sales.`
             },
@@ -331,11 +331,11 @@ And this finding was just the beginning.`
             },
             {
                 type: 'text',
-                content: `Taco Bell wasn't a one-off. The Service Profit Chain has been validated \u2014 and violated \u2014 across some of the most recognized names in the industry.
+                content: `Taco Bell wasn't a one-off. The Service Profit Chain has been validated,  and violated,  across some of the most recognized names in the industry.
 
-<strong>Chick-fil-A</strong> operates with franchise operator turnover below 5% and hourly turnover around 60% \u2014 roughly half the QSR industry average. The result: average unit sales above $9 million per year, 11 consecutive years as #1 in the American Customer Satisfaction Index for QSR, one fewer operating day per week than competitors.
+<strong>Chick-fil-A</strong> operates with franchise operator turnover below 5% and hourly turnover around 60%,  roughly half the QSR industry average. The result: average unit sales above $9 million per year, 11 consecutive years as #1 in the American Customer Satisfaction Index for QSR, one fewer operating day per week than competitors.
 
-<strong>Sears</strong> built the chain and proved it at massive scale. Rucci, Kirn, and Quinn (1998) documented an econometric model across 800 stores: a 5-point improvement in employee attitudes drove a 1.3-point improvement in customer satisfaction, which drove a 0.5% improvement in revenue growth \u2014 translating to roughly $250 million in market cap. Then Sears abandoned the model, and filed for bankruptcy in 2018. Proof and cautionary tale in one.
+<strong>Sears</strong> built the chain and proved it at massive scale. Rucci, Kirn, and Quinn (1998) documented an econometric model across 800 stores: a 5-point improvement in employee attitudes drove a 1.3-point improvement in customer satisfaction, which drove a 0.5% improvement in revenue growth,  translating to roughly $250 million in market cap. Then Sears abandoned the model, and filed for bankruptcy in 2018. Proof and cautionary tale in one.
 
 <strong>Costco</strong> versus Sam's Club is the clean comparison. Cascio (2006) found Costco paid $17/hour versus Sam's Club's $10.11, yet Costco's turnover was 17% versus 44%. The result: Costco generated $21,805 in operating profit per hourly employee. Annual turnover costs? Costco: $244 million. Sam's Club: $612 million. The "expensive" workforce was the cheaper one.
 
@@ -353,11 +353,11 @@ And this finding was just the beginning.`
 
 Three reasons.
 
-<strong>Nobody measures the upstream links.</strong> Standard restaurant KPIs \u2014 food cost, labor cost, covers, ticket times, RevPASH \u2014 are all downstream metrics. Not a single major restaurant KPI framework includes employee satisfaction as a core tracked metric. You can't manage what you can't measure, and most restaurants have zero systematic data on how their team feels on any given day.
+<strong>Nobody measures the upstream links.</strong> Standard restaurant KPIs,  food cost, labor cost, covers, ticket times, RevPASH,  are all downstream metrics. Not a single major restaurant KPI framework includes employee satisfaction as a core tracked metric. You can't manage what you can't measure, and most restaurants have zero systematic data on how their team feels on any given day.
 
 <strong>The margin trap squeezes labor investment.</strong> Full-service restaurants operate on 3\u20135% net margins with labor consuming 25\u201335% of revenue. Every labor dollar feels like a threat. The irony: turnover costs dwarf the investment required to prevent it, but turnover costs are invisible on the P&L while wage increases are immediately visible.
 
-<strong>The tools haven't existed.</strong> The Service Profit Chain requires measuring things most restaurants have never measured: daily employee sentiment, the connection between mood and service quality, the predictive signals that precede a resignation. Sears built a custom econometric model across 800 stores. Harrah's built a gain-sharing system from scratch. Most restaurant operators don't have the infrastructure to measure even the first link of the chain \u2014 internal service quality \u2014 let alone connect it to customer outcomes and revenue.
+<strong>The tools haven't existed.</strong> The Service Profit Chain requires measuring things most restaurants have never measured: daily employee sentiment, the connection between mood and service quality, the predictive signals that precede a resignation. Sears built a custom econometric model across 800 stores. Harrah's built a gain-sharing system from scratch. Most restaurant operators don't have the infrastructure to measure even the first link of the chain,  internal service quality,  let alone connect it to customer outcomes and revenue.
 
 The framework works. The data is clear. What's been missing is the ability to operationalize it at the individual restaurant level.`
             },
@@ -371,9 +371,9 @@ The framework works. The data is clear. What's been missing is the ability to op
                 type: 'text',
                 content: `Go back to the <a href="/learn/hidden-hemorrhage/">$420,000\u2013$720,000 annual cost</a> we documented in Paper #1. That number isn't random. It's not bad luck. It's the financial consequence of a broken Service Profit Chain.
 
-When internal service quality is low \u2014 unfair schedules, no feedback channels, poor management, inadequate tools \u2014 employee satisfaction drops. When satisfaction drops, people leave. When people leave, you pay $2,305 to $5,864 per replacement in hard and hidden costs. When your team is constantly cycling, service quality degrades. When service degrades, customers stop coming back. When customers leave, revenue falls. When revenue falls, margins tighten, which makes operators cut labor even further \u2014 and the chain spirals downward.
+When internal service quality is low,  unfair schedules, no feedback channels, poor management, inadequate tools,  employee satisfaction drops. When satisfaction drops, people leave. When people leave, you pay $2,305 to $5,864 per replacement in hard and hidden costs. When your team is constantly cycling, service quality degrades. When service degrades, customers stop coming back. When customers leave, revenue falls. When revenue falls, margins tighten, which makes operators cut labor even further,  and the chain spirals downward.
 
-The restaurants that break this cycle \u2014 Chick-fil-A, In-N-Out, the operators who somehow always seem to have the same faces behind the counter \u2014 aren't doing something mysterious. They're running a functional Service Profit Chain, whether they call it that or not. They invest in the upstream links and reap the compounding returns downstream.`
+The restaurants that break this cycle,  Chick-fil-A, In-N-Out, the operators who somehow always seem to have the same faces behind the counter,  aren't doing something mysterious. They're running a functional Service Profit Chain, whether they call it that or not. They invest in the upstream links and reap the compounding returns downstream.`
             },
             {
                 type: 'pullquote',
@@ -384,7 +384,7 @@ The restaurants that break this cycle \u2014 Chick-fil-A, In-N-Out, the operator
             // \u2500\u2500 TEASE PAPER #3 \u2500\u2500
             {
                 type: 'text',
-                content: `<strong>Next in the series:</strong> the measurable pipeline from your staff's daily mood to your Yelp score to your revenue. Paper #3 connects the dots between what your team feels on Monday and what your Google reviews say on Friday \u2014 with the data to prove it.`
+                content: `<strong>Next in the series:</strong> the measurable pipeline from your staff's daily mood to your Yelp score to your revenue. Paper #3 connects the dots between what your team feels on Monday and what your Google reviews say on Friday,  with the data to prove it.`
             },
 
             // \u2500\u2500 EN PLACE (LAST 10%) \u2500\u2500
@@ -394,9 +394,9 @@ The restaurants that break this cycle \u2014 Chick-fil-A, In-N-Out, the operator
             },
             {
                 type: 'text',
-                content: `I built En Place because I spent twenty years watching the Service Profit Chain work \u2014 at Culver's, at Caesars Entertainment, across hundreds of restaurant locations \u2014 without ever having the tools to measure it at the unit level. The framework is proven. The gap has always been implementation.
+                content: `I built En Place because I spent twenty years watching the Service Profit Chain work,  at Culver's, at Caesars Entertainment, across hundreds of restaurant locations,  without ever having the tools to measure it at the unit level. The framework is proven. The gap has always been implementation.
 
-The <strong>Staff Stability Engine</strong> measures the first link \u2014 anonymous daily mood check-ins that surface how your team actually feels, before frustration becomes a resignation. <strong>Stable Hire</strong> assesses candidate psychological fit during hiring, so you stop cycling through people who were never going to stay. And the escalation protocols give your team an anonymous voice \u2014 the feedback channel that keeps the upstream links intact while protecting the trust that makes it all work.
+The <strong>Staff Stability Engine</strong> measures the first link,  anonymous daily mood check-ins that surface how your team actually feels, before frustration becomes a resignation. <strong>Stable Hire</strong> assesses candidate psychological fit during hiring, so you stop cycling through people who were never going to stay. And the escalation protocols give your team an anonymous voice,  the feedback channel that keeps the upstream links intact while protecting the trust that makes it all work.
 
 The chain has been waiting thirty years for the right measurement tools. <a href="/contact">We built them.</a>`
             },
@@ -409,9 +409,9 @@ The chain has been waiting thirty years for the right measurement tools. <a href
 
         pullQuotes: [
             "Taco Bell stores in the lowest turnover quintile produced double the sales and 55% higher profits. Same menu. Same brand. Same price points. The only difference was how long their people stayed.",
-            "The Service Profit Chain isn't theory \u2014 it's been measured. Employee investment \u2192 service quality \u2192 customer loyalty \u2192 profitability. Six links, one chain, every link validated.",
+            "The Service Profit Chain isn't theory,  it's been measured. Employee investment \u2192 service quality \u2192 customer loyalty \u2192 profitability. Six links, one chain, every link validated.",
             "Costco paid $17/hour vs. Sam's Club's $10.11. Costco's turnover: 17%. Sam's Club: 44%. Costco's annual turnover costs: $244M. Sam's Club: $612M. The 'expensive' workforce was the cheaper one.",
-            "Standard restaurant KPI frameworks don't include employee satisfaction. You can't manage what you can't measure \u2014 and most restaurants have zero data on how their team feels.",
+            "Standard restaurant KPI frameworks don't include employee satisfaction. You can't manage what you can't measure,  and most restaurants have zero data on how their team feels.",
             "A 5-point improvement in Sears employee attitudes drove 1.3 points in customer satisfaction, 0.5% revenue growth, and ~$250M in market cap. Then they abandoned the model and went bankrupt.",
             "The $420,000 hemorrhage isn't a staffing problem. It's a broken Service Profit Chain. Fix the chain, fix the bleeding.",
             "Gallup's meta-analysis: 2.7 million employees, 96,000+ business units. Top-quartile engagement = 23% higher profitability, 51% lower turnover. The chain works at every scale.",
