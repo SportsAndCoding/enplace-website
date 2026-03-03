@@ -14,7 +14,7 @@ const ARTICLES = {
             author: 'Rob',
             authorTitle: 'Founder & CEO, En Place',
             authorBio: 'Rob spent twenty years in restaurant operations, from hands-on work at Culver\'s to enterprise-level analytics at Caesars Entertainment, before building the platform he wished had existed for the last two decades. He writes about the intersection of restaurant operations, workforce psychology, and the data that connects them.',
-            date: '2025-06-01',
+            date: '2026-02-24',
             duration: '10 min read',
             series: {
                 name: 'The Staffing Intelligence Series',
