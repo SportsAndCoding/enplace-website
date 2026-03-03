@@ -71,6 +71,18 @@ const CONTENT = [
         featured: true,
     },
     {
+        id: 'service-profit-chain',
+        type: 'research',
+        title: 'The Harvard Framework That Explains Why Your Best Restaurants Always Have the Same Staff',
+        excerpt: 'Taco Bell stores with the lowest turnover produced 2\u00d7 sales and 55% higher profits. The Service Profit Chain \u2014 validated across 30 years of research \u2014 explains exactly why.',
+        thumbnail: null,
+        videoUrl: null,
+        articleUrl: '/learn/service-profit-chain/',
+        date: '2025-07-01',
+        duration: '9 min read',
+        featured: true,
+    },
+    {
         id: 'anonymous-feedback',
         type: 'research',
         title: 'Why Anonymous Mood Tracking Changes Everything',

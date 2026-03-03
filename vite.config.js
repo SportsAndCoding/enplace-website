@@ -27,6 +27,7 @@ export default defineConfig({
                 privacy: './privacy/index.html',
                 learn: './learn/index.html',
                 learnHiddenHemorrhage: './learn/hidden-hemorrhage/index.html',
+                learnServiceProfitChain: './learn/service-profit-chain/index.html',
                 calculator: './calculator/index.html',
                 effect: './effect/index.html',
 
@@ -97,6 +98,9 @@ export default defineConfig({
                     }
                     if (req.url.startsWith('/learn/hidden-hemorrhage')) {
                         req.url = '/learn/hidden-hemorrhage/index.html';
+                    }
+                    if (req.url.startsWith('/learn/service-profit-chain')) {
+                        req.url = '/learn/service-profit-chain/index.html';
                     }
                     if (req.url === '/calculator' || req.url === '/calculator/') {
                         req.url = '/calculator/index.html';
