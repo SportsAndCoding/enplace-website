@@ -30,6 +30,8 @@ export default defineConfig({
                 learnServiceProfitChain: './learn/service-profit-chain/index.html',
                 calculator: './calculator/index.html',
                 effect: './effect/index.html',
+                faq: './faq/index.html',
+                webinars: './webinars/index.html',
 
                 // ─────────────────────────────────────
                 // SALES REP BOOKING PAGES
@@ -107,6 +109,12 @@ export default defineConfig({
                     }
                     if (req.url === '/effect' || req.url === '/effect/') {
                         req.url = '/effect/index.html';
+                    }
+                    if (req.url === '/faq' || req.url === '/faq/') {
+                        req.url = '/faq/index.html';
+                    }
+                    if (req.url === '/webinars' || req.url === '/webinars/') {
+                        req.url = '/webinars/index.html';
                     }
 
                     // ─────────────────────────────────────
