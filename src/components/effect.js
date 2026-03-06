@@ -56,8 +56,8 @@ const adoptionLinePlugin = {
     ctx.setLineDash([]);
     ctx.font = "600 11px 'DM Sans', sans-serif";
     ctx.fillStyle = "rgba(247, 243, 233, 0.7)";
-    ctx.textAlign = "center";
-    ctx.fillText("En Place Adopted", x, yScale.top - 8);
+    ctx.textAlign = "left";
+    ctx.fillText("En Place Adopted", x + 6, yScale.top - 8);
     ctx.restore();
   }
 };
