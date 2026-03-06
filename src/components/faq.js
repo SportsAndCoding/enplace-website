@@ -104,7 +104,7 @@ const FAQ_DATA = [
             },
             {
                 q: "What happens when a staff member quits?",
-                a: "En Place's Aftermath feature automatically monitors socially connected colleagues in the days following a departure. Research shows that turnover is contagious — when one person leaves, others in their social network are significantly more likely to follow. Aftermath catches the cascade before it starts."
+                a: "En Place's social dynamics feature automatically monitors socially connected colleagues in the days following a departure. Research shows that turnover is contagious — when one person leaves, others in their social network are significantly more likely to follow. Aftermath catches the cascade before it starts."
             }
         ]
     }
@@ -140,7 +140,7 @@ export default function Faq() {
           `).join('')}
           <div class="faq-nav__cta">
             <p>Still have questions?</p>
-            <a href="/contact" class="faq-nav__contact-link">Talk to the team →</a>
+            <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="faq-nav__contact-link">Book a demo →</a>
           </div>
         </aside>
 

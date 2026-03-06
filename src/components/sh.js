@@ -22,7 +22,8 @@ export default function SH() {
           </p>
           <div class="sh-hero__buttons">
             <button class="sh-btn sh-btn--primary" type="button" id="sh-demo-cta">Experience Stable Hire</button>
-            <a href="tel:+15134020611" class="sh-btn sh-btn--secondary">Talk to Sales</a>
+            <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="sh-btn sh-btn--secondary">Book a Demo</a>
+<a href="tel:+15134020611" class="sh-btn sh-btn--secondary">Call Now</a>
           </div>
         </div>
 
@@ -190,7 +191,8 @@ export default function SH() {
         <h2 class="sh-cta__title">The best hire you'll ever make is now the most predictable one.</h2>
         <div class="sh-cta__buttons">
           <button class="sh-btn sh-btn--primary" type="button" id="sh-demo-cta-bottom">Experience Stable Hire</button>
-          <a href="tel:+15134020611" class="sh-btn sh-btn--secondary">Talk to Sales</a>
+          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="sh-btn sh-btn--secondary">Book a Demo</a>
+<a href="tel:+15134020611" class="sh-btn sh-btn--secondary">Call Now</a>
         </div>
       </section>
 

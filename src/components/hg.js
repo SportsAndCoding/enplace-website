@@ -20,7 +20,8 @@ export default function HG() {
         </p>
         <div class="hg-hero__buttons">
           <button class="hg-btn hg-btn--primary" type="button" id="hg-demo-cta">Experience House Guardian</button>
-          <a href="tel:+15134020611" class="hg-btn hg-btn--secondary">Talk to Sales</a>
+          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="hg-btn hg-btn--secondary">Book a Demo</a>
+<a href="tel:+15134020611" class="hg-btn hg-btn--secondary">Call Now</a>
         </div>
       </header>
 
@@ -196,7 +197,8 @@ export default function HG() {
           <p class="hg-cta__subtitle">It just keeps the house from burning down.</p>
           <div class="hg-cta__buttons">
             <button class="hg-btn hg-btn--primary" type="button" id="hg-demo-cta-bottom">Experience House Guardian</button>
-            <a href="tel:+15134020611" class="hg-btn hg-btn--secondary">Talk to Sales</a>
+            <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="hg-btn hg-btn--secondary">Book a Demo</a>
+<a href="tel:+15134020611" class="hg-btn hg-btn--secondary">Call Now</a>
           </div>
         </div>
       </section>

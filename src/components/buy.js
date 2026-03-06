@@ -104,8 +104,7 @@ export default function Buy() {
         </div>
         <div class="buy-checkout__actions">
           <button class="buy-btn buy-btn--primary" type="button" onclick="startCheckout()">Buy Now</button>
-          <button class="buy-btn buy-btn--secondary" type="button">Talk to Sales</button>
-        </div>
+          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="buy-btn buy-btn--secondary">Talk to Sales</a>        </div>
         <p class="buy-checkout__reassurance">No long-term contracts. Cancel anytime.</p>
       </div>
 
@@ -155,8 +154,7 @@ export default function Buy() {
         <h2 class="buy-cta__title">This isn't software. It's relief.</h2>
         <div class="buy-cta__buttons">
           <button class="buy-btn buy-btn--primary" type="button" onclick="startCheckout()">Buy Now</button>
-          <button class="buy-btn buy-btn--secondary" type="button">Talk to Sales</button>
-        </div>
+          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="buy-btn buy-btn--secondary">Talk to Sales</a>        </div>
       </section>
 
     </div>

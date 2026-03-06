@@ -34,8 +34,19 @@ export default function Navbar() {
 
         <a href="/pricing" class="navbar__link">Pricing</a>
         <a href="/effect" class="navbar__link">Results</a>
-        <a href="/learn" class="navbar__link">Learn</a>
-        <a href="/webinars" class="navbar__link">Webinars</a>
+
+        <!-- Resources Dropdown -->
+        <div class="navbar__dropdown">
+          <button class="navbar__link navbar__dropdown-toggle" type="button">
+            Resources
+          </button>
+          <div class="navbar__dropdown-menu">
+            <a href="/learn">Learning Center</a>
+            <a href="/webinars">Webinars</a>
+            <a href="/faq">FAQ</a>
+          </div>
+        </div>
+
         <a href="/contact" class="navbar__link">Contact</a>
       </nav>
 
@@ -68,9 +79,16 @@ export default function Navbar() {
 
       <a href="/pricing" class="navbar__mobile-item">Pricing</a>
       <a href="/effect" class="navbar__mobile-item">Results</a>
-      <a href="/learn" class="navbar__mobile-item">Learn</a>
-      <a href="/webinars" class="navbar__mobile-item">Webinars</a>
-      <a href="/faq" class="navbar__mobile-item">FAQ</a>
+
+      <div class="navbar__mobile-dropdown">
+        <button class="navbar__mobile-dropdown-title" type="button">Resources</button>
+        <div class="navbar__mobile-subnav">
+          <a href="/learn" class="navbar__mobile-subitem">Learning Center</a>
+          <a href="/webinars" class="navbar__mobile-subitem">Webinars</a>
+          <a href="/faq" class="navbar__mobile-subitem">FAQ</a>
+        </div>
+      </div>
+
       <a href="/contact" class="navbar__mobile-item">Contact</a>
       
       <div class="navbar__mobile-divider"></div>

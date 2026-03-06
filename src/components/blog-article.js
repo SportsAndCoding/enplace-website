@@ -150,7 +150,7 @@ export default function BlogArticle(slug) {
                 <h2 class="article__footer-cta-title">Ready to see it in action?</h2>
                 <p class="article__footer-cta-text">Book a demo and see how En Place transforms your staffing operations.</p>
                 <div class="article__footer-cta-buttons">
-                    <a href="/contact" class="article__cta-btn article__cta-btn--primary">Book a Demo</a>
+                    <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="article__cta-btn article__cta-btn--primary">Book a Demo</a>
                     <a href="/learn" class="article__cta-btn article__cta-btn--secondary">Back to Learning Center</a>
                 </div>
             </div>

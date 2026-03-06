@@ -97,7 +97,8 @@ export default function OSM() {
         
         <div class="osm-tagline__buttons">
           <button class="osm-btn osm-btn--primary" type="button" id="osm-demo-cta">Experience Open Shift Marketplace</button>
-          <a href="tel:+15134020611" class="osm-btn osm-btn--secondary">Talk to Sales</a>
+          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="osm-btn osm-btn--secondary">Book a Demo</a>
+<a href="tel:+15134020611" class="osm-btn osm-btn--secondary">Call Now</a>
         </div>
 
         <!-- Manager / Staff screenshot comparison -->
@@ -127,7 +128,8 @@ export default function OSM() {
 
         <div class="osm-cta__buttons">
           <button class="osm-btn osm-btn--primary" type="button" id="osm-demo-cta-bottom">Experience Open Shift Marketplace</button>
-          <a href="tel:+15134020611" class="osm-btn osm-btn--secondary">Talk to Sales</a>
+          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="osm-btn osm-btn--secondary">Book a Demo</a>
+<a href="tel:+15134020611" class="osm-btn osm-btn--secondary">Call Now</a>
         </div>
       </section>
 

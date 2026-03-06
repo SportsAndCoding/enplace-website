@@ -4,11 +4,11 @@ import "../styles/components/webinars.scss";
 const API_BASE = 'https://enplace-api-v3-9101f20a30b4.herokuapp.com';
 
 export default function Webinars() {
-    const section = document.createElement("section");
-    section.className = "webinars";
-    section.id = "webinars";
+  const section = document.createElement("section");
+  section.className = "webinars";
+  section.id = "webinars";
 
-    section.innerHTML = `
+  section.innerHTML = `
     <div class="webinars__container">
 
       <!-- HERO -->
@@ -130,7 +130,7 @@ export default function Webinars() {
           <h2 class="webinars-cta__title">Ready to see it live in your data?</h2>
           <p class="webinars-cta__subtitle">Book a 1-on-1 demo and we'll run the numbers for your specific operation.</p>
           <div class="webinars-cta__actions">
-            <a href="/contact" class="webinars-btn webinars-btn--primary">Book a Demo</a>
+            <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="webinars-btn webinars-btn--primary">Book a Demo</a>
             <a href="/faq" class="webinars-btn webinars-btn--secondary">Read the FAQ</a>
           </div>
         </div>
@@ -139,8 +139,8 @@ export default function Webinars() {
     </div>
   `;
 
-    initWebinars();
-    return section;
+  initWebinars();
+  return section;
 }
 
 // ─── State ───────────────────────────────────────────────────────────────────
@@ -150,46 +150,46 @@ let currentWebinarId = null;
 // ─── Init ────────────────────────────────────────────────────────────────────
 
 async function initWebinars() {
-    window.openRegistrationModal = openRegistrationModal;
-    window.closeRegistrationModal = closeRegistrationModal;
-    window.submitRegistration = submitRegistration;
+  window.openRegistrationModal = openRegistrationModal;
+  window.closeRegistrationModal = closeRegistrationModal;
+  window.submitRegistration = submitRegistration;
 
-    await loadWebinars();
+  await loadWebinars();
 }
 
 async function loadWebinars() {
-    try {
-        const response = await fetch(`${API_BASE}/api/webinars`);
-        if (!response.ok) throw new Error('Failed to load');
-        const data = await response.json();
+  try {
+    const response = await fetch(`${API_BASE}/api/webinars`);
+    if (!response.ok) throw new Error('Failed to load');
+    const data = await response.json();
 
-        renderFeaturedWebinar(data.upcoming);
-        if (data.past && data.past.length > 0) {
-            renderPastWebinars(data.past);
-        }
-    } catch (err) {
-        // Graceful fallback — show a placeholder if API not yet wired
-        renderFallbackWebinar();
+    renderFeaturedWebinar(data.upcoming);
+    if (data.past && data.past.length > 0) {
+      renderPastWebinars(data.past);
     }
+  } catch (err) {
+    // Graceful fallback — show a placeholder if API not yet wired
+    renderFallbackWebinar();
+  }
 }
 
 function renderFeaturedWebinar(webinar) {
-    const container = document.getElementById('featuredWebinar');
-    if (!webinar) {
-        container.innerHTML = `
+  const container = document.getElementById('featuredWebinar');
+  if (!webinar) {
+    container.innerHTML = `
       <div class="webinars__no-upcoming">
         <p>No upcoming sessions scheduled right now.</p>
         <p>Follow us on <a href="https://www.linkedin.com/company/en-place-ai" target="_blank" rel="noopener">LinkedIn</a> to be notified when the next session is announced.</p>
       </div>
     `;
-        return;
-    }
+    return;
+  }
 
-    const dateObj = new Date(webinar.scheduled_at);
-    const dateStr = dateObj.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
-    const timeStr = dateObj.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
+  const dateObj = new Date(webinar.scheduled_at);
+  const dateStr = dateObj.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+  const timeStr = dateObj.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
 
-    container.innerHTML = `
+  container.innerHTML = `
     <div class="webinar-card webinar-card--featured">
       <div class="webinar-card__badge">Upcoming</div>
       <div class="webinar-card__body">
@@ -216,8 +216,8 @@ function renderFeaturedWebinar(webinar) {
 }
 
 function renderFallbackWebinar() {
-    const container = document.getElementById('featuredWebinar');
-    container.innerHTML = `
+  const container = document.getElementById('featuredWebinar');
+  container.innerHTML = `
     <div class="webinar-card webinar-card--featured webinar-card--coming-soon">
       <div class="webinar-card__badge webinar-card__badge--soon">Coming Soon</div>
       <div class="webinar-card__body">
@@ -235,14 +235,14 @@ function renderFallbackWebinar() {
 }
 
 function renderPastWebinars(webinars) {
-    const section = document.getElementById('pastWebinars');
-    const grid = document.getElementById('pastWebinarGrid');
-    section.style.display = '';
+  const section = document.getElementById('pastWebinars');
+  const grid = document.getElementById('pastWebinarGrid');
+  section.style.display = '';
 
-    grid.innerHTML = webinars.map(w => {
-        const dateObj = new Date(w.scheduled_at);
-        const dateStr = dateObj.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-        return `
+  grid.innerHTML = webinars.map(w => {
+    const dateObj = new Date(w.scheduled_at);
+    const dateStr = dateObj.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    return `
       <div class="webinar-past-card">
         <div class="webinar-past-card__date">${dateStr}</div>
         <h3 class="webinar-past-card__title">${w.title}</h3>
@@ -253,116 +253,116 @@ function renderPastWebinars(webinars) {
         ` : '<span class="webinar-past-card__unavailable">Recording coming soon</span>'}
       </div>
     `;
-    }).join('');
+  }).join('');
 }
 
 // ─── Registration Modal ───────────────────────────────────────────────────────
 
 function openRegistrationModal(webinarId, webinar) {
-    currentWebinarId = webinarId;
+  currentWebinarId = webinarId;
 
-    const overlay = document.getElementById('registrationOverlay');
-    const header = document.getElementById('modalHeader');
-    const formWrapper = document.getElementById('registrationFormWrapper');
-    const successEl = document.getElementById('registrationSuccess');
-    const formError = document.getElementById('formError');
+  const overlay = document.getElementById('registrationOverlay');
+  const header = document.getElementById('modalHeader');
+  const formWrapper = document.getElementById('registrationFormWrapper');
+  const successEl = document.getElementById('registrationSuccess');
+  const formError = document.getElementById('formError');
 
-    // Reset state
-    formWrapper.style.display = '';
-    successEl.style.display = 'none';
-    formError.style.display = 'none';
-    document.getElementById('webinarForm').reset();
-    document.getElementById('submitBtn').disabled = false;
-    document.getElementById('submitBtnText').textContent = 'Reserve My Spot';
+  // Reset state
+  formWrapper.style.display = '';
+  successEl.style.display = 'none';
+  formError.style.display = 'none';
+  document.getElementById('webinarForm').reset();
+  document.getElementById('submitBtn').disabled = false;
+  document.getElementById('submitBtnText').textContent = 'Reserve My Spot';
 
-    // Populate header
-    if (webinar && webinar.title) {
-        const dateObj = new Date(webinar.scheduled_at);
-        const dateStr = dateObj.toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' });
-        const timeStr = dateObj.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
-        header.innerHTML = `
+  // Populate header
+  if (webinar && webinar.title) {
+    const dateObj = new Date(webinar.scheduled_at);
+    const dateStr = dateObj.toLocaleDateString('en-US', { weekday: 'short', month: 'long', day: 'numeric' });
+    const timeStr = dateObj.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
+    header.innerHTML = `
       <p class="webinar-modal__eyebrow">Register for Free</p>
       <h2 class="webinar-modal__title">${webinar.title}</h2>
       <p class="webinar-modal__when">📅 ${dateStr} · ${timeStr}</p>
     `;
-    } else {
-        header.innerHTML = `
+  } else {
+    header.innerHTML = `
       <p class="webinar-modal__eyebrow">Register for Free</p>
       <h2 class="webinar-modal__title">Reserve Your Spot</h2>
     `;
-    }
+  }
 
-    overlay.classList.add('show');
-    document.body.style.overflow = 'hidden';
+  overlay.classList.add('show');
+  document.body.style.overflow = 'hidden';
 }
 
 function closeRegistrationModal(event, force = false) {
-    if (!force && event && event.target !== document.getElementById('registrationOverlay')) return;
-    document.getElementById('registrationOverlay').classList.remove('show');
-    document.body.style.overflow = '';
-    currentWebinarId = null;
+  if (!force && event && event.target !== document.getElementById('registrationOverlay')) return;
+  document.getElementById('registrationOverlay').classList.remove('show');
+  document.body.style.overflow = '';
+  currentWebinarId = null;
 }
 
 async function submitRegistration(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    const submitBtn = document.getElementById('submitBtn');
-    const submitBtnText = document.getElementById('submitBtnText');
-    const formError = document.getElementById('formError');
+  const submitBtn = document.getElementById('submitBtn');
+  const submitBtnText = document.getElementById('submitBtnText');
+  const formError = document.getElementById('formError');
 
-    const firstName = document.getElementById('regFirstName').value.trim();
-    const lastName = document.getElementById('regLastName').value.trim();
-    const email = document.getElementById('regEmail').value.trim();
-    const restaurantName = document.getElementById('regRestaurant').value.trim();
-    const role = document.getElementById('regRole').value;
+  const firstName = document.getElementById('regFirstName').value.trim();
+  const lastName = document.getElementById('regLastName').value.trim();
+  const email = document.getElementById('regEmail').value.trim();
+  const restaurantName = document.getElementById('regRestaurant').value.trim();
+  const role = document.getElementById('regRole').value;
 
-    if (!firstName || !lastName || !email || !role) {
-        formError.textContent = 'Please fill in all required fields.';
-        formError.style.display = 'block';
-        return;
+  if (!firstName || !lastName || !email || !role) {
+    formError.textContent = 'Please fill in all required fields.';
+    formError.style.display = 'block';
+    return;
+  }
+
+  formError.style.display = 'none';
+  submitBtn.disabled = true;
+  submitBtnText.textContent = 'Registering...';
+
+  try {
+    const response = await fetch(`${API_BASE}/api/webinars/register`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        webinar_id: currentWebinarId,
+        first_name: firstName,
+        last_name: lastName,
+        email: email,
+        restaurant_name: restaurantName || null,
+        role: role
+      })
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.detail || 'Registration failed. Please try again.');
     }
 
-    formError.style.display = 'none';
-    submitBtn.disabled = true;
-    submitBtnText.textContent = 'Registering...';
-
-    try {
-        const response = await fetch(`${API_BASE}/api/webinars/register`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                webinar_id: currentWebinarId,
-                first_name: firstName,
-                last_name: lastName,
-                email: email,
-                restaurant_name: restaurantName || null,
-                role: role
-            })
-        });
-
-        const data = await response.json();
-
-        if (!response.ok) {
-            throw new Error(data.detail || 'Registration failed. Please try again.');
-        }
-
-        // Show success
-        document.getElementById('registrationFormWrapper').style.display = 'none';
-        const successEl = document.getElementById('registrationSuccess');
-        document.getElementById('successMessage').textContent =
-            `A confirmation has been sent to ${email}. You'll receive a reminder 24 hours before and 1 hour before the session.`;
-        document.getElementById('successDetails').innerHTML = `
+    // Show success
+    document.getElementById('registrationFormWrapper').style.display = 'none';
+    const successEl = document.getElementById('registrationSuccess');
+    document.getElementById('successMessage').textContent =
+      `A confirmation has been sent to ${email}. You'll receive a reminder 24 hours before and 1 hour before the session.`;
+    document.getElementById('successDetails').innerHTML = `
       <div class="webinar-success__zoom-note">
         <span>🎥</span>
         <span>Your Zoom join link will be in your confirmation email.</span>
       </div>
     `;
-        successEl.style.display = '';
+    successEl.style.display = '';
 
-    } catch (err) {
-        formError.textContent = err.message;
-        formError.style.display = 'block';
-        submitBtn.disabled = false;
-        submitBtnText.textContent = 'Reserve My Spot';
-    }
+  } catch (err) {
+    formError.textContent = err.message;
+    formError.style.display = 'block';
+    submitBtn.disabled = false;
+    submitBtnText.textContent = 'Reserve My Spot';
+  }
 }

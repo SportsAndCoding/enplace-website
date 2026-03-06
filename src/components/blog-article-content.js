@@ -196,7 +196,7 @@ The restaurants losing $420,000 a year to turnover aren't doing it because they'
             },
             {
                 type: 'cta',
-                primary: { text: 'See How En Place Works', url: '/contact' },
+                primary: { text: 'Book a Demo', url: 'https://calendly.com/rob-en-place/en-place-demo' },
                 secondary: { text: 'Read the Full Research', url: '/learn' },
             },
         ],
@@ -398,11 +398,11 @@ The restaurants that break this cycle,  Chick-fil-A, In-N-Out, the operators who
 
 The <strong>Staff Stability Engine</strong> measures the first link,  anonymous daily mood check-ins that surface how your team actually feels, before frustration becomes a resignation. <strong>Stable Hire</strong> assesses candidate psychological fit during hiring, so you stop cycling through people who were never going to stay. And the escalation protocols give your team an anonymous voice,  the feedback channel that keeps the upstream links intact while protecting the trust that makes it all work.
 
-The chain has been waiting thirty years for the right measurement tools. <a href="/contact">We built them.</a>`
+The chain has been waiting thirty years for the right measurement tools. <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener">We built them.</a>`
             },
             {
                 type: 'cta',
-                primary: { text: 'See How En Place Works', url: '/contact' },
+                primary: { text: 'Book a Demo', url: 'https://calendly.com/rob-en-place/en-place-demo' },
                 secondary: { text: 'Read the Full Research', url: '/learn' },
             },
         ],

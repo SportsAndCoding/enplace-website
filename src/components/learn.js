@@ -295,7 +295,7 @@ export default function Learn() {
                     Book a demo and see how En Place transforms your staffing operations.
                 </p>
                 <div class="learn__cta-buttons">
-                    <a href="/contact" class="learn__cta-btn learn__cta-btn--primary">Book a Demo</a>
+                    <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="learn__cta-btn learn__cta-btn--primary">Book a Demo</a>
                     <a href="/pricing" class="learn__cta-btn learn__cta-btn--secondary">View Pricing</a>
                 </div>
             </div>

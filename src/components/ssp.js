@@ -17,7 +17,8 @@ export default function SSP() {
         <h1 class="ssp-hero__title">Staff swap shifts. You just tap approve.</h1>
         <div class="ssp-hero__buttons">
           <button class="ssp-btn ssp-btn--primary" type="button" id="ssp-demo-cta">Experience Shift Swap Marketplace</button>
-          <a href="tel:+15134020611" class="ssp-btn ssp-btn--secondary">Talk to Sales</a>
+          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="ssp-btn ssp-btn--secondary">Book a Demo</a>
+<a href="tel:+15134020611" class="ssp-btn ssp-btn--secondary">Call Now</a>
         </div>
       </header>
 
@@ -121,7 +122,8 @@ export default function SSP() {
         </h2>
         <div class="ssp-cta__buttons">
           <button class="ssp-btn ssp-btn--primary" type="button" id="ssp-demo-cta-bottom">Experience Shift Swap Portal</button>
-          <a href="tel:+15134020611" class="ssp-btn ssp-btn--secondary">Talk to Sales</a>
+          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="ssp-btn ssp-btn--secondary">Book a Demo</a>
+<a href="tel:+15134020611" class="ssp-btn ssp-btn--secondary">Call Now</a>
         </div>
       </section>
 

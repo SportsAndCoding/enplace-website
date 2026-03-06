@@ -277,7 +277,7 @@ export default function Calculator() {
                     they resign — turning reactive scrambling into proactive retention.
                 </p>
                 <div class="calc__cta-buttons">
-                    <a href="/contact" class="calc__cta-btn calc__cta-btn--primary">Book a Demo</a>
+                    <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="calc__cta-btn calc__cta-btn--primary">Book a Demo</a>
                     <a href="/pricing" class="calc__cta-btn calc__cta-btn--secondary">View Pricing</a>
                     <a href="/learn" class="calc__cta-btn calc__cta-btn--secondary">Learning Center</a>
                 </div>

@@ -20,7 +20,8 @@ export default function SSB() {
         </p>
         <div class="ssb-hero__buttons">
           <button class="ssb-btn ssb-btn--primary" type="button" id="ssb-demo-cta">Experience Stable Schedule Builder</button>
-          <a href="tel:+15134020611" class="ssb-btn ssb-btn--secondary">Talk to Sales</a>
+          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="ssb-btn ssb-btn--secondary">Book a Demo</a>
+<a href="tel:+15134020611" class="ssb-btn ssb-btn--secondary">Call Now</a>
         </div>
 
         <!-- Placeholder for Stability Score Dashboard Screenshot -->
@@ -127,7 +128,8 @@ export default function SSB() {
         </h2>
         <div class="ssb-cta__buttons">
           <button class="ssb-btn ssb-btn--primary" type="button" id="ssb-demo-cta-bottom">Experience Stable Schedule Builder</button>
-          <a href="tel:+15134020611" class="ssb-btn ssb-btn--secondary">Talk to Sales</a>
+          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="ssb-btn ssb-btn--secondary">Book a Demo</a>
+<a href="tel:+15134020611" class="ssb-btn ssb-btn--secondary">Call Now</a>
         </div>
       </section>
 
