@@ -14,7 +14,7 @@ export default function Navbar() {
         <span class="navbar__logo-text">En Place</span>
       </a>
 
-      <!-- CENTER: Main nav links (V1 shipping state) -->
+      <!-- CENTER: Main nav links -->
       <nav class="navbar__links" aria-label="Main navigation">
 
         <!-- Features Dropdown ONLY -->
@@ -32,10 +32,10 @@ export default function Navbar() {
           </div>
         </div>
 
-        <!-- Pricing — top-level, no dropdown -->
         <a href="/pricing" class="navbar__link">Pricing</a>
         <a href="/effect" class="navbar__link">Results</a>
         <a href="/learn" class="navbar__link">Learn</a>
+        <a href="/webinars" class="navbar__link">Webinars</a>
         <a href="/contact" class="navbar__link">Contact</a>
       </nav>
 
@@ -51,7 +51,7 @@ export default function Navbar() {
       </button>
     </div>
 
-    <!-- MOBILE MENU — stripped down -->
+    <!-- MOBILE MENU -->
     <div class="navbar__mobile-menu" aria-label="Mobile navigation">
 
       <div class="navbar__mobile-dropdown">
@@ -69,6 +69,8 @@ export default function Navbar() {
       <a href="/pricing" class="navbar__mobile-item">Pricing</a>
       <a href="/effect" class="navbar__mobile-item">Results</a>
       <a href="/learn" class="navbar__mobile-item">Learn</a>
+      <a href="/webinars" class="navbar__mobile-item">Webinars</a>
+      <a href="/faq" class="navbar__mobile-item">FAQ</a>
       <a href="/contact" class="navbar__mobile-item">Contact</a>
       
       <div class="navbar__mobile-divider"></div>
@@ -88,7 +90,7 @@ export default function Navbar() {
     document.body.classList.toggle('nav-open');
   });
 
-  // Mobile Features accordion (only one left)
+  // Mobile Features accordion
   nav.querySelectorAll('.navbar__mobile-dropdown-title').forEach(button => {
     button.addEventListener('click', () => {
       button.classList.toggle('open');
