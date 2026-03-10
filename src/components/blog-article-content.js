@@ -24,8 +24,8 @@ const ARTICLES = {
             heroImage: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1400&q=80&fit=crop',
             heroAlt: 'Restaurant kitchen during service, the daily reality operators face',
             heroCredit: 'Unsplash',
-            paperUrl: '/learn',
-            paperTitle: 'Read the full research paper',
+            paperUrl: '/learn/Paper_1_The_Hidden_Hemorrhage.pdf',
+            paperTitle: 'Download the Full Research Paper',
         },
 
         // ─────────────────────────────────────
@@ -234,8 +234,8 @@ The restaurants losing $420,000 a year to turnover aren't doing it because they'
             heroImage: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1400&q=80&fit=crop',
             heroAlt: 'Chef working in a busy restaurant kitchen,  the Service Profit Chain in action',
             heroCredit: 'Unsplash',
-            paperUrl: '/learn',
-            paperTitle: 'Read the full research paper',
+            paperUrl: '/learn/Paper_2_The_Service_Profit_Chain.pdf',
+            paperTitle: 'Download the Full Research Paper',
         },
 
         blocks: [
@@ -439,8 +439,8 @@ The chain has been waiting thirty years for the right measurement tools. <a href
             heroImage: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1400&q=80&fit=crop',
             heroAlt: 'Dimly lit restaurant bar during evening service, the mood on the floor that guests can feel',
             heroCredit: 'Unsplash',
-            paperUrl: '/learn',
-            paperTitle: 'Explore the Staffing Intelligence Series',
+            paperUrl: '/learn/Paper_3_Your_Staffs_Mood_Is_Your_Yelp_Score.pdf',
+            paperTitle: 'Download the Full Research Paper',
         },
 
         blocks: [
