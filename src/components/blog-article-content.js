@@ -419,7 +419,261 @@ The chain has been waiting thirty years for the right measurement tools. <a href
     },
 
     // ─────────────────────────────────────
-    // PAPER #3, #4, #5 go here
+    // PAPER #3: YOUR STAFF'S MOOD IS YOUR YELP SCORE
+    // ─────────────────────────────────────
+
+    'your-staffs-mood-is-your-yelp-score': {
+        meta: {
+            title: 'Your Staff\'s Mood Is Your Yelp Score: The Pipeline from Employee Engagement to Revenue',
+            description: 'Harvard research: a one-star Yelp increase drives 5-9% more revenue. The biggest lever? Staff mood, not food quality. Here\'s the data.',
+            author: 'Rob',
+            authorTitle: 'Founder & CEO, En Place',
+            authorBio: 'Rob spent twenty years in restaurant operations — from hands-on work at Culver\'s to enterprise-level analytics at Caesars Entertainment — before building the platform he wished had existed for the last two decades. He writes about the intersection of restaurant operations, workforce psychology, and the data that connects them.',
+            date: '2025-07-01',
+            duration: '11 min read',
+            series: {
+                name: 'The Staffing Intelligence Series',
+                number: 3,
+                total: 5,
+            },
+            heroImage: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1400&q=80&fit=crop',
+            heroAlt: 'Dimly lit restaurant bar during evening service — the mood on the floor that guests can feel',
+            heroCredit: 'Unsplash',
+            paperUrl: '/learn',
+            paperTitle: 'Read the full research paper',
+        },
+
+        blocks: [
+
+            // ── THE OPENING SCENE ──
+            {
+                type: 'text',
+                content: `It's Friday at 7:45 PM and you can feel it before you can name it.`
+            },
+            {
+                type: 'text',
+                content: `The dining room is full. Every table is seated. From the pass, everything looks right — plates are moving, drinks are going out, the host stand is turning. But something is off. You've been doing this long enough to feel it in the room like a draft you can't find the source of.
+
+Table 14 has been waiting too long for a second round. Your best server, the one who usually runs her section like clockwork, is going through the motions — the smile is there, but there's nothing behind it. She's saying the right words, hitting her marks, but the warmth is gone. The two-top by the window flagged down a busser for water because nobody checked back. The energy at the bar is flat. Your bartender is pouring correctly but not connecting — no small talk, no reading the room, just filling orders.
+
+You know what happened. She got the new schedule Wednesday and saw she'd been put on a double Saturday after requesting it off three weeks ago. She didn't say anything. She just got quiet. And now it's Friday night and her mood is the dining room's mood, because that's how restaurants work — one person's energy becomes everyone's energy, staff and guests alike.
+
+You go home. Saturday morning, you check your phone. Two new reviews, both from last night. One star. <em>"The food was fine but our server seemed like she didn't want to be there."</em> Another: <em>"Felt like nobody cared whether we had a good time."</em>
+
+You read them and think: <em>I knew it. I could feel it on the floor.</em>
+
+You just couldn't prove it. You had no data connecting Wednesday's schedule to Friday's service to Saturday's review. No system that could have seen it coming. No way to measure what you already knew in your gut.
+
+This blog post is the proof.`
+            },
+
+            // ── THE PIPELINE ──
+            {
+                type: 'heading',
+                content: 'The Five-Link Pipeline You Can\'t See',
+            },
+            {
+                type: 'text',
+                content: `There is a direct, measurable pipeline connecting how your employees feel when they clock in to what strangers write about your restaurant online — and how much revenue those words generate or destroy. It runs through five links:
+
+<strong>Employee mood → Service behavior → Guest perception → Online reviews → Revenue</strong>
+
+Each link has peer-reviewed evidence behind it. And the whole thing runs as a loop — because your public reputation feeds right back into how your staff feels about where they work. Our <a href="/learn">full research paper</a> traces every link with the complete citation record. What follows are the findings that should change how you think about your Yelp score, your team meetings, and where you invest your next dollar.`
+            },
+
+            // ── LINK 1: GUESTS DETECT FAKE ENTHUSIASM ──
+            {
+                type: 'heading',
+                content: 'Your Guests Know When Your Staff Is Faking It',
+            },
+            {
+                type: 'text',
+                content: `Here's the finding that should end every "just tell them to smile" conversation in every pre-shift meeting in America.
+
+A meta-analysis spanning <strong>95 studies and 494 correlations</strong> across three decades of emotional labor research (Hülsheger & Schewe, 2011) established what happens when service employees fake positive emotions — what psychologists call "surface acting." The numbers: surface acting correlates with impaired well-being (ρ ≈ .39–.48) and is consistently negatively related to job performance. Deep acting — genuinely working to feel the required emotions — correlates with <strong>customer satisfaction at ρ ≈ .37.</strong>
+
+In plain English: faking it doesn't just fail to help. It actively depletes your staff and degrades their performance as the shift progresses. The employee who clocks in upset and spends four hours performing enthusiasm doesn't stay at baseline — they get <em>worse</em>. And customers can tell.`
+            },
+            {
+                type: 'pullquote',
+                content: 'The authenticity of the emotional display — not the extent of smiling — determines whether emotional contagion occurs.',
+                attribution: 'Hennig-Thurau et al., Journal of Marketing, 2006',
+            },
+            {
+                type: 'text',
+                content: `Hennig-Thurau and colleagues (2006) tested this with 223 consumers in a controlled factorial design and found that <strong>the extent of smiling alone does not influence customer emotions.</strong> What matters is whether the display is authentic. Genuine positive affect produces emotional contagion — customers literally "catch" the good mood. Performed positivity? Nothing. The smile without substance is invisible to the guest's emotional radar.
+
+Think about what this means operationally. Every dollar you spend on scripts, greeting standards, and smile enforcement is wasted if the person delivering the script isn't actually in a good headspace. The solution to bad service isn't better acting — it's genuine engagement. And you can't create genuine engagement by mandate. You have to build conditions where it can actually exist.`
+            },
+
+            // ── LINK 2: SERVICE OUTWEIGHS FOOD ──
+            {
+                type: 'heading',
+                content: 'The Stat That Should Change Where You Invest',
+            },
+            {
+                type: 'image',
+                src: 'https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200&q=80&fit=crop',
+                alt: 'Restaurant service floor — where guest satisfaction is actually won or lost',
+                credit: 'Unsplash',
+            },
+            {
+                type: 'text',
+                content: `Ask any restaurant owner what drives customer satisfaction and they'll say food quality. Ask the data and you get a different answer.
+
+Andaleeb and Conway (2006) built a transaction-specific satisfaction model for full-service restaurants (n = 119) and ran the regression. The results reorder every operator's investment priorities:`
+            },
+            {
+                type: 'callout',
+                label: 'What Actually Drives Guest Satisfaction (Full-Service Restaurants)',
+                content: 'Andaleeb & Conway, 2006 — Journal of Services Marketing. Standardized regression coefficients from a transaction-specific satisfaction model.',
+            },
+            {
+                type: 'table',
+                rows: [
+                    ['Staff Responsiveness', 'β ≈ 0.566 (p < .001)'],
+                    ['Food Quality / Reliability', 'β ≈ 0.231 (p < .025)'],
+                    ['Price', 'β ≈ −0.186 (p < .001)'],
+                    ['Physical Design / Appearance', 'β ≈ 0.006 (not significant)'],
+                ],
+                footer: null,
+            },
+            {
+                type: 'text',
+                content: `Read that again. <strong>Staff responsiveness carries more than double the predictive weight of food quality.</strong> Physical design — the renovation, the new light fixtures, the Instagram-friendly tile — is statistically indistinguishable from zero.
+
+This doesn't mean food doesn't matter. It does. But food quality is table stakes — it's necessary but not sufficient. The service interaction is what differentiates the experience and drives review behavior. Four of five dimensions in the DINESERV service quality framework (reliability, responsiveness, assurance, empathy) are directly staff-driven. Only "tangibles" relates to the physical space.
+
+If you're choosing between a kitchen equipment upgrade and investing in the conditions that keep your front-of-house team genuinely engaged, the data says the engagement investment has a higher return. That's uncomfortable. It's also true.`
+            },
+
+            // ── LINK 3: SELECTION BIAS ──
+            {
+                type: 'heading',
+                content: 'Your Yelp Score Isn\'t What You Think It Is',
+            },
+            {
+                type: 'text',
+                content: `Here's the part most operators miss entirely. Your star rating is not a representative sample of your guests' experiences. It is a <strong>structurally unrepresentative sample</strong> dominated by the guests with the most extreme emotional reactions.
+
+Pew Research Center (2016) found that <strong>only about 1-in-10 Americans "nearly always" post reviews</strong> — including restaurant reviews. About 43% "sometimes" post. The rest? They eat and leave. The review ecosystem is not a democratic poll of your customer base. It's a highlight reel written by the guests who felt the most — positively or negatively.
+
+And it gets worse. Li (2020) found that extreme experiences — strongly positive or strongly negative — convert to reviews <em>faster</em> than moderate ones. The most emotionally intense shifts show up online first. And <strong>54% of consumers who read reviews pay more attention to negative reviews than positive ones</strong> (Pew, 2016).`
+            },
+            {
+                type: 'pullquote',
+                content: 'Only 1-in-10 Americans nearly always post reviews — and 54% of readers pay more attention to the negative ones. Your Yelp score isn\'t a sample of your guests. It\'s a highlight reel of your worst nights.',
+                attribution: null,
+            },
+            {
+                type: 'text',
+                content: `Connect the dots: a few bad shifts don't just produce a few bad reviews — they produce the <em>only</em> reviews that get written that week, and those reviews are the ones future customers weight most heavily. This is why a restaurant with a 95% satisfaction rate can still watch its Yelp score decline. The 5% who had emotionally charged negative experiences are disproportionately the ones writing, and their words carry disproportionate weight with everyone reading.
+
+And what do those reviews talk about? Text-mining analysis of over 130,000 Yelp reviews across 2,400+ restaurants (Mejia, Mankad, & Gopal, 2021) found that service and responsiveness are primary dimensions of review content — not footnotes. When a server was inattentive or indifferent, reviewers name it. The employee's emotional state doesn't just affect the review score — it literally appears in the review text.`
+            },
+
+            // ── LINK 4: THE MONEY ──
+            {
+                type: 'heading',
+                content: 'What a Star Is Worth',
+            },
+            {
+                type: 'text',
+                content: `Now the financial translation. Two peer-reviewed studies form the strongest evidence in review economics:
+
+Anderson and Magruder (2012) used a regression discontinuity design — exploiting Yelp's rounding thresholds to isolate causation — and found that <strong>an extra half-star increases the frequency with which restaurants sell out at peak times by approximately 49%.</strong> That's demand. More covers. Higher utilization.
+
+Luca (2016), in the most-cited study in the field (Harvard Business School Working Paper No. 12-016), applied the same method to actual restaurant revenue data and found that <strong>a one-star increase drives a 5–9% revenue increase for independent restaurants.</strong> Chain restaurants were largely unaffected — online reviews substitute for brand reputation, which means independents have the most to gain and the most to lose.
+
+Here's what those percentages mean in dollars:`
+            },
+            {
+                type: 'callout',
+                label: 'Revenue Impact of a One-Star Yelp Swing',
+                content: 'Based on Luca (2016): 5–9% revenue change per star for independent restaurants.',
+            },
+            {
+                type: 'table',
+                rows: [
+                    ['$750K annual revenue', '+$37,500 to +$67,500 per star gained'],
+                    ['$1M annual revenue', '+$50,000 to +$90,000 per star gained'],
+                    ['$1.5M annual revenue', '+$75,000 to +$135,000 per star gained'],
+                    ['$2M annual revenue', '+$100,000 to +$180,000 per star gained'],
+                ],
+                footer: null,
+            },
+            {
+                type: 'text',
+                content: `Those same numbers work in reverse. A lost star doesn't just hurt your feelings — it costs you $50,000 to $180,000 depending on your volume. And as we've now traced through the pipeline: the biggest single lever for that star rating isn't your menu, your decor, or your marketing. It's how your team feels when they walk in the door.`
+            },
+
+            // ── LINK 5: THE FEEDBACK LOOP ──
+            {
+                type: 'heading',
+                content: 'The Cycle That Builds — Or Destroys',
+            },
+            {
+                type: 'text',
+                content: `The pipeline doesn't just run one direction. It loops.
+
+Wolter and colleagues (2019), in a study published in the <em>Journal of the Academy of Marketing Science</em>, tracked 293 firms across four years and found something critical: it's not just the <em>level</em> of employee satisfaction that predicts customer satisfaction — it's the <strong>trajectory.</strong> A restaurant whose team morale is declining over weeks will see customer satisfaction follow, even if the absolute level hasn't hit crisis. The trend is the signal.
+
+When the loop runs positive, it compounds. Engaged staff deliver authentic service. Guests feel the warmth and write positive reviews. The reviews attract new customers and create pride in the team. Pride reduces turnover. Lower turnover means more experienced staff, deeper guest relationships, better service. The flywheel accelerates.`
+            },
+            {
+                type: 'text',
+                content: `When the loop runs negative, it destroys.
+
+A key manager leaves. The team's morale dips — not dramatically, just a half-step down. Service gets a little flatter. A few guests notice. The ones who notice are the ones who write reviews. The reviews are negative. New customer traffic softens. Revenue dips. The owner tightens labor to protect margins. The remaining staff are stretched thinner. The best employees — the ones with options — start looking. They leave. Service degrades further. Reviews get worse.
+
+By the time the owner checks Yelp and sees the score has dropped, the root cause is two months old. The schedule change that demoralized your best server. The manager who left. The shifts that went sideways. None of it showed up on any dashboard because no dashboard was measuring it.
+
+This is how a restaurant's reputation dies — not from a kitchen failure or a bad concept, but from a people problem that nobody had the tools to see.`
+            },
+
+            // ── CONNECTING TO PAPERS #1–2 ──
+            {
+                type: 'heading',
+                content: 'The Bigger Picture',
+            },
+            {
+                type: 'text',
+                content: `The <a href="/learn/hidden-hemorrhage/">$420,000–$720,000 annual hemorrhage we documented in Part 1</a> includes thousands of these invisible pipeline failures compounded across a year — every quit degrading service, every service failure becoming a review, every review eroding revenue. <a href="/learn/service-profit-chain/">The Service Profit Chain from Part 2</a> is the theoretical backbone — this paper is the empirical proof that the chain operates daily, shift by shift, table by table, review by review.
+
+<strong>Next in the series:</strong> what happens when the pipeline breaks at 6 AM — the cascading economics of a single call-out, and why "Billy Called In Sick" is the most expensive sentence in restaurant management.`
+            },
+
+            // ── EN PLACE (LAST 10%) ──
+            {
+                type: 'heading',
+                content: 'Making the Invisible Visible',
+            },
+            {
+                type: 'text',
+                content: `I built En Place because I spent twenty years feeling this pipeline in real time — on the floor at Culver's, across hundreds of locations at Caesars — without ever having the data to prove what I already knew. The connection between Monday's mood and Friday's review was obvious to anyone who'd managed a dining room. But obvious isn't measurable, and unmeasured things don't get managed.
+
+The <strong>Staff Stability Engine</strong> measures employee mood at the frequency the science demands — daily, anonymous, shift-level check-ins that take seconds. It detects the declining trajectories that Wolter et al. proved predict customer satisfaction drops. It surfaces the signal before it becomes a one-star review. The pipeline from employee mood to your Yelp score has always been running. <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener">Now you can see it.</a>`
+            },
+            {
+                type: 'cta',
+                primary: { text: 'Book a Demo', url: 'https://calendly.com/rob-en-place/en-place-demo' },
+                secondary: { text: 'Read the Full Research', url: '/learn' },
+            },
+        ],
+
+        pullQuotes: [
+            "The authenticity of the emotional display — not the extent of smiling — determines whether emotional contagion occurs. 'Just tell them to smile' doesn't work. Guests can tell.",
+            "Staff responsiveness carries more than double the predictive weight of food quality in guest satisfaction. The renovation isn't the ROI play. Your people are.",
+            "Only 1-in-10 Americans nearly always post reviews — and 54% of readers pay more attention to the negative ones. Your Yelp score is a highlight reel of your worst nights.",
+            "A one-star Yelp increase drives 5–9% revenue increase for independents. For a $1.5M restaurant, that's $75,000–$135,000 riding on your team's mood.",
+            "It's not the level of employee satisfaction that predicts customer outcomes — it's the trajectory. A declining trend is the signal, and you need daily data to see it.",
+            "This is how a restaurant's reputation dies — not from a kitchen failure, but from a people problem nobody had the tools to see.",
+            "The pipeline from employee mood to your Yelp score has always been running. The question is whether you can see it before the one-star review gets written.",
+        ],
+    },
+
+    // ─────────────────────────────────────
+    // PAPER #4, #5 go here
     // Same structure. Just add entries.
     // ─────────────────────────────────────
 };

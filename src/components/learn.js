@@ -83,6 +83,18 @@ const CONTENT = [
         featured: true,
     },
     {
+        id: 'your-staffs-mood-is-your-yelp-score',
+        type: 'research',
+        title: 'Your Staff\'s Mood Is Your Yelp Score: The Pipeline from Employee Engagement to Revenue',
+        excerpt: 'A one-star Yelp increase drives 5–9% more revenue — and the biggest lever isn\'t food quality. It\'s staff mood. Here\'s the peer-reviewed pipeline from employee engagement to online reviews to dollars.',
+        thumbnail: null,
+        videoUrl: null,
+        articleUrl: '/learn/your-staffs-mood-is-your-yelp-score/',
+        date: '2025-07-01',
+        duration: '11 min read',
+        featured: true,
+    },
+    {
         id: 'anonymous-feedback',
         type: 'research',
         title: 'Why Anonymous Mood Tracking Changes Everything',
