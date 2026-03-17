@@ -95,6 +95,18 @@ const CONTENT = [
         featured: true,
     },
     {
+        id: 'billy-called-in-sick',
+        type: 'research',
+        title: 'Billy Called In Sick: What One Call-Out Actually Costs Your Restaurant',
+        excerpt: 'Only 35% of call-outs are real illness. Each one costs $304 to $710 when you count everything, adding up to $63K to $270K per year with no line item on any P&L.',
+        thumbnail: null,
+        videoUrl: null,
+        articleUrl: '/learn/billy-called-in-sick/',
+        date: '2026-03-17',
+        duration: '12 min read',
+        featured: true,
+    },
+    {
         id: 'anonymous-feedback',
         type: 'research',
         title: 'Why Anonymous Mood Tracking Changes Everything',

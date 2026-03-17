@@ -673,8 +673,239 @@ The <strong>Staff Stability Engine</strong> measures employee mood at the freque
     },
 
     // ─────────────────────────────────────
-    // PAPER #4, #5 go here
-    // Same structure. Just add entries.
+    // PAPER #4: BILLY CALLED IN SICK
+    // ─────────────────────────────────────
+
+    'billy-called-in-sick': {
+        meta: {
+            title: 'Billy Called In Sick: What One Call-Out Actually Costs Your Restaurant',
+            description: 'Only 35% of restaurant call-outs are real illness. The rest cost $304 to $710 each, adding up to $63K to $270K per year with no line item.',
+            author: 'Rob',
+            authorTitle: 'Founder & CEO, En Place',
+            authorBio: 'Rob spent twenty years in restaurant operations, from hands-on work at Culver\'s to enterprise-level analytics at Caesars Entertainment, before building the platform he wished had existed for the last two decades. He writes about the intersection of restaurant operations, workforce psychology, and the data that connects them.',
+            date: '2026-03-17',
+            duration: '12 min read',
+            series: {
+                name: 'The Staffing Intelligence Series',
+                number: 4,
+                total: 5,
+            },
+            heroImage: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1400&q=80&fit=crop',
+            heroAlt: 'Empty commercial kitchen under fluorescent light, the silence before a short-staffed shift',
+            heroCredit: 'Unsplash',
+            paperUrl: '/learn/Paper_4_Billy_Called_In_Sick.pdf',
+            paperTitle: 'Download the Full Research Paper',
+        },
+
+        blocks: [
+
+            // ── THE OPENING SCENE ──
+            {
+                type: 'text',
+                content: `6:02 AM. Your phone buzzes on the nightstand. You already know what it is before you look. Nobody texts you at 6 AM with good news.`
+            },
+            {
+                type: 'pullquote',
+                content: `"Hey, can't make it in today. Sorry."`,
+                attribution: null,
+            },
+            {
+                type: 'text',
+                content: `That's it. Seven words and a period. Your Saturday prep cook, the one covering the station that feeds every entrée on the menu, just became a ghost. And your day just became someone else's.
+
+6:04 AM. You're sitting on the edge of the bed, scrolling through contacts. Not your full roster. The short list. The four or five people who might actually pick up. You already know Maria worked a double yesterday. You already know Tomas has his kid this weekend. But you call anyway because what else are you going to do.
+
+6:11 AM. Maria doesn't answer. Tomas can't. Devon picks up, groggy, and says he can come in but not until noon, and only for half a shift. You do the math. That leaves the entire morning prep uncovered and a dinner rush where you're still one body short.
+
+6:23 AM. You call your sous chef and tell her you're working the line today. She pauses. She knows what that means: the vendor meeting isn't happening. The inventory count isn't happening. The food cost review you've been putting off for two weeks isn't happening. You're prepping mirepoix instead of managing a restaurant.
+
+6:45 AM. You're in the car, still in the clothes you grabbed off the chair. The pit in your stomach isn't about the work. You've worked the line a thousand times. It's about everything that's not getting done while you're doing it. It's about the fact that this is the third time this month. It's about the slow, grinding realization that you're not running your restaurant anymore. You're reacting to it.
+
+7:30 AM. You're in the kitchen, alone, tying an apron. The fluorescent lights hum. The walk-in compressor kicks on. And the only thought in your head is the same one you've had a hundred mornings like this: <em>I can't keep doing this.</em>
+
+Every restaurant manager reading this has lived some version of this morning. Most have lived it dozens of times. Here's what almost none of them have done: calculated what it actually costs.`
+            },
+
+            // ── THE 35/65 REFRAME ──
+            {
+                type: 'heading',
+                content: 'The Stat That Redefines the Problem',
+            },
+            {
+                type: 'text',
+                content: `Before we talk about money, we need to talk about a number that changes everything.
+
+The CCH Unscheduled Absence Survey, conducted annually by Harris Interactive across 323 to 326 HR executives, found that only <strong>35% of unscheduled absences are attributed to personal illness.</strong> The other 65% break down into family issues (21 to 24%), personal needs (18%), stress (12%), and what the survey categorizes as "entitlement mentality" (11 to 14%).
+
+Read that again. Two-thirds of the call-outs hitting your operation have nothing to do with someone being sick.`
+            },
+            {
+                type: 'pullquote',
+                content: 'This isn\'t a sick-call problem. It\'s a disengagement problem wearing a sick-call costume.',
+                attribution: null,
+            },
+            {
+                type: 'text',
+                content: `Stricter attendance policies, the default response for most operators, are treating the symptom while ignoring the disease. The organizations in that survey with poor morale saw <strong>70% non-illness absences</strong> versus 60% in good-morale organizations, and their overall absence rate was 32% higher. Morale isn't a soft metric. It's the difference between a functional schedule and a broken one.
+
+For a 25-employee full-service restaurant, even a conservative 3.5% unplanned absence rate produces <strong>175 to 250 total absence-days per year.</strong> That's roughly one every single working day. And each one kicks off the cascade you just read about. The calls, the scramble, the manager on the line, the day's plan in the trash.`
+            },
+
+            // ── THE COST TABLE ──
+            {
+                type: 'heading',
+                content: 'What One Call-Out Actually Costs',
+            },
+            {
+                type: 'image',
+                src: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200&q=80&fit=crop',
+                alt: 'Restaurant kitchen prep station where every absence is felt immediately',
+                credit: 'Unsplash',
+            },
+            {
+                type: 'text',
+                content: `The <a href="/learn/Paper_4_Billy_Called_In_Sick.pdf">full research paper</a> builds a per-incident cost model from published data: SHRM/Kronos survey findings, BLS wage data, Harvard Business School revenue studies, and cross-industry productivity research. When you add up every cost component of a single unplanned absence, not just the overtime, but the productivity loss, the manager displacement, the service degradation, and the downstream effects, here's what emerges:`
+            },
+            {
+                type: 'table',
+                rows: [
+                    ['Overtime premium or platform markup', '$48 – $68'],
+                    ['Replacement worker productivity loss (36.6%)', '$50'],
+                    ['Manager displacement (2–4 hrs at $27/hr)', '$54 – $108'],
+                    ['Administrative and scheduling time', '$27 – $54'],
+                    ['Co-worker productivity drain (29.5%)', '$40 – $80'],
+                    ['Revenue impact from reduced throughput', '$50 – $200'],
+                    ['Service quality and review risk (amortized)', '$10 – $50'],
+                    ['Accelerated turnover cost (amortized)', '$25 – $100'],
+                ],
+                footer: ['Total per incident', '$304 – $710'],
+            },
+            {
+                type: 'text',
+                content: `That 36.6% productivity loss isn't a guess. It's from the SHRM/Kronos survey of 1,280 organizations across six countries, measuring the specific productivity gap for <em>unplanned</em> absences, the worst category. The $27/hour manager displacement reflects the real opportunity cost when a $57,000/year salaried manager stops managing and starts expediting.
+
+Multiply by reality. At 175 to 250 absence-days per year, a single 25-employee restaurant absorbs:`
+            },
+            {
+                type: 'pullquote',
+                content: '$63,000 to $270,000 per year in unplanned absence costs, and nobody has a line item for it anywhere.',
+                attribution: 'Per-incident cost × annual frequency for a 25-employee restaurant',
+            },
+            {
+                type: 'text',
+                content: `That range is wide because the cost multiplier depends on <em>when</em> and <em>who.</em> A dishwasher's Tuesday lunch call-out sits at the low end. A bartender's Friday night no-show (high-margin shift, high-complexity role, maximum guest impact) pushes toward the top. For multi-unit operators, the costs scale non-linearly: a five-location group faces not only five times the incidents but additional coordination overhead that industry sources estimate at 10 to 15% above the per-location baseline.
+
+The <a href="/learn/hidden-hemorrhage/">$420,000 to $720,000 hemorrhage we documented in Part 1</a> of this series? It's built from thousands of these mornings. Each one invisible on the P&L. Each one compounding.`
+            },
+
+            // ── CONTAGION ──
+            {
+                type: 'heading',
+                content: 'The Contagion Nobody Sees',
+            },
+            {
+                type: 'text',
+                content: `Here's the finding that should keep every operator up at night.
+
+Markussen and Røed published a study in the <em>Journal of Public Economics</em> (2018) using Norwegian matched employer-employee data with individual certified sick leave records from 2003 to 2012. They used instrumental variable design, the gold standard for causal inference, to isolate whether absence is contagious. Their finding: <strong>a 1-day change in a focal worker's sickness absence transfers to a 0.41-day shift in peer absence.</strong>
+
+And it wasn't because people were catching each other's colds. The peer absence increase came from non-communicable conditions: musculoskeletal complaints, psychological distress, general malaise. Peer absence from respiratory infections actually <em>declined</em> slightly when a coworker called out. The contagion is behavioral, not biological. When one person calls out, the remaining team absorbs extra workload, builds resentment, and their own threshold for calling out drops.`
+            },
+            {
+                type: 'pullquote',
+                content: 'Every call-out doesn\'t just cost you one shift. It costs you a piece of everyone else\'s commitment. 0.41 days of it, measured causally, not anecdotally.',
+                attribution: 'Markussen & Røed, Journal of Public Economics, 2018',
+            },
+            {
+                type: 'text',
+                content: `In a tight restaurant crew, the kind where everyone works in physical proximity under shared stress, this creates a vicious cycle. The same reliable employees get asked to cover again and again. Social exchange theory calls it "goodwill depletion," every favor drawn from the same account without deposit. Eventually your most dependable people burn out, call out themselves, or quit. The contagion effect means you don't just lose one person's labor when Billy calls in sick. You begin losing the commitment of the people who showed up.`
+            },
+
+            // ── SCHEDULE DESIGN ──
+            {
+                type: 'heading',
+                content: 'It\'s the Schedule, Not Just the Money',
+            },
+            {
+                type: 'image',
+                src: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200&q=80&fit=crop',
+                alt: 'Restaurant interior during quiet hours, where schedule design shapes what happens next',
+                credit: 'Unsplash',
+            },
+            {
+                type: 'text',
+                content: `The most actionable finding in the entire research paper comes from Schneider and Harknett's Shift Project, a survey of approximately <strong>28,000 hourly retail and food service workers.</strong>
+
+They found that two-thirds of workers received schedules with less than two weeks' notice. A third got less than one week. And 64% of workers who experienced canceled shifts reported psychological distress. But the headline finding is this: <strong>schedule stability improvements were more strongly associated with improved outcomes than equivalent wage increases.</strong>
+
+Let that land. You can't necessarily outpay the problem. But you can outschedule it.
+
+Workers with unstable schedules (clopening shifts, last-minute changes, denied time-off requests) aren't calling out because they're lazy. They're calling out because the schedule itself has made attendance harder: childcare arrangements collapse, second-job conflicts multiply, transportation plans fall apart. <a href="/learn/your-staffs-mood-is-your-yelp-score/">The mood-to-reviews pipeline we documented in Part 3</a> of this series explains why a short-staffed Friday becomes a one-star review by Sunday. It starts with the schedule that made someone check out.
+
+Walmart's implementation of predictive scheduling, providing core hours 13+ weeks in advance with a shift-swap app, produced an 11% decline in absenteeism and a 14% drop in turnover. That's one company, one intervention, measurable results. And it cost them nothing but operational discipline.`
+            },
+
+            // ── ROOT CAUSE ──
+            {
+                type: 'heading',
+                content: 'Why Billy Actually Called In',
+            },
+            {
+                type: 'text',
+                content: `The organizational behavior research frames absenteeism as part of a withdrawal continuum: disengagement, then tardiness, then absenteeism, then job search, then resignation. Berry, Lelchook, and Clark's 2012 meta-analysis confirmed a significant correlation between absenteeism and turnover (r = .253), and the progression-of-withdrawal model received the most empirical support among competing theories.
+
+Translation: Billy's call-out isn't the beginning of the problem. It's the middle. The opening act, declining engagement, shorter interactions, less initiative, happened weeks ago. And the third act is already being written: the final no-call no-show, or the text that says "I'm done."
+
+The research converges on five layers of causation, each feeding the next:
+
+<strong>Structural barriers</strong> (transportation, childcare, housing instability) make attendance inherently fragile for low-wage hourly workers. <strong>Schedule instability</strong> amplifies those barriers. <strong>Interpersonal conflict</strong> (bullying, toxic management, workplace tension) erodes the psychological safety that keeps people showing up. <strong>Job dissatisfaction</strong> fuels the withdrawal progression from disengagement to departure. And <strong>absence culture</strong> (the shared norms about when it's acceptable to call out) makes all of it self-reinforcing.
+
+Most call-outs are symptoms, not causes. And the industry's overwhelming focus on the downstream effect, scrambling for coverage, addresses the hemorrhaging without treating the wound.`
+            },
+
+            // ── CONNECTION TO SERIES ──
+            {
+                type: 'callout',
+                label: 'Series Connection',
+                content: 'This paper is Part 4 of a five-part series. <a href="/learn/hidden-hemorrhage/">Part 1</a> documents the $420K to $720K annual turnover hemorrhage. <a href="/learn/service-profit-chain/">Part 2</a> establishes the Service Profit Chain. <a href="/learn/your-staffs-mood-is-your-yelp-score/">Part 3</a> traces the mood-to-reviews pipeline. Every call-out is the Service Profit Chain breaking in real time: the mood nobody measured becoming the shift nobody covered becoming the review nobody wanted.',
+            },
+
+            // ── WHAT CHANGES ──
+            {
+                type: 'heading',
+                content: 'What Changes When You See It Coming',
+            },
+            {
+                type: 'text',
+                content: `The research paper documents machine learning models achieving 72% to 83% accuracy in predicting employee absences across multiple industries. The most reliable predictor? Previous absenteeism history. The pattern, not the excuse. When you combine absence patterns with engagement signals, schedule design data, and environmental factors, the intervention window opens from reactive (scrambling at 6 AM) to proactive (adjusting staffing 48 to 72 hours in advance).
+
+The cost differential is staggering. Reactive staffing means overtime at 1.5x or platform markups of 35 to 40%, with 36.6% productivity loss. Proactive staffing with adequate notice means internal fills at regular wages, cross-trained employees maintaining near-normal output, and a manager who gets to do their actual job.
+
+That's what we built En Place to do. The <strong>Staff Stability Engine</strong> captures anonymous daily mood data and surfaces the engagement patterns that precede call-outs, the declining signals that <a href="/learn/your-staffs-mood-is-your-yelp-score/">Part 3 proved</a> connect directly to operational outcomes. The <strong>Open Shift Marketplace</strong> turns the reactive scramble into an instant broadcast: when someone does call out, every eligible, available team member gets notified with bonus incentives. No phone tree. No 37 minutes of unanswered calls. And the <strong>Stable Schedule Builder</strong> analyzes the emotional cost of scheduling decisions before they're published, so the schedule that creates next week's call-outs never gets posted in the first place.
+
+<strong>Next in the series:</strong> the story of one company that spent billions proving employee investment works, and what their playbook means for a restaurant doing $2 million a year.`
+            },
+            {
+                type: 'cta',
+                primary: { text: 'Book a Demo', url: 'https://calendly.com/rob-en-place/en-place-demo' },
+                secondary: { text: 'Explore the Learning Center', url: '/learn' },
+            },
+        ],
+
+        pullQuotes: [
+            "6:02 AM. Your phone buzzes on the nightstand. You already know what it is before you look. Nobody texts you at 6 AM with good news.",
+            "Only 35% of unscheduled absences are actual illness. The other 65% is a disengagement problem wearing a sick-call costume.",
+            "A single call-out costs $304 to $710 when you count everything, and a 25-employee restaurant absorbs 175 to 250 of them per year. Do the math.",
+            "Every call-out doesn't just cost you one shift. It costs you 0.41 days of everyone else's commitment. Measured causally, not anecdotally.",
+            "Schedule stability improvements outperformed equivalent wage increases. You can't outpay this problem. You can outschedule it.",
+            "$63,000 to $270,000 per year in unplanned absence costs. No line item. No budget category. Just a slow bleed that every operator feels but nobody measures.",
+            "Billy's call-out isn't the beginning of the problem. It's the middle. The opening act happened weeks ago. The third act is already being written.",
+        ],
+    },
+
+    // ─────────────────────────────────────
+    // PAPER #5 goes here
+    // Same structure. Just add entry.
     // ─────────────────────────────────────
 };
 
