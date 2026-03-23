@@ -57,8 +57,8 @@ export default function ProofLanding() {
           <li><a href="mailto:rob@en-place.ai">Contact</a></li>
         </ul>
         <div class="proof-nav__actions">
-          <a href="mailto:rob@en-place.ai" class="proof-nav__login">Login</a>
-          <a href="mailto:rob@en-place.ai" class="btn-proof-primary btn-proof-primary--nav">Get Access</a>
+          <a href="https://proof.en-place.ai" class="proof-nav__login">Login</a>
+          <a href="https://proof.en-place.ai" class="btn-proof-primary btn-proof-primary--nav">Get Started</a>
         </div>
       </nav>
 
@@ -81,8 +81,8 @@ export default function ProofLanding() {
         </p>
 
         <div class="proof-hero__cta-stack">
-          <a href="mailto:rob@en-place.ai" class="btn-proof-primary">
-            Explore the Database &nbsp;→
+          <a href="https://proof.en-place.ai" class="btn-proof-primary">
+            Start Free &nbsp;→
           </a>
           <span class="proof-hero__micro">Used by food and beverage sales professionals across the country.</span>
         </div>
@@ -418,7 +418,7 @@ export default function ProofLanding() {
                 <div class="proof-usecases__price">$49<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/mo</span></div>
                 <div class="proof-usecases__price-sub">Pro. Dossiers at $1.00. Team and Company plans available.</div>
               </div>
-              <a href="mailto:rob@en-place.ai" class="btn-proof-primary btn-proof-primary--sm">Get Access</a>
+              <a href="https://proof.en-place.ai" class="btn-proof-primary btn-proof-primary--sm">Get Started</a>
             </div>
           </div>
 
@@ -442,7 +442,7 @@ export default function ProofLanding() {
                 <div class="proof-usecases__price">$49<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/mo</span></div>
                 <div class="proof-usecases__price-sub">Pro. One placement pays for years of access.</div>
               </div>
-              <a href="mailto:rob@en-place.ai" class="btn-proof-primary btn-proof-primary--sm">Get Access</a>
+              <a href="https://proof.en-place.ai" class="btn-proof-primary btn-proof-primary--sm">Get Started</a>
             </div>
           </div>
 
@@ -465,7 +465,7 @@ export default function ProofLanding() {
                 <div class="proof-usecases__price">$250<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/mo</span></div>
                 <div class="proof-usecases__price-sub">Team plan. Up to 10 users.</div>
               </div>
-              <a href="mailto:rob@en-place.ai" class="btn-proof-primary btn-proof-primary--sm">Get Access</a>
+              <a href="https://proof.en-place.ai" class="btn-proof-primary btn-proof-primary--sm">Get Started</a>
             </div>
           </div>
 
@@ -488,7 +488,7 @@ export default function ProofLanding() {
                 <div class="proof-usecases__price">$10<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/dossier</span></div>
                 <div class="proof-usecases__price-sub">No subscription. Pay as you go with credits.</div>
               </div>
-              <a href="mailto:rob@en-place.ai" class="btn-proof-primary btn-proof-primary--sm">Buy Credits</a>
+              <a href="https://proof.en-place.ai" class="btn-proof-primary btn-proof-primary--sm">Get Started</a>
             </div>
           </div>
 
@@ -501,7 +501,7 @@ export default function ProofLanding() {
             <div class="proof-credit-callout__hed">Load credits. Pull dossiers. No commitment.</div>
             <div class="proof-credit-callout__sub">Dossiers are $10 without a subscription. Load $30, run three competitor dossiers, and walk away with more intelligence than any consultant could deliver for that price. Or upgrade to Pro and pay $1.00 each.</div>
           </div>
-          <a href="mailto:rob@en-place.ai" class="btn-proof-primary" style="white-space:nowrap;flex-shrink:0;">Buy Credits &nbsp;→</a>
+          <a href="https://proof.en-place.ai" class="btn-proof-primary" style="white-space:nowrap;flex-shrink:0;">Start Free &nbsp;→</a>
         </div>
 
       </div>
@@ -619,7 +619,7 @@ export default function ProofLanding() {
           and every account comes with a $1 intelligence brief ready to pull.
         </p>
         <div class="proof-cta-band__btns">
-          <a href="mailto:rob@en-place.ai" class="btn-proof-primary">Get Full Access &nbsp;→</a>
+          <a href="https://proof.en-place.ai" class="btn-proof-primary">Start Free &nbsp;→</a>
           <a href="#demo-video" class="btn-proof-ghost">Watch It in Action</a>
         </div>
       </div>
