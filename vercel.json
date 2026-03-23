@@ -1,6 +1,16 @@
 {
     "rewrites": [
         {
+            "source": "/(.*)",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.proof.en-place.ai"
+                }
+            ],
+            "destination": "/proof/index.html"
+        },
+        {
             "source": "/join/:code",
             "destination": "/join/index.html"
         }
