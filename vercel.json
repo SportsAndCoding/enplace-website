@@ -1,22 +1,8 @@
 {
-    "rewrites": {
-        "beforeFiles": [
-            {
-                "source": "/",
-                "has": [
-                    {
-                        "type": "host",
-                        "value": "www.proof.en-place.ai"
-                    }
-                ],
-                "destination": "/proof/index.html"
-            }
-        ],
-        "afterFiles": [
-            {
-                "source": "/join/:code",
-                "destination": "/join/index.html"
-            }
-        ]
-    }
+    "rewrites": [
+        {
+            "source": "/join/:code",
+            "destination": "/join/index.html"
+        }
+    ]
 }
