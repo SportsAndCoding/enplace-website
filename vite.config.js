@@ -36,6 +36,12 @@ export default defineConfig({
                 webinars: './webinars/index.html',
 
                 // ─────────────────────────────────────
+                // PROOF INTELLIGENCE
+                // proof.en-place.ai — standalone, no En Place navbar
+                // ─────────────────────────────────────
+                proof: './proof/index.html',
+
+                // ─────────────────────────────────────
                 // SALES REP BOOKING PAGES
                 // Add new reps here as: repName: './rep-slug/index.html'
                 // ─────────────────────────────────────
@@ -123,6 +129,13 @@ export default defineConfig({
                     }
                     if (req.url === '/webinars' || req.url === '/webinars/') {
                         req.url = '/webinars/index.html';
+                    }
+
+                    // ─────────────────────────────────────
+                    // PROOF INTELLIGENCE REWRITE
+                    // ─────────────────────────────────────
+                    if (req.url === '/proof' || req.url === '/proof/') {
+                        req.url = '/proof/index.html';
                     }
 
                     // ─────────────────────────────────────
