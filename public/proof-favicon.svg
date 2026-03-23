@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="fg" x1="10%" y1="5%" x2="90%" y2="95%">
+      <stop offset="0%" stop-color="#fae49a"/>
+      <stop offset="50%" stop-color="#f4d06f"/>
+      <stop offset="100%" stop-color="#e6b800"/>
+    </linearGradient>
+    <radialGradient id="fs" cx="35%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.12)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    </radialGradient>
+  </defs>
+  <rect x="2" y="2" width="96" height="96" rx="18" fill="url(#fg)"/>
+  <rect x="2" y="2" width="96" height="96" rx="18" fill="url(#fs)"/>
+  <text
+    x="50" y="52"
+    font-family="Cinzel, 'Palatino Linotype', serif"
+    font-size="68"
+    font-weight="700"
+    fill="#1a1200"
+    text-anchor="middle"
+    dominant-baseline="central"
+    opacity="0.85">P</text>
+</svg>

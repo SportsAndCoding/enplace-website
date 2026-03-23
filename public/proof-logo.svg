@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="480" height="120">
+  <defs>
+    <linearGradient id="mark-grad" x1="10%" y1="5%" x2="90%" y2="95%">
+      <stop offset="0%" stop-color="#fae49a"/>
+      <stop offset="50%" stop-color="#f4d06f"/>
+      <stop offset="100%" stop-color="#e6b800"/>
+    </linearGradient>
+    <radialGradient id="mark-shine" cx="35%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.12)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Mark -->
+  <rect x="0" y="0" width="120" height="120" rx="22" fill="url(#mark-grad)"/>
+  <rect x="0" y="0" width="120" height="120" rx="22" fill="url(#mark-shine)"/>
+  <text
+    x="60" y="62"
+    font-family="Cinzel, 'Palatino Linotype', 'Book Antiqua', Palatino, serif"
+    font-size="72"
+    font-weight="700"
+    fill="#1a1200"
+    text-anchor="middle"
+    dominant-baseline="central"
+    opacity="0.85">P</text>
+
+  <!-- PROOF wordmark -->
+  <text
+    x="148" y="56"
+    font-family="Cinzel, 'Palatino Linotype', 'Book Antiqua', Palatino, serif"
+    font-size="44"
+    font-weight="700"
+    fill="#f7f3e9"
+    letter-spacing="8"
+    dominant-baseline="auto">PROOF</text>
+
+  <!-- Hairline rule -->
+  <line x1="148" y1="68" x2="472" y2="68" stroke="#f4d06f" stroke-width="0.75" opacity="0.4"/>
+
+  <!-- INTELLIGENCE subtext -->
+  <text
+    x="150" y="90"
+    font-family="Cinzel, 'Palatino Linotype', 'Book Antiqua', Palatino, serif"
+    font-size="12.5"
+    font-weight="400"
+    fill="#f4d06f"
+    letter-spacing="8"
+    dominant-baseline="auto">INTELLIGENCE</text>
+</svg>
