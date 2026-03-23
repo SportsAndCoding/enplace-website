@@ -54,7 +54,7 @@ export default function ProofLanding() {
           <li><a href="#dossier">Dossier</a></li>
           <li><a href="#use-cases">Use Cases</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li><a href="mailto:rob@en-place.ai">Contact</a></li>
+          <li><a href="tel:5134020611">Contact · (513) 402-0611</a></li>
         </ul>
         <div class="proof-nav__actions">
           <a href="https://proof.en-place.ai" class="proof-nav__login">Login</a>
