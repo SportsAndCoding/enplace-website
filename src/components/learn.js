@@ -154,6 +154,18 @@ const CONTENT = [
         duration: 'Interactive tool',
         featured: true,
     },
+    {
+        id: 'caesars-to-kitchen',
+        type: 'case-study',
+        title: 'From Caesars to Your Kitchen: The Billion-Dollar Employee Playbook Restaurants Never Got',
+        excerpt: 'A Harvard professor proved that investing in employees was more profitable than investing in slot machines, and built the world\'s largest gaming company to prove it. Peer-reviewed research confirms the framework transfers to restaurants.',
+        thumbnail: null,
+        videoUrl: null,
+        articleUrl: '/learn/caesars-to-kitchen/',
+        date: '2025-10-01',
+        duration: '14 min read',
+        featured: true,
+    },
 ];
 
 // ─────────────────────────────────────

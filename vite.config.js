@@ -30,6 +30,7 @@ export default defineConfig({
                 learnServiceProfitChain: './learn/service-profit-chain/index.html',
                 learnYourStaffsMoodIsYourYelpScore: './learn/your-staffs-mood-is-your-yelp-score/index.html',
                 learnBillyCalledInSick: './learn/billy-called-in-sick/index.html',
+                learnCaesarsToKitchen: './learn/caesars-to-kitchen/index.html',
                 calculator: './calculator/index.html',
                 effect: './effect/index.html',
                 faq: './faq/index.html',
@@ -117,6 +118,9 @@ export default defineConfig({
                     }
                     if (req.url.startsWith('/learn/billy-called-in-sick')) {
                         req.url = '/learn/billy-called-in-sick/index.html';
+                    }
+                    if (req.url.startsWith('/learn/caesars-to-kitchen')) {
+                        req.url = '/learn/caesars-to-kitchen/index.html';
                     }
                     if (req.url === '/calculator' || req.url === '/calculator/') {
                         req.url = '/calculator/index.html';
