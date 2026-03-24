@@ -75,7 +75,7 @@ export default function ProofLanding() {
 
         <p class="proof-hero__sub">
           Proof Intelligence is the only platform that combines a <strong>900K+ restaurant database</strong>
-          with AI-powered vacancy detection, deep-dive dossiers, and a built-in CRM.
+          with GM vacancy detection, deep-dive dossiers, and a built-in CRM.
           Built for the sales professionals who sell into restaurants.
         </p>
 
@@ -95,7 +95,7 @@ export default function ProofLanding() {
         </div>
         <div class="proof-stats__item">
           <div class="proof-stats__n">GM Scan</div>
-          <div class="proof-stats__l">AI detects GM vacancies by region. Nobody else does this.</div>
+          <div class="proof-stats__l">Detects GM vacancies by region. Nobody else does this.</div>
         </div>
         <div class="proof-stats__item">
           <div class="proof-stats__n">$1.00</div>
@@ -138,7 +138,7 @@ export default function ProofLanding() {
           GM Vacancy Scan.<br><em>Intelligence that doesn't exist anywhere else.</em>
         </h2>
         <p style="font-size:16px;font-weight:300;color:rgba(247,243,233,0.68);line-height:1.78;max-width:620px;margin-bottom:48px;">
-          Select a region. Proof's AI scans every restaurant in it, cross-referencing job boards,
+          Select a region. Proof scans every restaurant in it, cross-referencing job boards,
           social media, review patterns, and operational signals to identify which locations have
           a GM vacancy right now. The results come ranked by confidence, with vacancy signals
           and estimated time since the position opened.
@@ -158,7 +158,7 @@ export default function ProofLanding() {
             <div class="proof-scan-step">
               <div class="proof-scan-step__num">02</div>
               <div class="proof-scan-step__content">
-                <div class="proof-scan-step__title">AI scans every restaurant</div>
+                <div class="proof-scan-step__title">Every restaurant gets scanned</div>
                 <div class="proof-scan-step__desc">The scan runs in the background. Each restaurant gets checked against multiple live data sources for leadership instability signals.</div>
               </div>
             </div>
