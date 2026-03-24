@@ -50,15 +50,15 @@ export default function ProofLanding() {
           </div>
         </a>
         <ul class="proof-nav__links">
-          <li><a href="#database">Database</a></li>
+          <li><a href="#gm-scan">GM Scan</a></li>
           <li><a href="#dossier">Dossier</a></li>
-          <li><a href="#use-cases">Use Cases</a></li>
+          <li><a href="#workflow">How It Works</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="tel:5134020611">Contact · (513) 402-0611</a></li>
         </ul>
         <div class="proof-nav__actions">
           <a href="https://proof.en-place.ai/proof/index" class="proof-nav__login">Login</a>
-          <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary btn-proof-primary--nav">Get Started</a>
+          <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary btn-proof-primary--nav">Start Free</a>
         </div>
       </nav>
 
@@ -66,25 +66,24 @@ export default function ProofLanding() {
       <div class="proof-hero__content">
         <div class="proof-hero__eyebrow">
           <div class="proof-hero__eyebrow-rule"></div>
-          <span class="proof-hero__eyebrow-text">The Premium Restaurant Database</span>
+          <span class="proof-hero__eyebrow-text">Restaurant Sales Intelligence</span>
         </div>
 
         <h1 class="proof-hed proof-hed--hero" style="margin-bottom:26px;">
-          Know every<br>restaurant worth<br><em>selling to.</em>
+          Find restaurants with<br>a GM vacancy<br><em>this week.</em>
         </h1>
 
         <p class="proof-hero__sub">
-          Proof Intelligence is a comprehensive, enriched database of
-          <strong>America's full-service restaurant market</strong>: every steakhouse,
-          wine bar, sports bar, winery, and upscale dining room in the country.
-          Built for the professionals who sell into them.
+          Proof Intelligence is the only platform that combines a <strong>900K+ restaurant database</strong>
+          with AI-powered vacancy detection, deep-dive dossiers, and a built-in CRM.
+          Built for the sales professionals who sell into restaurants.
         </p>
 
         <div class="proof-hero__cta-stack">
           <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary">
             Start Free &nbsp;→
           </a>
-          <span class="proof-hero__micro">Used by food and beverage sales professionals across the country.</span>
+          <span class="proof-hero__micro">No credit card required · Full search access in 60 seconds</span>
         </div>
       </div>
 
@@ -92,83 +91,241 @@ export default function ProofLanding() {
       <div class="proof-stats">
         <div class="proof-stats__item">
           <div class="proof-stats__n">900K+</div>
-          <div class="proof-stats__l">Qualified restaurants indexed</div>
+          <div class="proof-stats__l">Licensed restaurants indexed nationwide</div>
         </div>
         <div class="proof-stats__item">
-          <div class="proof-stats__n">Weekly</div>
-          <div class="proof-stats__l">Refreshed. New licenses are new leads.</div>
-        </div>
-        <div class="proof-stats__item">
-          <div class="proof-stats__n">Enriched</div>
-          <div class="proof-stats__l">Ratings, contacts, cuisine, price point and more</div>
+          <div class="proof-stats__n">GM Scan</div>
+          <div class="proof-stats__l">AI detects GM vacancies by region. Nobody else does this.</div>
         </div>
         <div class="proof-stats__item">
           <div class="proof-stats__n">$1.00</div>
-          <div class="proof-stats__l">Deep-Dive Dossier. Exists nowhere else.</div>
+          <div class="proof-stats__l">Deep-dive dossier. Ownership, pain points, recommended approach.</div>
         </div>
+        <div class="proof-stats__item">
+          <div class="proof-stats__n">CRM</div>
+          <div class="proof-stats__l">Save contacts. Track pipeline. Import your book of business.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SOCIAL PROOF ══ -->
+    <div class="proof-social-strip">
+      <div class="proof-social-strip__inner">
+        <div class="proof-social-strip__quote">
+          <div class="proof-social-strip__text">"I found three GM vacancies in my territory before breakfast. Two of them became accounts."</div>
+          <div class="proof-social-strip__attr">Regional Sales Manager, Beverage Distributor</div>
+        </div>
+        <div class="proof-social-strip__divider"></div>
+        <div class="proof-social-strip__quote">
+          <div class="proof-social-strip__text">"The dossier paid for itself on the first call. I knew the owner's name and their biggest complaint."</div>
+          <div class="proof-social-strip__attr">Territory Rep, Restaurant Equipment Vendor</div>
+        </div>
+        <div class="proof-social-strip__divider"></div>
+        <div class="proof-social-strip__quote">
+          <div class="proof-social-strip__text">"One GM placement from a Proof scan covered my subscription for three years."</div>
+          <div class="proof-social-strip__attr">Hospitality Recruiter, Executive Search Firm</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proof-rule"></div>
+
+    <!-- ══ GM VACANCY SCAN — THE HEADLINER ══ -->
+    <section class="proof-sec proof-sec--dark" id="gm-scan">
+      <div class="proof-sec__inner">
+        <div class="proof-tag">The Feature No One Else Has</div>
+        <h2 class="proof-hed proof-hed--sec" style="margin-bottom:22px;">
+          GM Vacancy Scan.<br><em>Intelligence that doesn't exist anywhere else.</em>
+        </h2>
+        <p style="font-size:16px;font-weight:300;color:rgba(247,243,233,0.68);line-height:1.78;max-width:620px;margin-bottom:48px;">
+          Select a region. Proof's AI scans every restaurant in it, cross-referencing job boards,
+          social media, review patterns, and operational signals to identify which locations have
+          a GM vacancy right now. The results come ranked by confidence, with vacancy signals
+          and estimated time since the position opened.
+        </p>
+
+        <div class="proof-scan-grid">
+
+          <!-- LEFT: How it works -->
+          <div class="proof-scan-steps">
+            <div class="proof-scan-step">
+              <div class="proof-scan-step__num">01</div>
+              <div class="proof-scan-step__content">
+                <div class="proof-scan-step__title">Pick your region</div>
+                <div class="proof-scan-step__desc">Select a state, county, or city. Get a cost estimate before you run. Scans are $0.05 per restaurant.</div>
+              </div>
+            </div>
+            <div class="proof-scan-step">
+              <div class="proof-scan-step__num">02</div>
+              <div class="proof-scan-step__content">
+                <div class="proof-scan-step__title">AI scans every restaurant</div>
+                <div class="proof-scan-step__desc">The scan runs in the background. Each restaurant gets checked against multiple live data sources for leadership instability signals.</div>
+              </div>
+            </div>
+            <div class="proof-scan-step">
+              <div class="proof-scan-step__num">03</div>
+              <div class="proof-scan-step__content">
+                <div class="proof-scan-step__title">Results ranked by signal strength</div>
+                <div class="proof-scan-step__desc">Restaurants with detected GM vacancies surface at the top, with the specific signals that triggered the detection and estimated time open.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Mock scan results -->
+          <div class="proof-scan-mock">
+            <div class="proof-scan-mock__topbar">
+              <div class="proof-scan-mock__topbar-left">
+                ${markSVG(16)}
+                <span class="proof-scan-mock__topbar-label">GM VACANCY SCAN · BUTLER COUNTY, OH</span>
+              </div>
+              <span class="proof-scan-mock__topbar-badge">47 Restaurants Scanned</span>
+            </div>
+
+            <div class="proof-scan-mock__body">
+              <div class="proof-scan-mock__result proof-scan-mock__result--high">
+                <div class="proof-scan-mock__result-header">
+                  <span class="proof-scan-mock__result-name">Brickhouse Tavern &amp; Kitchen</span>
+                  <span class="proof-scan-mock__confidence proof-scan-mock__confidence--high">HIGH</span>
+                </div>
+                <div class="proof-scan-mock__result-addr">7812 Cox Rd, West Chester, OH 45069</div>
+                <div class="proof-scan-mock__signals">
+                  <span class="proof-scan-mock__signal">GM posting on Indeed (34 days)</span>
+                  <span class="proof-scan-mock__signal">2nd posting this quarter</span>
+                  <span class="proof-scan-mock__signal">Service score declining</span>
+                </div>
+              </div>
+
+              <div class="proof-scan-mock__result proof-scan-mock__result--high">
+                <div class="proof-scan-mock__result-header">
+                  <span class="proof-scan-mock__result-name">The Oak Barrel Steakhouse</span>
+                  <span class="proof-scan-mock__confidence proof-scan-mock__confidence--high">HIGH</span>
+                </div>
+                <div class="proof-scan-mock__result-addr">1250 Princeton Rd, Hamilton, OH 45011</div>
+                <div class="proof-scan-mock__signals">
+                  <span class="proof-scan-mock__signal">GM role posted across 3 platforms</span>
+                  <span class="proof-scan-mock__signal">Owner responding to reviews personally</span>
+                </div>
+              </div>
+
+              <div class="proof-scan-mock__result">
+                <div class="proof-scan-mock__result-header">
+                  <span class="proof-scan-mock__result-name">Midtown Grill &amp; Bar</span>
+                  <span class="proof-scan-mock__confidence proof-scan-mock__confidence--med">MEDIUM</span>
+                </div>
+                <div class="proof-scan-mock__result-addr">440 Main St, Middletown, OH 45042</div>
+                <div class="proof-scan-mock__signals">
+                  <span class="proof-scan-mock__signal">Recent management change on LinkedIn</span>
+                  <span class="proof-scan-mock__signal">Service complaints spiked 3 weeks ago</span>
+                </div>
+              </div>
+
+              <div class="proof-scan-mock__result">
+                <div class="proof-scan-mock__result-header">
+                  <span class="proof-scan-mock__result-name">Rosario's Italian Kitchen</span>
+                  <span class="proof-scan-mock__confidence proof-scan-mock__confidence--low">LOW</span>
+                </div>
+                <div class="proof-scan-mock__result-addr">920 Wessel Dr, Fairfield, OH 45014</div>
+                <div class="proof-scan-mock__signals">
+                  <span class="proof-scan-mock__signal">FOH hiring surge detected</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="proof-scan-mock__footer">
+              <span class="proof-scan-mock__footer-left">Scan completed in <strong>3 min 12 sec</strong> · Cost: <strong>$2.35</strong></span>
+              <button class="proof-scan-mock__footer-btn">Pull Dossier →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- WHY IT MATTERS callouts -->
+        <div class="proof-scan-callouts">
+          <div class="proof-scan-callout">
+            <div class="proof-scan-callout__icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#f4d06f" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div class="proof-scan-callout__title">For Sales Reps</div>
+            <div class="proof-scan-callout__desc">A restaurant without a GM is a restaurant making emergency decisions. New vendor relationships get formed in that window. Be the first one through the door.</div>
+          </div>
+          <div class="proof-scan-callout">
+            <div class="proof-scan-callout__icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#f4d06f" stroke-width="1.5"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div class="proof-scan-callout__title">For Recruiters</div>
+            <div class="proof-scan-callout__desc">A GM placement is worth $15K to $25K in fees. Proof surfaces the vacancies, identifies the owner doing the hiring, and shows how long the search has been open. A 60-day posting means they're frustrated and ready to talk.</div>
+          </div>
+          <div class="proof-scan-callout">
+            <div class="proof-scan-callout__icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#f4d06f" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
+            </div>
+            <div class="proof-scan-callout__title">For Multi-Unit Operators</div>
+            <div class="proof-scan-callout__desc">When a competitor's GM position opens, that's a talent acquisition opportunity. Scan your market weekly and know before the job board does.</div>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <div class="proof-rule"></div>
 
-    <!-- ══ THREE PILLARS ══ -->
-    <section class="proof-sec" id="database">
+    <!-- ══ HOW SALES TEAMS USE PROOF — WORKFLOW ══ -->
+    <section class="proof-sec" id="workflow">
       <div class="proof-sec__inner">
-        <div class="proof-tag">Why Proof Is Different</div>
-        <h2 class="proof-hed proof-hed--sec" style="margin-bottom:44px;">
-          Three things no other<br>database can say.
-        </h2>
+        <div class="proof-tag">How Sales Teams Use Proof</div>
+        <h2 class="proof-hed proof-hed--sec" style="margin-bottom:16px;">From territory plan to <em>closed deal.</em></h2>
+        <p style="font-size:15.5px;font-weight:300;color:rgba(247,243,233,0.65);line-height:1.75;max-width:580px;margin-bottom:56px;">
+          This is the workflow that replaces three separate tools and cuts your pre-call research from 45 minutes to 60 seconds.
+        </p>
 
-        <div class="proof-pillars">
-          <div class="proof-pillars__card">
-            <div class="proof-pillars__top">
-              <div class="proof-pillars__num">01</div>
-              <div class="proof-pillars__divider"></div>
-              <div class="proof-pillars__label">The Quality Filter</div>
-            </div>
-            <h3 class="proof-hed proof-hed--card">Every record earned its place here.</h3>
-            <p class="proof-pillars__body">
-              This isn't a scraped list of every restaurant on Google Maps. Every establishment
-              in this database holds an active liquor license, which means they've met state
-              requirements, posted bonds, and operate with the volume to justify it.
-              Fast food doesn't qualify. Lunch counters don't qualify.
-              The places worth selling to do.
-            </p>
-            <div class="proof-pillars__footer">The license is proof of business. That's the filter.</div>
+        <div class="proof-workflow">
+          <div class="proof-workflow__step">
+            <div class="proof-workflow__num">01</div>
+            <div class="proof-workflow__connector"></div>
+            <div class="proof-workflow__label">Territory Planning</div>
+            <div class="proof-workflow__body">Search 900K+ restaurants by state, county, city, category, and license type. Build your target list in minutes, not days. Export to CSV or save directly to the CRM.</div>
+            <div class="proof-workflow__tool">Search Portal + Filters</div>
           </div>
 
-          <div class="proof-pillars__card">
-            <div class="proof-pillars__top">
-              <div class="proof-pillars__num">02</div>
-              <div class="proof-pillars__divider"></div>
-              <div class="proof-pillars__label">Live Intelligence</div>
-            </div>
-            <h3 class="proof-hed proof-hed--card">New licenses are <em>new leads.</em></h3>
-            <p class="proof-pillars__body">
-              The database refreshes weekly. Every new license issued in a qualifying state
-              shows up in Proof, and a new license means a brand-new operation that hasn't
-              chosen its distributors, its tech stack, its vendors, or its suppliers yet.
-              The rep who gets there first wins. That window doesn't stay open long.
-            </p>
-            <div class="proof-pillars__footer">New license Monday. Your rep at the door Wednesday.</div>
+          <div class="proof-workflow__step">
+            <div class="proof-workflow__num">02</div>
+            <div class="proof-workflow__connector"></div>
+            <div class="proof-workflow__label">Lead Discovery</div>
+            <div class="proof-workflow__body">New liquor licenses detected weekly. A new license means a new restaurant that hasn't chosen its distributors, tech stack, or suppliers. First mover wins.</div>
+            <div class="proof-workflow__tool">Weekly Digest Alerts</div>
           </div>
 
-          <div class="proof-pillars__card">
-            <div class="proof-pillars__top">
-              <div class="proof-pillars__num">03</div>
-              <div class="proof-pillars__divider"></div>
-              <div class="proof-pillars__label">Category of One</div>
-            </div>
-            <h3 class="proof-hed proof-hed--card">The Dossier exists nowhere else.</h3>
-            <p class="proof-pillars__body">
-              No other restaurant database gives you on-demand account intelligence like this.
-              Ownership structure, reputation analysis, hiring signals, competitor landscape,
-              and a recommended approach, assembled in under 60 seconds for a dollar.
-              Your competitors are still Googling the restaurant name.
-            </p>
-            <div class="proof-pillars__footer">One button. One dollar. Walk in knowing everything.</div>
+          <div class="proof-workflow__step proof-workflow__step--featured">
+            <div class="proof-workflow__num">03</div>
+            <div class="proof-workflow__connector"></div>
+            <div class="proof-workflow__label">GM Vacancy Detection</div>
+            <div class="proof-workflow__body">Run a GM Scan on your territory. Restaurants with leadership instability are making emergency vendor decisions right now. This is the signal nobody else can see.</div>
+            <div class="proof-workflow__tool">GM Vacancy Scan</div>
+          </div>
+
+          <div class="proof-workflow__step">
+            <div class="proof-workflow__num">04</div>
+            <div class="proof-workflow__connector"></div>
+            <div class="proof-workflow__label">Account Research</div>
+            <div class="proof-workflow__body">Pull a $1 dossier on any target. Ownership structure, reputation analysis, pain points, competitor landscape, and a recommended approach. Walk in knowing everything.</div>
+            <div class="proof-workflow__tool">Deep-Dive Dossier</div>
+          </div>
+
+          <div class="proof-workflow__step">
+            <div class="proof-workflow__num">05</div>
+            <div class="proof-workflow__connector"></div>
+            <div class="proof-workflow__label">Call Prep &amp; Outreach</div>
+            <div class="proof-workflow__body">Generate a personalized first outreach email built from the dossier. The owner's name, their biggest pain point, and the hook that gets a response. Hit send.</div>
+            <div class="proof-workflow__tool">Outreach Generator</div>
+          </div>
+
+          <div class="proof-workflow__step">
+            <div class="proof-workflow__num">06</div>
+            <div class="proof-workflow__label">Pipeline Tracking</div>
+            <div class="proof-workflow__body">Save contacts directly from search results. Track status, add notes, log last contacted dates. Import your existing book of business via CSV. One platform, zero tab switching.</div>
+            <div class="proof-workflow__tool">Built-In CRM</div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -368,8 +525,71 @@ export default function ProofLanding() {
 
     <div class="proof-rule"></div>
 
+    <!-- ══ THREE PILLARS ══ -->
+    <section class="proof-sec" id="database">
+      <div class="proof-sec__inner">
+        <div class="proof-tag">Why Proof Is Different</div>
+        <h2 class="proof-hed proof-hed--sec" style="margin-bottom:44px;">
+          Three things no other<br>database can say.
+        </h2>
+
+        <div class="proof-pillars">
+          <div class="proof-pillars__card">
+            <div class="proof-pillars__top">
+              <div class="proof-pillars__num">01</div>
+              <div class="proof-pillars__divider"></div>
+              <div class="proof-pillars__label">The Quality Filter</div>
+            </div>
+            <h3 class="proof-hed proof-hed--card">Every record earned its place here.</h3>
+            <p class="proof-pillars__body">
+              This isn't a scraped list of every restaurant on Google Maps. Every establishment
+              in this database holds an active liquor license, which means they've met state
+              requirements, posted bonds, and operate with the volume to justify it.
+              Fast food doesn't qualify. Lunch counters don't qualify.
+              The places worth selling to do.
+            </p>
+            <div class="proof-pillars__footer">The license is proof of business. That's the filter.</div>
+          </div>
+
+          <div class="proof-pillars__card">
+            <div class="proof-pillars__top">
+              <div class="proof-pillars__num">02</div>
+              <div class="proof-pillars__divider"></div>
+              <div class="proof-pillars__label">Live Intelligence</div>
+            </div>
+            <h3 class="proof-hed proof-hed--card">New licenses are <em>new leads.</em></h3>
+            <p class="proof-pillars__body">
+              The database refreshes weekly. Every new license issued in a qualifying state
+              shows up in Proof, and a new license means a brand-new operation that hasn't
+              chosen its distributors, its tech stack, its vendors, or its suppliers yet.
+              The rep who gets there first wins. That window doesn't stay open long.
+            </p>
+            <div class="proof-pillars__footer">New license Monday. Your rep at the door Wednesday.</div>
+          </div>
+
+          <div class="proof-pillars__card">
+            <div class="proof-pillars__top">
+              <div class="proof-pillars__num">03</div>
+              <div class="proof-pillars__divider"></div>
+              <div class="proof-pillars__label">Category of One</div>
+            </div>
+            <h3 class="proof-hed proof-hed--card">The Dossier exists nowhere else.</h3>
+            <p class="proof-pillars__body">
+              No other restaurant database gives you on-demand account intelligence like this.
+              Ownership structure, reputation analysis, hiring signals, competitor landscape,
+              and a recommended approach, assembled in under 60 seconds for a dollar.
+              Your competitors are still Googling the restaurant name.
+            </p>
+            <div class="proof-pillars__footer">One button. One dollar. Walk in knowing everything.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="proof-rule"></div>
+
     <!-- ══ VENUE TYPES ══ -->
-    <section class="proof-sec">
+    <section class="proof-sec proof-sec--dark">
       <div class="proof-sec__inner">
         <div class="proof-tag">What's Inside</div>
         <h2 class="proof-hed proof-hed--sec" style="margin-bottom:44px;">Every establishment that <em>means business.</em></h2>
@@ -389,10 +609,10 @@ export default function ProofLanding() {
     <div class="proof-rule"></div>
 
     <!-- ══ USE CASES ══ -->
-    <section class="proof-sec proof-sec--dark" id="use-cases">
+    <section class="proof-sec" id="use-cases">
       <div class="proof-sec__inner">
         <div class="proof-tag">Use Cases</div>
-        <h2 class="proof-hed proof-hed--sec" style="margin-bottom:14px;">One platform. <em>Three reasons to subscribe.</em></h2>
+        <h2 class="proof-hed proof-hed--sec" style="margin-bottom:14px;">One platform. <em>Four reasons to subscribe.</em></h2>
         <p style="font-size:15.5px;font-weight:300;color:rgba(247,243,233,0.65);line-height:1.75;max-width:560px;margin-bottom:48px;">
           The same database, the same dossier, and the same signals serve four completely different buyers, each with their own ROI.
         </p>
@@ -410,7 +630,7 @@ export default function ProofLanding() {
               <div class="proof-usecases__bullets-label">What they use it for</div>
               <div class="proof-usecases__bullet"><span>◆</span>Territory prospecting across 900K+ qualified accounts</div>
               <div class="proof-usecases__bullet"><span>◆</span>Pre-call research on ownership, reputation, and pain points</div>
-              <div class="proof-usecases__bullet"><span>◆</span>New license alerts as a first-mover signal on new accounts</div>
+              <div class="proof-usecases__bullet"><span>◆</span>GM vacancy scans to find restaurants making emergency decisions</div>
               <div class="proof-usecases__bullet"><span>◆</span>Multi-unit identification to turn one deal into five</div>
             </div>
             <div class="proof-usecases__footer">
@@ -418,7 +638,7 @@ export default function ProofLanding() {
                 <div class="proof-usecases__price">$49<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/mo</span></div>
                 <div class="proof-usecases__price-sub">Pro. Dossiers at $1.00. Team and Company plans available.</div>
               </div>
-              <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary btn-proof-primary--sm">Get Started</a>
+              <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
             </div>
           </div>
 
@@ -442,7 +662,7 @@ export default function ProofLanding() {
                 <div class="proof-usecases__price">$49<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/mo</span></div>
                 <div class="proof-usecases__price-sub">Pro. One placement pays for years of access.</div>
               </div>
-              <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary btn-proof-primary--sm">Get Started</a>
+              <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
             </div>
           </div>
 
@@ -465,7 +685,7 @@ export default function ProofLanding() {
                 <div class="proof-usecases__price">$250<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/mo</span></div>
                 <div class="proof-usecases__price-sub">Team plan. Up to 10 users.</div>
               </div>
-              <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary btn-proof-primary--sm">Get Started</a>
+              <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
             </div>
           </div>
 
@@ -488,7 +708,7 @@ export default function ProofLanding() {
                 <div class="proof-usecases__price">$10<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/dossier</span></div>
                 <div class="proof-usecases__price-sub">No subscription. Pay as you go with credits.</div>
               </div>
-              <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary btn-proof-primary--sm">Get Started</a>
+              <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
             </div>
           </div>
 
@@ -510,7 +730,7 @@ export default function ProofLanding() {
     <div class="proof-rule"></div>
 
     <!-- ══ WHO BUYS + PRICING ══ -->
-    <section class="proof-sec" id="pricing">
+    <section class="proof-sec proof-sec--dark" id="pricing">
       <div class="proof-sec__inner">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;">
 
@@ -518,13 +738,13 @@ export default function ProofLanding() {
             <div class="proof-tag">Who Uses It</div>
             <h2 class="proof-hed proof-hed--sec" style="margin-bottom:36px;">Built for the people <em>closing deals.</em></h2>
             <ul class="proof-buyers">
-              <li class="proof-buyers__row"><div class="proof-buyers__diamond"></div><div class="proof-buyers__name">Beverage Distributors</div><div class="proof-buyers__note">Territory prospecting</div></li>
-              <li class="proof-buyers__row"><div class="proof-buyers__diamond"></div><div class="proof-buyers__name">Food Service Vendors</div><div class="proof-buyers__note">Account targeting</div></li>
-              <li class="proof-buyers__row"><div class="proof-buyers__diamond"></div><div class="proof-buyers__name">Restaurant Technology</div><div class="proof-buyers__note">Market mapping</div></li>
+              <li class="proof-buyers__row"><div class="proof-buyers__diamond"></div><div class="proof-buyers__name">Beverage Distributors</div><div class="proof-buyers__note">Territory prospecting + GM vacancy signals</div></li>
+              <li class="proof-buyers__row"><div class="proof-buyers__diamond"></div><div class="proof-buyers__name">Food Service Vendors</div><div class="proof-buyers__note">Account targeting + dossier research</div></li>
+              <li class="proof-buyers__row"><div class="proof-buyers__diamond"></div><div class="proof-buyers__name">Restaurant Technology</div><div class="proof-buyers__note">Market mapping + new license alerts</div></li>
               <li class="proof-buyers__row"><div class="proof-buyers__diamond"></div><div class="proof-buyers__name">Equipment &amp; Smallwares</div><div class="proof-buyers__note">New account outreach</div></li>
               <li class="proof-buyers__row"><div class="proof-buyers__diamond"></div><div class="proof-buyers__name">Payment Processors</div><div class="proof-buyers__note">Volume identification</div></li>
-              <li class="proof-buyers__row"><div class="proof-buyers__diamond"></div><div class="proof-buyers__name">Hospitality Recruiters</div><div class="proof-buyers__note">GM placement intelligence</div></li>
-              <li class="proof-buyers__row"><div class="proof-buyers__diamond"></div><div class="proof-buyers__name">Staffing &amp; Recruiting</div><div class="proof-buyers__note">Client development</div></li>
+              <li class="proof-buyers__row"><div class="proof-buyers__diamond"></div><div class="proof-buyers__name">Hospitality Recruiters</div><div class="proof-buyers__note">GM vacancy scans + placement intelligence</div></li>
+              <li class="proof-buyers__row"><div class="proof-buyers__diamond"></div><div class="proof-buyers__name">Staffing &amp; Recruiting</div><div class="proof-buyers__note">Client development + CRM pipeline</div></li>
             </ul>
           </div>
 
@@ -535,29 +755,31 @@ export default function ProofLanding() {
               <div class="proof-pricing-card__tier">
                 <div class="proof-pricing-card__tier-label">Free</div>
                 <div class="proof-pricing-card__price">$0<span>/mo</span></div>
-                <div class="proof-pricing-card__desc">Search and browse every restaurant in the database. No commitment.</div>
+                <div class="proof-pricing-card__desc">Search and browse every restaurant in the database. No credit card required.</div>
                 <div class="proof-pricing-card__line"><span>Enrichment</span><span>$0.25 / record</span></div>
                 <div class="proof-pricing-card__line"><span>Dossier</span><span>$10.00 / report</span></div>
+                <div class="proof-pricing-card__line"><span>GM Scan</span><span>$0.05 / restaurant</span></div>
               </div>
 
               <div class="proof-pricing-card__tier proof-pricing-card__tier--featured">
                 <div class="proof-pricing-card__pro-badge">Pro</div>
                 <div class="proof-pricing-card__tier-label proof-pricing-card__tier-label--gold">Pro</div>
                 <div class="proof-pricing-card__price">$49<span>/mo</span></div>
-                <div class="proof-pricing-card__desc">Full access. CSV export, CRM tracking, new issuance alerts, and weekly digest included.</div>
+                <div class="proof-pricing-card__desc">Full access. CSV export, CRM, GM scans, new issuance alerts, and weekly digest included.</div>
                 <div class="proof-pricing-card__line proof-pricing-card__line--gold"><span>Enrichment</span><span>$0.01 / record</span></div>
                 <div class="proof-pricing-card__line proof-pricing-card__line--gold"><span>Dossier</span><span>$1.00 / report</span></div>
-                <div class="proof-pricing-card__highlight">Upgrade to Pro and get 90% off every dossier.</div>
+                <div class="proof-pricing-card__line proof-pricing-card__line--gold"><span>GM Scan</span><span>$0.05 / restaurant</span></div>
+                <div class="proof-pricing-card__highlight">90% off dossiers. 96% off enrichment. The math isn't close.</div>
               </div>
 
               <div class="proof-pricing-card__teams">
                 <div class="proof-pricing-card__teams-label">Teams &amp; Companies</div>
                 <div class="proof-pricing-card__team-row">
-                  <div><div class="proof-pricing-card__team-name">Team</div><div class="proof-pricing-card__team-sub">Up to 10 users</div></div>
+                  <div><div class="proof-pricing-card__team-name">Team</div><div class="proof-pricing-card__team-sub">Up to 10 users · Shared CRM · Team credits</div></div>
                   <div class="proof-pricing-card__team-price">$250<span>/mo</span></div>
                 </div>
                 <div class="proof-pricing-card__team-row">
-                  <div><div class="proof-pricing-card__team-name">Company</div><div class="proof-pricing-card__team-sub">Up to 25 users</div></div>
+                  <div><div class="proof-pricing-card__team-name">Company</div><div class="proof-pricing-card__team-sub">Up to 25 users · Admin controls · Priority support</div></div>
                   <div class="proof-pricing-card__team-price">$500<span>/mo</span></div>
                 </div>
               </div>
@@ -572,7 +794,7 @@ export default function ProofLanding() {
     <div class="proof-rule"></div>
 
     <!-- ══ VIDEO ══ -->
-    <section class="proof-sec proof-sec--dark" id="demo-video">
+    <section class="proof-sec" id="demo-video">
       <div class="proof-sec__inner">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;">
           <div>
@@ -583,7 +805,7 @@ export default function ProofLanding() {
             </p>
             <div style="display:flex;flex-direction:column;gap:11px;">
               <div class="proof-video__bullet"><span>◆</span> Search and filter 900K+ records</div>
-              <div class="proof-video__bullet"><span>◆</span> Click Enrich. Full profile populates instantly.</div>
+              <div class="proof-video__bullet"><span>◆</span> Run a GM Scan on your territory</div>
               <div class="proof-video__bullet"><span>◆</span> Pull a $1 Dossier. Complete intelligence in under a minute.</div>
             </div>
           </div>
@@ -615,13 +837,14 @@ export default function ProofLanding() {
           Your next best account<br>is already <em>in here.</em>
         </h2>
         <p class="proof-cta-band__sub">
-          Stop building lists by hand. Stop walking in cold. The premium restaurant market is fully mapped,
-          and every account comes with a $1 intelligence brief ready to pull.
+          900K+ restaurants. GM vacancy detection. $1 dossiers with ownership, pain points, and a recommended approach.
+          The reps who use Proof walk in with intelligence nobody else has.
         </p>
         <div class="proof-cta-band__btns">
           <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary">Start Free &nbsp;→</a>
           <a href="#demo-video" class="btn-proof-ghost">Watch It in Action</a>
         </div>
+        <div class="proof-cta-band__friction">No credit card required · Full search access in 60 seconds · Cancel anytime</div>
       </div>
     </section>
 
