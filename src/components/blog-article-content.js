@@ -1185,14 +1185,7 @@ export function getArticle(slug) {
     return ARTICLES[slug] || null;
 }
 
-export function getAllSlugs() {
-    return Object.keys(ARTICLES);
-}
 
 export function getArticle(slug) {
     return ARTICLES[slug] || null;
-}
-
-export function getAllSlugs() {
-    return Object.keys(ARTICLES);
 }
