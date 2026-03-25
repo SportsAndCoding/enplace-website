@@ -138,7 +138,7 @@ export default function ProofLanding() {
           This is the workflow that replaces three separate tools and turns your pre-call research from 45 minutes into 60 seconds.
         </p>
 
-        <div class="proof-workflow proof-workflow--7">
+        <div class="proof-workflow">
           <div class="proof-workflow__step">
             <div class="proof-workflow__num">01</div>
             <div class="proof-workflow__connector"></div>
@@ -189,9 +189,17 @@ export default function ProofLanding() {
 
           <div class="proof-workflow__step">
             <div class="proof-workflow__num">07</div>
+            <div class="proof-workflow__connector"></div>
             <div class="proof-workflow__label">Pipeline Tracking</div>
             <div class="proof-workflow__body">Save contacts from search results or GM scans. Track status from lead to closed. Add notes after every call. Import your existing book of business via CSV or Excel. One platform, zero tab switching.</div>
             <div class="proof-workflow__tool">Built-In CRM</div>
+          </div>
+
+          <div class="proof-workflow__step">
+            <div class="proof-workflow__num">08</div>
+            <div class="proof-workflow__label">Route Planner</div>
+            <div class="proof-workflow__body">Turn your Docket into a driving route. Proof maps your daily calls by proximity and builds an optimized sequence so you're not zigzagging across the county. One tap opens turn-by-turn navigation.</div>
+            <div class="proof-workflow__tool">Optimized Field Routes</div>
           </div>
         </div>
 
