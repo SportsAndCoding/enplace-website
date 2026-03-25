@@ -1972,3 +1972,340 @@ body {
     color: var(--dim);
     letter-spacing: 0.02em;
 }
+
+// ── WORKFLOW 7-STEP VARIANT ──────────────────────────────────────────────
+.proof-workflow--7 {
+    grid-template-columns: repeat(4, 1fr);
+
+    .proof-workflow__step:nth-child(n+5) {
+        // Second row: 3 items spanning 4 columns
+    }
+}
+
+// ── THE DOCKET SECTION ───────────────────────────────────────────────────
+.proof-docket-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 56px;
+    align-items: start;
+}
+
+.proof-docket-bullets {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.proof-docket-bullet {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.65;
+
+    span {
+        color: var(--gold-mid);
+        flex-shrink: 0;
+        margin-top: 2px;
+        font-size: 10px;
+    }
+}
+
+// ── DOCKET MOCK ──────────────────────────────────────────────────────────
+.proof-docket-mock {
+    background: #060606;
+    border: 1px solid rgba(244, 208, 111, 0.13);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 28px 72px rgba(0, 0, 0, 0.55);
+
+    &__topbar {
+        background: rgba(244, 208, 111, 0.05);
+        border-bottom: 1px solid rgba(244, 208, 111, 0.09);
+        padding: 12px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__topbar-left {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__topbar-label {
+        font-family: "Cinzel", serif;
+        font-size: 8px;
+        color: var(--gold-mid);
+        letter-spacing: 0.28em;
+        opacity: 0.75;
+    }
+
+    &__topbar-badge {
+        font-family: "Cinzel", serif;
+        font-size: 7.5px;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        background: rgba(58, 138, 58, 0.12);
+        color: #6bc96b;
+        border: 1px solid rgba(58, 138, 58, 0.22);
+        padding: 3px 8px;
+        border-radius: 3px;
+    }
+
+    &__body {
+        padding: 0;
+    }
+
+    &__card {
+        display: flex;
+        gap: 14px;
+        padding: 14px 18px;
+        border-bottom: 1px solid rgba(244, 208, 111, 0.05);
+        transition: background 0.15s;
+
+        &:hover {
+            background: rgba(244, 208, 111, 0.02);
+        }
+
+        &--hot {
+            border-left: 3px solid rgba(244, 208, 111, 0.45);
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__rank {
+        font-family: "Playfair Display", serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: rgba(244, 208, 111, 0.22);
+        line-height: 1;
+        flex-shrink: 0;
+        width: 28px;
+        text-align: center;
+        padding-top: 2px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        min-width: 0;
+    }
+
+    &__name {
+        font-family: "Playfair Display", serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--cream);
+        line-height: 1.3;
+    }
+
+    &__type-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    &__type {
+        font-family: "Cinzel", serif;
+        font-size: 7px;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        padding: 3px 7px;
+        border-radius: 3px;
+
+        &--close {
+            background: rgba(244, 208, 111, 0.1);
+            color: var(--gold-light);
+            border: 1px solid rgba(244, 208, 111, 0.18);
+        }
+
+        &--cold {
+            background: rgba(107, 163, 190, 0.1);
+            color: #6ba3be;
+            border: 1px solid rgba(107, 163, 190, 0.18);
+        }
+
+        &--follow {
+            background: rgba(58, 138, 58, 0.1);
+            color: #6bc96b;
+            border: 1px solid rgba(58, 138, 58, 0.18);
+        }
+    }
+
+    &__phone {
+        font-size: 11px;
+        color: rgba(244, 208, 111, 0.55);
+        font-weight: 500;
+        letter-spacing: 0.02em;
+    }
+
+    &__reason {
+        font-size: 11.5px;
+        color: var(--muted);
+        line-height: 1.55;
+        font-style: italic;
+    }
+
+    &__footer {
+        padding: 10px 18px;
+        background: rgba(0, 0, 0, 0.35);
+        border-top: 1px solid rgba(244, 208, 111, 0.07);
+        font-size: 11px;
+        color: var(--dim);
+
+        strong {
+            color: var(--gold-light);
+        }
+    }
+}
+
+// ── CRM FEATURES ─────────────────────────────────────────────────────────
+.proof-crm-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 48px;
+}
+
+.proof-crm-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.65;
+
+    span {
+        color: var(--gold-mid);
+        flex-shrink: 0;
+        margin-top: 2px;
+        font-size: 10px;
+    }
+}
+
+// ── 4-TIER PRICING GRID ──────────────────────────────────────────────────
+.proof-pricing-tiers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(244, 208, 111, 0.06);
+    border: 1px solid rgba(244, 208, 111, 0.06);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.proof-pricing-tier {
+    background: var(--ink-card);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &--featured {
+        background: rgba(244, 208, 111, 0.035);
+    }
+
+    &__badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+        font-family: "Cinzel", serif;
+        font-size: 7px;
+        letter-spacing: 0.26em;
+        color: #1a1200;
+        padding: 5px 12px;
+        border-radius: 0 0 0 6px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &__header {
+        padding: 28px 24px 20px;
+        border-bottom: 1px solid rgba(244, 208, 111, 0.06);
+    }
+
+    &__label {
+        font-family: "Cinzel", serif;
+        font-size: 9px;
+        letter-spacing: 0.38em;
+        color: rgba(244, 208, 111, 0.48);
+        text-transform: uppercase;
+        margin-bottom: 8px;
+
+        &--gold {
+            color: var(--gold-mid);
+        }
+    }
+
+    &__price {
+        font-family: "Playfair Display", serif;
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--gold-light);
+        line-height: 1;
+        margin-bottom: 8px;
+
+        span {
+            font-size: 15px;
+            font-weight: 400;
+            color: rgba(247, 243, 233, 0.48);
+        }
+    }
+
+    &__desc {
+        font-size: 12px;
+        color: rgba(247, 243, 233, 0.58);
+        font-weight: 300;
+        line-height: 1.55;
+    }
+
+    &__body {
+        padding: 18px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        flex: 1;
+    }
+
+    &__line {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        padding: 3px 0;
+
+        span:first-child {
+            color: rgba(247, 243, 233, 0.52);
+        }
+
+        span:last-child {
+            color: var(--cream);
+            font-weight: 500;
+        }
+
+        &--dim {
+            opacity: 0.55;
+
+            span:last-child {
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__incl {
+        color: var(--gold-light) !important;
+        font-weight: 600 !important;
+    }
+
+    // CTA at bottom
+    .btn-proof-primary,
+    .btn-proof-ghost {
+        margin: 14px 24px 24px;
+    }
+}
