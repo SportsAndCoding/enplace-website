@@ -924,8 +924,8 @@ That's what we built En Place to do. The <strong>Staff Stability Engine</strong>
             heroImage: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1400&q=80&fit=crop',
             heroAlt: 'Grand hotel corridor with warm lighting stretching into the distance, evoking enterprise-scale hospitality',
             heroCredit: 'Unsplash',
-            paperUrl: '/learn',
-            paperTitle: 'Read the full research paper',
+            paperUrl: '/learn/Paper_5_From_Caesars_to_Your_Kitchen.pdf',
+            paperTitle: 'Download the Full Research Paper',
         },
 
         blocks: [
@@ -1155,7 +1155,7 @@ The framework works. The evidence is overwhelming. The question was never whethe
             {
                 type: 'cta',
                 primary: { text: 'Book a Demo', url: 'https://calendly.com/rob-en-place/en-place-demo' },
-                secondary: { text: 'Explore the Learning Center', url: '/learn' },
+                ssecondary: { text: 'Download the Research Paper', url: '/learn/Paper_5_From_Caesars_to_Your_Kitchen.pdf' },
             },
 
             // ── CLOSE ──
