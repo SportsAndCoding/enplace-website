@@ -56,8 +56,8 @@ export default function ProofLanding() {
           <li><a href="tel:5134020611">Contact · (513) 402-0611</a></li>
         </ul>
         <div class="proof-nav__actions">
-          <a href="https://proof.en-place.ai/proof/index" class="proof-nav__login">Login</a>
-          <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary btn-proof-primary--nav">Start Free</a>
+          <a href="https://proof.en-place.ai/login" class="proof-nav__login">Login</a>
+          <a href="https://proof.en-place.ai/login" class="btn-proof-primary btn-proof-primary--nav">Start Free</a>
         </div>
       </nav>
 
@@ -79,7 +79,7 @@ export default function ProofLanding() {
         </p>
 
         <div class="proof-hero__cta-stack">
-          <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary">
+          <a href="https://proof.en-place.ai/login" class="btn-proof-primary">
             Start Free &nbsp;→
           </a>
           <span class="proof-hero__micro">No credit card required · Full search access in 60 seconds</span>
@@ -746,7 +746,7 @@ export default function ProofLanding() {
                 <div class="proof-usecases__price">$49<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/mo</span></div>
                 <div class="proof-usecases__price-sub">Starter. Growth and Team plans available.</div>
               </div>
-              <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
+              <a href="https://proof.en-place.ai/login" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
             </div>
           </div>
 
@@ -770,7 +770,7 @@ export default function ProofLanding() {
                 <div class="proof-usecases__price">$49<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/mo</span></div>
                 <div class="proof-usecases__price-sub">Starter. One placement pays for years of access.</div>
               </div>
-              <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
+              <a href="https://proof.en-place.ai/login" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
             </div>
           </div>
 
@@ -793,7 +793,7 @@ export default function ProofLanding() {
                 <div class="proof-usecases__price">$249<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/mo</span></div>
                 <div class="proof-usecases__price-sub">Team plan. Up to 10 users.</div>
               </div>
-              <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
+              <a href="https://proof.en-place.ai/login" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
             </div>
           </div>
 
@@ -816,7 +816,7 @@ export default function ProofLanding() {
                 <div class="proof-usecases__price">$15<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/dossier</span></div>
                 <div class="proof-usecases__price-sub">No subscription. Pay as you go with credits.</div>
               </div>
-              <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
+              <a href="https://proof.en-place.ai/login" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
             </div>
           </div>
 
@@ -848,7 +848,7 @@ export default function ProofLanding() {
               <div class="proof-pricing-tier__line"><span>The Docket</span><span>—</span></div>
               <div class="proof-pricing-tier__line"><span>Weekly Alerts</span><span>—</span></div>
             </div>
-            <a href="https://proof.en-place.ai/proof/index" class="btn-proof-ghost" style="width:100%;justify-content:center;">Start Free</a>
+            <a href="https://proof.en-place.ai/login" class="btn-proof-ghost" style="width:100%;justify-content:center;">Start Free</a>
           </div>
 
           <!-- STARTER -->
@@ -867,7 +867,7 @@ export default function ProofLanding() {
               <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Dossier</span><span>$7</span></div>
               <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Scan</span><span>$0.30</span></div>
             </div>
-            <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary" style="width:100%;justify-content:center;">Start Free</a>
+            <a href="https://proof.en-place.ai/login" class="btn-proof-primary" style="width:100%;justify-content:center;">Start Free</a>
           </div>
 
           <!-- GROWTH -->
@@ -888,7 +888,7 @@ export default function ProofLanding() {
               <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Dossier</span><span>$5</span></div>
               <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Scan</span><span>$0.25</span></div>
             </div>
-            <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary" style="width:100%;justify-content:center;">Start Free</a>
+            <a href="https://proof.en-place.ai/login" class="btn-proof-primary" style="width:100%;justify-content:center;">Start Free</a>
           </div>
 
           <!-- TEAM -->
@@ -908,7 +908,7 @@ export default function ProofLanding() {
               <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Dossier</span><span>$3</span></div>
               <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Scan</span><span>$0.15</span></div>
             </div>
-            <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary" style="width:100%;justify-content:center;">Start Free</a>
+            <a href="https://proof.en-place.ai/login" class="btn-proof-primary" style="width:100%;justify-content:center;">Start Free</a>
           </div>
 
         </div>
@@ -965,7 +965,7 @@ export default function ProofLanding() {
           The reps who use Proof walk in with intelligence nobody else has.
         </p>
         <div class="proof-cta-band__btns">
-          <a href="https://proof.en-place.ai/proof/index" class="btn-proof-primary">Start Free &nbsp;→</a>
+          <a href="https://proof.en-place.ai/login" class="btn-proof-primary">Start Free &nbsp;→</a>
           <a href="#demo-video" class="btn-proof-ghost">Watch It in Action</a>
         </div>
         <div class="proof-cta-band__friction">No credit card required · Full search access in 60 seconds · Cancel anytime</div>
