@@ -72,7 +72,7 @@ export default function ProofLanding() {
 
         <p class="proof-hero__sub">
           Mise Intelligence is the only platform that combines a <strong>900K+ restaurant database</strong>
-          with AI-powered dossiers, GM vacancy detection, a built-in CRM, and a daily prioritized call list.
+          with deep-dive intel dossiers, GM vacancy detection, a built-in CRM, and a daily prioritized call list.
           Built for the sales professionals who sell into restaurants.
         </p>
 
@@ -92,7 +92,7 @@ export default function ProofLanding() {
         </div>
         <div class="proof-stats__item">
           <div class="proof-stats__n">60 sec</div>
-          <div class="proof-stats__l">AI dossiers. Ownership, pain points, recommended approach.</div>
+          <div class="proof-stats__l">Deep-dive intel dossiers. Ownership, pain points, recommended approach.</div>
         </div>
         <div class="proof-stats__item">
           <div class="proof-stats__n">Pulse</div>
@@ -423,9 +423,9 @@ export default function ProofLanding() {
 
             <div class="proof-docket-bullets">
               <div class="proof-docket-bullet"><span>◆</span>Enter how many contacts you want to reach today</div>
-              <div class="proof-docket-bullet"><span>◆</span>AI analyzes your full pipeline, notes, dossiers, and scan signals</div>
+              <div class="proof-docket-bullet"><span>◆</span>Mise analyzes your full pipeline, notes, dossiers, and scan signals</div>
               <div class="proof-docket-bullet"><span>◆</span>Each contact gets a specific reason why today and a suggested opening line</div>
-              <div class="proof-docket-bullet"><span>◆</span>AI recommends Call, Email, or Visit for each contact based on relationship history and available contact info. Override with one tap.</div>
+              <div class="proof-docket-bullet"><span>◆</span>Mise recommends Call, Email, or Visit for each contact based on relationship history and available contact info. Override with one tap.</div>
               <div class="proof-docket-bullet"><span>◆</span>Phone numbers pulled from enrichment data, ready to tap</div>
               <div class="proof-docket-bullet"><span>◆</span>Enrich or pull a dossier on any contact directly from the card</div>
               <div class="proof-docket-bullet"><span>◆</span>One click opens the full contact record with notes and history</div>
@@ -524,7 +524,7 @@ export default function ProofLanding() {
           <div class="proof-crm-feature"><span>◆</span>Enrich any contact with phone, website, ratings — even imported records without a database match</div>
           <div class="proof-crm-feature"><span>◆</span>Generate dossiers on any contact, including imports</div>
           <div class="proof-crm-feature"><span>◆</span>Last contacted tracking with one-click "Mark Contacted Today"</div>
-          <div class="proof-crm-feature"><span>◆</span>Log a call by typing or voice-dictating what happened. AI parses it into a structured contact, note, and status update automatically.</div>
+          <div class="proof-crm-feature"><span>◆</span>Log a call by typing or voice-dictating what happened. Mise parses it into a structured contact, note, and status update automatically.</div>
           <div class="proof-crm-feature"><span>◆</span>Filter and sort by status, source, or date</div>
         </div>
       </div>
@@ -982,7 +982,7 @@ export default function ProofLanding() {
           Your next best account<br>is already <em>in here.</em>
         </h2>
         <p class="proof-cta-band__sub">
-          900K+ restaurants. Pulse scans. AI dossiers. A daily contact list that tells you who to reach and why.
+          900K+ restaurants. Pulse scans. Deep-dive intel dossiers. A daily contact list that tells you who to reach and why.
           The reps who use Mise walk in with intelligence nobody else has.
         </p>
         <div class="proof-cta-band__btns">
