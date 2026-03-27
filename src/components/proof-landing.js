@@ -1,36 +1,34 @@
 // src/components/proof-landing.js
-// Proof Intelligence — full landing page
+// Mise Intelligence — full landing page (formerly Proof Intelligence)
 // Standalone — no En Place navbar, no cross-navigation
-// Deployed at proof.en-place.ai
+// CSS class names remain "proof-*" (styling hooks, not user-facing)
 
 export default function ProofLanding() {
   const root = document.createElement("div");
   root.className = "proof";
 
-  // ── MARK SVG (reused inline) ─────────────────────────────────────────
+  // ── MISE 4-SQUARE MARK SVG (reused inline) ──────────────────────────
   const markSVG = (size = 34) => `
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="${size}" height="${size}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="${size}" height="${size}">
       <defs>
-        <linearGradient id="pmg" x1="10%" y1="5%" x2="90%" y2="95%">
+        <linearGradient id="mg" x1="10%" y1="5%" x2="90%" y2="95%">
           <stop offset="0%" stop-color="#fae49a"/>
           <stop offset="50%" stop-color="#f4d06f"/>
           <stop offset="100%" stop-color="#e6b800"/>
         </linearGradient>
-        <radialGradient id="pig" cx="35%" cy="28%" r="65%">
-          <stop offset="0%" stop-color="rgba(255,255,255,0.11)"/>
+        <radialGradient id="ms" cx="35%" cy="28%" r="65%">
+          <stop offset="0%" stop-color="rgba(255,255,255,0.12)"/>
           <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
         </radialGradient>
       </defs>
-      <rect x="1" y="1" width="42" height="42" rx="8" fill="url(#pmg)"/>
-      <rect x="1" y="1" width="42" height="42" rx="8" fill="url(#pig)"/>
-      <text x="22" y="23"
-        font-family="Cinzel,serif"
-        font-size="26"
-        font-weight="700"
-        fill="#1a1200"
-        text-anchor="middle"
-        dominant-baseline="central"
-        opacity="0.82">P</text>
+      <rect x="8" y="8" width="47" height="47" rx="10" fill="url(#mg)"/>
+      <rect x="8" y="8" width="47" height="47" rx="10" fill="url(#ms)"/>
+      <rect x="65" y="8" width="47" height="47" rx="10" fill="url(#mg)"/>
+      <rect x="65" y="8" width="47" height="47" rx="10" fill="url(#ms)"/>
+      <rect x="8" y="65" width="47" height="47" rx="10" fill="url(#mg)"/>
+      <rect x="8" y="65" width="47" height="47" rx="10" fill="url(#ms)"/>
+      <rect x="65" y="65" width="47" height="47" rx="10" fill="url(#mg)"/>
+      <rect x="65" y="65" width="47" height="47" rx="10" fill="url(#ms)"/>
     </svg>`;
 
   root.innerHTML = `
@@ -45,7 +43,7 @@ export default function ProofLanding() {
         <a href="/proof" class="proof-nav__logo">
           ${markSVG(34)}
           <div class="proof-nav__wordmark">
-            <span class="proof-nav__proof">PROOF</span>
+            <span class="proof-nav__proof">MISE</span>
             <span class="proof-nav__intel">Intelligence</span>
           </div>
         </a>
@@ -56,8 +54,8 @@ export default function ProofLanding() {
           <li><a href="tel:5134020611">Contact · (513) 402-0611</a></li>
         </ul>
         <div class="proof-nav__actions">
-          <a href="https://proof.en-place.ai/login" class="proof-nav__login">Login</a>
-          <a href="https://proof.en-place.ai/login" class="btn-proof-primary btn-proof-primary--nav">Start Free</a>
+          <a href="https://mise.en-place.ai/login" class="proof-nav__login">Login</a>
+          <a href="https://mise.en-place.ai/login" class="btn-proof-primary btn-proof-primary--nav">Start Free</a>
         </div>
       </nav>
 
@@ -73,13 +71,13 @@ export default function ProofLanding() {
         </h1>
 
         <p class="proof-hero__sub">
-          Proof Intelligence is the only platform that combines a <strong>900K+ restaurant database</strong>
+          Mise Intelligence is the only platform that combines a <strong>900K+ restaurant database</strong>
           with AI-powered dossiers, GM vacancy detection, a built-in CRM, and a daily prioritized call list.
           Built for the sales professionals who sell into restaurants.
         </p>
 
         <div class="proof-hero__cta-stack">
-          <a href="https://proof.en-place.ai/login" class="btn-proof-primary">
+          <a href="https://mise.en-place.ai/login" class="btn-proof-primary">
             Start Free &nbsp;→
           </a>
           <span class="proof-hero__micro">No credit card required · Full search access in 60 seconds</span>
@@ -97,8 +95,8 @@ export default function ProofLanding() {
           <div class="proof-stats__l">AI dossiers. Ownership, pain points, recommended approach.</div>
         </div>
         <div class="proof-stats__item">
-          <div class="proof-stats__n">GM Scan</div>
-          <div class="proof-stats__l">Detects GM vacancies by region. Nobody else does this.</div>
+          <div class="proof-stats__n">Pulse</div>
+          <div class="proof-stats__l">GM vacancies, closures, competitor footprint. Five scans, one engine.</div>
         </div>
         <div class="proof-stats__item">
           <div class="proof-stats__n">CRM</div>
@@ -111,7 +109,7 @@ export default function ProofLanding() {
     <div class="proof-social-strip">
       <div class="proof-social-strip__inner">
         <div class="proof-social-strip__quote">
-          <div class="proof-social-strip__text">"The Docket changed my mornings. I used to spend 20 minutes deciding who to call. Now I open Proof and my list is ready."</div>
+          <div class="proof-social-strip__text">"The Docket changed my mornings. I used to spend 20 minutes deciding who to call. Now I open Mise and my list is ready."</div>
           <div class="proof-social-strip__attr">Territory Rep, Beverage Distributor</div>
         </div>
         <div class="proof-social-strip__divider"></div>
@@ -129,10 +127,10 @@ export default function ProofLanding() {
 
     <div class="proof-rule"></div>
 
-    <!-- ══ HOW SALES TEAMS USE PROOF — WORKFLOW ══ -->
+    <!-- ══ HOW SALES TEAMS USE MISE — WORKFLOW ══ -->
     <section class="proof-sec" id="workflow">
       <div class="proof-sec__inner">
-        <div class="proof-tag">How Sales Teams Use Proof</div>
+        <div class="proof-tag">How Sales Teams Use Mise</div>
         <h2 class="proof-hed proof-hed--sec" style="margin-bottom:16px;">From territory plan to <em>closed deal.</em></h2>
         <p style="font-size:15.5px;font-weight:300;color:rgba(247,243,233,0.65);line-height:1.75;max-width:580px;margin-bottom:56px;">
           This is the workflow that replaces three separate tools and turns your pre-call research from 45 minutes into 60 seconds.
@@ -159,24 +157,24 @@ export default function ProofLanding() {
             <div class="proof-workflow__num">03</div>
             <div class="proof-workflow__connector"></div>
             <div class="proof-workflow__label">Account Research</div>
-            <div class="proof-workflow__body">Pull a $1 dossier on any target. Ownership structure, reputation analysis, pain points, competitor landscape, and a recommended approach. Walk in knowing everything.</div>
+            <div class="proof-workflow__body">Pull a dossier on any target. Ownership structure, reputation analysis, pain points, competitor landscape, and a recommended approach. Walk in knowing everything.</div>
             <div class="proof-workflow__tool">Deep-Dive Dossier</div>
           </div>
 
           <div class="proof-workflow__step">
             <div class="proof-workflow__num">04</div>
             <div class="proof-workflow__connector"></div>
-            <div class="proof-workflow__label">GM Vacancy Detection</div>
-            <div class="proof-workflow__body">Run a GM Scan on your territory. Restaurants with leadership instability are making emergency vendor decisions right now. This is the signal nobody else can see.</div>
-            <div class="proof-workflow__tool">GM Vacancy Scan</div>
+            <div class="proof-workflow__label">Pulse Scans</div>
+            <div class="proof-workflow__body">Run scans on your territory. Detect GM vacancies, recently closed locations, competitor footprints, and market gaps. Five scan types, one intelligence engine.</div>
+            <div class="proof-workflow__tool">Pulse Scan Suite</div>
           </div>
 
           <div class="proof-workflow__step proof-workflow__step--featured">
             <div class="proof-workflow__num">05</div>
             <div class="proof-workflow__connector"></div>
             <div class="proof-workflow__label">The Docket</div>
-            <div class="proof-workflow__body">Every morning, Proof analyzes your contacts, notes, dossiers, and vacancy signals to build your prioritized call list. Tell it how many calls you want to make. It tells you who, why today, and what to say.</div>
-            <div class="proof-workflow__tool">AI-Powered Daily Call List</div>
+            <div class="proof-workflow__body">Every morning, Mise analyzes your contacts, notes, dossiers, and scan signals to build your prioritized contact list. Tell it how many touches you want to make. It tells you who, why today, and whether to call, email, or visit.</div>
+            <div class="proof-workflow__tool">AI-Powered Daily Contact List</div>
           </div>
 
           <div class="proof-workflow__step">
@@ -191,14 +189,14 @@ export default function ProofLanding() {
             <div class="proof-workflow__num">07</div>
             <div class="proof-workflow__connector"></div>
             <div class="proof-workflow__label">Pipeline Tracking</div>
-            <div class="proof-workflow__body">Save contacts from search results or GM scans. Track status from lead to closed. Add notes after every call. Import your existing book of business via CSV or Excel. One platform, zero tab switching.</div>
+            <div class="proof-workflow__body">Save contacts from search results or scans. Track status from lead to closed. Add notes after every call. Import your existing book of business via CSV or Excel. One platform, zero tab switching.</div>
             <div class="proof-workflow__tool">Built-In CRM</div>
           </div>
 
           <div class="proof-workflow__step">
             <div class="proof-workflow__num">08</div>
             <div class="proof-workflow__label">Route Planner</div>
-            <div class="proof-workflow__body">Turn your Docket into a driving route. Proof maps your daily calls by proximity and builds an optimized sequence so you're not zigzagging across the county. One tap opens turn-by-turn navigation.</div>
+            <div class="proof-workflow__body">Turn your Docket into an optimized driving route. Mise maps your daily visits, respects scheduling rules ("Judy is only there mornings"), and builds the fastest sequence using real drive times. One tap opens turn-by-turn navigation in Google Maps.</div>
             <div class="proof-workflow__tool">Optimized Field Routes</div>
           </div>
         </div>
@@ -223,10 +221,10 @@ export default function ProofLanding() {
             <h2 class="proof-hed proof-hed--sec" style="margin-bottom:22px;">Stop walking in <em>cold.</em></h2>
 
             <div class="proof-price-callout">
-              <div class="proof-price-callout__big">$1</div>
+              <div class="proof-price-callout__big">$3</div>
               <div class="proof-price-callout__context">
-                <span class="proof-price-callout__label">Per Report</span>
-                <span class="proof-price-callout__sub">Generated in 30 to 60 seconds</span>
+                <span class="proof-price-callout__label">Starting At</span>
+                <span class="proof-price-callout__sub">From $3 to $15 depending on plan</span>
               </div>
             </div>
 
@@ -273,7 +271,7 @@ export default function ProofLanding() {
               <div class="proof-mock__topbar">
                 <div class="proof-mock__title-row">
                   ${markSVG(20)}
-                  <span class="proof-mock__title-text">PROOF · DEEP-DIVE DOSSIER</span>
+                  <span class="proof-mock__title-text">MISE · DEEP-DIVE DOSSIER</span>
                 </div>
                 <div class="proof-mock__badges">
                   <span class="proof-mock__badge proof-mock__badge--generated">Generated</span>
@@ -366,7 +364,7 @@ export default function ProofLanding() {
 
               <div class="proof-mock__gen-row">
                 <span class="proof-mock__gen-left">Report generated in <strong>41 seconds</strong></span>
-                <button class="proof-mock__gen-btn">Pull Dossier &nbsp;· &nbsp;$1.00</button>
+                <button class="proof-mock__gen-btn">Pull Dossier</button>
               </div>
             </div>
           </div>
@@ -410,7 +408,7 @@ export default function ProofLanding() {
       <div class="proof-sec__inner">
         <div class="proof-tag">The Feature That Makes It a Daily Habit</div>
         <h2 class="proof-hed proof-hed--sec" style="margin-bottom:22px;">
-          Every morning, Proof tells you<br><em>who to call.</em>
+          Every morning, Mise tells you<br><em>who to contact.</em>
         </h2>
 
         <div class="proof-docket-grid">
@@ -419,16 +417,17 @@ export default function ProofLanding() {
             <p style="font-size:16px;font-weight:300;color:rgba(247,243,233,0.72);line-height:1.78;margin-bottom:28px;">
               Your pipeline has 80 contacts. Some have GM vacancies. Some you haven't called in three weeks.
               Some have a proposal pending. Some just got a bad Yelp review. The Docket reads everything — your contacts,
-              your notes, every dossier, every scan result — and ranks your calls by who needs attention today.
+              your notes, every dossier, every scan result — and ranks your outreach by who needs attention today.
               Not who's alphabetically first. Who matters right now.
             </p>
 
             <div class="proof-docket-bullets">
-              <div class="proof-docket-bullet"><span>◆</span>Enter how many calls you want to make today</div>
-              <div class="proof-docket-bullet"><span>◆</span>AI analyzes your full pipeline, notes, dossiers, and vacancy signals</div>
-              <div class="proof-docket-bullet"><span>◆</span>Each call gets a specific reason why today and a suggested opening line</div>
+              <div class="proof-docket-bullet"><span>◆</span>Enter how many contacts you want to reach today</div>
+              <div class="proof-docket-bullet"><span>◆</span>AI analyzes your full pipeline, notes, dossiers, and scan signals</div>
+              <div class="proof-docket-bullet"><span>◆</span>Each contact gets a specific reason why today and a suggested opening line</div>
+              <div class="proof-docket-bullet"><span>◆</span>AI recommends Call, Email, or Visit for each contact based on relationship history and available contact info. Override with one tap.</div>
               <div class="proof-docket-bullet"><span>◆</span>Phone numbers pulled from enrichment data, ready to tap</div>
-              <div class="proof-docket-bullet"><span>◆</span>Enrich or pull a dossier on any contact directly from the call card</div>
+              <div class="proof-docket-bullet"><span>◆</span>Enrich or pull a dossier on any contact directly from the card</div>
               <div class="proof-docket-bullet"><span>◆</span>One click opens the full contact record with notes and history</div>
             </div>
           </div>
@@ -441,7 +440,7 @@ export default function ProofLanding() {
                   ${markSVG(16)}
                   <span class="proof-docket-mock__topbar-label">THE DOCKET · TUESDAY, MARCH 25</span>
                 </div>
-                <span class="proof-docket-mock__topbar-badge">8 Calls Prioritized</span>
+                <span class="proof-docket-mock__topbar-badge">8 Contacts Prioritized</span>
               </div>
 
               <div class="proof-docket-mock__body">
@@ -450,7 +449,7 @@ export default function ProofLanding() {
                   <div class="proof-docket-mock__info">
                     <div class="proof-docket-mock__name">Marcus Bellamy · The Mahogany Room</div>
                     <div class="proof-docket-mock__type-row">
-                      <span class="proof-docket-mock__type proof-docket-mock__type--close">Close Attempt</span>
+                      <span class="proof-docket-mock__type proof-docket-mock__type--close">Call · Close Attempt</span>
                       <span class="proof-docket-mock__phone">(513) 555-0142</span>
                     </div>
                     <div class="proof-docket-mock__reason">Proposal sent 6 days ago. No response. Follow up before he goes with another vendor. Mention the multi-unit discount for his 4 locations.</div>
@@ -462,10 +461,10 @@ export default function ProofLanding() {
                   <div class="proof-docket-mock__info">
                     <div class="proof-docket-mock__name">Brickhouse Tavern &amp; Kitchen</div>
                     <div class="proof-docket-mock__type-row">
-                      <span class="proof-docket-mock__type proof-docket-mock__type--cold">Cold Intro</span>
+                      <span class="proof-docket-mock__type proof-docket-mock__type--cold">Visit · Cold Intro</span>
                       <span class="proof-docket-mock__phone">(513) 555-0287</span>
                     </div>
-                    <div class="proof-docket-mock__reason">GM vacancy detected 34 days ago. Second posting this quarter. They're struggling. Lead with staffing solutions.</div>
+                    <div class="proof-docket-mock__reason">GM vacancy detected 34 days ago. Second posting this quarter. No email on file. Drive-by recommended. Lead with staffing solutions.</div>
                   </div>
                 </div>
 
@@ -474,8 +473,8 @@ export default function ProofLanding() {
                   <div class="proof-docket-mock__info">
                     <div class="proof-docket-mock__name">Teresa Campos · El Torero Mexican Grill</div>
                     <div class="proof-docket-mock__type-row">
-                      <span class="proof-docket-mock__type proof-docket-mock__type--follow">Follow Up</span>
-                      <span class="proof-docket-mock__phone">(513) 555-0419</span>
+                      <span class="proof-docket-mock__type proof-docket-mock__type--follow">Email · Follow Up</span>
+                      <span class="proof-docket-mock__phone">teresa@eltorero.com</span>
                     </div>
                     <div class="proof-docket-mock__reason">Last contacted 19 days ago. Your note says she wanted pricing for 2 locations. Send the updated proposal.</div>
                   </div>
@@ -486,10 +485,10 @@ export default function ProofLanding() {
                   <div class="proof-docket-mock__info">
                     <div class="proof-docket-mock__name">The Oak Barrel Steakhouse</div>
                     <div class="proof-docket-mock__type-row">
-                      <span class="proof-docket-mock__type proof-docket-mock__type--cold">Cold Intro</span>
+                      <span class="proof-docket-mock__type proof-docket-mock__type--cold">Call · Cold Intro</span>
                       <span class="proof-docket-mock__phone">(513) 555-0661</span>
                     </div>
-                    <div class="proof-docket-mock__reason">New GM vacancy. Owner responding to reviews personally — they're overwhelmed. Good timing for a first call.</div>
+                    <div class="proof-docket-mock__reason">New GM vacancy. Owner responding to reviews personally. Good timing for a first call.</div>
                   </div>
                 </div>
               </div>
@@ -514,7 +513,7 @@ export default function ProofLanding() {
         </h2>
 
         <p style="font-size:16px;font-weight:300;color:rgba(247,243,233,0.68);line-height:1.78;max-width:640px;margin-bottom:40px;">
-          Every contact you save from search, every restaurant you flag from a GM scan, every record you import from a CSV — they all land in the same pipeline. Track status, add notes, log last contacted dates, enrich with Google and Yelp data, generate dossiers. Your entire book of business in one place with intelligence attached to every record.
+          Every contact you save from search, every restaurant you flag from a scan, every record you import from a CSV — they all land in the same pipeline. Track status, add notes, log last contacted dates, enrich with Google and Yelp data, generate dossiers. Your entire book of business in one place with intelligence attached to every record.
         </p>
 
         <div class="proof-crm-features">
@@ -525,6 +524,7 @@ export default function ProofLanding() {
           <div class="proof-crm-feature"><span>◆</span>Enrich any contact with phone, website, ratings — even imported records without a database match</div>
           <div class="proof-crm-feature"><span>◆</span>Generate dossiers on any contact, including imports</div>
           <div class="proof-crm-feature"><span>◆</span>Last contacted tracking with one-click "Mark Contacted Today"</div>
+          <div class="proof-crm-feature"><span>◆</span>Log a call by typing or voice-dictating what happened. AI parses it into a structured contact, note, and status update automatically.</div>
           <div class="proof-crm-feature"><span>◆</span>Filter and sort by status, source, or date</div>
         </div>
       </div>
@@ -532,52 +532,66 @@ export default function ProofLanding() {
 
     <div class="proof-rule"></div>
 
-    <!-- ══ GM VACANCY SCAN (reduced) ══ -->
-    <section class="proof-sec" id="gm-scan">
+    <!-- ══ PULSE SCAN SUITE ══ -->
+    <section class="proof-sec" id="pulse">
       <div class="proof-sec__inner">
-        <div class="proof-tag">GM Vacancy Scan</div>
+        <div class="proof-tag">Pulse Scan Suite</div>
         <h2 class="proof-hed proof-hed--sec" style="margin-bottom:22px;">
-          The signal <em>nobody else can see.</em>
+          Five scans. One <em>intelligence engine.</em>
         </h2>
-        <p style="font-size:15.5px;font-weight:300;color:rgba(247,243,233,0.68);line-height:1.78;max-width:600px;margin-bottom:44px;">
-          Select a region. Proof scans every restaurant in it, cross-referencing job boards,
-          social media, review patterns, and operational signals to detect GM vacancies.
+        <p style="font-size:15.5px;font-weight:300;color:rgba(247,243,233,0.68);line-height:1.78;max-width:620px;margin-bottom:44px;">
+          Select a region. Mise scans every restaurant in it, cross-referencing job boards,
+          social media, review patterns, licensing records, and operational signals.
           Results ranked by confidence with the specific signals that triggered detection.
         </p>
 
         <div class="proof-scan-grid">
 
-          <!-- LEFT: How it works -->
+          <!-- LEFT: Scan types -->
           <div class="proof-scan-steps">
             <div class="proof-scan-step">
               <div class="proof-scan-step__num">01</div>
               <div class="proof-scan-step__content">
-                <div class="proof-scan-step__title">Pick your region</div>
-                <div class="proof-scan-step__desc">Select a state, county, or city. Get a cost estimate before you run.</div>
+                <div class="proof-scan-step__title">GM Vacancies</div>
+                <div class="proof-scan-step__desc">Detect leadership instability by region. Job board postings, social signals, review pattern changes. The signal nobody else can see.</div>
               </div>
             </div>
             <div class="proof-scan-step">
               <div class="proof-scan-step__num">02</div>
               <div class="proof-scan-step__content">
-                <div class="proof-scan-step__title">Every restaurant gets scanned</div>
-                <div class="proof-scan-step__desc">Each restaurant gets checked against multiple live data sources for leadership instability signals.</div>
+                <div class="proof-scan-step__title">Closed Locations</div>
+                <div class="proof-scan-step__desc">Find recently closed restaurants. Turnkey spaces for operators, lost accounts for reps who need to reallocate.</div>
               </div>
             </div>
             <div class="proof-scan-step">
               <div class="proof-scan-step__num">03</div>
               <div class="proof-scan-step__content">
-                <div class="proof-scan-step__title">Results ranked by signal strength</div>
-                <div class="proof-scan-step__desc">Restaurants with detected vacancies surface at the top with estimated time since the position opened.</div>
+                <div class="proof-scan-step__title">Competitor Footprint</div>
+                <div class="proof-scan-step__desc">See every competitor in the same category and county, including new entrants this year.</div>
+              </div>
+            </div>
+            <div class="proof-scan-step">
+              <div class="proof-scan-step__num">04</div>
+              <div class="proof-scan-step__content">
+                <div class="proof-scan-step__title">Market Saturation <span style="font-size:10px;color:rgba(244,208,111,0.55);font-style:italic;">Coming Soon</span></div>
+                <div class="proof-scan-step__desc">Population density vs restaurant density by category. Know when a market is oversaturated before you invest.</div>
+              </div>
+            </div>
+            <div class="proof-scan-step">
+              <div class="proof-scan-step__num">05</div>
+              <div class="proof-scan-step__content">
+                <div class="proof-scan-step__title">White Space <span style="font-size:10px;color:rgba(244,208,111,0.55);font-style:italic;">Coming Soon</span></div>
+                <div class="proof-scan-step__desc">Find underserved markets backed by Census data. Where should you open next? Where are the gaps your competitors haven't found?</div>
               </div>
             </div>
           </div>
 
-          <!-- RIGHT: Mock scan results -->
+          <!-- RIGHT: Mock scan results (GM Vacancy example) -->
           <div class="proof-scan-mock">
             <div class="proof-scan-mock__topbar">
               <div class="proof-scan-mock__topbar-left">
                 ${markSVG(16)}
-                <span class="proof-scan-mock__topbar-label">GM VACANCY SCAN · BUTLER COUNTY, OH</span>
+                <span class="proof-scan-mock__topbar-label">PULSE · GM VACANCY SCAN · BUTLER COUNTY, OH</span>
               </div>
               <span class="proof-scan-mock__topbar-badge">47 Restaurants Scanned</span>
             </div>
@@ -622,7 +636,7 @@ export default function ProofLanding() {
             </div>
 
             <div class="proof-scan-mock__footer">
-              <span class="proof-scan-mock__footer-left">Scan completed in <strong>3 min 12 sec</strong> · Cost: <strong>$2.35</strong></span>
+              <span class="proof-scan-mock__footer-left">Scan completed in <strong>3 min 12 sec</strong></span>
               <button class="proof-scan-mock__footer-btn">Pull Dossier →</button>
             </div>
           </div>
@@ -636,7 +650,7 @@ export default function ProofLanding() {
     <!-- ══ THREE PILLARS ══ -->
     <section class="proof-sec proof-sec--dark" id="database">
       <div class="proof-sec__inner">
-        <div class="proof-tag">Why Proof Is Different</div>
+        <div class="proof-tag">Why Mise Is Different</div>
         <h2 class="proof-hed proof-hed--sec" style="margin-bottom:44px;">
           Three things no other<br>database can say.
         </h2>
@@ -656,7 +670,7 @@ export default function ProofLanding() {
               Fast food doesn't qualify. Lunch counters don't qualify.
               The places worth selling to do.
             </p>
-            <div class="proof-pillars__footer">The license is proof of business. That's the filter.</div>
+            <div class="proof-pillars__footer">The license is the filter. That's what makes it worth your time.</div>
           </div>
 
           <div class="proof-pillars__card">
@@ -668,7 +682,7 @@ export default function ProofLanding() {
             <h3 class="proof-hed proof-hed--card">New licenses are <em>new leads.</em></h3>
             <p class="proof-pillars__body">
               The database refreshes weekly. Every new license issued in a qualifying state
-              shows up in Proof, and a new license means a brand-new operation that hasn't
+              shows up in Mise, and a new license means a brand-new operation that hasn't
               chosen its distributors, its tech stack, its vendors, or its suppliers yet.
               The rep who gets there first wins. That window doesn't stay open long.
             </p>
@@ -685,10 +699,10 @@ export default function ProofLanding() {
             <p class="proof-pillars__body">
               No other restaurant database gives you on-demand account intelligence like this.
               Ownership structure, reputation analysis, hiring signals, competitor landscape,
-              and a recommended approach, assembled in under 60 seconds for a dollar.
+              and a recommended approach, assembled in under 60 seconds.
               Your competitors are still Googling the restaurant name.
             </p>
-            <div class="proof-pillars__footer">One button. One dollar. Walk in knowing everything.</div>
+            <div class="proof-pillars__footer">One button. Walk in knowing everything.</div>
           </div>
         </div>
       </div>
@@ -732,21 +746,21 @@ export default function ProofLanding() {
             <div class="proof-usecases__top">
               <div class="proof-usecases__tag">For Sales Professionals</div>
               <h3 class="proof-hed proof-hed--card">Your entire workflow. One login.</h3>
-              <p class="proof-usecases__body-copy">Beverage distributors, food service vendors, restaurant tech companies, and equipment reps use Proof to find net-new accounts, research prospects with $1 dossiers, detect GM vacancies, manage their pipeline in the built-in CRM, and start every morning with The Docket: a prioritized call list built from their contacts, notes, and intelligence.</p>
+              <p class="proof-usecases__body-copy">Beverage distributors, food service vendors, restaurant tech companies, and equipment reps use Mise to find net-new accounts, research prospects with dossiers, detect GM vacancies, manage their pipeline in the built-in CRM, and start every morning with The Docket: a prioritized contact list built from their contacts, notes, and intelligence.</p>
             </div>
             <div class="proof-usecases__bullets">
               <div class="proof-usecases__bullets-label">What they use it for</div>
               <div class="proof-usecases__bullet"><span>◆</span>Territory prospecting across 900K+ qualified accounts</div>
-              <div class="proof-usecases__bullet"><span>◆</span>GM vacancy scans to find restaurants making emergency decisions</div>
-              <div class="proof-usecases__bullet"><span>◆</span>The Docket: AI-prioritized daily call list with opening lines</div>
-              <div class="proof-usecases__bullet"><span>◆</span>Built-in CRM with status pipeline, notes, and last contacted tracking</div>
+              <div class="proof-usecases__bullet"><span>◆</span>Pulse scans: GM vacancies, closures, competitor footprint</div>
+              <div class="proof-usecases__bullet"><span>◆</span>The Docket: AI-prioritized daily contact list with opening lines</div>
+              <div class="proof-usecases__bullet"><span>◆</span>Built-in CRM with status pipeline, notes, voice logger, and route planner</div>
             </div>
             <div class="proof-usecases__footer">
               <div>
                 <div class="proof-usecases__price">$49<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/mo</span></div>
                 <div class="proof-usecases__price-sub">Starter. Growth and Team plans available.</div>
               </div>
-              <a href="https://proof.en-place.ai/login" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
+              <a href="https://mise.en-place.ai/login" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
             </div>
           </div>
 
@@ -756,7 +770,7 @@ export default function ProofLanding() {
             <div class="proof-usecases__top">
               <div class="proof-usecases__tag">For Hospitality Recruiters</div>
               <h3 class="proof-hed proof-hed--card">Find GM vacancies before anyone else does.</h3>
-              <p class="proof-usecases__body-copy">A GM placement is worth $15,000 to $25,000 in fees. Proof surfaces active GM vacancies, identifies the owner doing the hiring, and shows how long the search has been open. A 60-day-old posting means they're frustrated and ready to talk.</p>
+              <p class="proof-usecases__body-copy">A GM placement is worth $15,000 to $25,000 in fees. Mise surfaces active GM vacancies, identifies the owner doing the hiring, and shows how long the search has been open. A 60-day-old posting means they're frustrated and ready to talk.</p>
             </div>
             <div class="proof-usecases__bullets">
               <div class="proof-usecases__bullets-label">What they use it for</div>
@@ -770,7 +784,7 @@ export default function ProofLanding() {
                 <div class="proof-usecases__price">$49<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/mo</span></div>
                 <div class="proof-usecases__price-sub">Starter. One placement pays for years of access.</div>
               </div>
-              <a href="https://proof.en-place.ai/login" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
+              <a href="https://mise.en-place.ai/login" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
             </div>
           </div>
 
@@ -779,7 +793,7 @@ export default function ProofLanding() {
             <div class="proof-usecases__top">
               <div class="proof-usecases__tag">For Multi-Unit Operators</div>
               <h3 class="proof-hed proof-hed--card">Know when a competitor's GM is available.</h3>
-              <p class="proof-usecases__body-copy">Restaurant groups use Proof to watch the competitive landscape for talent signals. When a GM vacancy appears at a top competitor, that's an opportunity to recruit before they've even posted publicly.</p>
+              <p class="proof-usecases__body-copy">Restaurant groups use Mise to watch the competitive landscape for talent signals. When a GM vacancy appears at a top competitor, that's an opportunity to recruit before they've even posted publicly.</p>
             </div>
             <div class="proof-usecases__bullets">
               <div class="proof-usecases__bullets-label">What they use it for</div>
@@ -793,7 +807,7 @@ export default function ProofLanding() {
                 <div class="proof-usecases__price">$249<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/mo</span></div>
                 <div class="proof-usecases__price-sub">Team plan. Up to 10 users.</div>
               </div>
-              <a href="https://proof.en-place.ai/login" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
+              <a href="https://mise.en-place.ai/login" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
             </div>
           </div>
 
@@ -816,7 +830,7 @@ export default function ProofLanding() {
                 <div class="proof-usecases__price">$15<span style="font-size:14px;font-weight:400;color:rgba(247,243,233,0.45);">/dossier</span></div>
                 <div class="proof-usecases__price-sub">No subscription. Pay as you go with credits.</div>
               </div>
-              <a href="https://proof.en-place.ai/login" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
+              <a href="https://mise.en-place.ai/login" class="btn-proof-primary btn-proof-primary--sm">Start Free</a>
             </div>
           </div>
 
@@ -826,7 +840,7 @@ export default function ProofLanding() {
 
     <div class="proof-rule"></div>
 
-    <!-- ══ WHO BUYS + PRICING ══ -->
+    <!-- ══ PRICING ══ -->
     <section class="proof-sec" id="pricing">
       <div class="proof-sec__inner">
         <div class="proof-tag" style="margin-bottom:16px;">Pricing</div>
@@ -844,11 +858,12 @@ export default function ProofLanding() {
             <div class="proof-pricing-tier__body">
               <div class="proof-pricing-tier__line"><span>Enrichment</span><span>$0.50 / record</span></div>
               <div class="proof-pricing-tier__line"><span>Dossier</span><span>$15 / report</span></div>
-              <div class="proof-pricing-tier__line"><span>GM Scan</span><span>$0.50 / restaurant</span></div>
+              <div class="proof-pricing-tier__line"><span>Pulse Scan</span><span>$0.50 / restaurant</span></div>
               <div class="proof-pricing-tier__line"><span>The Docket</span><span>—</span></div>
               <div class="proof-pricing-tier__line"><span>Weekly Alerts</span><span>—</span></div>
+              <div class="proof-pricing-tier__line"><span>Route Planner</span><span>—</span></div>
             </div>
-            <a href="https://proof.en-place.ai/login" class="btn-proof-ghost" style="width:100%;justify-content:center;">Start Free</a>
+            <a href="https://mise.en-place.ai/login" class="btn-proof-ghost" style="width:100%;justify-content:center;">Start Free</a>
           </div>
 
           <!-- STARTER -->
@@ -863,11 +878,13 @@ export default function ProofLanding() {
               <div class="proof-pricing-tier__line"><span>Dossiers included</span><span class="proof-pricing-tier__incl">5</span></div>
               <div class="proof-pricing-tier__line"><span>Scan restaurants incl.</span><span class="proof-pricing-tier__incl">100</span></div>
               <div class="proof-pricing-tier__line"><span>The Docket</span><span class="proof-pricing-tier__incl">10/mo</span></div>
+              <div class="proof-pricing-tier__line"><span>Route Planner</span><span class="proof-pricing-tier__incl">5/mo</span></div>
               <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Enrichment</span><span>$0.15</span></div>
               <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Dossier</span><span>$7</span></div>
               <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Scan</span><span>$0.30</span></div>
+              <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Route</span><span>$1.00</span></div>
             </div>
-            <a href="https://proof.en-place.ai/login" class="btn-proof-primary" style="width:100%;justify-content:center;">Start Free</a>
+            <a href="https://mise.en-place.ai/login" class="btn-proof-primary" style="width:100%;justify-content:center;">Start Free</a>
           </div>
 
           <!-- GROWTH -->
@@ -884,11 +901,13 @@ export default function ProofLanding() {
               <div class="proof-pricing-tier__line"><span>Scan restaurants incl.</span><span class="proof-pricing-tier__incl">500</span></div>
               <div class="proof-pricing-tier__line"><span>The Docket</span><span class="proof-pricing-tier__incl">Unlimited</span></div>
               <div class="proof-pricing-tier__line"><span>Weekly Alerts</span><span class="proof-pricing-tier__incl">Included</span></div>
+              <div class="proof-pricing-tier__line"><span>Route Planner</span><span class="proof-pricing-tier__incl">15/mo</span></div>
               <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Enrichment</span><span>$0.10</span></div>
               <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Dossier</span><span>$5</span></div>
               <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Scan</span><span>$0.25</span></div>
+              <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Route</span><span>$0.75</span></div>
             </div>
-            <a href="https://proof.en-place.ai/login" class="btn-proof-primary" style="width:100%;justify-content:center;">Start Free</a>
+            <a href="https://mise.en-place.ai/login" class="btn-proof-primary" style="width:100%;justify-content:center;">Start Free</a>
           </div>
 
           <!-- TEAM -->
@@ -904,11 +923,13 @@ export default function ProofLanding() {
               <div class="proof-pricing-tier__line"><span>Scan restaurants incl.</span><span class="proof-pricing-tier__incl">1,500</span></div>
               <div class="proof-pricing-tier__line"><span>The Docket</span><span class="proof-pricing-tier__incl">Unlimited</span></div>
               <div class="proof-pricing-tier__line"><span>Weekly Alerts</span><span class="proof-pricing-tier__incl">Included</span></div>
+              <div class="proof-pricing-tier__line"><span>Route Planner</span><span class="proof-pricing-tier__incl">30/mo</span></div>
               <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Enrichment</span><span>$0.08</span></div>
               <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Dossier</span><span>$3</span></div>
               <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Scan</span><span>$0.15</span></div>
+              <div class="proof-pricing-tier__line proof-pricing-tier__line--dim"><span>Overage: Route</span><span>$0.50</span></div>
             </div>
-            <a href="https://proof.en-place.ai/login" class="btn-proof-primary" style="width:100%;justify-content:center;">Start Free</a>
+            <a href="https://mise.en-place.ai/login" class="btn-proof-primary" style="width:100%;justify-content:center;">Start Free</a>
           </div>
 
         </div>
@@ -929,8 +950,8 @@ export default function ProofLanding() {
             </p>
             <div style="display:flex;flex-direction:column;gap:11px;">
               <div class="proof-video__bullet"><span>◆</span> Search and filter 900K+ records</div>
-              <div class="proof-video__bullet"><span>◆</span> Run a GM Scan on your territory</div>
-              <div class="proof-video__bullet"><span>◆</span> Pull a $1 Dossier. Complete intelligence in under a minute.</div>
+              <div class="proof-video__bullet"><span>◆</span> Run a Pulse scan on your territory</div>
+              <div class="proof-video__bullet"><span>◆</span> Pull a Dossier. Complete intelligence in under a minute.</div>
             </div>
           </div>
           <div>
@@ -961,11 +982,11 @@ export default function ProofLanding() {
           Your next best account<br>is already <em>in here.</em>
         </h2>
         <p class="proof-cta-band__sub">
-          900K+ restaurants. GM vacancy detection. $1 dossiers. A daily call list that tells you who to call and why.
-          The reps who use Proof walk in with intelligence nobody else has.
+          900K+ restaurants. Pulse scans. AI dossiers. A daily contact list that tells you who to reach and why.
+          The reps who use Mise walk in with intelligence nobody else has.
         </p>
         <div class="proof-cta-band__btns">
-          <a href="https://proof.en-place.ai/login" class="btn-proof-primary">Start Free &nbsp;→</a>
+          <a href="https://mise.en-place.ai/login" class="btn-proof-primary">Start Free &nbsp;→</a>
           <a href="#demo-video" class="btn-proof-ghost">Watch It in Action</a>
         </div>
         <div class="proof-cta-band__friction">No credit card required · Full search access in 60 seconds · Cancel anytime</div>
@@ -974,7 +995,7 @@ export default function ProofLanding() {
 
     <!-- ══ FOOTER ══ -->
     <footer class="proof-footer">
-      <div class="proof-footer__brand">Proof Intelligence &nbsp;·&nbsp; An En Place Company</div>
+      <div class="proof-footer__brand">Mise Intelligence &nbsp;·&nbsp; An En Place Company</div>
       <div class="proof-footer__copy">© 2026 En Place, Inc. All rights reserved.</div>
     </footer>
 

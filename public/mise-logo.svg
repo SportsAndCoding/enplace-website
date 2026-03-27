@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="480" height="120">
+  <defs>
+    <!-- Primary gold gradient matching En Place system -->
+    <linearGradient id="mise-g1" x1="10%" y1="5%" x2="90%" y2="95%">
+      <stop offset="0%" stop-color="#fae49a"/>
+      <stop offset="50%" stop-color="#f4d06f"/>
+      <stop offset="100%" stop-color="#e6b800"/>
+    </linearGradient>
+    <!-- Subtle shine overlay -->
+    <radialGradient id="mise-shine" cx="35%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.12)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    </radialGradient>
+    <!-- Slightly lighter gradient for top-right quadrant (per PNG) -->
+    <linearGradient id="mise-g2" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#fae49a"/>
+      <stop offset="40%" stop-color="#f4d06f"/>
+      <stop offset="100%" stop-color="#daa520"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ══ 4-SQUARE GRID MARK ══ -->
+  <!-- Top-left -->
+  <rect x="4" y="4" width="52" height="52" rx="10" fill="url(#mise-g1)"/>
+  <rect x="4" y="4" width="52" height="52" rx="10" fill="url(#mise-shine)"/>
+  <!-- Top-right -->
+  <rect x="64" y="4" width="52" height="52" rx="10" fill="url(#mise-g2)"/>
+  <rect x="64" y="4" width="52" height="52" rx="10" fill="url(#mise-shine)"/>
+  <!-- Bottom-left -->
+  <rect x="4" y="64" width="52" height="52" rx="10" fill="url(#mise-g1)"/>
+  <rect x="4" y="64" width="52" height="52" rx="10" fill="url(#mise-shine)"/>
+  <!-- Bottom-right -->
+  <rect x="64" y="64" width="52" height="52" rx="10" fill="url(#mise-g1)"/>
+  <rect x="64" y="64" width="52" height="52" rx="10" fill="url(#mise-shine)"/>
+
+  <!-- ══ MISE WORDMARK ══ -->
+  <text
+    x="148" y="56"
+    font-family="Cinzel, 'Palatino Linotype', 'Book Antiqua', Palatino, serif"
+    font-size="48"
+    font-weight="700"
+    fill="#f7f3e9"
+    letter-spacing="10"
+    dominant-baseline="auto">MISE</text>
+
+  <!-- Hairline rule -->
+  <line x1="148" y1="68" x2="380" y2="68" stroke="#f4d06f" stroke-width="0.75" opacity="0.4"/>
+
+  <!-- INTELLIGENCE subtext -->
+  <text
+    x="150" y="90"
+    font-family="Cinzel, 'Palatino Linotype', 'Book Antiqua', Palatino, serif"
+    font-size="12.5"
+    font-weight="400"
+    fill="#f4d06f"
+    letter-spacing="8"
+    dominant-baseline="auto">INTELLIGENCE</text>
+</svg>
