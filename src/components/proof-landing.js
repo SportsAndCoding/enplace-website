@@ -955,19 +955,10 @@ export default function ProofLanding() {
             </div>
           </div>
           <div>
-            <!-- Replace inner content with Loom or Vimeo iframe when ready -->
-            <div class="proof-video__frame">
-              <div style="display:flex;flex-direction:column;align-items:center;gap:13px;">
-                <div class="proof-video__play-btn">
-                  <svg viewBox="0 0 24 24" width="22" height="22" fill="#1a1200"><polygon points="8,5 19,12 8,19"/></svg>
-                </div>
-                <div class="proof-video__coming-soon">Video Coming Soon</div>
-              </div>
-              <div class="proof-video__corner proof-video__corner--tl"></div>
-              <div class="proof-video__corner proof-video__corner--tr"></div>
-              <div class="proof-video__corner proof-video__corner--bl"></div>
-              <div class="proof-video__corner proof-video__corner--br"></div>
+            <div class="proof-video__frame" style="position:relative;padding:56.25% 0 0 0;border-radius:12px;overflow:hidden;">
+              <iframe src="https://player.vimeo.com/video/1178873119?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Mise Intelligence Demo"></iframe>
             </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
           </div>
         </div>
       </div>
