@@ -15,37 +15,37 @@ export default function Pricing() {
         <p class="pricing-header__eyebrow">Pricing</p>
         <h1 class="pricing-header__title">Predictable teams start here.</h1>
         <p class="pricing-header__subtitle">
-          One stability engine. Optional superpowers. Built for restaurants that refuse chaos.
+          One platform. Everything included. Built for teams that refuse chaos.
         </p>
       </section>
 
       <!-- Core Product -->
       <div class="core-product">
-        <span class="core-product__badge">Most Popular • 87% of groups</span>
+        <span class="core-product__badge">One plan • Everything included</span>
 
         <div class="core-product__header">
           <div class="core-product__info">
-            <h2>Stable Staff Engine (SSE)</h2>
+            <h2>The LeanOn Platform</h2>
             <p class="core-product__tagline">The foundation of predictable operations.</p>
           </div>
 
           <div class="location-selector">
-            <label class="location-selector__label">How many locations?</label>
+            <label class="location-selector__label">How many active staff?</label>
             <div class="location-selector__controls">
-              <input 
-                type="range" 
-                class="location-selector__slider" 
-                min="1" 
-                max="50" 
-                value="1"
-                id="locationSlider"
+              <input
+                type="range"
+                class="location-selector__slider"
+                min="1"
+                max="500"
+                value="10"
+                id="staffSlider"
               />
-              <span class="location-selector__value" id="locationValue">1</span>
+              <span class="location-selector__value" id="staffValue">10</span>
             </div>
             <div class="location-selector__price">
-              <p class="location-selector__price-label">Monthly investment</p>
+              <p class="location-selector__price-label">Monthly price</p>
               <p class="location-selector__price-value">
-                $<span id="priceValue">1,500</span><span>/mo</span>
+                <span id="pricePrefix">$</span><span id="priceValue">70</span><span id="priceSuffix">/mo</span>
               </p>
             </div>
           </div>
@@ -76,6 +76,26 @@ export default function Pricing() {
             <span class="feature-item__icon"></span>
             Action Board / Manager Playbook
           </div>
+          <div class="feature-item">
+            <span class="feature-item__icon"></span>
+            Stable Hire — predictive hiring
+          </div>
+          <div class="feature-item">
+            <span class="feature-item__icon"></span>
+            Stable Schedule Builder
+          </div>
+          <div class="feature-item">
+            <span class="feature-item__icon"></span>
+            House Guardian
+          </div>
+          <div class="feature-item">
+            <span class="feature-item__icon"></span>
+            Open Shift Marketplace
+          </div>
+          <div class="feature-item">
+            <span class="feature-item__icon"></span>
+            Shift Swap Portal
+          </div>
         </div>
 
         <a href="/buy" class="core-product__cta">
@@ -88,96 +108,33 @@ export default function Pricing() {
         </a>
       </div>
 
-      <!-- Premium Add-Ons -->
-      <section class="addons-section">
-        <div class="section-header">
-          <h3>Premium Add-Ons</h3>
-          <p>Unlock next-level stability when you're ready.</p>
-        </div>
-
-        <div class="addons-grid">
-          <div class="addon-card">
-            <div class="addon-card__header">
-              <h4 class="addon-card__name">Stable Hire</h4>
-              <span class="addon-card__price">$500<span>/mo</span></span>
-            </div>
-            <p class="addon-card__description">
-              Screen candidates against network-wide bad patterns and your team’s emotional profile before you hire.
-            </p>
-          </div>
-
-          <div class="addon-card">
-            <div class="addon-card__header">
-              <h4 class="addon-card__name">Stable Schedule Builder</h4>
-              <span class="addon-card__price">$500<span>/mo</span></span>
-            </div>
-            <p class="addon-card__description">
-              The only scheduler that optimizes for people and profit, not one at the expense of the other.
-            </p>
-          </div>
-
-          <div class="addon-card">
-            <div class="addon-card__header">
-              <h4 class="addon-card__name">House Guardian</h4>
-              <span class="addon-card__price">$500<span>/mo</span></span>
-            </div>
-            <p class="addon-card__description">
-              The system that surfaces the truths staff never say out loud, including misconduct, morale collapse, theft and drugs.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Popular Bundles -->
-      <section class="bundles-section">
-        <div class="section-header">
-          <h3>Most Popular Combinations</h3>
-          <p>Pre-configured packages chosen by operators like you.</p>
-        </div>
-
-        <div class="bundles-grid">
-          <div class="bundle-card bundle-card--featured">
-            <span class="bundle-card__badge">Best Value</span>
-            <h4 class="bundle-card__name">The Full Stability Suite</h4>
-            <p class="bundle-card__price">$3,000<span>/mo</span></p>
-            <p class="bundle-card__includes">SSE + all 3 Premium Add-Ons</p>
-            <ul class="bundle-card__features">
-              <li>Complete emotional intelligence coverage</li>
-              <li>Predictive hiring that reduces 90-day turnover</li>
-              <li>Stability-optimized scheduling engine</li>
-              <li>Real-time friction monitoring & intervention</li>
-            </ul>
-          </div>
-
-          <div class="bundle-card">
-            <h4 class="bundle-card__name">Scheduling Chaos Fix</h4>
-            <p class="bundle-card__price">$2,000<span>/mo</span></p>
-            <p class="bundle-card__includes">SSE + Stable Schedule Builder</p>
-            <ul class="bundle-card__features">
-              <li>Full stability intelligence foundation</li>
-              <li>Automated schedule generation</li>
-              <li>Morale-aware shift assignments</li>
-              <li>Burnout prevention baked in</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Operational Tools -->
+      <!-- Pricing Tiers -->
       <section class="operational-section">
         <div class="section-header">
-          <h3>Operational Tools</h3>
-          <p>Standalone tools that work with or without SSE.</p>
+          <h3>Pricing by team size</h3>
+          <p>One flat rate per active team member. The bigger your team, the lower the rate.</p>
         </div>
 
         <div class="operational-grid">
           <div class="operational-card">
-            <span class="operational-card__name">Open Shift Marketplace</span>
-            <span class="operational-card__price">$200/mo</span>
+            <span class="operational-card__name">1–24 staff</span>
+            <span class="operational-card__price">$7/mo each</span>
           </div>
           <div class="operational-card">
-            <span class="operational-card__name">Shift Swap Portal</span>
-            <span class="operational-card__price">$200/mo</span>
+            <span class="operational-card__name">25–99 staff</span>
+            <span class="operational-card__price">$5/mo each</span>
+          </div>
+          <div class="operational-card">
+            <span class="operational-card__name">100–249 staff</span>
+            <span class="operational-card__price">$4/mo each</span>
+          </div>
+          <div class="operational-card">
+            <span class="operational-card__name">250–499 staff</span>
+            <span class="operational-card__price">$3/mo each</span>
+          </div>
+          <div class="operational-card">
+            <span class="operational-card__name">500+ staff</span>
+            <span class="operational-card__price">Custom</span>
           </div>
         </div>
       </section>
@@ -210,15 +167,15 @@ export default function Pricing() {
         <h3>Frequently Asked Questions</h3>
         <div class="faq-grid">
           <div class="faq-item">
-            <p class="faq-item__question">Can I add modules later?</p>
+            <p class="faq-item__question">Is everything included, or are there add-ons?</p>
             <p class="faq-item__answer">
-              Yes. Start with SSE and add premium modules whenever you're ready. Everything is modular.
+              Everything is included. One price per active team member covers the entire platform — every feature, no modules to bolt on later.
             </p>
           </div>
           <div class="faq-item">
-            <p class="faq-item__question">What if I only have one location?</p>
+            <p class="faq-item__question">What if I only have a small team?</p>
             <p class="faq-item__answer">
-              Same price, same power. Single-location operators get the full stability engine and emotional data network.
+              LeanOn scales to you. You pay per active team member, so a 10-person team pays for 10 — and still gets the full platform.
             </p>
           </div>
           <div class="faq-item">
@@ -230,7 +187,7 @@ export default function Pricing() {
           <div class="faq-item">
             <p class="faq-item__question">Do you integrate with my existing tools?</p>
             <p class="faq-item__answer">
-              Yes. We integrate with major POS, scheduling, and HR systems—and we’ll work with you on anything custom.
+              Yes. We integrate with major payroll, scheduling, and HR systems—and we’ll work with you on anything custom.
             </p>
           </div>
         </div>
@@ -239,18 +196,40 @@ export default function Pricing() {
     </div>
   `;
 
-  // Slider logic
-  const slider = section.querySelector("#locationSlider");
-  const locationValue = section.querySelector("#locationValue");
+  // Headcount -> price logic (flat rate per tier)
+  const slider = section.querySelector("#staffSlider");
+  const staffValue = section.querySelector("#staffValue");
   const priceValue = section.querySelector("#priceValue");
-  const SSE_PRICE = 1500;
+  const pricePrefix = section.querySelector("#pricePrefix");
+  const priceSuffix = section.querySelector("#priceSuffix");
 
-  if (slider && locationValue && priceValue) {
-    slider.addEventListener("input", () => {
-      const locations = parseInt(slider.value, 10) || 1;
-      locationValue.textContent = locations;
-      priceValue.textContent = (locations * SSE_PRICE).toLocaleString();
-    });
+  const TIERS = [
+    { min: 250, rate: 3 },
+    { min: 100, rate: 4 },
+    { min: 25,  rate: 5 },
+    { min: 1,   rate: 7 },
+  ];
+
+  function update() {
+    const staff = parseInt(slider.value, 10) || 1;
+    staffValue.textContent = staff;
+
+    if (staff >= 500) {
+      pricePrefix.style.display = "none";
+      priceSuffix.style.display = "none";
+      priceValue.textContent = "Custom";
+      return;
+    }
+
+    const tier = TIERS.find((t) => staff >= t.min);
+    pricePrefix.style.display = "";
+    priceSuffix.style.display = "";
+    priceValue.textContent = (staff * tier.rate).toLocaleString();
+  }
+
+  if (slider && staffValue && priceValue) {
+    slider.addEventListener("input", update);
+    update();
   }
 
   return section;

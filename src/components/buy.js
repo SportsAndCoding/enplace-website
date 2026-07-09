@@ -1,5 +1,21 @@
 // src/components/buy.js
 import "../styles/components/buy.scss";
+import "../styles/components/pricing.scss"; // reuse .location-selector styling
+
+const API_BASE = "https://enplace-api-v3-9101f20a30b4.herokuapp.com";
+
+// Flat rate per tier (matches pricing.js)
+const TIERS = [
+  { min: 250, rate: 3 },
+  { min: 100, rate: 4 },
+  { min: 25,  rate: 5 },
+  { min: 1,   rate: 7 },
+];
+
+function rateFor(staff) {
+  const t = TIERS.find((t) => staff >= t.min);
+  return t ? t.rate : 7;
+}
 
 export default function Buy() {
   const section = document.createElement("section");
@@ -12,80 +28,38 @@ export default function Buy() {
       <!-- HERO -->
       <header class="buy-hero">
         <h1 class="buy-hero__title">Predictable teams start here.</h1>
-        <p class="buy-hero__subtitle">One stability engine. Optional superpowers. Built for restaurants that refuse chaos.</p>
+        <p class="buy-hero__subtitle">One platform, one price per person — affordable whether you’re a team of 6 or an organization of 600.</p>
       </header>
 
-      <!-- MODULE SELECTOR -->
+      <!-- PRODUCT + HEADCOUNT -->
       <section class="buy-selector">
-        
-        <!-- SSE CORE (Required) -->
-        <div class="buy-module buy-module--core buy-module--selected buy-module--locked" data-module="sse" data-price="1500">
+
+        <div class="buy-module buy-module--core buy-module--selected buy-module--locked">
           <div class="buy-module__checkbox buy-module__checkbox--checked">✓</div>
           <div class="buy-module__content">
             <div class="buy-module__header">
-              <h3 class="buy-module__title">Staff Stability Engine</h3>
-              <span class="buy-module__badge">Required</span>
+              <h3 class="buy-module__title">The LeanOn Platform</h3>
+              <span class="buy-module__badge">Everything included</span>
             </div>
-            <p class="buy-module__desc">The core platform that detects turnover risk before it happens. Includes Manager Portal, Staff Portal, Action Board, 7-Step Escalation Ladder, and Network Intelligence.</p>
+            <p class="buy-module__desc">Everything LeanOn does, in one platform — turnover prediction, hiring intelligence, smarter scheduling, and the tools that keep your team stable. Manager Portal, Staff Portal, Action Board, and Network Intelligence all included.</p>
           </div>
-          <div class="buy-module__price">$1,500<span>/mo</span></div>
+          <div class="buy-module__price">Per active staff</div>
         </div>
 
-        <!-- PREMIUM ADD-ONS -->
-        <div class="buy-selector__tier">
-          <h4 class="buy-selector__tier-label">Premium Add-Ons</h4>
-          <span class="buy-selector__tier-price">$500/month each</span>
-        </div>
-
-        <div class="buy-module buy-module--selected" data-module="stable_hire" data-price="500" onclick="toggleModule(this)">
-          <div class="buy-module__checkbox buy-module__checkbox--checked">✓</div>
-          <div class="buy-module__content">
-            <h3 class="buy-module__title">Stable Hire</h3>
-            <p class="buy-module__desc">Predict which candidates will stay before you hire them. Psychological assessment that scores cultural fit and retention probability.</p>
+        <div class="location-selector">
+          <label class="location-selector__label">How many active staff?</label>
+          <div class="location-selector__controls">
+            <input
+              type="range"
+              class="location-selector__slider"
+              min="1"
+              max="500"
+              value="10"
+              id="staffSlider"
+            />
+            <span class="location-selector__value" id="staffValue">10</span>
           </div>
-          <div class="buy-module__price">+$500<span>/mo</span></div>
-        </div>
-
-        <div class="buy-module buy-module--selected" data-module="stable_schedule" data-price="500" onclick="toggleModule(this)">
-          <div class="buy-module__checkbox buy-module__checkbox--checked">✓</div>
-          <div class="buy-module__content">
-            <h3 class="buy-module__title">Stable Schedule Builder</h3>
-            <p class="buy-module__desc">See the human cost of your schedule before you publish. Emotional load analysis that prevents burnout before it starts.</p>
-          </div>
-          <div class="buy-module__price">+$500<span>/mo</span></div>
-        </div>
-
-        <div class="buy-module buy-module--selected" data-module="house_guardian" data-price="500" onclick="toggleModule(this)">
-          <div class="buy-module__checkbox buy-module__checkbox--checked">✓</div>
-          <div class="buy-module__content">
-            <h3 class="buy-module__title">House Guardian</h3>
-            <p class="buy-module__desc">Early detection for high-risk issues hidden in team feedback. Continuously scans open-ended comments to quietly flag theft, harassment, substance use, or mutiny. Alerting leaders with context and guidance before problems escalate.</p>
-          </div>
-          <div class="buy-module__price">+$500<span>/mo</span></div>
-        </div>
-
-        <!-- OPERATIONAL ADD-ONS -->
-        <div class="buy-selector__tier">
-          <h4 class="buy-selector__tier-label">Operational Add-Ons</h4>
-          <span class="buy-selector__tier-price">$200/month each</span>
-        </div>
-
-        <div class="buy-module buy-module--selected" data-module="open_shift" data-price="200" onclick="toggleModule(this)">
-          <div class="buy-module__checkbox buy-module__checkbox--checked">✓</div>
-          <div class="buy-module__content">
-            <h3 class="buy-module__title">Open Shift Marketplace</h3>
-            <p class="buy-module__desc">Post open shifts. Staff claims them. No more phone tag, group texts, or begging.</p>
-          </div>
-          <div class="buy-module__price">+$200<span>/mo</span></div>
-        </div>
-
-        <div class="buy-module buy-module--selected" data-module="shift_swap" data-price="200" onclick="toggleModule(this)">
-          <div class="buy-module__checkbox buy-module__checkbox--checked">✓</div>
-          <div class="buy-module__content">
-            <h3 class="buy-module__title">Shift Swap</h3>
-            <p class="buy-module__desc">Staff-initiated shift trades with manager approval. They handle the logistics, you just approve.</p>
-          </div>
-          <div class="buy-module__price">+$200<span>/mo</span></div>
+          <p class="buy-tier-note">Pricing scales with your team — $7/mo per person, dropping to $3 as you grow.</p>
         </div>
 
       </section>
@@ -94,7 +68,7 @@ export default function Buy() {
       <div class="buy-checkout">
         <div class="buy-checkout__total">
           <span class="buy-checkout__label">Monthly Total</span>
-          <span class="buy-checkout__amount">$<span id="totalAmount">3,400</span>/mo</span>
+          <span class="buy-checkout__amount"><span id="totalPrefix">$</span><span id="totalAmount">70</span><span id="totalSuffix">/mo</span></span>
         </div>
         <div class="buy-checkout__terms" id="termsWrapper">
           <label class="buy-terms">
@@ -104,20 +78,20 @@ export default function Buy() {
         </div>
         <div class="buy-checkout__actions">
           <button class="buy-btn buy-btn--primary" type="button" onclick="startCheckout()">Buy Now</button>
-          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="buy-btn buy-btn--secondary">Talk to Sales</a>        </div>
+        </div>
         <p class="buy-checkout__reassurance">No long-term contracts. Cancel anytime.</p>
       </div>
 
       <!-- HOW ONBOARDING WORKS -->
       <section class="buy-onboarding">
         <div class="section-header">
-          <h2 class="section-header__title">You'll be live in under an hour.</h2>
+          <h2 class="section-header__title">You’ll be live in under an hour.</h2>
         </div>
 
         <div class="buy-onboarding__steps">
           <div class="buy-step">
             <span class="buy-step__number">1</span>
-            <p class="buy-step__text">Purchase En Place</p>
+            <p class="buy-step__text">Purchase LeanOn</p>
           </div>
           <div class="buy-step">
             <span class="buy-step__number">2</span>
@@ -151,94 +125,90 @@ export default function Buy() {
 
       <!-- FINAL CTA -->
       <section class="buy-cta">
-        <h2 class="buy-cta__title">This isn't software. It's relief.</h2>
+        <h2 class="buy-cta__title">This isn’t software. It’s relief.</h2>
         <div class="buy-cta__buttons">
           <button class="buy-btn buy-btn--primary" type="button" onclick="startCheckout()">Buy Now</button>
-          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="buy-btn buy-btn--secondary">Talk to Sales</a>        </div>
+        </div>
       </section>
 
     </div>
   `;
 
-  // Initialize module selection logic
-  initModuleSelector();
+  // Wire the headcount slider
+  const slider = section.querySelector("#staffSlider");
+  if (slider) slider.addEventListener("input", updateTotal);
+
+  // Expose checkout for inline onclick handlers
+  window.startCheckout = startCheckout;
 
   return section;
 }
 
 // ============================================
-// MODULE SELECTOR LOGIC
+// HEADCOUNT -> PRICE
 // ============================================
 
-const API_BASE = 'https://enplace-api-v3-9101f20a30b4.herokuapp.com';
-
-function initModuleSelector() {
-  // Make functions globally available
-  window.toggleModule = toggleModule;
-  window.startCheckout = startCheckout;
-  window.updateTotal = updateTotal;
-}
-
-function toggleModule(el) {
-  // Don't toggle if locked (SSE core)
-  if (el.classList.contains('buy-module--locked')) return;
-
-  el.classList.toggle('buy-module--selected');
-
-  const checkbox = el.querySelector('.buy-module__checkbox');
-  if (el.classList.contains('buy-module--selected')) {
-    checkbox.classList.add('buy-module__checkbox--checked');
-    checkbox.textContent = '✓';
-  } else {
-    checkbox.classList.remove('buy-module__checkbox--checked');
-    checkbox.textContent = '';
-  }
-
-  updateTotal();
-}
-
 function updateTotal() {
-  let total = 0;
+  const slider = document.getElementById("staffSlider");
+  const staffValue = document.getElementById("staffValue");
+  const totalAmount = document.getElementById("totalAmount");
+  const totalPrefix = document.getElementById("totalPrefix");
+  const totalSuffix = document.getElementById("totalSuffix");
+  if (!slider) return;
 
-  document.querySelectorAll('.buy-module--selected').forEach(mod => {
-    total += parseInt(mod.dataset.price) || 0;
-  });
+  const staff = parseInt(slider.value, 10) || 1;
+  staffValue.textContent = staff;
 
-  document.getElementById('totalAmount').textContent = total.toLocaleString();
-}
+  const buyButtons = document.querySelectorAll(".buy-btn--primary");
 
-function getSelectedModules() {
-  const modules = [];
-  document.querySelectorAll('.buy-module--selected').forEach(mod => {
-    modules.push(mod.dataset.module);
-  });
-  return modules;
-}
-
-async function startCheckout() {
-  const termsCheckbox = document.getElementById('agreeTerms');
-  const termsWrapper = document.getElementById('termsWrapper');
-
-  if (!termsCheckbox || !termsCheckbox.checked) {
-    termsWrapper?.classList.add('buy-checkout__terms--error');
-    termsCheckbox?.focus();
+  if (staff >= 500) {
+    totalPrefix.style.display = "none";
+    totalSuffix.style.display = "none";
+    totalAmount.textContent = "Custom";
+    buyButtons.forEach((b) => { b.textContent = "Get Custom Pricing"; });
     return;
   }
 
-  termsWrapper?.classList.remove('buy-checkout__terms--error');
-  const modules = getSelectedModules();
+  totalPrefix.style.display = "";
+  totalSuffix.style.display = "";
+  totalAmount.textContent = (staff * rateFor(staff)).toLocaleString();
+  buyButtons.forEach((b) => { b.textContent = "Buy Now"; });
+}
 
-  // Find all buy buttons and disable them
-  document.querySelectorAll('.buy-btn--primary').forEach(btn => {
+// ============================================
+// CHECKOUT
+// ============================================
+
+async function startCheckout() {
+  const slider = document.getElementById("staffSlider");
+  const staffCount = parseInt(slider?.value, 10) || 1;
+
+  // Custom tier (500+) is not self-serve -> route to contact
+  if (staffCount >= 500) {
+    window.location.href = "/contact";
+    return;
+  }
+
+  const termsCheckbox = document.getElementById("agreeTerms");
+  const termsWrapper = document.getElementById("termsWrapper");
+
+  if (!termsCheckbox || !termsCheckbox.checked) {
+    termsWrapper?.classList.add("buy-checkout__terms--error");
+    termsCheckbox?.focus();
+    return;
+  }
+  termsWrapper?.classList.remove("buy-checkout__terms--error");
+
+  document.querySelectorAll(".buy-btn--primary").forEach((btn) => {
     btn.disabled = true;
-    btn.textContent = 'Preparing checkout...';
+    btn.textContent = "Preparing checkout...";
   });
 
   try {
     const response = await fetch(`${API_BASE}/api/checkout/create-session`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ modules })
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ staff_count: staffCount }),
     });
 
     const data = await response.json();
@@ -246,15 +216,15 @@ async function startCheckout() {
     if (data.url) {
       window.location.href = data.url;
     } else {
-      throw new Error(data.detail || 'Failed to create checkout');
+      throw new Error(data.detail || "Failed to create checkout");
     }
   } catch (error) {
-    console.error('Checkout error:', error);
-    alert('Something went wrong. Please try again.');
+    console.error("Checkout error:", error);
+    alert("Something went wrong. Please try again.");
 
-    document.querySelectorAll('.buy-btn--primary').forEach(btn => {
+    document.querySelectorAll(".buy-btn--primary").forEach((btn) => {
       btn.disabled = false;
-      btn.textContent = 'Buy Now';
+      btn.textContent = "Buy Now";
     });
   }
 }

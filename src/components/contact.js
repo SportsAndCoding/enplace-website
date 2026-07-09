@@ -36,7 +36,7 @@ export default function Contact() {
 
       <header class="contact__header">
         <h1 class="contact__title">Let's Talk</h1>
-        <p class="contact__subtitle">Have questions about En Place? We'd love to hear from you.</p>
+        <p class="contact__subtitle">Have questions about LeanOn? We'd love to hear from you.</p>
       </header>
 
       <form class="contact__form" id="contact-form">
@@ -57,7 +57,7 @@ export default function Contact() {
             <input type="tel" id="contact-phone" name="phone" />
           </div>
           <div class="contact__field">
-            <label for="contact-restaurant">Restaurant Name</label>
+            <label for="contact-restaurant">Company Name</label>
             <input type="text" id="contact-restaurant" name="restaurant_name" />
           </div>
         </div>

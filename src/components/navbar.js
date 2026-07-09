@@ -10,8 +10,8 @@ export default function Navbar() {
 
       <!-- LEFT: Logo — clickable home -->
       <a href="/" class="navbar__logo">
-        <img src="/assets/4_squares.png" onerror="this.src='/4_squares.png'" alt="En Place logo" class="navbar__logo-icon" />
-        <span class="navbar__logo-text">En Place</span>
+        <img src="/assets/4_squares.png" onerror="this.src='/4_squares.png'" alt="LeanOn logo" class="navbar__logo-icon" />
+        <span class="navbar__logo-text">LeanOn</span>
       </a>
 
       <!-- CENTER: Main nav links -->
@@ -52,7 +52,7 @@ export default function Navbar() {
 
       <!-- RIGHT: Auth + CTA -->
       <div class="navbar__actions">
-        <a href="https://app.en-place.ai/index.html" class="navbar__login">Login</a>
+        <a href="https://app.leanonhq.com/index.html" class="navbar__login">Login</a>
         <a href="/buy" class="navbar__cta">Buy Now</a>
       </div>
 
@@ -93,7 +93,7 @@ export default function Navbar() {
       
       <div class="navbar__mobile-divider"></div>
       
-      <a href="https://app.en-place.ai/index.html" class="navbar__mobile-login">Login</a>
+      <a href="https://app.leanonhq.com/index.html" class="navbar__mobile-login">Login</a>
       <a href="/buy" class="navbar__cta-mobile">Buy Now</a>
     </div>
   `;
