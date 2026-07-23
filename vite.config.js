@@ -35,6 +35,10 @@ export default defineConfig({
                 effect: './effect/index.html',
                 faq: './faq/index.html',
                 webinars: './webinars/index.html',
+                serviceCare: './service-care/index.html',
+                buyServiceCare: './buy-service-care/index.html',
+                smallBusiness: './small-business/index.html',
+                buySmallBusiness: './buy-small-business/index.html',
 
                 // ─────────────────────────────────────
                 // PROOF INTELLIGENCE
@@ -46,7 +50,6 @@ export default defineConfig({
                 // SALES REP BOOKING PAGES
                 // Add new reps here as: repName: './rep-slug/index.html'
                 // ─────────────────────────────────────
-                kyleParker: './kyle-parker/index.html',
                 // amandaNunnallee: './amanda-nunnallee/index.html',
                 // juliaVanDorn: './julia-van-dorn/index.html',
             }
@@ -134,6 +137,18 @@ export default defineConfig({
                     if (req.url === '/webinars' || req.url === '/webinars/') {
                         req.url = '/webinars/index.html';
                     }
+                    if (req.url === '/service-care' || req.url === '/service-care/') {
+                        req.url = '/service-care/index.html';
+                    }
+                    if (req.url === '/buy-service-care' || req.url === '/buy-service-care/') {
+                        req.url = '/buy-service-care/index.html';
+                    }
+                    if (req.url === '/small-business' || req.url === '/small-business/') {
+                        req.url = '/small-business/index.html';
+                    }
+                    if (req.url === '/buy-small-business' || req.url === '/buy-small-business/') {
+                        req.url = '/buy-small-business/index.html';
+                    }
 
                     // ─────────────────────────────────────
                     // PROOF INTELLIGENCE REWRITE
@@ -146,10 +161,6 @@ export default defineConfig({
                     // SALES REP BOOKING PAGE REWRITES
                     // Add new reps here
                     // ─────────────────────────────────────
-                    if (req.url === '/kyle-parker' || req.url === '/kyle-parker/') {
-                        req.url = '/kyle-parker/index.html';
-                    }
-
                     next();
                 });
             }

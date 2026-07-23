@@ -57,7 +57,7 @@ const adoptionLinePlugin = {
     ctx.font = "600 11px 'DM Sans', sans-serif";
     ctx.fillStyle = "rgba(247, 243, 233, 0.7)";
     ctx.textAlign = "left";
-    ctx.fillText("En Place Adopted", x + 6, yScale.top - 8);
+    ctx.fillText("LeanOn Adopted", x + 6, yScale.top - 8);
     ctx.restore();
   }
 };
@@ -73,8 +73,8 @@ export default function Effect() {
 
       <!-- Hero -->
       <header class="effect__header">
-        <p class="effect__eyebrow">Network Results</p>
-        <h1 class="effect__title">The En Place Effect</h1>
+        <p class="effect__eyebrow">Restaurant Network Results</p>
+        <h1 class="effect__title">The LeanOn Effect</h1>
         <p class="effect__subtitle">
           Staff turnover across our restaurant network, before and after adoption.
         </p>
@@ -84,13 +84,13 @@ export default function Effect() {
       <div class="effect__stats" id="effect-stats">
         <div class="effect__stat">
           <p class="effect__stat-value effect__stat-value--muted" id="stat-pre">—</p>
-          <p class="effect__stat-label">Before En Place</p>
+          <p class="effect__stat-label">Before LeanOn</p>
           <p class="effect__stat-sub">Network rolling avg</p>
         </div>
         <div class="effect__stat-divider"></div>
         <div class="effect__stat">
           <p class="effect__stat-value effect__stat-value--gold" id="stat-post">—</p>
-          <p class="effect__stat-label">After En Place</p>
+          <p class="effect__stat-label">After LeanOn</p>
           <p class="effect__stat-sub">Annualized quit rate</p>
         </div>
         <div class="effect__stat-divider"></div>
@@ -177,7 +177,7 @@ export default function Effect() {
             looking. The cost compounds.
           </p>
           <p>
-            En Place breaks this cycle by detecting warning signs before they become resignations.
+            LeanOn breaks this cycle by detecting warning signs before they become resignations.
             Anonymous mood tracking catches the drift. Predictive scheduling avoids the burnout.
             When a position does turn over, Stable Hire reduces the probability of a cliff failure.
             The cascade never starts.
@@ -187,7 +187,7 @@ export default function Effect() {
         <div class="effect__callout">
           <h3 class="effect__callout-title">The Three-Exit Rule</h3>
           <p class="effect__callout-body">
-            If En Place prevents just <strong>3 departures per year</strong>, the platform pays for itself.
+            If LeanOn prevents just <strong>3 departures per year</strong>, the platform pays for itself.
             Three prevented exits at $2,305 each = $6,915 in hard replacement costs alone — before
             accounting for productivity loss, training burden, and team morale impact.
           </p>

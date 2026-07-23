@@ -1,31 +1,20 @@
-// src/effect-main.js
+// src/small-business-main.js
 
 import Navbar from "./components/navbar.js";
-import Effect from "./components/effect.js";
+import SmallBusiness from "./components/small-business.js";
 import "./styles/globals.scss";
 
-// Mount root
 const app = document.getElementById("app");
 
-// ---------------------
-// COMPONENT MOUNT ORDER
-// ---------------------
-
-// 1) Navbar
 const navbar = Navbar();
 app.appendChild(navbar);
 
-// 2) LeanOn Effect page
-const effect = Effect();
-app.appendChild(effect);
+const page = SmallBusiness();
+app.appendChild(page);
 
-// ---------------------
-// NAVBAR SCROLL BEHAVIOR
-// ---------------------
 window.addEventListener("scroll", () => {
     const nav = document.querySelector(".navbar");
     if (!nav) return;
-
     if (window.scrollY > 20) {
         nav.classList.add("scrolled");
     } else {

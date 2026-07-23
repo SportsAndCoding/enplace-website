@@ -14,8 +14,8 @@ export default function Webinars() {
       <!-- HERO -->
       <header class="webinars-hero">
         <p class="webinars-hero__eyebrow">Free Live Sessions</p>
-        <h1 class="webinars-hero__title">The math behind ending<br>restaurant turnover.</h1>
-        <p class="webinars-hero__subtitle">60-minute live sessions for restaurant operators who are done accepting 80% annual turnover as a cost of doing business. No fluff. Real data. Actionable frameworks.</p>
+        <h1 class="webinars-hero__title">The math behind ending<br>frontline turnover.</h1>
+        <p class="webinars-hero__subtitle">60-minute live sessions for operators who are done accepting high turnover as a cost of doing business. No fluff. Real data. Actionable frameworks.</p>
       </header>
 
       <!-- UPCOMING WEBINAR FEATURE -->
@@ -36,12 +36,12 @@ export default function Webinars() {
           <div class="webinars-learn__item">
             <span class="webinars-learn__icon">📊</span>
             <h3>The Real Cost of Turnover</h3>
-            <p>Why your P&L is missing $420K–$720K in annual turnover costs — and how to calculate your restaurant's exact number.</p>
+            <p>Why your P&L is missing $420K–$720K in annual turnover costs — and how to calculate your operation's exact number.</p>
           </div>
           <div class="webinars-learn__item">
             <span class="webinars-learn__icon">🧠</span>
             <h3>Behavioral Fingerprinting</h3>
-            <p>How En Place tracks six behavioral dimensions to identify flight risk 2–6 weeks before anyone hands in their notice.</p>
+            <p>How LeanOn tracks six behavioral dimensions to identify flight risk 2–6 weeks before anyone hands in their notice.</p>
           </div>
           <div class="webinars-learn__item">
             <span class="webinars-learn__icon">🔒</span>
@@ -51,7 +51,7 @@ export default function Webinars() {
           <div class="webinars-learn__item">
             <span class="webinars-learn__icon">📈</span>
             <h3>Network Intelligence</h3>
-            <p>How the En Place network turns shared anonymized data into benchmarks that benefit every operator from day one.</p>
+            <p>How the LeanOn network turns shared anonymized data into benchmarks that benefit every operator from day one.</p>
           </div>
         </div>
       </section>
@@ -79,10 +79,10 @@ export default function Webinars() {
               </div>
               <div class="webinar-form__field">
                 <label class="webinar-form__label">Work Email *</label>
-                <input type="email" id="regEmail" class="webinar-form__input" required autocomplete="email" placeholder="you@yourrestaurant.com" />
+                <input type="email" id="regEmail" class="webinar-form__input" required autocomplete="email" placeholder="you@yourcompany.com" />
               </div>
               <div class="webinar-form__field">
-                <label class="webinar-form__label">Restaurant Name</label>
+                <label class="webinar-form__label">Company Name</label>
                 <input type="text" id="regRestaurant" class="webinar-form__input" autocomplete="organization" placeholder="Optional" />
               </div>
               <div class="webinar-form__field">
@@ -91,7 +91,8 @@ export default function Webinars() {
                   <option value="" disabled selected>Select your role</option>
                   <option value="GM">General Manager</option>
                   <option value="Owner">Owner / Operator</option>
-                  <option value="Multi-Unit">Multi-Unit Operator</option>
+                  <option value="Multi-Unit">Multi-Unit / Multi-Location Operator</option>
+                  <option value="Exec-Director">Executive Director</option>
                   <option value="Other">Other</option>
                 </select>
               </div>
@@ -130,7 +131,7 @@ export default function Webinars() {
           <h2 class="webinars-cta__title">Ready to see it live in your data?</h2>
           <p class="webinars-cta__subtitle">Book a 1-on-1 demo and we'll run the numbers for your specific operation.</p>
           <div class="webinars-cta__actions">
-            <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="webinars-btn webinars-btn--primary">Book a Demo</a>
+            <a href="/contact" class="webinars-btn webinars-btn--primary">Book a Demo</a>
             <a href="/faq" class="webinars-btn webinars-btn--secondary">Read the FAQ</a>
           </div>
         </div>
@@ -202,7 +203,7 @@ function renderFeaturedWebinar(webinar) {
         ${webinar.description ? `<p class="webinar-card__desc">${webinar.description}</p>` : ''}
         <div class="webinar-card__host">
           <span class="webinar-card__host-label">Hosted by</span>
-          <span class="webinar-card__host-name">${webinar.host_name || 'En Place Team'}</span>
+          <span class="webinar-card__host-name">${webinar.host_name || 'LeanOn Team'}</span>
         </div>
       </div>
       <div class="webinar-card__actions">

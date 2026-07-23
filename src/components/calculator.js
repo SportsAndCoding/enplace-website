@@ -242,7 +242,7 @@ export default function Calculator() {
                                 <span class="calc__savings-label">saved per year</span>
                             </div>
                             <div class="calc__savings-card calc__savings-card--highlight">
-                                <span class="calc__savings-badge">Typical with En Place</span>
+                                <span class="calc__savings-badge">Typical with LeanOn</span>
                                 <span class="calc__savings-pct">-30%</span>
                                 <span class="calc__savings-amount" id="save30">$0</span>
                                 <span class="calc__savings-label">saved per year</span>
@@ -273,11 +273,11 @@ export default function Calculator() {
             <div class="calc__cta-inner">
                 <h2 class="calc__cta-title">Stop bleeding. Start predicting.</h2>
                 <p class="calc__cta-text">
-                    En Place's Staff Stability Engine identifies flight-risk employees before
+                    LeanOn's Staff Stability Engine identifies flight-risk employees before
                     they resign — turning reactive scrambling into proactive retention.
                 </p>
                 <div class="calc__cta-buttons">
-                    <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="calc__cta-btn calc__cta-btn--primary">Book a Demo</a>
+                    <a href="/contact" class="calc__cta-btn calc__cta-btn--primary">Book a Demo</a>
                     <a href="/pricing" class="calc__cta-btn calc__cta-btn--secondary">View Pricing</a>
                     <a href="/learn" class="calc__cta-btn calc__cta-btn--secondary">Learning Center</a>
                 </div>
@@ -456,7 +456,7 @@ export default function Calculator() {
             ``,
             `💡 Potential savings with 30% reduction: ${formatCurrency(totalCost * 0.30)}/year`,
             ``,
-            `Calculate yours → en-place.ai/calculator`,
+            `Calculate yours → leanonhq.com/calculator`,
         ].join('\n');
 
         navigator.clipboard.writeText(text).then(() => {

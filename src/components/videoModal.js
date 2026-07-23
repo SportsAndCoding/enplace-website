@@ -35,7 +35,7 @@ export function openVideoModal(vimeoId) {
         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
         referrerpolicy="strict-origin-when-cross-origin" 
         style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-        title="En Place Video">
+        title="LeanOn Video">
       </iframe>
     </div>
   `;

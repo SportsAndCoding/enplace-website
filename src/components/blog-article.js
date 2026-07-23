@@ -138,13 +138,13 @@ function renderPaperGate(meta) {
                             </div>
                             <div class="article__paper-gate-field">
                                 <label for="paper-gate-email">Email <span class="article__paper-gate-req">*</span></label>
-                                <input type="email" id="paper-gate-email" placeholder="you@restaurant.com" required />
+                                <input type="email" id="paper-gate-email" placeholder="you@yourcompany.com" required />
                             </div>
                         </div>
                         <div class="article__paper-gate-row">
                             <div class="article__paper-gate-field">
-                                <label for="paper-gate-restaurant">Restaurant (optional)</label>
-                                <input type="text" id="paper-gate-restaurant" placeholder="Restaurant name" />
+                                <label for="paper-gate-restaurant">Company (optional)</label>
+                                <input type="text" id="paper-gate-restaurant" placeholder="Company name" />
                             </div>
                         </div>
                         <button class="article__paper-gate-submit" id="paper-gate-submit">
@@ -295,9 +295,9 @@ export default function BlogArticle(slug) {
         <div class="article__footer-cta">
             <div class="article__footer-cta-inner">
                 <h2 class="article__footer-cta-title">Ready to see it in action?</h2>
-                <p class="article__footer-cta-text">Book a demo and see how En Place transforms your staffing operations.</p>
+                <p class="article__footer-cta-text">Book a demo and see how LeanOn transforms your staffing operations.</p>
                 <div class="article__footer-cta-buttons">
-                    <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="article__cta-btn article__cta-btn--primary">Book a Demo</a>
+                    <a href="/contact" class="article__cta-btn article__cta-btn--primary">Book a Demo</a>
                     <a href="/learn" class="article__cta-btn article__cta-btn--secondary">Back to Learning Center</a>
                 </div>
             </div>

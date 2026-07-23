@@ -12,7 +12,7 @@ const ARTICLES = {
             title: 'The Real Cost of Restaurant Turnover: Why Your Staffing Problem Is a $420,000 Hemorrhage',
             description: 'Restaurant turnover costs a five-unit operator $420K–$720K per year. Here\'s the data, the hidden costs nobody measures, and what to do about it.',
             author: 'Rob',
-            authorTitle: 'Founder & CEO, En Place',
+            authorTitle: 'Founder & CEO, LeanOn',
             authorBio: 'Rob spent twenty years in restaurant operations, from hands-on work at Culver\'s to enterprise-level analytics at Caesars Entertainment, before building the platform he wished had existed for the last two decades. He writes about the intersection of restaurant operations, workforce psychology, and the data that connects them.',
             date: '2026-02-24',
             duration: '10 min read',
@@ -186,9 +186,9 @@ That last one is the gap nobody has filled. Most restaurants have no systematic 
             },
             {
                 type: 'text',
-                content: `I didn't start En Place because I read a research paper. I started it because I lived the problem for twenty years. I've been the manager getting that Tuesday morning text. I've been the one pulling doubles because someone quit without notice. I've run the numbers at the enterprise level and watched the same pattern repeat across hundreds of locations: the restaurants that retained their people outperformed on every metric that matters.
+                content: `I didn't start LeanOn because I read a research paper. I started it because I lived the problem for twenty years. I've been the manager getting that Tuesday morning text. I've been the one pulling doubles because someone quit without notice. I've run the numbers at the enterprise level and watched the same pattern repeat across hundreds of locations: the restaurants that retained their people outperformed on every metric that matters.
 
-<strong>En Place is a restaurant emotional intelligence platform.</strong> Not another scheduling tool. Not another job board.
+<strong>LeanOn is a restaurant emotional intelligence platform.</strong> Not another scheduling tool. Not another job board.
 
 The <strong>Staff Stability Engine</strong> captures anonymous daily mood data from your team, a quick check-in that takes seconds, and surfaces patterns before they become resignations. <strong>Stable Hire</strong> assesses candidate psychological fit during the hiring process so you stop cycling through people who were never going to stay. And the escalation protocols surface problems through an anonymous channel that protects employee identity while giving managers the signal they've never had: <em>someone on your team is struggling, and here's what you can do about it right now.</em>
 
@@ -196,7 +196,7 @@ The restaurants losing $420,000 a year to turnover aren't doing it because they'
             },
             {
                 type: 'cta',
-                primary: { text: 'Book a Demo', url: 'https://calendly.com/rob-en-place/en-place-demo' },
+                primary: { text: 'Book a Demo', url: '/contact' },
                 secondary: { text: 'Read the Full Research', url: '/learn' },
             },
         ],
@@ -222,7 +222,7 @@ The restaurants losing $420,000 a year to turnover aren't doing it because they'
             title: 'The Harvard Framework That Explains Why Your Best Restaurants Always Have the Same Staff',
             description: 'Taco Bell stores with the lowest turnover produced 2x sales and 55% higher profits. The Service Profit Chain explains exactly why,  and how to use it.',
             author: 'Rob',
-            authorTitle: 'Founder & CEO, En Place',
+            authorTitle: 'Founder & CEO, LeanOn',
             authorBio: 'Rob spent twenty years in restaurant operations,  from hands-on work at Culver\'s to enterprise-level analytics at Caesars Entertainment,  before building the platform he wished had existed for the last two decades. He writes about the intersection of restaurant operations, workforce psychology, and the data that connects them.',
             date: '2025-07-01',
             duration: '9 min read',
@@ -387,22 +387,22 @@ The restaurants that break this cycle,  Chick-fil-A, In-N-Out, the operators who
                 content: `<strong>Next in the series:</strong> the measurable pipeline from your staff's daily mood to your Yelp score to your revenue. Paper #3 connects the dots between what your team feels on Monday and what your Google reviews say on Friday,  with the data to prove it.`
             },
 
-            // \u2500\u2500 EN PLACE (LAST 10%) \u2500\u2500
+            // \u2500\u2500 LEANON (LAST 10%) \u2500\u2500
             {
                 type: 'heading',
                 content: 'Making the Chain Measurable',
             },
             {
                 type: 'text',
-                content: `I built En Place because I spent twenty years watching the Service Profit Chain work,  at Culver's, at Caesars Entertainment, across hundreds of restaurant locations,  without ever having the tools to measure it at the unit level. The framework is proven. The gap has always been implementation.
+                content: `I built LeanOn because I spent twenty years watching the Service Profit Chain work,  at Culver's, at Caesars Entertainment, across hundreds of restaurant locations,  without ever having the tools to measure it at the unit level. The framework is proven. The gap has always been implementation.
 
 The <strong>Staff Stability Engine</strong> measures the first link,  anonymous daily mood check-ins that surface how your team actually feels, before frustration becomes a resignation. <strong>Stable Hire</strong> assesses candidate psychological fit during hiring, so you stop cycling through people who were never going to stay. And the escalation protocols give your team an anonymous voice,  the feedback channel that keeps the upstream links intact while protecting the trust that makes it all work.
 
-The chain has been waiting thirty years for the right measurement tools. <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener">We built them.</a>`
+The chain has been waiting thirty years for the right measurement tools. <a href="/contact">We built them.</a>`
             },
             {
                 type: 'cta',
-                primary: { text: 'Book a Demo', url: 'https://calendly.com/rob-en-place/en-place-demo' },
+                primary: { text: 'Book a Demo', url: '/contact' },
                 secondary: { text: 'Read the Full Research', url: '/learn' },
             },
         ],
@@ -427,7 +427,7 @@ The chain has been waiting thirty years for the right measurement tools. <a href
             title: 'Your Staff\'s Mood Is Your Yelp Score: The Pipeline from Employee Engagement to Revenue',
             description: 'Harvard research: a one-star Yelp increase drives 5-9% more revenue. The biggest lever? Staff mood, not food quality. Here\'s the data.',
             author: 'Rob',
-            authorTitle: 'Founder & CEO, En Place',
+            authorTitle: 'Founder & CEO, LeanOn',
             authorBio: 'Rob spent twenty years in restaurant operations, from hands-on work at Culver\'s to enterprise-level analytics at Caesars Entertainment, before building the platform he wished had existed for the last two decades. He writes about the intersection of restaurant operations, workforce psychology, and the data that connects them.',
             date: '2025-07-01',
             duration: '11 min read',
@@ -643,7 +643,7 @@ This is how a restaurant\'s reputation dies. Not from a kitchen failure or a bad
 <strong>Next in the series:</strong> what happens when the pipeline breaks at 6 AM, the cascading economics of a single call-out, and why "Billy Called In Sick" is the most expensive sentence in restaurant management.`
             },
 
-            // ── EN PLACE (LAST 10%) ──
+            // ── LEANON (LAST 10%) ──
             {
                 type: 'heading',
                 content: 'Making the Invisible Visible',
@@ -652,11 +652,11 @@ This is how a restaurant\'s reputation dies. Not from a kitchen failure or a bad
                 type: 'text',
                 content: `The connection between Monday\'s mood and Friday\'s review is obvious to anyone who has managed a dining room. But obvious isn\'t measurable, and unmeasured things don\'t get managed. That\'s why the pipeline has been running invisibly for decades, costing operators thousands per month in lost stars, lost covers, and lost revenue with no way to trace it back to the source.
 
-The <strong>Staff Stability Engine</strong> measures employee mood at the frequency the science demands: daily, anonymous, shift-level check-ins that take seconds. It detects the declining trajectories that Wolter et al. proved predict customer satisfaction drops. It surfaces the signal before it becomes a one-star review. The pipeline from employee mood to your Yelp score has always been running. <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener">Now you can see it.</a>`
+The <strong>Staff Stability Engine</strong> measures employee mood at the frequency the science demands: daily, anonymous, shift-level check-ins that take seconds. It detects the declining trajectories that Wolter et al. proved predict customer satisfaction drops. It surfaces the signal before it becomes a one-star review. The pipeline from employee mood to your Yelp score has always been running. <a href="/contact">Now you can see it.</a>`
             },
             {
                 type: 'cta',
-                primary: { text: 'Book a Demo', url: 'https://calendly.com/rob-en-place/en-place-demo' },
+                primary: { text: 'Book a Demo', url: '/contact' },
                 secondary: { text: 'Explore the Learning Center', url: '/learn' },
             },
         ],
@@ -681,7 +681,7 @@ The <strong>Staff Stability Engine</strong> measures employee mood at the freque
             title: 'Billy Called In Sick: What One Call-Out Actually Costs Your Restaurant',
             description: 'Only 35% of restaurant call-outs are real illness. The rest cost $304 to $710 each, adding up to $63K to $270K per year with no line item.',
             author: 'Rob',
-            authorTitle: 'Founder & CEO, En Place',
+            authorTitle: 'Founder & CEO, LeanOn',
             authorBio: 'Rob spent twenty years in restaurant operations, from hands-on work at Culver\'s to enterprise-level analytics at Caesars Entertainment, before building the platform he wished had existed for the last two decades. He writes about the intersection of restaurant operations, workforce psychology, and the data that connects them.',
             date: '2026-03-17',
             duration: '12 min read',
@@ -881,13 +881,13 @@ Most call-outs are symptoms, not causes. And the industry's overwhelming focus o
 
 The cost differential is staggering. Reactive staffing means overtime at 1.5x or platform markups of 35 to 40%, with 36.6% productivity loss. Proactive staffing with adequate notice means internal fills at regular wages, cross-trained employees maintaining near-normal output, and a manager who gets to do their actual job.
 
-That's what we built En Place to do. The <strong>Staff Stability Engine</strong> captures anonymous daily mood data and surfaces the engagement patterns that precede call-outs, the declining signals that <a href="/learn/your-staffs-mood-is-your-yelp-score/">Part 3 proved</a> connect directly to operational outcomes. The <strong>Open Shift Marketplace</strong> turns the reactive scramble into an instant broadcast: when someone does call out, every eligible, available team member gets notified with bonus incentives. No phone tree. No 37 minutes of unanswered calls. And the <strong>Stable Schedule Builder</strong> analyzes the emotional cost of scheduling decisions before they're published, so the schedule that creates next week's call-outs never gets posted in the first place.
+That's what we built LeanOn to do. The <strong>Staff Stability Engine</strong> captures anonymous daily mood data and surfaces the engagement patterns that precede call-outs, the declining signals that <a href="/learn/your-staffs-mood-is-your-yelp-score/">Part 3 proved</a> connect directly to operational outcomes. The <strong>Open Shift Marketplace</strong> turns the reactive scramble into an instant broadcast: when someone does call out, every eligible, available team member gets notified with bonus incentives. No phone tree. No 37 minutes of unanswered calls. And the <strong>Stable Schedule Builder</strong> analyzes the emotional cost of scheduling decisions before they're published, so the schedule that creates next week's call-outs never gets posted in the first place.
 
 <strong>Next in the series:</strong> the story of one company that spent billions proving employee investment works, and what their playbook means for a restaurant doing $2 million a year.`
             },
             {
                 type: 'cta',
-                primary: { text: 'Book a Demo', url: 'https://calendly.com/rob-en-place/en-place-demo' },
+                primary: { text: 'Book a Demo', url: '/contact' },
                 secondary: { text: 'Explore the Learning Center', url: '/learn' },
             },
         ],
@@ -912,7 +912,7 @@ That's what we built En Place to do. The <strong>Staff Stability Engine</strong>
             title: 'From Caesars to Your Kitchen: The Billion-Dollar Employee Playbook Restaurants Never Got',
             description: 'A Harvard professor proved employee investment beats slot machines. Caesars became the world\'s largest gaming company. Here\'s why restaurants are next.',
             author: 'Rob',
-            authorTitle: 'Founder & CEO, En Place',
+            authorTitle: 'Founder & CEO, LeanOn',
             authorBio: 'Rob spent twenty years in restaurant operations, from hands-on work at Culver\'s to enterprise-level analytics at Caesars Entertainment, before building the platform he wished had existed for the last two decades. He writes about the intersection of restaurant operations, workforce psychology, and the data that connects them.',
             date: '2025-10-01',
             duration: '14 min read',
@@ -1112,10 +1112,10 @@ And now, Paper 5: the proof of concept at enterprise scale. <strong>Caesars prov
 So if the cost is documented, the framework is validated, the daily mechanism is mapped, the breaking point is identified, and the enterprise proof exists, what's missing?`
             },
 
-            // ── EN PLACE ──
+            // ── LEANON ──
             {
                 type: 'heading',
-                content: 'What En Place Built, and Why',
+                content: 'What LeanOn Built, and Why',
             },
             {
                 type: 'image',
@@ -1129,7 +1129,7 @@ So if the cost is documented, the framework is validated, the daily mechanism is
  
 And then I spent fifteen years in restaurant operations, from running shifts at Culver's to managing multi-unit operations, watching the same dynamics play out without any of the tools to capture them. The same turnover spiral. The same "Billy called in sick" scramble. The same gut feeling that staff morale was dropping but no data to prove it and no system to act on it. I knew the playbook. I just didn't have the platform.
  
-That's what En Place is. Not a scheduling tool with analytics bolted on. It's the enterprise employee intelligence system Caesars had, rebuilt from scratch for independent and multi-unit restaurants.`
+That's what LeanOn is. Not a scheduling tool with analytics bolted on. It's the enterprise employee intelligence system Caesars had, rebuilt from scratch for independent and multi-unit restaurants.`
             },
             {
                 type: 'text',
@@ -1154,7 +1154,7 @@ The framework works. The evidence is overwhelming. The question was never whethe
             },
             {
                 type: 'cta',
-                primary: { text: 'Book a Demo', url: 'https://calendly.com/rob-en-place/en-place-demo' },
+                primary: { text: 'Book a Demo', url: '/contact' },
                 ssecondary: { text: 'Download the Research Paper', url: '/learn/Paper_5_From_Caesars_to_Your_Kitchen.pdf' },
             },
 
@@ -1175,7 +1175,7 @@ We built it. Come see what it does.`
             "Turnover at Harrah's Las Vegas dropped to 16%, in an industry that typically runs 40-60%. The employee investment wasn't charity. It was the most profitable strategy they had.",
             "The bankruptcy examiner confirmed: the operating strategy worked. Private equity loaded $25 billion in debt. The strategy survived. The balance sheet didn't.",
             "Three peer-reviewed restaurant studies confirmed the Service Profit Chain transfers from casinos to restaurants. This isn't analogy. It's documented science.",
-            "Every En Place feature maps to a principle proven at Caesars: daily mood tracking, anonymous feedback, structured escalation, Realistic Job Previews. Enterprise proof at restaurant scale.",
+            "Every LeanOn feature maps to a principle proven at Caesars: daily mood tracking, anonymous feedback, structured escalation, Realistic Job Previews. Enterprise proof at restaurant scale.",
             "The restaurant industry has been waiting twenty years for someone to translate the Caesars playbook. The framework works. The technology barrier has collapsed. We built it.",
         ],
     },

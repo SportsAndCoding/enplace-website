@@ -17,7 +17,7 @@ export default function SSP() {
         <h1 class="ssp-hero__title">Staff swap shifts. You just tap approve.</h1>
         <div class="ssp-hero__buttons">
           <button class="ssp-btn ssp-btn--primary" type="button" id="ssp-demo-cta">Experience Shift Swap Marketplace</button>
-          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="ssp-btn ssp-btn--secondary">Book a Demo</a>
+          <a href="/contact" class="ssp-btn ssp-btn--secondary">Book a Demo</a>
 <a href="tel:+15134020611" class="ssp-btn ssp-btn--secondary">Call Now</a>
         </div>
       </header>
@@ -49,7 +49,7 @@ export default function SSP() {
           <!-- Step 2 -->
           <div class="ssp-how__step">
             <span class="ssp-how__step-number">2</span>
-            <p class="ssp-how__step-text">Posts shift to restaurant-wide Shift Swap Marketplace</p>
+            <p class="ssp-how__step-text">Posts shift to team-wide Shift Swap Marketplace</p>
           </div>
 
           <!-- Step 3 -->
@@ -117,12 +117,12 @@ export default function SSP() {
       <section class="ssp-cta">
         <h2 class="ssp-cta__title">
           <span>Staff handle the conversation.</span>
-          <span>En Place handles the risk.</span>
+          <span>LeanOn handles the risk.</span>
           <span class="ssp-cta__title--gold">You just tap approve.</span>
         </h2>
         <div class="ssp-cta__buttons">
           <button class="ssp-btn ssp-btn--primary" type="button" id="ssp-demo-cta-bottom">Experience Shift Swap Portal</button>
-          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="ssp-btn ssp-btn--secondary">Book a Demo</a>
+          <a href="/contact" class="ssp-btn ssp-btn--secondary">Book a Demo</a>
 <a href="tel:+15134020611" class="ssp-btn ssp-btn--secondary">Call Now</a>
         </div>
       </section>

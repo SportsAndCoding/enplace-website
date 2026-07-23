@@ -3,24 +3,24 @@ import "../styles/components/faq.scss";
 
 const FAQ_DATA = [
     {
-        category: "About En Place",
+        category: "About LeanOn",
         icon: "🏠",
         questions: [
             {
-                q: "What exactly is En Place?",
-                a: "En Place is a workforce intelligence platform built for restaurants. It predicts staff turnover before it happens using anonymous daily mood check-ins, behavioral analytics, and network-wide intelligence. Think of it as loss prevention software — except instead of protecting inventory, it protects your team."
+                q: "What exactly is LeanOn?",
+                a: "LeanOn is a staffing intelligence platform that predicts staff turnover before it happens — using anonymous daily mood check-ins, behavioral analytics, and network-wide intelligence. Think of it as loss prevention software — except instead of protecting inventory, it protects your team."
             },
             {
                 q: "Is this a scheduling tool?",
-                a: "No. En Place doesn't replace your scheduler. It sits alongside whatever you use for scheduling today — 7shifts, HotSchedules, paper, spreadsheets — and tells you the human cost your schedule is creating before you publish it. The optional Stable Schedule Builder add-on shows you emotional load patterns; your existing scheduler handles the shift logic."
+                a: "No. LeanOn doesn't replace your scheduler. It sits alongside whatever you use for scheduling today and tells you the human cost your schedule is creating before you publish it. The Stable Schedule Builder shows you emotional load patterns; your existing scheduler handles the shift logic."
             },
             {
-                q: "Does it replace my POS or any existing software?",
-                a: "No installations. No integrations required. En Place requires nothing from your current tech stack. Managers access a web portal. Staff check in from any smartphone browser — no app download required."
+                q: "Does it replace any existing software?",
+                a: "No installations. No integrations required. LeanOn requires nothing from your current tech stack. Managers access a web portal. Staff check in from any smartphone browser — no app download required."
             },
             {
                 q: "How is this different from a survey tool?",
-                a: "Surveys tell you how people feel today. En Place builds behavioral fingerprints over time — learning each staff member's patterns across six dimensions, then flagging deviations that predict flight risk 2–6 weeks in advance. It's the difference between a thermometer and a weather forecast."
+                a: "Surveys tell you how people feel today. LeanOn builds behavioral fingerprints over time — learning each staff member's patterns across six dimensions, then flagging deviations that predict flight risk 2–6 weeks in advance. It's the difference between a thermometer and a weather forecast."
             }
         ]
     },
@@ -29,20 +29,20 @@ const FAQ_DATA = [
         icon: "💰",
         questions: [
             {
-                q: "What does En Place cost?",
-                a: "The Staff Stability Engine starts at $1,500/month and includes everything: Manager Portal, Staff Portal, Action Board, 7-Step Escalation Ladder, and Network Intelligence. Premium add-ons (Stable Hire, Stable Schedule Builder, House Guardian) are $500/month each. Operational add-ons (Open Shift Marketplace, Shift Swap) are $200/month each. Full suite is $3,400/month."
+                q: "What does LeanOn cost?",
+                a: "One platform, one price per active team member. Tiers are flat by team size: 1–24 staff at $7/mo each, 25–99 at $5/mo, 100–249 at $4/mo, 250–499 at $3/mo, and custom pricing at 500+. Everything is included — the Manager Portal, Staff Portal, Action Board, Stable Hire, Stable Schedule Builder, House Guardian, Open Shift Marketplace, and Shift Swap. No add-ons, no bundles, no surprises."
             },
             {
                 q: "Are there long-term contracts?",
-                a: "No. En Place is month-to-month. No annual commitment required, no cancellation fees. You stay because it's working — not because you're locked in."
+                a: "No. LeanOn is month-to-month by default. No annual commitment required, no cancellation fees. You stay because it's working — not because you're locked in. Annual plans are available with meaningful savings."
             },
             {
                 q: "Is there a free trial?",
-                a: "We don't offer a free trial, but we do offer live demos of both the Manager Portal and Staff Portal — with real data from our demo restaurant. You'll see exactly what your team would experience before spending a dollar. Contact us or book a demo from the site."
+                a: "We don't offer a free trial, but we do offer live demos of both the Manager Portal and Staff Portal — with real data from our demo environment. You'll see exactly what your team would experience before spending a dollar. Reach out through our contact page to schedule one."
             },
             {
-                q: "What's included in the $1,500/month base?",
-                a: "Everything your operation needs to detect and prevent turnover: anonymous daily mood tracking, behavioral fingerprinting, persona classification (four staff personas), retention risk scoring, the 7-Step Escalation Ladder, Action Board, and En Place Network Intelligence — which gives you benchmark data from day one, not just your own restaurant's history."
+                q: "What's included?",
+                a: "Everything your operation needs to detect and prevent turnover: anonymous daily mood tracking, behavioral fingerprinting, persona classification (four staff personas), retention risk scoring, the 7-Step Escalation Ladder, Action Board, Stable Hire, Stable Schedule Builder, House Guardian, Open Shift Marketplace, Shift Swap, and LeanOn Network Intelligence — giving you benchmark data from day one, not just your own history."
             }
         ]
     },
@@ -56,11 +56,11 @@ const FAQ_DATA = [
             },
             {
                 q: "Do I need any technical skills?",
-                a: "None. If you can use a smartphone, you can use En Place. The onboarding flow walks managers through every step, and staff check in from any browser with no app download and no account creation required."
+                a: "None. If you can use a smartphone, you can use LeanOn. The onboarding flow walks managers through every step, and staff check in from any browser with no app download and no account creation required."
             },
             {
                 q: "What if my staff aren't tech-savvy?",
-                a: "The staff check-in experience is intentionally minimal — three taps and they're done. It takes under 60 seconds. We've designed it specifically for restaurant staff whose primary tool is a ticket printer, not a laptop."
+                a: "The staff check-in experience is intentionally minimal — three taps and they're done. It takes under 60 seconds. We've designed it for frontline teams whose primary tool isn't a laptop."
             }
         ]
     },
@@ -92,19 +92,19 @@ const FAQ_DATA = [
         questions: [
             {
                 q: "What are the four staff personas?",
-                a: "En Place's Staff Stability Engine classifies staff into four personas based on behavioral patterns over time: Steady Operator (reliable, consistent, low risk), Quiet Contributor (engaged but reserved — easy to overlook until they're gone), Social Navigator (mood is influenced by team dynamics), and Flight Risk (showing active departure signals). Each persona gets a tailored intervention strategy."
+                a: "LeanOn classifies staff into four personas based on behavioral patterns over time: Steady Operator (reliable, consistent, low risk), Quiet Contributor (engaged but reserved — easy to overlook until they're gone), Social Navigator (mood is influenced by team dynamics), and Flight Risk (showing active departure signals). Each persona gets a tailored intervention strategy."
             },
             {
-                q: "What is the En Place Network?",
-                a: "Because En Place operates across multiple restaurants, every new client immediately benefits from aggregated, anonymized network intelligence — industry benchmarks, seasonal patterns, and turnover predictors that no single restaurant could build on their own. You're not starting from zero on day one."
+                q: "What is the LeanOn Network?",
+                a: "Because LeanOn operates across many organizations, every new client benefits from aggregated, anonymized network intelligence — benchmarks, seasonal patterns, and turnover predictors no single team could build on their own. You're not starting from zero on day one."
             },
             {
                 q: "What is House Guardian?",
-                a: "House Guardian is an optional add-on that quietly scans open-ended staff check-in notes for high-risk signals — harassment, theft, substance use, or team conflict. It requires corroboration from multiple independent sources before escalating anything to management, and it never names individuals based on a single report."
+                a: "House Guardian quietly scans open-ended staff check-in notes for high-risk signals — harassment, theft, substance use, or team conflict. It requires corroboration from multiple independent sources before escalating anything to management, and it never names individuals based on a single report."
             },
             {
                 q: "What happens when a staff member quits?",
-                a: "En Place's social dynamics feature automatically monitors socially connected colleagues in the days following a departure. Research shows that turnover is contagious — when one person leaves, others in their social network are significantly more likely to follow. Aftermath catches the cascade before it starts."
+                a: "LeanOn's social dynamics feature automatically monitors socially connected colleagues in the days following a departure. Research shows that turnover is contagious — when one person leaves, others in their social network are significantly more likely to follow. Aftermath catches the cascade before it starts."
             }
         ]
     }
@@ -121,7 +121,7 @@ export default function Faq() {
       <header class="faq-hero">
         <p class="faq-hero__eyebrow">Got questions?</p>
         <h1 class="faq-hero__title">We've got straight answers.</h1>
-        <p class="faq-hero__subtitle">No sales language. No runaround. Everything you need to know about En Place before you make a decision.</p>
+        <p class="faq-hero__subtitle">No sales language. No runaround. Everything you need to know about LeanOn before you make a decision.</p>
         <div class="faq-search">
           <input type="text" id="faqSearch" class="faq-search__input" placeholder="Search questions..." autocomplete="off" />
           <span class="faq-search__icon">⌕</span>
@@ -140,7 +140,7 @@ export default function Faq() {
           `).join('')}
           <div class="faq-nav__cta">
             <p>Still have questions?</p>
-            <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="faq-nav__contact-link">Book a demo →</a>
+            <a href="/contact" class="faq-nav__contact-link">Get in touch →</a>
           </div>
         </aside>
 

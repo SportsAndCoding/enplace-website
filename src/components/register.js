@@ -65,14 +65,14 @@ export default function Register() {
             </div>
 
             <div class="register-form__field">
-              <label class="register-form__label" for="restaurantName">Restaurant Name</label>
+              <label class="register-form__label" for="restaurantName">Company Name</label>
               <input 
                 type="text" 
                 id="restaurantName" 
                 name="restaurantName" 
                 class="register-form__input" 
                 required 
-                placeholder="e.g. The Golden Fork"
+                placeholder="e.g. Your Company Name"
               />
             </div>
 
@@ -145,7 +145,7 @@ export default function Register() {
           <li>Generate your staff QR code</li>
           <li>Your Manager Portal goes live</li>
         </ol>
-        <p class="register-next__footer">Most restaurants finish in under 20 minutes.</p>
+        <p class="register-next__footer">Most teams finish in under 20 minutes.</p>
       </section>
 
       <!-- TRUST FOOTER -->
@@ -286,7 +286,7 @@ export default function Register() {
 
         if (response.ok && data.success) {
           // Store JWT token for authenticated session
-          localStorage.setItem("enplace_token", data.token);
+          localStorage.setItem("leanon_token", data.token);
 
           // Redirect to onboarding
           window.location.href = `https://app.en-place.ai/manager-home.html?token=${data.token}`;

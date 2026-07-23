@@ -20,7 +20,7 @@ export default function SSB() {
         </p>
         <div class="ssb-hero__buttons">
           <button class="ssb-btn ssb-btn--primary" type="button" id="ssb-demo-cta">Experience Stable Schedule Builder</button>
-          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="ssb-btn ssb-btn--secondary">Book a Demo</a>
+          <a href="/contact" class="ssb-btn ssb-btn--secondary">Book a Demo</a>
 <a href="tel:+15134020611" class="ssb-btn ssb-btn--secondary">Call Now</a>
         </div>
 
@@ -61,7 +61,7 @@ export default function SSB() {
         <div class="ssb-how__steps">
           <div class="ssb-how__step">
             <span class="ssb-how__step-number">1</span>
-            <p class="ssb-how__step-text">Drop in your schedule (Excel, 7Shifts, napkin scan—doesn't matter)</p>
+            <p class="ssb-how__step-text">Drop in your schedule (Excel, screenshot, napkin scan—doesn't matter)</p>
           </div>
           <div class="ssb-how__step">
             <span class="ssb-how__step-number">2</span>
@@ -128,7 +128,7 @@ export default function SSB() {
         </h2>
         <div class="ssb-cta__buttons">
           <button class="ssb-btn ssb-btn--primary" type="button" id="ssb-demo-cta-bottom">Experience Stable Schedule Builder</button>
-          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="ssb-btn ssb-btn--secondary">Book a Demo</a>
+          <a href="/contact" class="ssb-btn ssb-btn--secondary">Book a Demo</a>
 <a href="tel:+15134020611" class="ssb-btn ssb-btn--secondary">Call Now</a>
         </div>
       </section>

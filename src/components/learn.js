@@ -13,7 +13,7 @@ const CONTENT = [
     {
         id: 'getting-started',
         type: 'training',
-        title: 'Getting Started with En Place',
+        title: 'Getting Started with LeanOn',
         excerpt: 'A complete walkthrough of the platform — from your first login to reading your Staff Stability Engine dashboard.',
         thumbnail: null,
         videoUrl: null,       // Replace with Vimeo embed URL: 'https://player.vimeo.com/video/XXXXXXX'
@@ -38,7 +38,7 @@ const CONTENT = [
         id: 'open-shift-walkthrough',
         type: 'training',
         title: 'Open Shift Marketplace: Billy Called In Sick',
-        excerpt: 'See how En Place instantly notifies available staff with bonus incentives when someone calls out — solving your biggest daily headache.',
+        excerpt: 'See how LeanOn instantly notifies available staff with bonus incentives when someone calls out — solving your biggest daily headache.',
         thumbnail: null,
         videoUrl: null,
         articleUrl: null,
@@ -110,7 +110,7 @@ const CONTENT = [
         id: 'anonymous-feedback',
         type: 'research',
         title: 'Why Anonymous Mood Tracking Changes Everything',
-        excerpt: 'When staff know their identity is protected, honesty rates jump from 23% to 89%. Here\'s the science behind En Place\'s anonymization model.',
+        excerpt: 'When staff know their identity is protected, honesty rates jump from 23% to 89%. Here\'s the science behind LeanOn\'s anonymization model.',
         thumbnail: null,
         videoUrl: null,
         articleUrl: null,
@@ -304,7 +304,7 @@ export default function Learn() {
                 </div>
                 <h3 class="learn__empty-title">Case Studies Coming Soon</h3>
                 <p class="learn__empty-text">
-                    We're documenting real results from En Place restaurants. 
+                    We're documenting real results from LeanOn customers. 
                     Check back soon for data-driven success stories.
                 </p>
             </div>
@@ -328,10 +328,10 @@ export default function Learn() {
             <div class="learn__cta-inner">
                 <h2 class="learn__cta-title">Ready to see it in action?</h2>
                 <p class="learn__cta-text">
-                    Book a demo and see how En Place transforms your staffing operations.
+                    Book a demo and see how LeanOn transforms your staffing operations.
                 </p>
                 <div class="learn__cta-buttons">
-                    <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="learn__cta-btn learn__cta-btn--primary">Book a Demo</a>
+                    <a href="/contact" class="learn__cta-btn learn__cta-btn--primary">Book a Demo</a>
                     <a href="/pricing" class="learn__cta-btn learn__cta-btn--secondary">View Pricing</a>
                 </div>
             </div>

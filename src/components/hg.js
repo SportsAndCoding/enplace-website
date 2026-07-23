@@ -20,7 +20,7 @@ export default function HG() {
         </p>
         <div class="hg-hero__buttons">
           <button class="hg-btn hg-btn--primary" type="button" id="hg-demo-cta">Experience House Guardian</button>
-          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="hg-btn hg-btn--secondary">Book a Demo</a>
+          <a href="/contact" class="hg-btn hg-btn--secondary">Book a Demo</a>
 <a href="tel:+15134020611" class="hg-btn hg-btn--secondary">Call Now</a>
         </div>
       </header>
@@ -32,11 +32,11 @@ export default function HG() {
           <p class="hg-problem__lead">They look like:</p>
           <ul class="hg-problem__list">
             <li>Someone disappearing into the bathroom for 20 minutes every shift</li>
-            <li>A cook coming back from break wired or nodding off</li>
+            <li>A staff member coming back from break wired or nodding off</li>
             <li>Female staff finding reasons to avoid certain closers</li>
             <li>The walk-in becoming a hookup spot</li>
             <li>A clique freezing out the new guy until he quits</li>
-            <li>BOH and FOH ready to throw hands</li>
+            <li>Kitchen and floor ready to throw hands</li>
           </ul>
           <p class="hg-problem__footer">By the time you hear it out loud, you're already down three people and facing a lawyer.</p>
         </div>
@@ -197,7 +197,7 @@ export default function HG() {
           <p class="hg-cta__subtitle">It just keeps the house from burning down.</p>
           <div class="hg-cta__buttons">
             <button class="hg-btn hg-btn--primary" type="button" id="hg-demo-cta-bottom">Experience House Guardian</button>
-            <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="hg-btn hg-btn--secondary">Book a Demo</a>
+            <a href="/contact" class="hg-btn hg-btn--secondary">Book a Demo</a>
 <a href="tel:+15134020611" class="hg-btn hg-btn--secondary">Call Now</a>
           </div>
         </div>

@@ -37,7 +37,7 @@ export default function OSM() {
           <p class="osm-panic__line osm-panic__line--muted">You're now in the walk-in, trying not to spiral, marinara running down your sleeve because you knocked over the bucket while attempting to breathe.</p>
         </div>
 
-        <p class="osm-panic__universal">This is every restaurant on Earth.</p>
+        <p class="osm-panic__universal">This is every shift-based business on Earth.</p>
       </section>
 
       <!-- THE TURN -->
@@ -45,7 +45,7 @@ export default function OSM() {
         <p class="osm-turn__hook">Now listen to this.</p>
         
         <div class="osm-turn__action">
-          <p class="osm-turn__line">You open En Place.</p>
+          <p class="osm-turn__line">You open LeanOn.</p>
           <p class="osm-turn__line">Tap <span class="osm-turn__highlight">"Create Open Shift."</span></p>
         </div>
       </section>
@@ -53,7 +53,7 @@ export default function OSM() {
       <!-- THE SOLUTION -->
       <section class="osm-solution">
         <div class="osm-card">
-          <p class="osm-solution__lead">En Place works exactly like DoorDash,<br/>but for restaurant shifts.</p>
+          <p class="osm-solution__lead">LeanOn works exactly like DoorDash,<br/>but for shifts.</p>
           
           <div class="osm-solution__flow">
             <p class="osm-solution__step">You post the shift.</p>
@@ -97,7 +97,7 @@ export default function OSM() {
         
         <div class="osm-tagline__buttons">
           <button class="osm-btn osm-btn--primary" type="button" id="osm-demo-cta">Experience Open Shift Marketplace</button>
-          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="osm-btn osm-btn--secondary">Book a Demo</a>
+          <a href="/contact" class="osm-btn osm-btn--secondary">Book a Demo</a>
 <a href="tel:+15134020611" class="osm-btn osm-btn--secondary">Call Now</a>
         </div>
 
@@ -128,7 +128,7 @@ export default function OSM() {
 
         <div class="osm-cta__buttons">
           <button class="osm-btn osm-btn--primary" type="button" id="osm-demo-cta-bottom">Experience Open Shift Marketplace</button>
-          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="osm-btn osm-btn--secondary">Book a Demo</a>
+          <a href="/contact" class="osm-btn osm-btn--secondary">Book a Demo</a>
 <a href="tel:+15134020611" class="osm-btn osm-btn--secondary">Call Now</a>
         </div>
       </section>

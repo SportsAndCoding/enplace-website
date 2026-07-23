@@ -16,7 +16,7 @@ export default function SSE() {
         <p class="sse-header__eyebrow">Staff Stability Engine</p>
         <h1 class="sse-header__title">Stability Command Center</h1>
         <p class="sse-header__subtitle">
-          Your restaurant's emotional heartbeat. Organized. Clear. Actionable.
+          Your team's emotional heartbeat. Organized. Clear. Actionable.
           One place to lead from.
         </p>
       </header>
@@ -26,7 +26,7 @@ export default function SSE() {
         <div class="sse-hero-card__header">
           <h2 class="sse-hero-card__title">What We Surface</h2>
           <p class="sse-hero-card__tagline">
-            The signals that predict turnover before it happens. Informed by millions of data points across the En Place network.
+            The signals that predict turnover before it happens. Informed by millions of data points across the LeanOn network.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export default function SSE() {
           </div>
           <div class="signal-item">
             <span class="signal-item__icon"></span>
-            FOH/BOH tension
+            Cross-team friction
           </div>
           <div class="signal-item">
             <span class="signal-item__icon"></span>
@@ -69,7 +69,7 @@ export default function SSE() {
           <h2 class="section-header__title">Every Issue. Every Next Step. Zero Guesswork.</h2>
           <p class="section-header__subtitle">Everything you need to act decisively.</p>
           <p class="section-header__subtitle">Powered by network-wide outcomes.</p>
-          <p class="section-header__subtitle">Tuned to your restaurant's unique fingerprint.</p>
+          <p class="section-header__subtitle">Tuned to your team's unique fingerprint.</p>
         </div>
 
         <div class="value-grid">
@@ -102,7 +102,7 @@ export default function SSE() {
       <section class="sse-crisis-section">
         <div class="sse-crisis-content">
           <h2 class="sse-crisis-content__title">When things get critical, clarity gets sharper.</h2>
-          <p class="sse-crisis-content__note">Managers with En Place don't panic. They execute.</p>
+          <p class="sse-crisis-content__note">Managers with LeanOn don't panic. They execute.</p>
           <p class="sse-crisis-content__note sse-crisis-content__note--muted">Because the system already knows how these crises typically unfold across the network.</p>
         </div>
         
@@ -147,8 +147,8 @@ export default function SSE() {
           </div>
 
           <p class="sse-ladder-card__description">
-            Structured guidance based on real outcomes from hundreds of restaurants.
-            Managers choose the step. En Place handles the organization.
+            Structured guidance based on real outcomes from hundreds of frontline teams.
+            Managers choose the step. LeanOn handles the organization.
           </p>
         </div>
       </section>
@@ -176,7 +176,7 @@ export default function SSE() {
           <div class="why-card">
             <h3 class="why-card__title">Scalable Leadership</h3>
             <p class="why-card__description">
-              Every manager follows the same playbook. Every restaurant becomes more stable. Every entry makes the network smarter.
+              Every manager follows the same playbook. Every team becomes more stable. Every entry makes the network smarter.
             </p>
           </div>
         </div>
@@ -186,7 +186,7 @@ export default function SSE() {
       <section class="sse-cta-section">
         <h2 class="sse-cta__title">
           <span>Most platforms manage labor.</span>
-          <span>En Place manages the humans who run it.</span>
+          <span>LeanOn manages the humans who run it.</span>
         </h2>
         <p class="sse-cta__subtitle">
           See the difference stability makes.

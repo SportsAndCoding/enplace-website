@@ -18,11 +18,11 @@ export default function SH() {
           <p class="sh-hero__eyebrow">Stable Hire</p>
           <h1 class="sh-hero__title">Hire people who stay.</h1>
           <p class="sh-hero__subtitle">
-            Stable Hire predicts who survives the 90-day cliff—using every shift, every team, every exit in the En Place network.
+            Stable Hire predicts who survives the 90-day cliff—using every shift, every team, every exit in the LeanOn network.
           </p>
           <div class="sh-hero__buttons">
             <button class="sh-btn sh-btn--primary" type="button" id="sh-demo-cta">Experience Stable Hire</button>
-            <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="sh-btn sh-btn--secondary">Book a Demo</a>
+            <a href="/contact" class="sh-btn sh-btn--secondary">Book a Demo</a>
 <a href="tel:+15134020611" class="sh-btn sh-btn--secondary">Call Now</a>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function SH() {
               </div>
             </div>
           </div>
-          <div class="sh-hero__badge">Millions of shift-level data points · En Place Network</div>
+          <div class="sh-hero__badge">Millions of shift-level data points · LeanOn Network</div>
         </div>
       </header>
 
@@ -114,7 +114,7 @@ export default function SH() {
           <div class="sh-how__step">
             <span class="sh-how__step-number">2</span>
             <p class="sh-how__step-text">We run it through the network model</p>
-            <p class="sh-how__step-note">Pattern-matched against 1.1 M+ shift signals across hundreds of restaurants</p>
+            <p class="sh-how__step-note">Pattern-matched against 1.1 M+ shift signals across hundreds of frontline teams</p>
           </div>
           <div class="sh-how__step">
             <span class="sh-how__step-number">3</span>
@@ -132,7 +132,7 @@ export default function SH() {
         <!-- Interactive Report Demo (injected via JS) -->
         <div class="sh-report-section__demo" id="sh-report-mount"></div>
 
-        <p class="sh-report-section__footer">Every metric trained on the largest restaurant stability dataset in existence.</p>
+        <p class="sh-report-section__footer">Every metric trained on the largest frontline stability dataset in existence.</p>
       </section>
 
       <!-- WHY MANAGERS USE IT -->
@@ -151,7 +151,7 @@ export default function SH() {
           </div>
           <div class="sh-why__item">
             <span class="sh-why__icon">✓</span>
-            <span class="sh-why__text">Same standard from unit 1 to unit 50</span>
+            <span class="sh-why__text">Same standard from location 1 to location 50</span>
           </div>
           <div class="sh-why__item">
             <span class="sh-why__icon">✓</span>
@@ -191,7 +191,7 @@ export default function SH() {
         <h2 class="sh-cta__title">The best hire you'll ever make is now the most predictable one.</h2>
         <div class="sh-cta__buttons">
           <button class="sh-btn sh-btn--primary" type="button" id="sh-demo-cta-bottom">Experience Stable Hire</button>
-          <a href="https://calendly.com/rob-en-place/en-place-demo" target="_blank" rel="noopener" class="sh-btn sh-btn--secondary">Book a Demo</a>
+          <a href="/contact" class="sh-btn sh-btn--secondary">Book a Demo</a>
 <a href="tel:+15134020611" class="sh-btn sh-btn--secondary">Call Now</a>
         </div>
       </section>
